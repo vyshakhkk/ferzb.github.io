@@ -1,0 +1,58 @@
+/* ===============================
+   Author: {Vitaliy Vorynka}
+   Date:   {DATE HERE}
+   
+   Notes:
+   Hand coded for Build a Website
+   from Scratch with HTML & CSS
+   by Vitaliy Vorynka
+   
+   Colour Palette:
+   ---------------
+   =============================== */
+
+/* General */
+body{
+   background: #eee;
+   text-align: center;
+}
+.container{
+   width: 200px;
+   height: 200px;
+   background: #fff;
+   box-shadow: 0px 0px 8px 0px;
+   margin: 5em auto 0;
+}
+
+.circle{
+   background: #eee;
+   box-shadow: 2px 2px 3px 0px rgb(115, 114, 114);
+   display: inline-block;
+   border-radius: 90%;
+   border: 2px solid #fff;
+   margin: 2px;
+}
+.circle:hover{
+   cursor: pointer;
+}
+.selected{
+   background-color:#4D90FE;
+   
+}
+.wrong{
+   background-color:red;
+}
+/* Typography */
+
+
+
+/* Header */
+
+
+
+/* Footer */
+
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
