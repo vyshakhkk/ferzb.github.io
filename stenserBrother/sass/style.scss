@@ -1,0 +1,213 @@
+@import "smart-grid.scss";
+
+/****************Preparatory works***************/
+
+$col-1:8.33333333%;
+$col-2:16.66666667%;
+$col-3:25%;
+$col-4:33.33333333%;
+$col-5:41.66666667%;
+$col-6:50%;
+$col-7:58.33333333%;
+$col-8:66.66666667%;
+$col-9:75%;
+$col-10:83.33333333%;
+$col-11:91.66666667%;
+$col-12:100%;
+
+$dw-480:480px;
+$dw-560:560px;
+$dw-780:780px;
+$dw-960:960px;
+$dw-1100:1100px;
+
+@mixin col($col, $offset){
+	width: calc(#{$col} - #{$offset});
+}
+@mixin grid($col, $offset){
+	flex-basis: calc(#{$col} - #{$offset});
+}
+@mixin device-col($dw, $col-dw, $offset){
+	@media (min-width: #{$dw}){
+		width: calc(#{$col-dw} - #{$offset});
+	}
+}
+@mixin device-grid($dw, $col-dw, $offset){
+	@media (min-width: #{$dw}){
+		flex-basis: calc(#{$col-dw} - #{$offset});
+	}
+}
+
+/*******reset******/
+
+@include reset();
+
+/******end reset*****/
+
+/******************General**************************/
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	min-width: 320px;
+}
+.wrap{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	@media (min-width: $dw-960){
+		width: 90%;
+		padding: 30px 0;
+	}
+}
+
+/*******************Typography*********************/
+a{
+	text-decoration: none;
+	color:#fff;
+}
+
+/*********************header***********************/
+
+.page-head{
+	background-color: rgba(0,0,0,0.8);
+	position: relative;
+	&::before{
+		content:'';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: url('../img/bg-header.jpg') no-repeat;
+		background-size: cover;
+	}
+}
+.nav-toggle{
+	background: #111;
+	display: block;
+
+	@media (min-width: $dw-960){
+		display:none;
+	}
+}
+.toggle{
+	cursor: pointer;
+	display: block;
+	padding: 28px 20px;
+	width: 30px;
+	margin-left: auto;
+	em{
+		transition: opacity 0.2s 0.2s, transform 0.2s 0.2s, top 0.2s 0.3s;
+		display: block;
+		height: 3px;
+		background: #fff;
+		border-radius: 8px;
+		&:first-child{
+			position:relative;
+			top: -5px;
+		}
+		&:last-child{
+			position:relative;
+			top: 5px;
+		}
+	}
+	.close{
+	transition: opacity 0.2s 0.2s, transform 0.2s 0.4s, top 0.1s 0.1s;
+	&:nth-child(2){
+		opacity: 0;
+	}
+	&:first-child{
+		top: 0px;
+		transform: skewY(45deg);
+	}
+	&:last-child{
+		top: -4px;
+		transform: skewY(-45deg);
+	}
+} 
+
+}
+.head{
+	display: none;
+	flex-direction: column;
+	text-align: center;
+	background: #000;
+	@media (min-width: $dw-960){
+		display:flex;
+		flex-direction:row;
+		justify-content: space-between;
+		background: transparent;
+	}
+}
+.logo{
+	@include grid($col-3, 0px);
+	a{
+		display: block;
+		padding: 30px 0;
+		font-weight: 700;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		@media (min-width: $dw-960){
+			padding: 0;
+		}
+	}
+	
+}
+.menu-side{
+	@include grid($col-3, 0px);
+	ul{
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $dw-960){
+			flex-direction:row;
+			justify-content: space-between;
+		}
+		li{
+			margin-bottom: 14px;
+			@media (min-width: $dw-960){
+				margin: 0;
+			}
+		}
+	}
+	a{
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
+.slog{
+	color: #fff;
+	margin: 5em auto;
+	text-align: center;
+	h1{
+		font-weight: 700;
+		font-size: 30px;
+		margin: 0.8em 0;
+		strong{
+			font-weight: 700;
+		}
+		@media (min-width: $dw-560){
+			font-size: 68px;
+		}
+	}
+	span{
+		font-size: 14px;
+		line-height: 20px;
+		display: block;
+		margin: 0 auto;
+		max-width: 350px;
+		font-weight: lighter;
+		@media (min-width: $dw-560){
+			max-width: 500px;
+			font-size: 22px;
+    		line-height: 1.5;
+		}
+	}
+}
+.arrow{
+	text-align: center;
+	svg{
+		fill:#fff;
+	}	
+}
+

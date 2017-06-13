@@ -1,0 +1,176 @@
+.fc{
+	display: flex;
+	flex-wrap: wrap;
+}
+.fc-sb{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.fc-sa{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.fc-c{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.fe-l1{flex: 1 auto;}
+.fe-l2{flex: 2 auto;}
+.fe-l3{flex: 3 auto;}
+.fe-l4{flex: 4 auto;}
+.fe-xs-12{
+	flex-basis: 100%;
+}
+.fe-xs-11{
+	flex-basis: 91.66666667%;
+}
+.fe-xs-10{
+	flex-basis: 83.33333333%;
+}
+.fe-xs-9{
+	flex-basis: 75%;
+}
+.fe-xs-8{
+	flex-basis: 66.66666667%;
+}
+.fe-xs-7{
+	flex-basis: 58.33333333%;
+}
+.fe-xs-6{
+	flex-basis: 50%;
+}
+.fe-xs-5{
+	flex-basis: 41.66666667%;
+}
+.fe-xs-4{
+	flex-basis: 33.33333333%;
+}
+.fe-xs-3{
+	flex-basis: 25%;
+}
+.fe-xs-2{
+	flex-basis: 16.66666667%;
+}
+.fe-xs-1{
+	flex-basis: 8.33333333%;
+}
+
+@media (min-width: 768px){
+	.fe-sm-12{
+		flex-basis: 100%;
+	}
+	.fe-sm-11{
+		flex-basis: 91.66666667%;
+	}
+	.fe-sm-10{
+		flex-basis: 83.33333333%;
+	}
+	.fe-sm-9{
+		flex-basis: 75%;
+	}
+	.fe-sm-8{
+		flex-basis: 66.66666667%;
+	}
+	.fe-sm-7{
+		flex-basis: 58.33333333%;
+	}
+	.fe-sm-6{
+		flex-basis: 50%;
+	}
+	.fe-sm-5{
+		flex-basis: 41.66666667%;
+	}
+	.fe-sm-4{
+		flex-basis: 33.33333333%;
+	}
+	.fe-sm-3{
+		flex-basis: 25%;
+	}
+	.fe-sm-2{
+		flex-basis: 16.66666667%;
+	}
+	.fe-sm-1{
+		flex-basis: 8.33333333%;
+	}
+}
+
+@media (min-width: 992px){
+	.fe-md-12{
+		flex-basis: 100%;
+	}
+	.fe-md-11{
+		flex-basis: 91.66666667%;
+	}
+	.fe-md-10{
+		flex-basis: 83.33333333%;
+	}
+	.fe-md-9{
+		flex-basis: 75%;
+	}
+	.fe-md-8{
+		flex-basis: 66.66666667%;
+	}
+	.fe-md-7{
+		flex-basis: 58.33333333%;
+	}
+	.fe-md-6{
+		flex-basis: 50%;
+	}
+	.fe-md-5{
+		flex-basis: 41.66666667%;
+	}
+	.fe-md-4{
+		flex-basis: 33.33333333%;
+	}
+	.fe-md-3{
+		flex-basis: 25%;
+	}
+	.fe-md-2{
+		flex-basis: 16.66666667%;
+	}
+	.fe-md-1{
+		flex-basis: 8.33333333%;
+	}
+}
+
+@media (min-width: 1200px){
+	.fe-lg-12{
+		flex-basis: 100%;
+	}
+	.fe-lg-11{
+		flex-basis: 91.66666667%;
+	}
+	.fe-lg-10{
+		flex-basis: 83.33333333%;
+	}
+	.fe-lg-9{
+		flex-basis: 75%;
+	}
+	.fe-lg-8{
+		flex-basis: 66.66666667%;
+	}
+	.fe-lg-7{
+		flex-basis: 58.33333333%;
+	}
+	.fe-lg-6{
+		flex-basis: 50%;
+	}
+	.fe-lg-5{
+		flex-basis: 41.66666667%;
+	}
+	.fe-lg-4{
+		flex-basis: 33.33333333%;
+	}
+	.fe-lg-3{
+		flex-basis: 25%;
+	}
+	.fe-lg-2{
+		flex-basis: 16.66666667%;
+	}
+	.fe-lg-1{
+		flex-basis: 8.33333333%;
+	}
+}
