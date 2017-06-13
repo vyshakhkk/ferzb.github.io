@@ -1,9 +1,14 @@
 var dh = $(document).height();
-console.log(dh);
 $('.page-head').css('height', dh);
 
 $('.toggle').click(function(){
-	$('.head').slideToggle();
+	$('.head').slideToggle().css({
+		position: 'absolute',
+		zIndex: '2',
+		width: '100%',
+    	top: '65px'
+	});
+	// $('.head').fadeOut();
 	$('em').toggleClass('close');
 })
 
