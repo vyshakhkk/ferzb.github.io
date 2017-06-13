@@ -169,6 +169,8 @@ a {
       @media (min-width: 960px) {
         .menu-side ul li {
           margin: 0; } }
+      .menu-side ul li:last-child {
+        margin-bottom: 28px; }
   .menu-side a {
     font-size: 16px;
     font-weight: 700; }
@@ -250,21 +252,21 @@ article {
   font-size: 42px;
   margin: 1em 0; }
 
-.article-text, .advantages p {
+.article-text, .advantages p, .step p {
   font-size: 20px;
   line-height: 1.5;
   font-weight: lighter;
   margin: 0 auto;
   max-width: 700px; }
   @media (min-width: 560px) {
-    .article-text, .advantages p {
+    .article-text, .advantages p, .step p {
       font-size: 22px; } }
 
-.why-we {
+.why-we, .actions {
   background: #eee; }
 
 .advantages {
-  margin-top: 45px;
+  margin-top: 55px;
   flex-basis: calc(66.66667% - 0px); }
   @media (min-width: 960px) {
     .advantages {
@@ -275,3 +277,40 @@ article {
     font-size: 16px; }
   .advantages img {
     max-width: 30%; }
+
+.actions .article-logo, .actions .advantages h3, .advantages .actions h3 {
+  font-size: 30px; }
+  @media (min-width: 560px) {
+    .actions .article-logo, .actions .advantages h3, .advantages .actions h3 {
+      font-size: 42px; } }
+
+.step {
+  display: flex;
+  text-align: left;
+  margin: 30px auto 0; }
+  @media (min-width: 560px) {
+    .step {
+      max-width: 650px; } }
+  .step div {
+    margin-left: 24px; }
+  .step h3 {
+    margin: 1em 0 0;
+    font-weight: 700;
+    font-size: 16px; }
+    @media (min-width: 560px) {
+      .step h3 {
+        font-size: 20px; } }
+  .step p {
+    font-size: 14px; }
+
+.checkmark {
+  fill: #ff4c7c;
+  display: block;
+  width: 50px;
+  height: 40px; }
+  @media (min-width: 560px) {
+    .checkmark {
+      width: 80px; } }
+  @media (min-width: 780px) {
+    .checkmark {
+      width: 55px; } }
