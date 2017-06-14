@@ -57,12 +57,30 @@ body {
 
 .wrap {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 90%; }
 
 /*******************Typography*********************/
 a {
   text-decoration: none;
   color: #fff; }
+
+button {
+  border: none;
+  cursor: pointer; }
+
+/*button*/
+.view-more {
+  margin-left: auto;
+  color: #fff;
+  background: #4493a7;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 20px; }
+
+.view-more:hover {
+  background: #f1715e; }
 
 /*********************header***********************/
 .page-head {
@@ -79,17 +97,16 @@ a {
     background-size: cover; }
 
 .container {
-  width: 100%;
   height: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 0 30px;
+  padding: 0 0 42px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
   @media (min-width: 960px) {
     .container {
-      padding: 30px 0;
+      padding: 42px 0;
       width: 90%; } }
 
 /***********NAV TOGGLE**************/
@@ -145,7 +162,7 @@ a {
 .logo {
   flex-basis: calc(25% - 0px); }
   .logo a {
-    display: block;
+    display: inline-block;
     padding: 30px 0;
     font-weight: 700;
     font-size: 18px;
@@ -154,6 +171,11 @@ a {
     @media (min-width: 960px) {
       .logo a {
         padding: 0; } }
+  .logo h3 {
+    text-align: center; }
+    @media (min-width: 960px) {
+      .logo h3 {
+        text-align: left; } }
 
 .menu-side {
   flex-basis: calc(25% - 0px); }
@@ -247,7 +269,7 @@ article {
   padding: 60px 20px;
   text-align: center; }
 
-.article-logo, .advantages h3 {
+.article-logo, .advantages h3, .proposals-content h3 {
   font-weight: 700;
   font-size: 42px;
   margin: 1em 0; }
@@ -276,12 +298,51 @@ article {
   .advantages p {
     font-size: 16px; }
   .advantages img {
-    max-width: 30%; }
+    max-width: 32%; }
 
-.actions .article-logo, .actions .advantages h3, .advantages .actions h3 {
+/*****************services****************/
+.proposals {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  width: calc(100% - 0px); }
+  @media (min-width: 560px) {
+    .proposals {
+      width: calc(75% - 0px); } }
+  @media (min-width: 960px) {
+    .proposals {
+      width: calc(50% - 30px); } }
+
+.proposals-content h3 {
+  font-size: 24px; }
+
+.proposals-content p {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 12px 0; }
+
+.proposals-content ul {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 480px) {
+    .proposals-content ul {
+      flex-wrap: wrap;
+      max-height: 400px; } }
+  .proposals-content ul .avaliable, .proposals-content ul .unavailable {
+    width: calc(50% - 24px);
+    padding-left: 26px;
+    margin-bottom: 12px;
+    background: url("../img/avaliable1.png") 0px -4px no-repeat; }
+  .proposals-content ul .unavailable {
+    background: url("../img/unavaliable.png") 0px -4px no-repeat; }
+
+/****************action******************/
+.actions .article-logo, .actions .advantages h3, .advantages .actions h3, .actions .proposals-content h3, .proposals-content .actions h3 {
   font-size: 30px; }
   @media (min-width: 560px) {
-    .actions .article-logo, .actions .advantages h3, .advantages .actions h3 {
+    .actions .article-logo, .actions .advantages h3, .advantages .actions h3, .actions .proposals-content h3, .proposals-content .actions h3 {
       font-size: 42px; } }
 
 .step {
@@ -290,11 +351,11 @@ article {
   margin: 30px auto 0; }
   @media (min-width: 560px) {
     .step {
-      max-width: 650px; } }
+      max-width: 700px; } }
   .step div {
     margin-left: 24px; }
   .step h3 {
-    margin: 1em 0 0;
+    margin: 1em 0;
     font-weight: 700;
     font-size: 16px; }
     @media (min-width: 560px) {
@@ -302,15 +363,81 @@ article {
         font-size: 20px; } }
   .step p {
     font-size: 14px; }
+    @media (min-width: 560px) {
+      .step p {
+        font-size: 18px; } }
 
-.checkmark {
-  fill: #ff4c7c;
-  display: block;
-  width: 50px;
-  height: 40px; }
-  @media (min-width: 560px) {
-    .checkmark {
-      width: 80px; } }
+/************contact**************/
+.contact {
+  background: #222; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   @media (min-width: 780px) {
-    .checkmark {
-      width: 55px; } }
+    .contact-form {
+      flex-direction: row; } }
+  .contact-form form {
+    flex-basis: calc(100% - 0px);
+    order: 1;
+    text-align: left; }
+    @media (min-width: 560px) {
+      .contact-form form {
+        flex-basis: calc(50% - 20px); } }
+    @media (min-width: 780px) {
+      .contact-form form {
+        order: 0; } }
+  .contact-form .contact-info {
+    flex-basis: calc(100% - 0px); }
+    @media (min-width: 560px) {
+      .contact-form .contact-info {
+        flex-basis: calc(50% - 20px); } }
+
+.forms-contact {
+  padding: 0 22px; }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 25px 0; }
+
+.form-labels label {
+  cursor: pointer;
+  color: #aaa;
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 8px; }
+
+.req {
+  color: #E74C3C; }
+
+.input-form input, .input-form textarea {
+  background: #f3f2ed;
+  border: 0;
+  width: 85%;
+  padding: 12px 10px; }
+
+.input-form textarea {
+  width: 100%;
+  height: 250px; }
+
+.input-form input:focus, .input-form textarea:focus {
+  background: #fff;
+  border: 1px solid #989999;
+  padding: 11px 8px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+
+/*******************FOOTER*****************/
+footer {
+  background: #111;
+  text-align: center;
+  color: #9d9d9d;
+  padding: 24px 0 0; }
+  footer p {
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 24px; }

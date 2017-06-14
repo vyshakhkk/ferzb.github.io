@@ -37,7 +37,6 @@ $dw-1100:1100px;
 		flex-basis: calc(#{$col-dw} - #{$offset});
 	}
 }
-
 /*******reset******/
 
 @include reset();
@@ -56,13 +55,28 @@ body{
 .wrap{
 	max-width: 1200px;
 	margin: 0 auto;
+	width: 90%;
 }
 /*******************Typography*********************/
 a{
 	text-decoration: none;
 	color:#fff;
 }
-
+button{
+	border:none;
+	cursor: pointer;
+}
+/*button*/
+.view-more{
+   margin-left: auto;
+   color: #fff;
+   background:#4493a7;
+   text-transform: uppercase;
+   border-radius: 4px;
+   font-size: 16px;
+   padding: 10px 20px;
+}
+.view-more:hover{background: #f1715e;}
 /*********************header***********************/
 
 .page-head{
@@ -80,18 +94,16 @@ a{
 	}
 }
 .container{
-	width: 100%;
 	height: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 0 30px;
+	padding: 0 0 42px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	@media (min-width: $dw-960){
-		padding:30px 0;
+		padding:42px 0;
 		width: 90%;
-		
 	}
 }
 /***********NAV TOGGLE**************/
@@ -155,7 +167,7 @@ a{
 .logo{
 	@include grid($col-3, 0px);
 	a{
-		display: block;
+		display: inline-block;
 		padding: 30px 0;
 		font-weight: 700;
 		font-size: 18px;
@@ -163,6 +175,12 @@ a{
 		letter-spacing: 1.5px;
 		@media (min-width: $dw-960){
 			padding: 0;
+		}
+	}
+	h3{
+		text-align: center;
+		@media (min-width: $dw-960){
+			text-align: left;
 		}
 	}
 	
@@ -312,9 +330,52 @@ article{
 		font-size:16px;
 	}
 	img {
-    	max-width: 30%;
+    	max-width: 32%;
 	}
 }
+
+/*****************services****************/
+.proposals{
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: left;
+	@include col($col-12, 0px);
+	@include device-col($dw-560, $col-9, 0px);
+	@include device-col($dw-960, $col-6, 30px);
+}
+.proposals-content{
+	h3{
+		@extend .article-logo;
+		font-size: 24px;
+	}
+	p{
+		font-weight: 700;
+		font-size: 16px;
+		margin: 12px 0;
+	}
+	ul{
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $dw-480){
+			flex-wrap: wrap;
+			max-height:400px;
+		}
+		.avaliable{
+			@include col($col-6, 24px);
+			padding-left: 26px;
+			margin-bottom: 12px;
+			background: url('../img/avaliable1.png') 0px -4px no-repeat;
+		}
+		.unavailable{
+			@extend .avaliable;
+			background: url('../img/unavaliable.png') 0px -4px no-repeat;
+			
+		}
+	}
+}
+/****************action******************/
 .actions{
 	@extend .why-we;
 	.article-logo{
@@ -330,13 +391,13 @@ article{
 	margin: 30px auto 0;
 
 	@media(min-width: $dw-560){
-		max-width:650px;
+		max-width:700px;
 	}
 	div{
 		margin-left: 24px;
 	}
 	h3{
-		margin: 1em 0 0;
+		margin: 1em 0;
 		font-weight: 700;
 		font-size:16px;
 		@media(min-width: $dw-560){
@@ -346,17 +407,80 @@ article{
 	p{
 		@extend .article-text;
 		font-size:14px;
+		@media(min-width: $dw-560){
+			font-size:18px;
+		}
 	}
 }
-.checkmark{
-	fill: rgb(255, 76, 124);
-	display: block;
-	width:50px;
-	height: 40px;
-	@media(min-width: $dw-560){
-		width: 80px;
+/************contact**************/
+.contact{
+	background: #222;
+}
+.contact-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@media (min-width: $dw-780){
+			flex-direction:row;
+		}
+	form{
+		@include grid($col-12, 0px);
+		order: 1;
+		text-align: left;
+		@include device-grid($dw-560, $col-6, 20px);
+		@media (min-width: $dw-780){
+			order:0;
+		}
 	}
-	@media(min-width: $dw-780){
-		width: 55px;
+	.contact-info{
+		@include grid($col-12, 0px);
+		@include device-grid($dw-560, $col-6, 20px);
+	}
+}
+.forms-contact{padding: 0 22px;}
+fieldset{
+   border:none;
+   padding: 0;
+   margin: 0 0 25px 0;
+}
+.form-labels label{
+	cursor: pointer;
+   color: #aaa;
+   font-weight: bold;
+   line-height: 1.4;
+   text-transform: uppercase;
+   font-size: 20px;
+   display: block;
+   margin-bottom: 8px;
+}
+.req{color: #E74C3C;}
+.input-form input, .input-form textarea {
+   background: #f3f2ed;
+   border: 0;
+   width: 85%;
+   padding: 12px 10px;      
+}
+.input-form textarea{
+   width: 100%;
+   height:250px;
+}
+.input-form input:focus, .input-form textarea:focus{
+   background: #fff;
+   border: 1px solid #989999;
+   padding: 11px 8px;
+   box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+/*******************FOOTER*****************/
+
+footer{
+	background: #111;
+	text-align: center;
+	color: #9d9d9d;
+	padding: 24px 0 0;
+	p{
+		font-size: 15px;
+		display: inline-block;
+		margin-bottom: 24px;
 	}
 }
