@@ -334,7 +334,7 @@ article {
     width: calc(50% - 24px);
     padding-left: 26px;
     margin-bottom: 12px;
-    background: url("../img/avaliable1.png") 0px -4px no-repeat; }
+    background: url("../img/avaliable.png") 0px -4px no-repeat; }
   .proposals-content ul .unavailable {
     background: url("../img/unavaliable.png") 0px -4px no-repeat; }
 

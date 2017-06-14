@@ -366,7 +366,7 @@ article{
 			@include col($col-6, 24px);
 			padding-left: 26px;
 			margin-bottom: 12px;
-			background: url('../img/avaliable1.png') 0px -4px no-repeat;
+			background: url('../img/avaliable.png') 0px -4px no-repeat;
 		}
 		.unavailable{
 			@extend .avaliable;
