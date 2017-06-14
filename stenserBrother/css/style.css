@@ -315,24 +315,24 @@ button {
 
 .arrow{
   text-align: center;
-  &-down{
-    transition: fill 0.1s 0.1s; 
-    cursor: pointer;
-    fill:#fff;
-    position: relative;
-    animation-name:'jump';
-      animation-duration:2s;
-      animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name:'jump';
-      -webkit-animation-duration:2s;
-      -ms-animation-name:'jump';
-      -ms-animation-iteration-count: infinite;
-      -ms-animation-duration:2s;
-      &:hover{
-      fill:#999;
-      }
-  } 
+}
+.arrow-down{
+  transition: fill 0.1s 0.1s; 
+  cursor: pointer;
+  fill:#fff;
+  position: relative;
+  animation-name:'jump';
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name:'jump';
+  -webkit-animation-duration:2s;
+  -ms-animation-name:'jump';
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-duration:2s;
+}
+  .arrow-down:hover{
+    fill:#999;
 }
 @-webkit-keyframes 'jump' {
     from {
