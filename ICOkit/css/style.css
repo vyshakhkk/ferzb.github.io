@@ -194,6 +194,15 @@ button {
   background: #f1715e;
 }
 
+
+.remodal fieldset {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.remodal button {
+  margin: 20px 10px; }
+
 /*********************header***********************/
 
 .page-head {
