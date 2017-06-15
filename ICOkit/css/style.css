@@ -143,6 +143,41 @@ button {
   cursor: pointer;
 }
 
+.btn-up {
+  display: block;
+  background: #999;
+  border-radius: 90%;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  right: 20px;
+  bottom: -50px;
+  cursor: pointer;
+  outline: 0 !important;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+
+.btn-up::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.btn-up.active {
+  bottom: 20px;
+}
+
 /*button*/
 
 .view-more {
