@@ -364,6 +364,7 @@ article{
 /************contact**************/
 .contact{
 	background: #222;
+	padding: 30px 0 0;
 }
 .contact-form{
 	display: flex;
@@ -380,43 +381,72 @@ article{
 		@media (min-width: $dw-780){
 			order:0;
 		}
+		fieldset{
+		   border:none;
+		   display: inline-block;
+		   padding: 0;
+		   margin: 0 2% 16px 5%;
+		   @include col($col-5, 3px)
+		   &:nth-child(3){
+				display:block;
+				@include col($col-11, 12px)
+				margin: 0 auto 16px;
+		   }
+		}
+		.view-more{
+			margin-left: 5%;
+		}
 	}
-	.contact-info{
-		@include grid($col-12, 0px);
-		@include device-grid($dw-560, $col-6, 20px);
+}
+.contact-info{
+	@include grid($col-12, 0px);
+	@include device-grid($dw-560, $col-6, 20px);
+	h3{
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 18px;
+		margin: 30px 0;
+	}
+	a{
+		display: block;
+		font-size: 28px;
+		font-weight: lighter;
+	}
+	.social-link{
+		margin: 30px 2px;
+		display: inline-block;
+		svg{
+			width: 48px;
+			height: 48px;
+		}
 	}
 }
 .forms-contact{padding: 0 22px;}
-fieldset{
-   border:none;
-   padding: 0;
-   margin: 0 0 25px 0;
-}
+
 .form-labels label{
 	cursor: pointer;
    color: #aaa;
    font-weight: bold;
    line-height: 1.4;
    text-transform: uppercase;
-   font-size: 20px;
+   font-size: 14px;
    display: block;
    margin-bottom: 8px;
 }
 .req{color: #E74C3C;}
 .input-form input, .input-form textarea {
+	width: 100%;
    background: #f3f2ed;
    border: 0;
-   width: 85%;
-   padding: 12px 10px;      
+   padding: 5px 10px;      
 }
-.input-form textarea{
-   width: 100%;
-   height:250px;
+.input-form textarea {
+	height: 72px;
 }
 .input-form input:focus, .input-form textarea:focus{
    background: #fff;
    border: 1px solid #989999;
-   padding: 11px 8px;
+   padding: 4px 8px;
    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
