@@ -17,6 +17,7 @@ $col-12:100%;
 
 $dw-480:480px;
 $dw-560:560px;
+$dw-640:640px;
 $dw-780:780px;
 $dw-960:960px;
 $dw-1100:1100px;
@@ -290,38 +291,66 @@ article{
 	flex-direction: column;
 	justify-content: flex-end;
 	text-align: left;
+	border: 1px solid #ddd;
+	padding: 10px 20px;
 	@include col($col-12, 0px);
-	@include device-col($dw-560, $col-9, 0px);
-	@include device-col($dw-960, $col-6, 30px);
+	@include device-col($dw-640, $col-6, 30px);
+	@include device-col($dw-1100, $col-3, 30px);
 }
-.proposals-content{
+.proposals-logo{
+	margin: 20px 0 40px;
+	text-align: center;
+	color: #333;
 	h3{
 		@extend .article-logo;
 		font-size: 24px;
+		font-weight: normal;
+		margin-top: 0;
 	}
 	p{
 		font-weight: 700;
-		font-size: 16px;
+		font-size: 42px;
 		margin: 12px 0;
+		span{
+			margin-top:16px;
+			display: block;
+			font-size: 16px;
+		}
+	}
+	.view-more{
+		width: 100%;
+		font-size: 15px;
+	}
+}
+.proposals-content{
+	.view-more{
+		display: block;
+		text-align: center;
+		background: transparent;
+		color: #4493a7;
+		border:1px solid #4493a7;
+		margin: 24px 0;
+		transition: color 0.2s 0.2s, border 0.2s 0.2s;
+		&:hover{
+			color:#f1715e;
+			border-color: #f1715e;
+		}
 	}
 	ul{
 		display: flex;
 		flex-direction: column;
-		@media (min-width: $dw-480){
-			flex-wrap: wrap;
-			max-height:400px;
-		}
+		font-size: 16px;
 		.avaliable{
-			@include col($col-6, 24px);
 			padding-left: 26px;
 			margin-bottom: 12px;
-			background: url('../img/avaliable.png') 0px -4px no-repeat;
+			background: url('../img/avaliable.png') 0px -3px no-repeat;
 		}
 		.unavailable{
 			@extend .avaliable;
-			background: url('../img/unavaliable.png') 0px -4px no-repeat;
+			background: url('../img/unavaliable.png') 0px -1px no-repeat;
 			
 		}
+
 	}
 }
 /****************action******************/
@@ -364,7 +393,7 @@ article{
 /************contact**************/
 .contact{
 	background: #222;
-	padding: 30px 0 0;
+	padding: 30px 0;
 }
 .contact-form{
 	display: flex;
@@ -461,5 +490,12 @@ footer{
 		font-size: 15px;
 		display: inline-block;
 		margin-bottom: 24px;
+	}
+	svg{
+		fill: #fff;
+		transition: fill 0.1s 0.1s;
+		&:hover{
+			fill:#4493a7;
+		}
 	}
 }

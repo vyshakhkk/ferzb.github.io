@@ -312,7 +312,6 @@ button {
 }
 
 /***********ANIMATION ARROWW**************/
-
 .arrow{
   text-align: center;
 }
@@ -376,7 +375,7 @@ article {
 
 .article-logo,
 .advantages h3,
-.proposals-content h3 {
+.proposals-logo h3 {
   font-weight: 700;
   font-size: 42px;
   margin: 1em 0;
@@ -422,34 +421,70 @@ article {
   flex-direction: column;
   justify-content: flex-end;
   text-align: left;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
   width: calc(100% - 0px);
 }
 
-.proposals-content h3 {
-  font-size: 24px;
+.proposals-logo {
+  margin: 20px 0 40px;
+  text-align: center;
+  color: #333;
 }
 
-.proposals-content p {
+.proposals-logo h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.proposals-logo p {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 42px;
   margin: 12px 0;
+}
+
+.proposals-logo p span {
+  margin-top: 16px;
+  display: block;
+  font-size: 16px;
+}
+
+.proposals-logo .view-more {
+  width: 100%;
+  font-size: 15px;
+}
+
+.proposals-content .view-more {
+  display: block;
+  text-align: center;
+  background: transparent;
+  color: #4493a7;
+  border: 1px solid #4493a7;
+  margin: 24px 0;
+  transition: color 0.2s 0.2s, border 0.2s 0.2s;
+}
+
+.proposals-content .view-more:hover {
+  color: #f1715e;
+  border-color: #f1715e;
 }
 
 .proposals-content ul {
   display: flex;
   flex-direction: column;
+  font-size: 16px;
 }
 
 .proposals-content ul .avaliable,
 .proposals-content ul .unavailable {
-  width: calc(50% - 24px);
   padding-left: 26px;
   margin-bottom: 12px;
-  background: url("../img/avaliable.png") 0px -4px no-repeat;
+  background: url("../img/avaliable.png") 0px -3px no-repeat;
 }
 
 .proposals-content ul .unavailable {
-  background: url("../img/unavaliable.png") 0px -4px no-repeat;
+  background: url("../img/unavaliable.png") 0px -1px no-repeat;
 }
 
 /****************action******************/
@@ -457,8 +492,8 @@ article {
 .actions .article-logo,
 .actions .advantages h3,
 .advantages .actions h3,
-.actions .proposals-content h3,
-.proposals-content .actions h3 {
+.actions .proposals-logo h3,
+.proposals-logo .actions h3 {
   font-size: 30px;
 }
 
@@ -486,7 +521,7 @@ article {
 
 .contact {
   background: #222;
-  padding: 30px 0 0;
+  padding: 30px 0;
 }
 
 .contact-form {
@@ -600,11 +635,13 @@ footer p {
   margin-bottom: 24px;
 }
 
-@media (min-width: 480px) {
-  .proposals-content ul {
-    flex-wrap: wrap;
-    max-height: 400px;
-  }
+footer svg {
+  fill: #fff;
+  transition: fill 0.1s 0.1s;
+}
+
+footer svg:hover {
+  fill: #4493a7;
 }
 
 @media (min-width: 560px) {
@@ -624,15 +661,11 @@ footer p {
     font-size: 22px;
   }
 
-  .proposals {
-    width: calc(75% - 0px);
-  }
-
   .actions .article-logo,
   .actions .advantages h3,
   .advantages .actions h3,
-  .actions .proposals-content h3,
-  .proposals-content .actions h3 {
+  .actions .proposals-logo h3,
+  .proposals-logo .actions h3 {
     font-size: 42px;
   }
 
@@ -654,6 +687,12 @@ footer p {
 
   .contact-info {
     flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 640px) {
+  .proposals {
+    width: calc(50% - 30px);
   }
 }
 
@@ -704,8 +743,10 @@ footer p {
   .advantages {
     flex-basis: calc(33.33333% - 30px);
   }
+}
 
+@media (min-width: 1100px) {
   .proposals {
-    width: calc(50% - 30px);
+    width: calc(25% - 30px);
   }
 }
