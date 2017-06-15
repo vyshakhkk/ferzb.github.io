@@ -143,6 +143,8 @@ button {
   cursor: pointer;
 }
 
+/*button*/
+
 .btn-up {
   display: block;
   background: #999;
@@ -178,8 +180,6 @@ button {
   bottom: 20px;
 }
 
-/*button*/
-
 .view-more {
   margin-left: auto;
   color: #fff;
@@ -194,17 +194,6 @@ button {
   background: #f1715e;
 }
 
-
-.remodal fieldset {
-  margin: 0 auto;
-  margin-top: 20px; }
-  .remodal fieldset input {
-    width: 60%; }
-  .remodal fieldset textarea {
-    width: 60%; }
-
-.remodal button {
-  margin: 20px 10px; }
 /*********************header***********************/
 
 .page-head {
@@ -690,6 +679,23 @@ footer svg:hover {
   fill: #4493a7;
 }
 
+.remodal fieldset {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.remodal fieldset input {
+  width: 90%;
+}
+
+.remodal fieldset textarea {
+  width: 90%;
+}
+
+.remodal button {
+  margin: 20px 10px;
+}
+
 @media (min-width: 560px) {
   .slog h1 {
     font-size: 68px;
@@ -733,6 +739,14 @@ footer svg:hover {
 
   .contact-info {
     flex-basis: calc(50% - 20px);
+  }
+
+  .remodal fieldset input {
+    width: 60%;
+  }
+
+  .remodal fieldset textarea {
+    width: 60%;
   }
 }
 
