@@ -196,13 +196,15 @@ button {
 
 
 .remodal fieldset {
-  width: 50%;
   margin: 0 auto;
   margin-top: 20px; }
+  .remodal fieldset input {
+    width: 60%; }
+  .remodal fieldset textarea {
+    width: 60%; }
 
 .remodal button {
   margin: 20px 10px; }
-
 /*********************header***********************/
 
 .page-head {
