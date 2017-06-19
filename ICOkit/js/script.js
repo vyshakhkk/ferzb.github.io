@@ -11,7 +11,7 @@ $('.toggle').click(function(){
 	// $('.head').fadeOut();
 	$('.click').toggleClass('close');
 })
-$(".menu-side").on("click","a", function (event) {
+$(".scrollTo").click(function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
