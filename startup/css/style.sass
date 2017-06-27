@@ -1,0 +1,509 @@
+/****************Preparatory works***************/
+$col-1: 8.33333333%;
+$col-2: 16.66666667%;
+$col-3: 25%;
+$col-4: 33.33333333%;
+$col-5: 41.66666667%;
+$col-6: 50%;
+$col-7: 58.33333333%;
+$col-8: 66.66666667%;
+$col-9: 75%;
+$col-10: 83.33333333%;
+$col-11: 91.66666667%;
+$col-12: 100%;
+
+$dw-480: 480px;
+$dw-560: 560px;
+$dw-640: 640px;
+$dw-780: 780px;
+$dw-960: 960px;
+$dw-1100: 1100px;
+$red: #c0301c;
+$pink: #d36e60;
+
+=col($col, $offset)
+	width: calc(#{$col} - #{$offset});
+
+=grid($col, $offset)
+	flex-basis: calc(#{$col} - #{$offset});
+
+=device-col($dw, $col-dw, $offset)
+	@media screen and (min-width: #{$dw})
+		width: calc(#{$col-dw} - #{$offset});
+
+=device-grid($dw, $col-dw, $offset)
+	@media screen and (min-width: #{$dw})
+		flex-basis: calc(#{$col-dw} - #{$offset});
+
+/************************************************************/
+/*General*/
+*
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+html
+	overflow-x: hidden;
+
+body
+	position: relative;
+	font-family: 'Roboto Slab', serif;
+	min-width: 320px;
+	color: #555;
+article
+	padding: 75px 0 100px
+	text-align: center 
+p
+	font-size: 14px;
+	line-height: 24px; 
+	font-weight: normal
+
+a
+	text-decoration: none;
+	font-size: 14px;
+	color: #555;
+
+h1,h2,h3,h4,h5,h6
+	font-family: 'Montserrat', sans-serif;
+	padding: 0
+	margin: 25px 0
+	font-weight: normal
+	text-transform: uppercase
+
+img
+	max-width: 100%; 
+
+ul
+	padding: 0;
+	list-style-type: none; 
+
+.wrap
+	width: 80%;
+	max-width: 1200px; 
+	margin: 0 auto;
+	padding: 0;
+
+/*btn-up*/
+.btn-up
+	display: block
+	background: #999
+	-webkit-border-radius: 90% 
+	border-radius: 90% 
+	position: fixed
+	width: 50px
+	height: 50px
+	z-index: 1000
+	right: 20px
+	bottom: -50px
+	cursor: pointer
+	outline: 0 !important
+	-webkit-transition: 0.4s 
+	 -moz-transition: 0.4s 
+	 -ms-transition: 0.4s 
+	 -o-transition: 0.4s 
+	 transition: 0.4s
+	opacity: 0.6
+	&::after
+		content: ' '
+		width: 10px
+		height: 10px
+		border-top: 2px solid #fff
+		border-left: 2px solid #fff   
+		-webkit-transform: rotate(45deg)
+		-moz-transform: rotate(45deg)
+		-ms-transform: rotate(45deg)
+		-o-transform: rotate(45deg)
+		transform: rotate(45deg)
+		position: absolute 
+		top: 4px
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+	&.active
+		bottom: 20px
+/*header navbar*/
+.fixed-nav-bar
+	padding: 25px 0
+	position: fixed
+	width: 100%
+	z-index: 999 
+	background: #222
+	top: 0
+	left: 0
+	.top-nav-collapse
+		background: #222
+	.logo
+		a
+			font-size: 24px;
+			font-weight: bold;
+			color: #fff;
+	ul
+		-webkit-flex-direction: column 
+		-ms-flex-direction: column 
+		flex-direction: column
+		li
+			margin-top: 14px 
+			@media screen and (min-width: $dw-780)
+				margin: 0
+		@media screen and (min-width: $dw-780)
+			-webkit-flex-direction: row
+			-ms-flex-direction: row
+			flex-direction: row
+		a
+			color: #fff;
+	@media screen and (min-width: $dw-780)
+		background: transparent
+		
+.navbar
+	display: none 
+	-webkit-align-self: center 
+	align-self: center
+	@media screen and (min-width: $dw-780)
+		display: block 
+/***nav-toggle***/
+.nav-toggle
+	display: block
+	border-radius: 4px
+	width: 50px
+	height: 21px;
+	cursor: pointer
+	padding: 4px
+	-webkit-align-self: center 
+	align-self: center 
+	@media screen and (min-width: $dw-780)
+		display: none
+	i
+		display: block;
+		position: relative;
+		height: 1px
+		width: 100% 
+		border-radius: 2px;
+		background: #fff
+		&:first-child
+			width: 33%
+		&:nth-child(2)
+			top: 4px
+			width: 66% 
+		&:last-child
+			top: 8px
+		
+/*-------carusel-------*/
+.carousel
+	position: relative
+	
+.carousel-controller
+	position: absolute
+	bottom: 20px 
+	left: 20px
+	z-index: 5  
+	em
+		display: inline-block
+		margin-right: 12px
+		width: 14px
+		height: 14px
+		-webkit-border-radius: 90% 
+		border-radius: 90%
+		border: 2px solid #fff 
+		background: transparent
+		cursor: pointer
+		&.active
+			background: #FFF 
+.full-screen 
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+.item
+	display: none
+	&.active
+		display: block
+.item::after
+	content: ''
+	display: block
+	position: absolute 
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background: #222
+	opacity: 0.35
+	z-index: 1
+   
+.carousel-centered
+	text-align: center
+	z-index: 2; 
+	margin: 0 auto 
+	color: #fff 
+	position: relative 
+	top: 40%
+	h1
+		margin-top: 0 
+		font-size:  24px
+		@media screen and (min-width: $dw-640)
+			font-size: 48px
+	span
+		font-size: 16px
+		@media screen and (min-width: $dw-640)
+			font-size: 20px
+.btn-more
+	display: block
+	margin: 28px auto
+	width: 150px
+	color: #FFF
+	text-align: center  
+	padding: 8px
+	border: 2px solid #fff
+	text-transform: uppercase  
+
+/*===============start main====================*/
+.acticle-name
+	font-size: 20px;
+	&::after
+		content: ''
+		display: block
+		width: 60px
+		height: 2px
+		background: #555
+		margin: 25px auto 0
+	 
+/*=====================services================*/
+
+.services-card
+	section
+		margin: 0 auto
+		cursor: pointer
+		-webkit-transition: transform 0.2s 0.2s 
+		-moz-transition: transform 0.2s 0.2s 
+		-ms-transition: transform 0.2s 0.2s 
+		-o-transition: transform 0.2s 0.2s 
+		transition: transform 0.2s 0.2s 
+		+grid($col-12, 0px)
+		+device-grid($dw-480, $col-8, 15px)
+		+device-grid($dw-780, $col-4, 15px)
+		&:hover
+			-webkit-transform: scale(1.2) 
+			-moz-transform: scale(1.2) 
+			-ms-transform: scale(1.2) 
+			-o-transform: scale(1.2) 
+			transform: scale(1.2) 
+			&:first-child
+				.services-img
+					background: $red url("../img/fa-font-hover.png") center center no-repeat
+			&:nth-child(2)
+				.services-img
+					background: $red url("../img/fa-code-hover.png") center center no-repeat
+					
+			&:last-child
+				.services-img
+					background: $red url("../img/fa-support-hover.png") center center no-repeat
+		.services-img
+			width: 86px
+			height: 86px
+			margin: 0 auto
+			border: 1px solid #ddd
+			-webkit-border-radius: 90%;
+			border-radius: 90%
+			margin-top: 70px
+		&:first-child
+			.services-img
+				background: url("../img/fa-font.png") center center no-repeat
+		&:nth-child(2)
+			.services-img
+				background: url("../img/fa-code.png") center center no-repeat
+		&:last-child
+			.services-img
+				background: url("../img/fa-support.png") center center no-repeat
+/*===================about==================*/
+.about
+	background: #f8f8f8
+.about-discription
+	div
+		margin: 70px 0
+		+grid($col-12, 0px)
+		+device-grid($dw-780, $col-6, 20px)
+		p
+			word-break: break-all;
+/*=================about slider======================*/ 
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev
+
+	
+.slide
+	h5
+		font-size: 14px
+		margin: 16px 0 6px
+	span 
+		font-size: 13px 
+.slide-img
+	overflow: hidden
+	height: 250px
+	position: relative
+	-webkit-transition: opacity 0.2s 0.2s
+	-moz-transition: opacity 0.2s 0.2s
+	-ms-transition: opacity 0.2s 0.2s
+	-o-transition: opacity 0.2s 0.2s
+	transition: opacity 0.2s 0.2s
+	&:hover
+		.slide-link
+			opacity: 1 		
+.slide-link
+	opacity: 0
+	background: rgba(0,0,0, 0.2)
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: flex
+	-webkit-flex-direction: column 
+	-ms-flex-direction: column 
+	flex-direction: column 
+	-webkit-justify-content: flex-end 
+	justify-content: flex-end 
+	ul
+		margin-bottom: 16px 
+	li
+		margin: 0 8px
+		padding: 6px
+		&:hover
+			background: $red 
+	a
+		display: block
+		background: url("../img/soc-link.png") no-repeat
+		width: 16px
+		height: 16px
+		&.facebook
+			background-position: 3px 0
+		&.twitter
+			background-position: -17px 3px
+		&.google-plus
+			background-position:  -41px 1px
+		&.linkIdin
+			background-position: -64px 0
+			
+/*=====================works==========================*/
+.latest-works
+	padding-bottom: 0 
+	li
+		margin: 0 12px
+		a:hover
+			color: $red
+.works-position
+	margin-top: 30px 
+.work-page
+	max-height: 215px 
+	overflow: hidden
+	margin-bottom: 20px 
+	+grid($col-12, 0px)
+	+device-grid($dw-480, $col-6, 15px)
+	+device-grid($dw-780, $col-4, 15px)
+	
+.work-popup
+	background: $red
+	text-align: center
+	margin-top: 70px 
+	p
+		color: #FFF
+		font-size: 16px
+		margin: 16px 0
+		@media screen and (min-width: $dw-560)
+			font-size: 30px 
+	a
+		color: #FFF
+		
+/*======================blog=====================*/ 
+
+.post
+	margin-top: 70px 
+
+.post-img
+	max-height: 300px
+	overflow: hidden
+	+grid($col-12, 0px)
+	+device-grid($dw-780, $col-4, 20px)
+
+.post-text
+	margin-top: 30px 
+	text-align: left 
+	-webkit-transition: all 0.3s ease
+	-moz-transition: all 0.3s ease
+	-ms-transition: all 0.3s ease
+	-o-transition: all 0.3s ease
+	transition: all 0.3s ease
+	+grid($col-12, 0px)
+	+device-grid($dw-780, $col-8, 20px)
+	@media screen and (min-width:$dw-780)
+		margin: 0
+	p
+		margin: 25px 0
+	a
+		text-transform: uppercase
+		display: block
+		font-weight: bold 
+	&:hover
+		a
+			color: $red
+		.title-post
+			h4
+				color: $red
+			em
+			 	color: $red 
+		 
+.post-text-title
+	h4
+		margin-top: 0 
+		font-weight: bold 
+	.data
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold
+		font-size: 24px  
+		display: block
+		border: 2px solid #777
+		margin: 0px 20px 20px 0
+		padding: 12px 20px
+		text-align: center  
+		em
+			font-size: 14px 
+			display: block
+			font-style: normal
+			text-transform: uppercase
+			font-weight: normal  
+	.title-post
+		span
+			font-style: italic
+
+/*=========================clients=================================*/
+
+.clients
+	background: #F8F8F8 
+	
+.clients-link
+	overflow: auto
+	width: 100% 
+	ul
+		-webkit-flex-wrap: nowrap 
+		-ms-flex-wrap: nowrap 
+		flex-wrap: nowrap 
+	a
+		width: 150px
+		height: 49px
+		display: block
+		background: url('../img/clients-link.png') no-repeat 
+	li
+		&:first-child
+			a
+				background-position: 0 12px 
+		&:nth-child(2)
+			a
+				background-position: -150px 0
+			
+		&:nth-child(3)
+			a
+				background-position: -307px 12px
+			
+		&:nth-child(4)
+			a
+				background-position: -455px 12px
+			
+		&:nth-child(5)
+			a
+				background-position: -595px 0 

@@ -1,0 +1,38 @@
+.fc {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fc-sb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fc-sa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fc-c {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fe-l1 {
+  flex: 1 auto;
+}
+
+.fe-l2 {
+  flex: 2 auto;
+}
+
+.fe-l3 {
+  flex: 3 auto;
+}
+
+.fe-l4 {
+  flex: 4 auto;
+}
