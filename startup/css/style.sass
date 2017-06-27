@@ -50,7 +50,7 @@ body
 	font-family: 'Roboto Slab', serif;
 	min-width: 320px;
 	color: #555;
-article
+article, footer
 	padding: 75px 0 100px
 	text-align: center 
 p
@@ -192,31 +192,11 @@ ul
 .carousel
 	position: relative
 	
-.carousel-controller
-	position: absolute
-	bottom: 20px 
-	left: 20px
-	z-index: 5  
-	em
-		display: inline-block
-		margin-right: 12px
-		width: 14px
-		height: 14px
-		-webkit-border-radius: 90% 
-		border-radius: 90%
-		border: 2px solid #fff 
-		background: transparent
-		cursor: pointer
-		&.active
-			background: #FFF 
 .full-screen 
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
-.item
-	display: none
-	&.active
-		display: block
+
 .item::after
 	content: ''
 	display: block
@@ -507,3 +487,76 @@ ul
 		&:nth-child(5)
 			a
 				background-position: -595px 0 
+
+.blockquote
+	margin-top: 50px 
+	blockquote
+		margin: 0 auto
+		width: 70% 
+		font-style: italic
+		h4
+			font-style: normal
+			
+/*====================contact form=============================*/
+
+.contact-inner
+	margin-top: 50px
+	text-align: left  
+
+.contact-info
+	display: flex
+	-webkit-flex-direction: column 
+	-ms-flex-direction: column 
+	flex-direction: column 
+	-webkit-justify-content: space-between 
+	justify-content: space-between 
+	+grid($col-12, 0px)
+	+device-grid($dw-780, $col-3, 20px)
+	h4
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 14px
+		margin: 25px 0 16px
+	section
+		&:first-child
+			h4
+				margin-top: 0 
+	span
+		font-size: 12px
+	
+/*=======contact form=============*/
+
+.contact-form
+	margin-top: 30px 
+	+grid($col-12, 0px)
+	+device-grid($dw-780, $col-8, 20px)
+	@media screen and (min-width: $dw-780)
+		margin-top: 0 
+	form
+		fieldset
+			border: none
+			margin-bottom: 16px 
+			+grid($col-12, 0px)
+			+device-grid($dw-780, $col-6, 15px)
+			&:nth-child(5)
+				+device-grid($dw-780, $col-12, 0px)
+			input
+				width: 100%
+				padding: 10px 
+				&:active
+					border: 1px solid $red 
+				&:focus
+					border: 1px solid $red 
+			textarea
+				width: 100%
+				padding: 10px
+		button
+			background: none
+			padding: 10px 30px
+			text-transform: uppercase 
+			border: 1px solid #555
+			cursor: pointer 
+
+/*====================footer page=============================*/
+.footer-page
+	background: $red 

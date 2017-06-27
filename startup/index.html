@@ -29,13 +29,13 @@
 				</span>
 				<nav class="navbar fe-l1">
 					<ul class="toggle-navbar fc-sb">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Works</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Clients</a></li>
-						<li><a href="#">Contact</a></li>
+						<li class="js_nav-item"><a href="#">Home</a></li>
+						<li class="js_nav-item"><a href="#">Services</a></li>
+						<li class="js_nav-item"><a href="#">About</a></li>
+						<li class="js_nav-item"><a href="#">Works</a></li>
+						<li class="js_nav-item"><a href="#">Blog</a></li>
+						<li class="js_nav-item"><a href="#">Clients</a></li>
+						<li class="js_nav-item"><a href="#">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -43,13 +43,9 @@
 		<!-- end header -->
 		<!-- start slider -->
 		<div id="carousel" class="carousel">
-			<div class="carousel-controller">
-				<em class="pick-slide active"></em>
-				<em class="pick-slide"></em>
-			</div>
              <!-- Wrapper for slides -->
-			<div class="carusel-inner">
-				<div class="item active">
+			<div class="carusel-in owl-carousel">
+				<div class="item">
 					<img class="img-responsive" src="img/slide-1.jpg" alt="Slider Image">
 					<div class="carousel-centered">
 						<h1>startup</h1>
@@ -115,7 +111,7 @@
 					<!-- about slider -->
 					<div id="slider" class="about-slider">
 						<!-- slides -->
-						<div class="owl-carousel">
+						<div class="about-slides owl-carousel">
 						 	<div class="slide">
 						 		<div class="slide-img">
 						 			<img src="img/img-slide-2.jpg" alt="man">
@@ -413,22 +409,105 @@
 							<li><a href="#"></a></li>
 						</ul>
 					</div>
+					<div class="blockquote owl-carousel">
+						<blockquote>
+							Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+							<h4>name</h4>
+						</blockquote>
+						<blockquote>
+							Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+							<h4>name</h4>
+						</blockquote>
+						<blockquote>
+							Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+							<h4>name</h4>
+						</blockquote>
+						<blockquote>
+							Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+							<h4>name</h4>
+						</blockquote>
+					</div>
 				</div>
 			</article>
 			<!-- end clients -->
+			<!-- start contacts -->
+			<article id="contacts" class="contacts">
+				<div class="wrap">
+					<h3 class="acticle-name">Get in touch</h3>
+					<span>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</span>
+					<div class="contact-inner fc-sb">
+						<div class="contact-info">
+							<section>
+								<h4>address</h4>
+								<span>312, 7th Ave, New York NY 101200, United States of America
+ 								</span>
+							</section>
+							<section>
+								<h4>address</h4>
+								<span>312, 7th Ave, New York NY 101200, United States of America
+ 								</span>
+							</section>
+							<section>
+								<h4>address</h4>
+								<span>312, 7th Ave, New York NY 101200, United States of America
+ 								</span>
+							</section>
+						</div>
+						<div class="contact-form">
+							<form class="fc-sb" action="#" method="post">
+								<fieldset>
+									<input id="user-name" type="text" name="user-name" placeholder="YOUR NAME">
+								</fieldset>
+								<fieldset>
+									<input id="user-email" type="email" name="user-email"
+									placeholder="YOUR E-MAIL">
+								</fieldset>
+								<fieldset>
+									<input id="user-subject" type="text" name="user-subject"
+									placeholder="YOUR SABJUCT">
+								</fieldset>
+								<fieldset>
+									<input id="user-company" type="text" name="user-company"
+									placeholder="YOUR COMPANY">
+								</fieldset>
+								<fieldset>
+									<textarea name="user-message" id="message" rows="5" placeholder="Write your message"></textarea>
+								</fieldset>
+								<button type="submit">send message</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!-- end contacts -->
 		</main>
+		<footer class="footer-page">
+			
+		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/script.js"></script>
 		<script>
-			$('.owl-carousel').owlCarousel({
+			$('.carusel-in').owlCarousel({
+				autoplay:true,
+			    loop:true,
+			    responsiveClass:true,
+			    responsive:{
+			        0:{
+			            items:1,
+			            nav:false
+			        }
+			    }
+			})
+			$('.about-slides').owlCarousel({
+				autoplay:true,
 			    loop:true,
 			    margin:20,
 			    responsiveClass:true,
 			    responsive:{
 			        0:{
 			            items:1,
-			            nav:true
+			            nav:false
 			        },
 			        480:{
 			            items:2,
@@ -436,8 +515,25 @@
 			        },
 			        780:{
 			            items:4,
-			            nav:true,
-			            loop:false
+			            nav:false
+			        }
+			    }
+			})
+
+			$('.blockquote').owlCarousel({
+				autoplay:true,
+			    loop:true,
+			    margin:0,
+			    responsiveClass:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        480:{
+			            items:1
+			        },
+			        780:{
+			            items:1
 			        }
 			    }
 			})
