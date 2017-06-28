@@ -14,12 +14,11 @@ if (!empty($_POST['user-name']) AND !empty($_POST['user-email']) AND !empty($_PO
     $letter .="\nКомпания: ".$_POST['user-subject'];
     $letter .="\nСообщение: ".$_POST['user-message'];
     
-    if (mail("vorynkavetal@gmail.com", $theme, $letter, $headers)){
-      header("Location: /startup/index.html");
+    if (mail('durgoisvet@gmail.com', $theme, $letter, $headers)){
+        echo "Сообщение отправлено!";
     } else {
-      header("Location: /startup");
-    }  
-              
-} else {
-  header("Location: /startup");
-}
+        echo "Ошибка при отправке!";
+    }
+    } else {
+        echo "Ошибка: Заполните все поля!";
+    }

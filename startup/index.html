@@ -12,7 +12,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Roboto+Slab:300,400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 		<link rel="stylesheet" href="css/fc-framework.css">
 		<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/remodal/remodal.css">
+		<link rel="stylesheet" href="css/remodal/remodal-default-theme.css">
 		<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/animate/animate.css">
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body id="body">
@@ -22,20 +25,20 @@
 				<div class="logo fe-l2">
 					<a href="#body">Startup</a>
 				</div>
-				<span class="nav-toggle">
+				<span id="nav-toggle" class="nav-toggle">
 					<i></i>
 					<i></i>
 					<i></i>
 				</span>
 				<nav class="navbar fe-l1">
 					<ul class="toggle-navbar fc-sb">
-						<li class="js_nav-item"><a href="#">Home</a></li>
-						<li class="js_nav-item"><a href="#">Services</a></li>
-						<li class="js_nav-item"><a href="#">About</a></li>
-						<li class="js_nav-item"><a href="#">Works</a></li>
-						<li class="js_nav-item"><a href="#">Blog</a></li>
-						<li class="js_nav-item"><a href="#">Clients</a></li>
-						<li class="js_nav-item"><a href="#">Contact</a></li>
+						<li class="js_nav-item"><a href="#body">Home</a></li>
+						<li class="js_nav-item"><a href="#services">Services</a></li>
+						<li class="js_nav-item"><a href="#about">About</a></li>
+						<li class="js_nav-item"><a href="#works">Works</a></li>
+						<li class="js_nav-item"><a href="#blog">Blog</a></li>
+						<li class="js_nav-item"><a href="#clients">Clients</a></li>
+						<li class="js_nav-item"><a href="#contacts">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -67,23 +70,23 @@
 		<!-- start main -->
 		<main>
 			<!-- start services -->
-			<article id="services" class="services">
+			<article id="services" class="services wow fadeIn" data-wow-offset="200">
 				<div class="wrap">
 					<h3 class="acticle-name">services</h3>
 					<span>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</span>
 					<!-- services card -->
 					<div class="services-card fc-sb">
-						<section>
+						<section class="wow fadeIn" data-wow-delay="0.2s">
 							<div class="services-img"></div>
 							<h4>clean typography</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptas explicabo quisquam.</p>
 						</section>
-						<section>
+						<section class="wow fadeIn" data-wow-delay="0.2s">
 							<div class="services-img"></div>
 							<h4>roch solid code</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed earum non.</p>
 						</section>
-						<section>
+						<section class="wow fadeIn" data-wow-delay="0.2s">
 							<div class="services-img"></div>
 							<h4>expert support</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quis, porro consequatur.</p>
@@ -94,22 +97,22 @@
 			</article>
 			<!-- end services -->
 			<!-- start about -->
-			<article id="about" class="about">
+			<article id="about" class="about wow fadeIn" data-wow-offset="200">
 				<div class="wrap">
 					<h3 class="acticle-name">about us</h3>
 					<span>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</span>
 					<!-- about discription -->
 					<div class="about-discription fc-sb">
-						<div>
+						<div class="wow fadeInLeft">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, nostrum atque iusto enim saepe aspernatur tempore minima voluptatem consequuntur quaerat debitis sapiente corrupti quo, harum veniam reiciendis odio accusamus, velit sint! Impedit in perferendis earum quae placeat distinctio ratione, nulla ipsam cum harum, libero eveniet dolorem quod. Accusamus expedita, sunt?</p>
 						</div>
-						<div>
+						<div class="wow fadeInRight">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto amet ipsam, debitis, beatae quibusdam labore consequatur mollitia quos adipisci sapiente necessitatibus facere quod eos nemo, corrupti. Error molestias in non veritatis magni quidem aspernatur id quia qui voluptatem hic, dolores corporis, maiores impedit ex harum maxime voluptates sequi. Impedit, vel.</p>
 						</div>
 					</div>
 					<!-- end about discription -->
 					<!-- about slider -->
-					<div id="slider" class="about-slider">
+					<div id="slider" class="about-slider wow fadeInUp" data-wow-offset="100">
 						<!-- slides -->
 						<div class="about-slides owl-carousel">
 						 	<div class="slide">
@@ -303,43 +306,43 @@
 			</article>
 			<!-- end about -->
 			<!-- start works -->
-			<article id="works" class="latest-works">
+			<article id="works" class="latest-works wow fadeIn" data-wow-offset="200">
 				<div class="wrap">
 					<h3 class="acticle-name">Latest Works</h3>
 					<ul class="fc-c">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Branding</a></li>
-						<li><a href="#">Design</a></li>
-						<li><a href="#">Development</a></li>
-						<li><a href="#">Strategy</a></li>
+						<li><p class="all">All</p></li>
+						<li><p  class="branding">Branding</p></li>
+						<li><p  class="design">Design</p></li>
+						<li><p  class="development">Development</p></li>
+						<li><p  class="strategy">Strategy</p></li>
 					</ul>
 					<!-- start works page -->
 					<div class="works-position fc-sb">
-						<div class="work-page">
+						<div class="work-page branding-img">
 							<img src="img/our-work-1.jpg" alt="bird">
 						</div>
-						<div class="work-page">
+						<div class="work-page design-img">
 							<img src="img/our-work-2.jpg" alt="bird">
 						</div>
-						<div class="work-page">
+						<div class="work-page branding-img">
 							<img src="img/our-work-3.jpg" alt="bird">
 						</div>
-						<div class="work-page">
+						<div class="work-page development-img">
 							<img src="img/our-work-4.jpg" alt="bird">
 						</div>
-						<div class="work-page">
+						<div class="work-page branding-img">
 							<img src="img/our-work-5.jpg" alt="bird">
 						</div>
-						<div class="work-page">
+						<div class="work-page design-img">
 							<img src="img/our-work-6.jpg" alt="bird">
 						</div>
-						<div class="work-page">
+						<div class="work-page development-img">
 							<img src="img/our-work-7.jpg" alt="bird">
 						</div>
-						<div class="work-page">
+						<div class="work-page design-img">
 							<img src="img/our-work-8.jpg" alt="bird">
 						</div>
-						<div class="work-page">
+						<div class="work-page strategy-img">
 							<img src="img/our-work-1.jpg" alt="bird">
 						</div>
 					</div>
@@ -348,12 +351,12 @@
 				<article class="work-popup">
 					<p>Do you like OUR WORK so far?</p>
 					<p>Let's talk about YOUR PROJECT!</p>
-					<a class="btn-more" href="#">get in touch</a>
+					<a class="btn-more" href="#" data-remodal-target="modal">get in touch</a>
 				</article>
 			</article>
 			<!-- end works -->
 			<!-- start blog -->
-			<article id="blog" class="blog">
+			<article id="blog" class="blog wow fadeIn" data-wow-offset="200">
 				<div class="wrap">
 					<h3 class="acticle-name">Recent blog posts</h3>
 					<span>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</span>
@@ -398,7 +401,7 @@
 			</article>
 			<!-- end blog -->
 			<!-- start clients -->
-			<article id="clients" class="clients">
+			<article id="clients" class="clients wow fadeIn" data-wow-offset="200">
 				<div class="wrap">
 					<div id="counter" class="clients-counter fc-sb">
 						
@@ -451,7 +454,7 @@
 			</article>
 			<!-- end clients -->
 			<!-- start contacts -->
-			<article id="contacts" class="contacts">
+			<article id="contacts" class="contacts wow fadeIn" data-wow-offset="200">
 				<div class="wrap">
 					<h3 class="acticle-name">Get in touch</h3>
 					<span>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</span>
@@ -474,7 +477,7 @@
 							</section>
 						</div>
 						<div class="contact-form">
-							<form class="fc-sb" action="https://github.com/ferzb/ferzb.github.io/blob/master/startup/submit.php" method="post">
+							<form class="fc-sb" method="post">
 								<fieldset>
 									<input id="user-name" type="text" name="user-name" placeholder="YOUR NAME">
 								</fieldset>
@@ -493,7 +496,7 @@
 								<fieldset>
 									<textarea name="user-message" id="message" rows="5" placeholder="WRITE YOUR MESSAGE"></textarea>
 								</fieldset>
-								<button type="submit">send message</button>
+								<button class="submit-message" type="submit">send message</button>
 							</form>
 						</div>
 					</div>
@@ -504,10 +507,42 @@
 		<footer class="footer-page">
 			
 		</footer>
+		<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+		 	<button data-remodal-action="close" class="remodal-close"></button>
+		  	<h1>SIGNUP TO OUR NEWSLETTER</h1>
+			 <div class="contact-form">
+				<form class="fc-sb" method="post">
+					<fieldset>
+						<input id="user-name" type="text" name="user-name" placeholder="YOUR NAME">
+					</fieldset>
+					<fieldset>
+						<input id="user-email" type="email" name="user-email"
+						placeholder="YOUR E-MAIL">
+					</fieldset>
+					<fieldset>
+						<input id="user-subject" type="text" name="user-subject"
+						placeholder="YOUR SABJUCT">
+					</fieldset>
+					<fieldset>
+						<input id="user-company" type="text" name="user-company"
+						placeholder="YOUR COMPANY">
+					</fieldset>
+					<fieldset>
+						<textarea name="user-message" id="message" rows="5" placeholder="WRITE YOUR MESSAGE"></textarea>
+					</fieldset>
+					<button class="submit-message" type="submit">send message</button>
+				</form>
+			</div>
+		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/submit.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/headhesive.min.js"></script>
+		<script src="js/remodal.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script src="js/script.js"></script>
 		<script>
+			new WOW().init();
 			/*header carousel*/ 
 			$('.carusel-in').owlCarousel({
 				autoplay:true,

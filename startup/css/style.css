@@ -118,16 +118,12 @@ ul {
 
 .fixed-nav-bar {
   padding: 25px 0;
-  position: fixed;
+  position: absolute;
+  background: #222;
   width: 100%;
   z-index: 999;
-  background: #222;
   top: 0;
   left: 0;
-}
-
-.fixed-nav-bar .top-nav-collapse {
-  background: #222;
 }
 
 .fixed-nav-bar .logo a {
@@ -148,6 +144,30 @@ ul {
 
 .fixed-nav-bar ul a {
   color: #fff;
+}
+
+.headhesive {
+  background-color: #222;
+  position: fixed;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.headhesive--stick {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .navbar {
@@ -418,7 +438,11 @@ ul {
   margin: 0 12px;
 }
 
-.latest-works li a:hover {
+.latest-works li p {
+  cursor: pointer;
+}
+
+.latest-works li p:hover {
   color: #c0301c;
 }
 
@@ -713,6 +737,10 @@ ul {
 }
 
 @media screen and (min-width: 780px) {
+  .fixed-nav-bar {
+    background: none;
+  }
+
   .fixed-nav-bar ul li {
     margin: 0;
   }
@@ -723,8 +751,8 @@ ul {
     flex-direction: row;
   }
 
-  .fixed-nav-bar {
-    background: transparent;
+  .headhesive {
+    background-color: #222;
   }
 
   .navbar {

@@ -125,14 +125,14 @@ ul
 /*header navbar*/
 .fixed-nav-bar
 	padding: 25px 0
-	position: fixed
+	position: absolute
+	background: #222
 	width: 100%
 	z-index: 999 
-	background: #222
 	top: 0
 	left: 0
-	.top-nav-collapse
-		background: #222
+	@media screen and (min-width: $dw-780)
+		background: none
 	.logo
 		a
 			font-size: 24px;
@@ -152,9 +152,30 @@ ul
 			flex-direction: row
 		a
 			color: #fff;
+
+.headhesive
+	background-color: #222
+	position: fixed
+	width: 100%
+	-webkit-transform: translateY(-100%) 
+	-moz-transform: translateY(-100%) 
+	-ms-transform: translateY(-100%) 
+	-o-transform: translateY(-100%) 
+	transform: translateY(-100%) 
 	@media screen and (min-width: $dw-780)
-		background: transparent
-		
+		background-color: #222
+
+.headhesive--stick
+	-webkit-transform: translateY(0) 
+	-moz-transform: translateY(0) 
+	-ms-transform: translateY(0) 
+	-o-transform: translateY(0) 
+	transform: translateY(0) 
+	-webkit-transition: 0.6s
+	-moz-transition: 0.6s
+	-ms-transition: 0.6s
+	-o-transition: 0.6s
+	transition: 0.6s
 .navbar
 	display: none 
 	-webkit-align-self: center 
@@ -365,7 +386,9 @@ ul
 	padding-bottom: 0 
 	li
 		margin: 0 12px
-		a:hover
+		p
+			cursor: pointer
+		p:hover
 			color: $red
 .works-position
 	margin-top: 30px 
