@@ -400,6 +400,26 @@
 			<!-- start clients -->
 			<article id="clients" class="clients">
 				<div class="wrap">
+					<div id="counter" class="clients-counter fc-sb">
+						
+						<div class="counter-numb">
+							<div data-num="10" class="counter-numbers">0</div>
+							<div class="counter-text">лет на рынке</div>
+						</div>
+						<div class="counter-numb">
+							<div data-num="319" class="counter-numbers">0</div>
+							<div class="counter-text">клиентов</div>
+						</div>
+						<div class="counter-numb">
+							<div data-num="400" class="counter-numbers">0</div>
+							<div class="counter-text">успешных проектов</div>
+						</div>
+						<div class="counter-numb">
+							<div data-num="27" class="counter-numbers">0</div>
+							<div class="counter-text">человек в команде</div>
+						</div>
+
+					</div>
 					<div class="clients-link">
 						<ul class="fc-sb">
 							<li><a href="#"></a></li>
@@ -454,7 +474,7 @@
 							</section>
 						</div>
 						<div class="contact-form">
-							<form class="fc-sb" action="#" method="post">
+							<form class="fc-sb" action="/submit.php" method="post">
 								<fieldset>
 									<input id="user-name" type="text" name="user-name" placeholder="YOUR NAME">
 								</fieldset>
@@ -471,7 +491,7 @@
 									placeholder="YOUR COMPANY">
 								</fieldset>
 								<fieldset>
-									<textarea name="user-message" id="message" rows="5" placeholder="Write your message"></textarea>
+									<textarea name="user-message" id="message" rows="5" placeholder="WRITE YOUR MESSAGE"></textarea>
 								</fieldset>
 								<button type="submit">send message</button>
 							</form>
@@ -488,6 +508,7 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/script.js"></script>
 		<script>
+			/*header carousel*/ 
 			$('.carusel-in').owlCarousel({
 				autoplay:true,
 			    loop:true,
@@ -499,6 +520,7 @@
 			        }
 			    }
 			})
+			/*about slider*/ 
 			$('.about-slides').owlCarousel({
 				autoplay:true,
 			    loop:true,
@@ -519,7 +541,7 @@
 			        }
 			    }
 			})
-
+			/*blockquote slider*/ 
 			$('.blockquote').owlCarousel({
 				autoplay:true,
 			    loop:true,

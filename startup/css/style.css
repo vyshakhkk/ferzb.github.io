@@ -327,7 +327,7 @@ ul {
 }
 
 .about-discription div p {
-  word-break: break-all;
+  text-align: justify;
 }
 
 /*=================about slider======================*/
@@ -528,6 +528,31 @@ ul {
   background: #F8F8F8;
 }
 
+.clients-counter {
+  margin: 0 0 80px;
+}
+
+.counter-numb {
+  font-size: 18px;
+  margin: 20px 0;
+  flex-basis: calc(100% - 0px);
+}
+
+.counter-numbers {
+  opacity: 0;
+  margin: 10px 0;
+  font-size: 36px;
+}
+
+.viz {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
 .clients-link {
   overflow: auto;
   width: 100%;
@@ -580,7 +605,7 @@ ul {
   font-style: normal;
 }
 
-/*====================contact form=============================*/
+/*====================contact=============================*/
 
 .contact-inner {
   margin-top: 50px;
@@ -665,6 +690,10 @@ ul {
   .work-page {
     flex-basis: calc(50% - 15px);
   }
+
+  .counter-numb {
+    flex-basis: calc(50% - 50px);
+  }
 }
 
 @media screen and (min-width: 560px) {
@@ -728,6 +757,10 @@ ul {
 
   .post-text {
     margin: 0;
+  }
+
+  .counter-numb {
+    flex-basis: calc(25% - 50px);
   }
 
   .contact-info {

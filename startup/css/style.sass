@@ -302,7 +302,7 @@ ul
 		+grid($col-12, 0px)
 		+device-grid($dw-780, $col-6, 20px)
 		p
-			word-break: break-all;
+			text-align: justify 
 /*=================about slider======================*/ 
 .owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev
 
@@ -455,7 +455,30 @@ ul
 
 .clients
 	background: #F8F8F8 
-	
+
+.clients-counter
+	margin: 0 0 80px
+		
+.counter-numb
+	font-size: 18px 
+	margin: 20px 0 
+	+grid($col-12, 0px)
+	+device-grid($dw-480, $col-6, 50px)
+	+device-grid($dw-780, $col-3, 50px)
+
+.counter-numbers
+	opacity: 0
+	margin: 10px 0
+	font-size: 36px 
+
+.viz
+	-webkit-transition: 1s 
+	-moz-transition: 1s 
+	-ms-transition: 1s 
+	-o-transition: 1s 
+	transition: 1s 
+	opacity: 1 
+
 .clients-link
 	overflow: auto
 	width: 100% 
@@ -497,7 +520,7 @@ ul
 		h4
 			font-style: normal
 			
-/*====================contact form=============================*/
+/*====================contact=============================*/
 
 .contact-inner
 	margin-top: 50px
