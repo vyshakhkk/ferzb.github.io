@@ -5,7 +5,7 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width initial-scale=1.0"">
 		<title>My Page</title>
-		<link rel="shortcut icon" href="">
+		<link rel="shortcut icon" href="img/favicon.ico">
 		<!--[if gt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -311,39 +311,75 @@
 					<h3 class="acticle-name">Latest Works</h3>
 					<ul class="fc-c">
 						<li><p class="all">All</p></li>
-						<li><p  class="branding">Branding</p></li>
-						<li><p  class="design">Design</p></li>
-						<li><p  class="development">Development</p></li>
-						<li><p  class="strategy">Strategy</p></li>
+						<li><p name="acticle-name"  class="branding">Branding</p></li>
+						<li><p name="acticle-name"  class="design">Design</p></li>
+						<li><p name="acticle-name"  class="development">Development</p></li>
+						<li><p name="acticle-name"  class="strategy">Strategy</p></li>
 					</ul>
 					<!-- start works page -->
 					<div class="works-position fc-sb">
 						<div class="work-page branding-img">
 							<img src="img/our-work-1.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 						<div class="work-page design-img">
 							<img src="img/our-work-2.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 						<div class="work-page branding-img">
-							<img src="img/our-work-3.jpg" alt="bird">
+							<img src="img/our-work-9.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 						<div class="work-page development-img">
 							<img src="img/our-work-4.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 						<div class="work-page branding-img">
 							<img src="img/our-work-5.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 						<div class="work-page design-img">
 							<img src="img/our-work-6.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 						<div class="work-page development-img">
 							<img src="img/our-work-7.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 						<div class="work-page design-img">
 							<img src="img/our-work-8.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 						<div class="work-page strategy-img">
 							<img src="img/our-work-1.jpg" alt="bird">
+							<div class="work-discription">
+								<h4>Work title</h4>
+								<a class="btn-more" href="#">Read more</a>
+							</div>
 						</div>
 					</div>
 					<!-- end works page -->
@@ -477,7 +513,7 @@
 							</section>
 						</div>
 						<div class="contact-form">
-							<form class="fc-sb" method="post">
+							<form class="fc-sb" action="http://localhost:3000/contacts" method="post" method="post">
 								<fieldset>
 									<input id="user-name" type="text" name="user-name" placeholder="YOUR NAME">
 								</fieldset>
@@ -505,13 +541,19 @@
 			<!-- end contacts -->
 		</main>
 		<footer class="footer-page">
-			
+			<h6>contact with us</h6>
+			<ul class="fc-c">
+				<li><a class="facebook" href="#"></a></li>
+				<li><a class="twitter" href="#"></a></li>
+				<li><a class="google-plus" href="#"></a></li>
+				<li><a class="linkIdin" href="#"></a></li>
+			</ul>
 		</footer>
 		<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
 		 	<button data-remodal-action="close" class="remodal-close"></button>
 		  	<h1>SIGNUP TO OUR NEWSLETTER</h1>
 			 <div class="contact-form">
-				<form class="fc-sb" method="post">
+				<form class="fc-sb" action="http://localhost:3000/contacts" method="post">
 					<fieldset>
 						<input id="user-name" type="text" name="user-name" placeholder="YOUR NAME">
 					</fieldset>
@@ -545,6 +587,7 @@
 			new WOW().init();
 			/*header carousel*/ 
 			$('.carusel-in').owlCarousel({
+				smartSpeed: 2200,
 				autoplay:true,
 			    loop:true,
 			    responsiveClass:true,
