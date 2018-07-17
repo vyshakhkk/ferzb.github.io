@@ -181,29 +181,43 @@ img
 	li
 		margin-bottom: 10px
 	@media screen and (min-width: $dw-1100)
-		margin-top: 4px
+		margin-top: -57px
 		-webkit-flex-direction:  row
 		-ms-flex-direction:  row
 		flex-direction:  row 
 		li
 			margin-bottom: 0
 .nav-item
-	padding: 2px 0px 0px 34px
+	padding-left: 16px
+	text-align: center 
 	position: relative
-	display: block
-	background-position: -10px 0 
-	&:hover
+	display: block 
+	-webkit-transition: all .5s ease 
+	-moz-transition: all .5s ease 
+	-ms-transition: all .5s ease 
+	-o-transition: all .5s ease 
+	transition: all .5s ease
+	&:before
+		content: ' '
+		width: 60px
+		height: 60px
+		display: block
 		color: #FF8D6B
 		-webkit-transition: all .5s ease 
 		-moz-transition: all .5s ease 
 		-ms-transition: all .5s ease 
 		-o-transition: all .5s ease 
 		transition: all .5s ease
-		background: url("../img/coin.png") 0px 0px no-repeat
-		-webkit-background-size: 44px 
-		-o-background-size: 44px 
-		background-size: 44px
-
+		background: url("../img/coin.png") center center no-repeat
+		-webkit-background-size: 100px 
+		-o-background-size: 100px 
+		background-size: 100px
+		opacity: 0
+	&:hover
+		color: #FF8D6B
+		&:before
+			opacity: 1 
+	
 .nav-toggle
 	display: block
 	border-radius: 4px
