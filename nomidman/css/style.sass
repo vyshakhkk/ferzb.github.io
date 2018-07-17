@@ -939,7 +939,45 @@ img
 			border: 1px solid #555
 			cursor: pointer 
 			
-
+/*btn-up*/
+.btn-up
+	display: block
+	background: #999
+	-webkit-border-radius: 90% 
+	border-radius: 90% 
+	position: fixed
+	width: 50px
+	height: 50px
+	z-index: 1000
+	right: 20px
+	bottom: -50px
+	cursor: pointer
+	outline: 0 !important
+	-webkit-transition: 0.4s 
+	 -moz-transition: 0.4s 
+	 -ms-transition: 0.4s 
+	 -o-transition: 0.4s 
+	 transition: 0.4s
+	opacity: 0.6
+	&::after
+		content: ' '
+		width: 10px
+		height: 10px
+		border-top: 2px solid #fff
+		border-left: 2px solid #fff   
+		-webkit-transform: rotate(45deg)
+		-moz-transform: rotate(45deg)
+		-ms-transform: rotate(45deg)
+		-o-transform: rotate(45deg)
+		transform: rotate(45deg)
+		position: absolute 
+		top: 4px
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+	&.active
+		bottom: 20px
 /************FAQ*************/
 .faq
 	padding: 50px 0
