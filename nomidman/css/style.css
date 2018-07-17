@@ -153,7 +153,7 @@ img {
     margin-bottom: 10px; }
   @media screen and (min-width: 1100px) {
     .navigation {
-      margin-top: 6px;
+      margin-top: 4px;
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row; }
@@ -161,7 +161,7 @@ img {
         margin-bottom: 0; } }
 
 .nav-item {
-  padding-left: 26px;
+  padding: 2px 0px 0px 34px;
   position: relative;
   display: block;
   background-position: -10px 0; }
@@ -173,9 +173,9 @@ img {
     -o-transition: all .5s ease;
     transition: all .5s ease;
     background: url("../img/coin.png") 0px 0px no-repeat;
-    -webkit-background-size: 32px;
-    -o-background-size: 32px;
-    background-size: 32px; }
+    -webkit-background-size: 44px;
+    -o-background-size: 44px;
+    background-size: 44px; }
 
 .nav-toggle {
   display: block;
