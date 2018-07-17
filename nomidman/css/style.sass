@@ -167,6 +167,13 @@ img
 .open-nav
 	left: 0%
 
+.active
+	color: #FF8D6B
+	background: url("../img/coin.svg") 0px 3px no-repeat
+	-webkit-background-size: 14px 
+	-o-background-size: 14px 
+	background-size: 14px
+
 .navigation
 	-webkit-flex-direction: column 
 	-ms-flex-direction: column 
@@ -590,7 +597,44 @@ img
 	
 .percent-disc
 	line-height: 30px 
-/************animation-img***************/
+	
+/************roadmap****************/
+.roadmap-img
+	text-align: center
+	margin: 24px 0px
+
+
+/************team****************/
+.list-team
+	margin: 40px 0
+	
+.teamer
+	margin: 24px 0
+	text-align: center 
+	+col($col-12, 0)
+	+device-col($dw-780, $col-6, 16px)
+	+device-col($dw-1100, $col-4, 16px)
+
+.foto-teamer
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
+	
+.teamer-name
+	font-size: 28px
+	margin: 14px 0
+	font-weight: bold
+
+.teamer-disc
+	font-size: 22px
+
+	
+/****************footer*******************/
+.footer
+	background: #786E64
+	text-align: center
+	padding: 50px
+	color: #fff  
+/************animation-img****************/
 .animation-img
 	position: relative
 	top: 40px
@@ -894,5 +938,33 @@ img
 			text-transform: uppercase 
 			border: 1px solid #555
 			cursor: pointer 
-/********media queries********/
+			
+
+/************FAQ*************/
+.faq
+	padding: 50px 0
+.faq-list
+	margin: 24px 12px
+	line-height: 28px
+	list-style-type: decimal
+	a
+		display: block
+		-webkit-transition: 0.5s 
+		-moz-transition: 0.5s 
+		-ms-transition: 0.5s 
+		-o-transition: 0.5s 
+		transition: 0.5s 
+		&:hover
+			color:#FF8D6B
+.general-question
+	font-size: 24px
+	color: #FF8D6B
+	margin-top: 40px 
+.logo-question
+	font-size: 16px
+	text-transform: uppercase
+	margin: 30px 0 18px
+.answer
+	line-height: 22px 
+/********media queries******/
 

@@ -224,10 +224,6 @@
 
 /* Media queries
    ========================================================================== */
-@media only screen and (min-width: 641px) {
-  .remodal {
-    max-width: 700px; } }
-
 /* IE8
    ========================================================================== */
 .lt-ie9 .remodal-overlay {
@@ -235,3 +231,7 @@
 
 .lt-ie9 .remodal {
   width: 700px; }
+
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 700px; } }
