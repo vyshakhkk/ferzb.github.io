@@ -1215,11 +1215,25 @@ label {
     color: #A1C6D4; }
 
 /***************register form********/
+.register {
+  background: linear-gradient(to bottom, #CFC3BC 50%, #fff 50%); }
+  @media screen and (min-width: 660px) {
+    .register {
+      background: linear-gradient(to left, #CFC3BC 50%, #fff 50%); } }
+  .register .fc-sb {
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse; }
+    @media screen and (min-width: 660px) {
+      .register .fc-sb {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.logo-site {
+  text-align: center; }
+
 .register-form fieldset {
   flex-basis: calc(100% - 0px); }
-  @media screen and (min-width: 960px) {
-    .register-form fieldset {
-      flex-basis: calc(50% - 18px); } }
 
 .form-links {
   padding-top: 18px; }
@@ -1266,7 +1280,10 @@ label {
 /********resend page*********/
 .confirmed {
   padding: 48px 0;
-  width: 30%; }
+  flex-basis: calc(100% - 0px); }
+  @media screen and (min-width: 660px) {
+    .confirmed {
+      flex-basis: calc(50% - 24px); } }
   .confirmed h2 {
     font-size: 28px; }
 

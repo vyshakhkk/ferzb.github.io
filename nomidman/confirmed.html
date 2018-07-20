@@ -63,21 +63,26 @@
 				</div>
 			</div>
 		</header>
-		<menu>
-			<div class="wrap confirmed">
-				<h2>Thanks for singing up!</h2>
-				<div class="confirmed-text">
-					<p>An email with account activation link has ben sent to</p>
+		<menu class="register">
+			<div class="wrap fc-sb">
+				<div class="confirmed">
+					<h2>Thanks for singing up!</h2>
+					<div class="confirmed-text">
+						<p>An email with account activation link has ben sent to</p>
+					</div>
+					<div class="confirmed-text">
+						<p>If you haven't recived the configuration email or email address above is wrong, you can requst a resend</p>
+					</div>
+					<form method="post" class="resend">
+						<fieldset>
+							<input class="input-form" id="user-email" type="email" name="user-email" placeholder="email">
+						</fieldset>
+						<a href="confirmed.html" class="submit-form" type="submit">Resend</a>
+					</form>
 				</div>
-				<div class="confirmed-text">
-					<p>If you haven't recived the configuration email or email address above is wrong, you can requst a resend</p>
+				<div class="confirmed logo-site">
+					<img src="img/logo.png">
 				</div>
-				<form method="post" class="resend">
-					<fieldset>
-						<input class="input-form" id="user-email" type="email" name="user-email" placeholder="email">
-					</fieldset>
-					<a href="confirmed.html" class="submit-form" type="submit">Resend</a>
-				</form>
 			</div>
 		</menu>
 		<footer id="footer" class="footer">
