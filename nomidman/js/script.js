@@ -10,6 +10,9 @@ $('#nav-toggle').click(function(){
 	$('.toggle-navbar').toggleClass('open-nav')
 	$('.nav-toggle').toggleClass('open-toggle')
 })
+$('.dropdown').click(function() {
+	$('.list-language').slideToggle()
+});
 $(".js_nav-item").on("click","a", function (event) {
         event.preventDefault();
 
