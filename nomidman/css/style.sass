@@ -71,7 +71,11 @@ img
 	border: 0
 	max-width: 100%
 	vertical-align: middle 
-	
+fieldset
+	border: none 
+	margin: 24px 0
+label
+	cursor: pointer
 .wrap
 	width: 80%
 	max-width: 1200px
@@ -111,24 +115,26 @@ img
 		opacity: 0
 		visibility: hidden
 .loader
-	width: 100px
-	height: 100px
-	border: 10px solid #fff
-	-webkit-border-radius: 50% 
-	border-radius: 50%
-	border-top-color: #FF8D6B 
+	width: 200px
+	height: 200px
+	opacity: 0 
+	background: url('../img/logo.png') center center no-repeat
+	-webkit-background-size: 70% 
+	-o-background-size: 70% 
+	background-size: 70% 
 	position: absolute
-	left: 47%
-	top: 36%
+	left: 50%
+	top: 50%
 	-webkit-transform: translate(-50%, -50%) 
 	-moz-transform: translate(-50%, -50%) 
 	-ms-transform: translate(-50%, -50%) 
 	-o-transform: translate(-50%, -50%) 
-	transform: translate(-50%, -50%) 
-	-webkit-animation: 1s spin infinite
-	-moz-animation: 1s spin infinite
-	-o-animation: 1s spin infinite
-	animation: 1s spin infinite
+	transform: translate(-50%, -50%)
+	-webkit-animation: 1s vision infinite
+	-moz-animation: 1s vision infinite
+	-o-animation: 1s vision infinite
+	animation: 1s vision infinite
+
 /*header*/
 .social-links
 	position: fixed
@@ -698,9 +704,10 @@ img
 /************animation-img****************/
 .animation-img
 	position: relative
-	top: 40px
+	bottom: 30px
+	right: 30px 
 	z-index: 20
-	width: 695px
+	width: 620px
 	height: 505px
 	img
 		position: absolute
@@ -970,35 +977,14 @@ img
 	100%
 		transform: translateX(0px)
 
-/***********contact form*****/
-.contact-form
-	margin-top: 30px 
-	+grid($col-12, 0px)
-	+device-grid($dw-780, $col-8, 20px)
-	form
-		fieldset
-			border: none
-			margin-bottom: 16px 
-			+grid($col-12, 0px)
-			+device-grid($dw-780, $col-6, 15px)
-			&:nth-child(5)
-				+device-grid($dw-780, $col-12, 0px)
-			input
-				width: 100%
-				padding: 10px
-				&:active
-					border: 1px solid #c0301c
-				&:focus
-					border: 1px solid #c0301c
-			textarea
-				width: 100%
-				padding: 10px
-		button
-			background: none
-			padding: 10px 30px
-			text-transform: uppercase 
-			border: 1px solid #555
-			cursor: pointer 
+
+@keyframes vision
+	0%
+		opacity: 0
+	50%
+	 	opacity: 1 
+	100%
+		opacity: 0 
 			
 /*btn-up*/
 .btn-up
@@ -1154,5 +1140,59 @@ img
 		margin: 6px 0px
 		color: #A1C6D4
 
+/***************register form********/
+.register-form
+	fieldset
+		+grid($col-12, 0px)
+		+device-grid($dw-960, $col-6, 18px)
+		
+.form-links
+	padding-top: 18px 
+/***************login form********/
+.login-form
+	padding: 36px 0
+.input-form
+	display: block
+	margin: 8px 0px
+	width: 100%
+	padding: 18px
+	border: 1px solid #e8e8e8
+	-webkit-border-radius: 3px 
+	border-radius: 3px
+	background: #f5f5f5
+	color: #565656
+	font-weight: lighter 
+	font-size: 18px
+
+.link-form
+	font-size: 18px
+	margin-right: 22px
+	-webkit-transition: 0.3s all ease 
+	-moz-transition: 0.3s all ease 
+	-ms-transition: 0.3s all ease 
+	-o-transition: 0.3s all ease 
+	transition: 0.3s all ease
+	&:hover
+		color: #FF8D6B
+		
+.submit-form
+	background: #FF8D6B
+	border: none
+	cursor: pointer
+	-webkit-border-radius: 3px 
+	border-radius: 3px
+	padding: 12px 62px
+	margin: 24px 0
+	font-size: 18px
+	color: #fff
+
+/********resend page*********/
+.confirmed
+	padding: 48px 0
+	width: 30%
+	h2
+		font-size: 28px 
+.confirmed-text
+	margin: 24px 0
 /********media queries******/
 
