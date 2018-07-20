@@ -17,6 +17,11 @@
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
+		<!-- start preloder -->
+		<div id="page-preloader" class="preloader">
+			<div class="loader"></div>
+		</div>
+		<!-- end preloder -->
 		<header id="home" class="page-header">
 			<div class="page-navbar">
 				<span id="nav-toggle" class="nav-toggle">
@@ -41,7 +46,7 @@
 						</ul>
 					</nav>
 					<div class="private-sale fe-l1">
-						<a class="flash" href="#" data-remodal-target="modal">Join Private Sale</a>
+						<a class="flash" href="#" data-remodal-target="modal">Whitelist for Private Sale</a>
 					</div>
 				</div>
 			</div>
@@ -49,60 +54,278 @@
 		<menu id="faq" class="faq">
 			<div class="wrap">
 				<div class="section-logo-block">
-					<h2 class="section-logo">FAQ of NOMIDMAN</h2>
+					<h2 class="section-logo">FAQ</h2>
 				</div>
-				<ul class="faq-list">
-					<li>
-						<a href="#">GENERAL QUESTIONS</a>
-					</li>
-					<li>
-						<a href="#">NOMIDMAN TOKEN (MANO)</a>
-					</li>
-					<li>
-						<a href="#">ICO</a>
-					</li>
-					<li>
-						<a href="#">NOMID ARMY (OPERATORS)</a>
-					</li>
-					<li>
-						<a href="#">PAYMENT</a>
-					</li>
-				</ul>
-				<h3 id="question" class="general-question">GENERAL QUESTIONS</h3>
-				<div class="fc-sb discriptions">
-					<div class="platform-discriptions">
-						<h4 class="platform-logo">What is a DAPP?</h4>
-						<p class="answer">DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.</p>
-					</div>
-					<div class="platform-discriptions">
-						<h4 class="platform-logo">What is a Smart Contract?</h4>
-						<p class="answer">In concept, this is a contract, a computer algorithm having conditions preset and open for any participant, and when these conditions are fulfilled, the parties will be able to exchange money, assets, or new processes will be launched free from participation of third parties (agents).</p>
-					</div>
-					<div class="platform-discriptions">
-						<h4 class="platform-logo">What is the NoMidMan platform?</h4>
-						<p class="answer">Nomidman is a peer to peer decentralized market place for trading Digital Assets (Like Crytocurrency); Physical Assets (Individual or Wholesale); and Professional Services (for All Freelancers).</p>
-						<h4 class="platform-logo">How does it work?</h4>
-						<p class="answer">Nomidman Market Platform is powered by Ethereum blockchain and Smart Contract technology to build a secure, cost efficient and fast environment to reshape the future of trading. 
-						Through the Ethereum Smart Contract technology, traders can now securely execute a trade transaction without the need of trusted Middle Men or third-party providers. 
-						</p>
-						<h4 class="platform-logo">Who are the users of Nomidman platform?</h4>
-						<p class="answer">Nomidman attracts global users of Buyers and sellers of literally anything. It is a tool of liquidating cryptocurrency locally in a swift and safely manner; it’s a hub to connect vendors’ market places to a global market; it’s a tool for any person to sell any physical asset locally or internationally; and it’s a freelancer’s hub, ALL under one global market place.</p>
-						<h4 class="platform-logo">What is an ICO?</h4>
-						<p class="answer">'Initial Coin Offering (ICO)' is a mean by which funds are raised for a new cryptocurrency venture (a Start-up) through Crowd Funding. 
-						An ICO typically involves selling a new digital currency (Coin) at a discount — or a “token” — as part of a way for a company to raise money and create a solid community for their upcoming product. 
-						</p>
-					</div>
-					<div class="platform-discriptions">
-						<h4 class="platform-logo">How is NoMidMan different from the competition?</h4>
-						<p class="answer">Nomidman is the first decentralized market hub created on blockchain aiming to reduce the time and fees for trade transaction in an ultimately global presence. </p>
-						<h5 class="logo-question">Trading Physical Goods Competition</h5>
-						<p class="answer">
-							Other platforms that currently partially provide similar services are Amazon, Ebay, Alibaba using a centralized server to store user’s sensitive information such as name, address and financial details. However, data could be compromised or even used to track user behavior, or shared with other third parties for financial gain. On the other hand, these platforms charge sellers hefty fees to list their product and services, forcing them to pass these fees on to buyers. This ultimately results in them paying significantly more
-						</p>
-						<h5 class="logo-question">Trading Crytocurrency</h5>
-						<p class="answer">Platforms like Local Bitcoins is limited to trading only bitcoins. Other few platforms are also limited to one or a handful of cryptocurrencies and trading speeds are limited by block times. New platforms such as 0x have addressed some issues with the current problems but still fail to enhance the user experience. They are also limited to digital assets such as some ERC20 tokens.</p>
-						<h5 class="logo-question">Freelancers’ Hub</h5>
-						<p class="answer">The global market lacks a secure and low-cost platform for freelancers and service providers. Platforms like Upwork is the current best option for freelancers to have a global exposure and potentially increase their income and portfolio. But this comes with a large cost. Upwork currently charges freelancers up to 20% as a commission on all their invoices due to their centralized structure. </p>
+				<div class="faq-body clearfix">
+					<ul class="faq-list">
+						<span class="open-faq-list">
+							<i></i><i></i>
+						</span>
+						<li class="faq-list-item active-item" name="question">
+							GENERAL QUESTIONS
+						</li>
+						<li class="faq-list-item" name="token">
+							NOMIDMAN TOKEN (MANO)
+						</li>
+						<li class="faq-list-item" name="ico">
+							ICO
+						</li>
+						<li class="faq-list-item" name="army">
+							NOMID ARMY (OPERATORS)
+						</li>
+						<li class="faq-list-item" name="payment">
+							PAYMENT
+						</li>
+					</ul>
+					<div class="faq-questions">
+						<div id="question" class="general-quetion clearfix" style="display:block">
+							<div class="left">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a Smart Contract?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											In concept, this is a contract, a computer algorithm having conditions preset and open for any participant, and when these conditions are fulfilled, the parties will be able to exchange money, assets, or new processes will be launched free from participation of third parties (agents).
+										</p>
+									</div>
+								</div>
+								<div class="question-item">
+									<div class="title">
+										<h3>What is the NoMidMan platform?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											Nomidman is a peer to peer decentralized market place for trading Digital Assets (Like Crytocurrency); Physical Assets (Individual or Wholesale); and Professional Services (for All Freelancers). 
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="question-item">
+									<div class="title">
+										<h3>How is NoMidMan different from the competition?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											Nomidman is the first decentralized market hub created on blockchain aiming to reduce the time and fees for trade transaction in an ultimately global presence.
+										</p>
+										<h4>Trading Physical Goods Competition</h4>
+										<p>Other platforms that currently partially provide similar services are Amazon, Ebay, Alibaba using a centralized server to store user’s sensitive information such as name, address and financial details. However, data could be compromised or even used to track user behavior, or shared with other third parties for financial gain. On the other hand, these platforms charge sellers hefty fees to list their product and services, forcing them to pass these fees on to buyers. This ultimately results in them paying significantly more</p>
+										<h4>Trading Crytocurrency</h4>
+										<p>Platforms like Local Bitcoins is limited to trading only bitcoins. Other few platforms are also limited to one or a handful of cryptocurrencies and trading speeds are limited by block times. New platforms such as 0x have addressed some issues with the current problems but still fail to enhance the user experience. They are also limited to digital assets such as some ERC20 tokens.</p>
+										<h4>Freelancers’ Hub</h4>
+										<p>The global market lacks a secure and low-cost platform for freelancers and service providers. Platforms like Upwork is the current best option for freelancers to have a global exposure and potentially increase their income and portfolio. But this comes with a large cost. Upwork currently charges freelancers up to 20% as a commission on all their invoices due to their centralized structure. </p>
+									</div>
+								</div>
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="token" class="general-quetion">
+							<div class="left">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div><div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div><div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="ico" class="general-quetion">
+							<div class="left">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div><div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div><div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="army" class="general-quetion">
+							<div class="left">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div><div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div><div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="payment" class="general-quetion">
+							<div class="left">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div><div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div><div class="question-item">
+									<div class="title">
+										<h3>What is a DAPP?</h3>
+									</div>
+									<div class="inner">
+										<p>
+											DApp (Engl.) Decentralized Application. As an ordinary application, DApp consists of the user interface (frontend) and the server part (backend), but is different from it as it includes a smart contract. The smart contract is also a part of the backend, only it is created especially for the block-chain. In essence, the smart contract is a contract between the developers and the users that provides for full transparency of application performance. Decentralized applications include games, social networks, postal services and all other things that we are so used to in the world of the Internet. The only difference is that their operation is fully transparent.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
