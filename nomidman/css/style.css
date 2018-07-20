@@ -77,24 +77,25 @@ img {
     visibility: hidden; }
 
 .loader {
-  width: 100px;
-  height: 100px;
-  border: 10px solid #fff;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  border-top-color: #FF8D6B;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  background: url("../img/logo.png") center center no-repeat;
+  -webkit-background-size: 70%;
+  -o-background-size: 70%;
+  background-size: 70%;
   position: absolute;
-  left: 47%;
-  top: 36%;
+  left: 50%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-animation: 1s spin infinite;
-  -moz-animation: 1s spin infinite;
-  -o-animation: 1s spin infinite;
-  animation: 1s spin infinite; }
+  -webkit-animation: 1s vision infinite;
+  -moz-animation: 1s vision infinite;
+  -o-animation: 1s vision infinite;
+  animation: 1s vision infinite; }
 
 /*header*/
 .social-links {
@@ -993,6 +994,14 @@ img {
     transform: translateX(-700px); }
   100% {
     transform: translateX(0px); } }
+
+@keyframes vision {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 /***********contact form*****/
 .contact-form {
