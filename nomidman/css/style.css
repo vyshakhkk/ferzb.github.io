@@ -70,7 +70,7 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 99999;
+  z-index: 101;
   background: #000;
   -webkit-transition: 1s all;
   -moz-transition: 1s all;
@@ -109,7 +109,7 @@ label {
   position: fixed;
   right: 10px;
   top: 40%;
-  z-index: 999; }
+  z-index: 100; }
   .social-links li {
     margin-bottom: 20px; }
 
@@ -162,11 +162,10 @@ label {
 .toggle-navbar {
   position: absolute;
   width: 80%;
-  height: 100%;
   top: 0;
   left: -100%;
   padding: 20px;
-  z-index: 10000;
+  z-index: 100;
   background: #000;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -189,6 +188,9 @@ label {
       flex-direction: row;
       z-index: none;
       background: none; } }
+  @media screen and (min-height: 400px) {
+    .toggle-navbar {
+      height: 100%; } }
 
 .open-nav {
   left: 0%; }
@@ -731,8 +733,39 @@ label {
 .footer {
   background: #786E64;
   text-align: center;
-  padding: 50px;
-  color: #fff; }
+  padding: 50px; }
+  .footer .fc-sb a {
+    color: #fff; }
+
+.footer-nav {
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%; }
+
+/***********timer*******************/
+.timer {
+  position: fixed;
+  z-index: 99;
+  bottom: 150px;
+  right: 10px; }
+  .timer p {
+    font-size: 36px;
+    margin: 18px 0;
+    color: #FF8D6B;
+    text-transform: uppercase; }
+
+.clock {
+  width: 320px;
+  margin: 0; }
+  @media screen and (min-width: 640px) {
+    .clock {
+      width: 620px; } }
+
+.flip-clock-label {
+  display: none; }
+
+.flip-clock-wrapper .flip {
+  -webkit-box-shadow: 0 2px 9px 3px rgba(255, 141, 107, 0.7);
+  box-shadow: 0 2px 9px 3px rgba(255, 141, 107, 0.7); }
 
 /************animation-img****************/
 .animation-img {
@@ -751,44 +784,6 @@ label {
   bottom: 94px;
   width: 200px;
   z-index: 2; }
-
-.animation-boat {
-  left: 250px;
-  bottom: 76px;
-  width: 50px;
-  z-index: 2; }
-
-.animation-bg {
-  left: -58px;
-  top: 50px;
-  z-index: 0;
-  width: 645px; }
-
-.animation-base {
-  z-index: 1;
-  width: 602px; }
-
-.bird {
-  width: 21px;
-  z-index: 2; }
-
-.animation-bird-5 {
-  left: 400px;
-  bottom: 180px; }
-
-.animation-bird-4 {
-  left: 320px;
-  bottom: 160px; }
-
-.animation-bird-3 {
-  left: 280px;
-  bottom: 170px; }
-
-.animation-bird-2 {
-  bottom: 150px; }
-
-.animation-bird-1 {
-  top: 100px; }
 
 .cloud {
   transform: scale3d(-1, 1, 1);
@@ -824,12 +819,6 @@ label {
   left: 20px;
   width: 80px; }
 
-.animation-city-lights {
-  left: 148px;
-  top: 68px;
-  width: 301px;
-  z-index: 2; }
-
 .animation-windmill-blade-2 {
   left: 43px;
   bottom: 151px;
@@ -848,45 +837,6 @@ label {
   width: 85px;
   z-index: 2; }
 
-.city-train-mask-1 {
-  position: absolute;
-  left: 60px;
-  bottom: 122px;
-  z-index: 1;
-  overflow: hidden;
-  width: 460px;
-  height: 38px; }
-
-.city-train-1 {
-  left: -100%;
-  height: 38px; }
-
-.city-train-mask-2 {
-  position: absolute;
-  left: 30px;
-  top: 178px;
-  z-index: 0;
-  overflow: hidden;
-  width: 500px;
-  height: 38px; }
-
-.city-train-1 {
-  right: -100%; }
-
-.city-coin-mask {
-  position: absolute;
-  left: 116px;
-  top: -81px;
-  z-index: 0;
-  overflow: hidden;
-  width: 70px;
-  height: 100px; }
-
-.city-coin {
-  left: 15px;
-  top: 20px;
-  width: 40px; }
-
 /***************ANIMATION****************/
 .move {
   animation: move infinite ease-in-out; }
@@ -902,15 +852,6 @@ label {
 
 .changeopacity {
   animation: changeopacity infinite ease-in-out; }
-
-.trainmove {
-  animation: trainmove infinite linear; }
-
-.trainmovet {
-  animation: trainmovet infinite linear; }
-
-.coinmove {
-  animation: coinmove infinite ease-in-out; }
 
 .anim-dur8 {
   animation-duration: 8s; }
@@ -980,29 +921,6 @@ label {
   100% {
     opacity: 0; } }
 
-@keyframes trainmovet {
-  0% {
-    transform: translateX(0px); }
-  100% {
-    transform: translateX(2012px); } }
-
-@keyframes trainmove {
-  0% {
-    transform: translateX(1006px); }
-  100% {
-    transform: translateX(-1006px); } }
-
-@keyframes coinmove {
-  0% {
-    transform: translateY(0px);
-    opacity: 0; }
-  25% {
-    opacity: 1; }
-  75% {
-    transform: translateY(150px); }
-  100% {
-    transform: translateY(150px); } }
-
 @keyframes flash {
   0% {
     color: #786E64; }
@@ -1046,7 +964,7 @@ label {
   position: fixed;
   width: 50px;
   height: 50px;
-  z-index: 1000;
+  z-index: 100;
   right: 20px;
   bottom: -50px;
   cursor: pointer;

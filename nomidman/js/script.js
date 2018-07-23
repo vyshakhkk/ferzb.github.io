@@ -55,3 +55,22 @@ $('.open-faq-list').click(function() {
 $('.question-item').click(function() {
 	$(this).children('.inner').slideToggle()
 });
+
+	var clock
+	clock = $('.clock').FlipClock({
+		clockFace : 'DailyCounter',
+		autostart : false,
+		callbacks : {
+			stop : function () {
+				$('.massage').html("time out")
+			}
+		}
+	})
+	var dt = "Oct 30 2018";
+	var first = new Date(dt);
+	var last = Date.now();
+	var remaining = (first - last)/1000;
+
+clock.setTime(remaining);
+clock.setCountdown(true);
+clock.start();
