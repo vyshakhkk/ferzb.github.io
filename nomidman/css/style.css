@@ -743,12 +743,26 @@ label {
 
 /***********timer*******************/
 .timer {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
+  transform: scale(0.4);
   position: fixed;
   z-index: 99;
-  bottom: 150px;
-  right: 10px; }
+  bottom: 10px;
+  right: -70px; }
+  @media screen and (min-width: 640px) {
+    .timer {
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      transform: scale(0.7);
+        transform-bottom: 70px;
+      right: -70px; } }
   .timer p {
-    font-size: 36px;
+    font-size: 24px;
     margin: 18px 0;
     color: #FF8D6B;
     text-transform: uppercase; }
