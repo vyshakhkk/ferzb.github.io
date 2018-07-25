@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700,700i" rel="stylesheet">
 		<link rel="stylesheet" href="css/fc-framework.css">
+		<link rel="stylesheet" href="css/remodal-default-theme.css">
+		<link rel="stylesheet" href="css/remodal.css">
 		<link rel="stylesheet" href="css/flipclock.css">
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
@@ -93,7 +95,7 @@
 				</div>
 				<ul class="fe-l1 footer-nav footer-block">
 					<li><a href="#">Terms and conditions</a></li>
-					<li><a href="#">Contact us</a></li>
+					<li><a href="#" data-remodal-target="modal">Contact us</a></li>
 					<li><a href="#">Career</a></li>
 				</ul>
 				<ul class="social-media fe-l1 footer-block">
@@ -108,7 +110,26 @@
 			<div class="clock">
 			</div>
 		</div>
+		<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+		 	<button data-remodal-action="close" class="remodal-close"></button>
+			<form method="post" class="wrap">
+				<fieldset>
+					<label for="user-email">E-mail</label>
+					<input class="input-form" id="user-email" type="email" name="user-email" placeholder="email">
+				</fieldset>
+				<fieldset>
+					<label for="user-name">Name</label>
+					<input class="input-form" id="user-name" type="name" name="user-name" placeholder="name">
+				</fieldset>
+				<fieldset>
+					<label for="user-message">Message</label>
+					<textarea class="input-form" name="user-message" id="user-message" rows="2"></textarea>
+				</fieldset>
+				<button class="submit-form" type="submit">Submit</button>
+			</form>
+		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/remodal.min.js"></script>
 		<script src="js/flipclock.min.js"></script>
 		<script src="js/script.js"></script>
 		
