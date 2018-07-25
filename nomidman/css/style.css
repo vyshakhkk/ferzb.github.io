@@ -733,9 +733,56 @@ label {
 .footer {
   background: #786E64;
   text-align: center;
-  padding: 50px; }
-  .footer .fc-sb a {
-    color: #fff; }
+  padding: 50px;
+  margin-bottom: 160px; }
+  @media screen and (min-width: 640px) {
+    .footer {
+      margin-bottom: 141px; } }
+  .footer .fc-sb {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .footer .fc-sb a {
+      color: #fff; }
+    @media screen and (min-width: 960px) {
+      .footer .fc-sb {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+
+.footer-block {
+  margin: 12px 0;
+  display: block;
+  text-align: left; }
+  @media screen and (min-width: 960px) {
+    .footer-block {
+      margin: 0; } }
+
+.footer-block {
+  display: block; }
+  .footer-block li {
+    margin: 8px 0; }
+  @media screen and (min-width: 560px) {
+    .footer-block {
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between; } }
+  @media screen and (min-width: 960px) {
+    .footer-block {
+      width: auto;
+      -webkit-justify-content: space-around;
+      justify-content: space-around; } }
+
+.social-media {
+  display: flex;
+  width: 100px;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+  @media screen and (min-width: 960px) {
+    .social-media {
+      width: auto;
+      -webkit-justify-content: space-around;
+      justify-content: space-around; } }
 
 .footer-nav {
   -webkit-flex-basis: 50%;
@@ -743,36 +790,45 @@ label {
 
 /***********timer*******************/
 .timer {
-  -webkit-transform: scale(0.4);
-  -moz-transform: scale(0.4);
-  -ms-transform: scale(0.4);
-  -o-transform: scale(0.4);
-  transform: scale(0.4);
   position: fixed;
   z-index: 99;
-  bottom: 10px;
-  right: -70px; }
+  bottom: 0px;
+  width: 100%;
+  height: 160px;
+  background: rgba(193, 193, 193, 0.5); }
   @media screen and (min-width: 640px) {
     .timer {
+      height: auto; } }
+  .timer p {
+    font-size: 18px;
+    width: 240px;
+    margin: 18px 0;
+    color: #FF8D6B;
+    text-transform: uppercase;
+    margin: 6px 0 6px auto; }
+    @media screen and (min-width: 640px) {
+      .timer p {
+        font-size: 24px;
+        width: 525px; } }
+
+.clock {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  width: 320px;
+  bottom: 40px;
+  margin: 0 0 0 auto; }
+  @media screen and (min-width: 640px) {
+    .clock {
       -webkit-transform: scale(0.7);
       -moz-transform: scale(0.7);
       -ms-transform: scale(0.7);
       -o-transform: scale(0.7);
       transform: scale(0.7);
-        transform-bottom: 70px;
-      right: -70px; } }
-  .timer p {
-    font-size: 24px;
-    margin: 18px 0;
-    color: #FF8D6B;
-    text-transform: uppercase; }
-
-.clock {
-  width: 320px;
-  margin: 0; }
-  @media screen and (min-width: 640px) {
-    .clock {
-      width: 620px; } }
+      width: 620px;
+      bottom: 0; } }
 
 .flip-clock-label {
   display: none; }

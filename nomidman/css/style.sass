@@ -725,9 +725,47 @@ label
 	background: #786E64
 	text-align: center
 	padding: 50px
-	.fc-sb a
-		color: #fff
-	
+	margin-bottom: 160px 
+	@media screen and (min-width: #{$dw-640})
+		margin-bottom: 141px
+	.fc-sb
+		-webkit-flex-direction: column 
+		-ms-flex-direction: column 
+		flex-direction: column
+		a
+			color: #fff
+		@media screen and (min-width: #{$dw-960})
+			-webkit-flex-direction: row 
+			-ms-flex-direction: row 
+			flex-direction: row 
+
+.footer-block
+	margin: 12px 0 
+	display: block
+	text-align: left 
+	@media screen and (min-width: #{$dw-960})
+		margin: 0
+.footer-block
+	display: block
+	li
+		margin: 8px 0 
+	@media screen and (min-width: #{$dw-560})
+		display: flex
+		-webkit-justify-content: space-between 
+		justify-content: space-between
+	@media screen and (min-width: #{$dw-960})
+		width: auto
+		-webkit-justify-content: space-around
+		justify-content: space-around 
+.social-media
+	display: flex
+	width: 100px
+	-webkit-justify-content: space-between 
+	justify-content: space-between 
+	@media screen and (min-width: #{$dw-960})
+		width: auto
+		-webkit-justify-content: space-around
+		justify-content: space-around 
 .footer-nav
 	-webkit-flex-basis: 50% 
 	flex-basis: 50% 
@@ -735,18 +773,39 @@ label
 .timer
 	position: fixed
 	z-index: 99
-	bottom: 150px
-	right: 10px
+	bottom: 0px
+	width: 100%
+	height: 160px 
+	background: rgba(193, 193, 193, 0.5)
+	@media screen and (min-width: #{$dw-640})
+		height: auto
 	p
-		font-size: 36px
+		font-size: 18px
+		width: 240px
 		margin: 18px 0
 		color: #FF8D6B
-		text-transform: uppercase   
+		text-transform: uppercase
+		margin: 6px 0 6px auto
+		@media screen and (min-width: #{$dw-640})
+			font-size: 24px
+			width: 525px
 .clock
+	-webkit-transform: scale(0.5) 
+	-moz-transform: scale(0.5) 
+	-ms-transform: scale(0.5) 
+	-o-transform: scale(0.5) 
+	transform: scale(0.5) 
 	width: 320px
-	margin: 0
+	bottom: 40px 
+	margin: 0 0 0 auto
 	@media screen and (min-width: #{$dw-640})
+		-webkit-transform: scale(0.7) 
+		-moz-transform: scale(0.7) 
+		-ms-transform: scale(0.7) 
+		-o-transform: scale(0.7) 
+		transform: scale(0.7) 
 		width: 620px
+		bottom: 0 
 .flip-clock-label
 	display: none
 	
