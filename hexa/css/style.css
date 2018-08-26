@@ -118,10 +118,10 @@ input {
   position: absolute;
   top: 0;
   padding: 20px;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
+  -webkit-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
   transform: translateX(-100%);
   background: rgba(0, 0, 0, 0.25);
   -webkit-flex-direction: column;
