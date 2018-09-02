@@ -1,0 +1,310 @@
+/****************Preparatory works***************/
+
+$col-1: 8.33333333%;
+$col-2: 16.66666667%;
+$col-3: 25%;
+$col-4: 33.33333333%;
+$col-5: 41.66666667%;
+$col-6: 50%;
+$col-7: 58.33333333%;
+$col-8: 66.66666667%;
+$col-9: 75%;
+$col-10: 83.33333333%;
+$col-11: 91.66666667%;
+$col-12: 100%;
+
+$dw-480: 480px;
+$dw-560: 560px;
+$dw-640: 640px;
+$dw-780: 780px;
+$dw-960: 960px;
+$dw-1100: 1100px;
+
+=col($col, $offset)
+	width: calc(#{$col} - #{$offset});
+
+=grid($col, $offset)
+	flex-basis: calc(#{$col} - #{$offset});
+
+=device-col($dw, $col-dw, $offset)
+	@media screen and (min-width: #{$dw})
+		width: calc(#{$col-dw} - #{$offset});
+
+=device-grid($dw, $col-dw, $offset)
+	@media screen and (min-width: #{$dw})
+		flex-basis: calc(#{$col-dw} - #{$offset});
+		
+/*General*/
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	margin: 0	
+	padding: 0
+	
+body
+	line-height: 1.6
+	font-family: 'Orbitron', sans-serif
+	background: url('../img/cube.png') repeat 
+	font-size: 16px
+	overflow-x: hidden 
+
+ul
+	list-style: none 
+
+a
+	text-decoration: none
+	
+
+/*********navigator*********/
+.nav-page
+	position: fixed
+	width: 100%
+	z-index: 1 
+
+.background-black
+	background: #131313
+
+/*nav-toggle-block*/
+.nav-toggle-block
+	margin: 15px
+	cursor: pointer
+	display: block
+	width: 29px
+	height: 27px
+	position: relative
+	-webkit-transition: all 0.35s ease 
+	-moz-transition: all 0.35s ease 
+	-ms-transition: all 0.35s ease 
+	-o-transition: all 0.35s ease 
+	transition: all 0.35s ease
+	
+.open
+	background: #000
+
+.nav-toggle-line
+	width: 80%
+	-webkit-border-radius: 16px 
+	border-radius: 16px 
+	display: block
+	height: 3px
+	background: #000
+	position: absolute
+	left: 3px
+	top: 0
+	-webkit-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-moz-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-ms-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-o-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	&:nth-child(1)
+		top: 5px
+	&:nth-child(2)
+		top: 12px
+	&:nth-child(3)
+		top: 19px
+		
+.active-line
+	-webkit-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-moz-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-ms-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-o-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	background: #FFF
+	&:nth-child(1)
+		top: 12px
+		-webkit-transform: rotate(45deg) 
+		-moz-transform: rotate(45deg) 
+		-ms-transform: rotate(45deg) 
+		-o-transform: rotate(45deg) 
+		transform: rotate(45deg) 
+	&:nth-child(2)
+		opacity: 0 
+	&:nth-child(3)
+		top: 12px
+		-webkit-transform: rotate(-45deg) 
+		-moz-transform: rotate(-45deg) 
+		-ms-transform: rotate(-45deg) 
+		-o-transform: rotate(-45deg) 
+		transform: rotate(-45deg)
+		
+/**********end nav toggle**************/
+
+/******list nav toggle*********/
+.wrap-nav
+	position: absolute
+	top: 57px
+	left: 0
+	z-index: 100 
+	padding: 15px
+	height: 100vh
+	width: 100%
+	background: #131313
+	opacity: 0 
+	-webkit-transform: translateX(100%) 
+	-moz-transform: translateX(100%) 
+	-ms-transform: translateX(100%) 
+	-o-transform: translateX(100%) 
+	transform: translateX(100%) 
+	-webkit-transition: opacity 0.3s, transform 0.3s 0.6s ease 
+	-moz-transition: opacity 0.3s, transform 0.3s 0.6s ease 
+	-ms-transition: opacity 0.3s, transform 0.3s 0.6s ease 
+	-o-transition: opacity 0.3s, transform 0.3s 0.6s ease 
+	transition: opacity 0.3s, transform 0.3s 0.6s ease 
+	
+.wrap-nav-open
+	-webkit-transform: translateX(0%) 
+	-moz-transform: translateX(0%) 
+	-ms-transform: translateX(0%) 
+	-o-transform: translateX(0%) 
+	transform: translateX(0%)
+	opacity: 1
+	-webkit-transition: opacity 0.3s
+	-moz-transition: opacity 0.3s
+	-ms-transition: opacity 0.3s
+	-o-transition: opacity 0.3s
+	transition: opacity 0.3s
+
+.menu-nav
+	width: 20vw
+	@media screen and (min-width: #{$dw-640})
+		margin: 0 auto
+
+.nav-list
+	-webkit-flex-direction: column 
+	-ms-flex-direction: column 
+	flex-direction: column 
+	li
+		margin-bottom: 20px
+		-webkit-transform: translateX(100%) 
+		-moz-transform: translateX(100%) 
+		-ms-transform: translateX(100%) 
+		-o-transform: translateX(100%) 
+		transform: translateX(100%) 
+		opacity: 0
+		-webkit-transition: all .5s ease-out 
+		-moz-transition: all .5s ease-out 
+		-ms-transition: all .5s ease-out 
+		-o-transition: all .5s ease-out 
+		transition: all .5s ease-out 
+
+li.active-list
+	-webkit-transform: translateX(0) 
+	-moz-transform: translateX(0) 
+	-ms-transform: translateX(0) 
+	-o-transform: translateX(0) 
+	transform: translateX(0)
+	opacity: 1
+	&:nth-child(1)
+		-webkit-transition: transform 0.7s, opacity 0.9s 
+		-moz-transition: transform 0.7s, opacity 0.9s 
+		-ms-transition: transform 0.7s, opacity 0.9s 
+		-o-transition: transform 0.7s, opacity 0.9s 
+		transition: transform 0.7s, opacity 0.9s
+	&:nth-child(2)
+		-webkit-transition: transform 0.9s, opacity 1.1s 
+		-moz-transition: transform 0.9s, opacity 1.1s 
+		-ms-transition: transform 0.9s, opacity 1.1s 
+		-o-transition: transform 0.9s, opacity 1.1s 
+		transition: transform 0.9s, opacity 1.1s 
+	&:nth-child(3)
+		-webkit-transition: transform 1.1s, opacity 1.3s 
+		-moz-transition: transform 1.1s, opacity 1.3s 
+		-ms-transition: transform 1.1s, opacity 1.3s 
+		-o-transition: transform 1.1s, opacity 1.3s 
+		transition: transform 1.1s, opacity 1.3s 
+	&:nth-child(4)
+		-webkit-transition: transform 1.3s, opacity 1.5s 
+		-moz-transition: transform 1.3s, opacity 1.5s 
+		-ms-transition: transform 1.3s, opacity 1.5s 
+		-o-transition: transform 1.3s, opacity 1.5s 
+		transition: transform 1.3s, opacity 1.5s 
+	&:nth-child(5)
+		-webkit-transition: transform 1.5s, opacity 1.7s 
+		-moz-transition: transform 1.5s, opacity 1.7s 
+		-ms-transition: transform 1.5s, opacity 1.7s 
+		-o-transition: transform 1.5s, opacity 1.7s 
+		transition: transform 1.5s, opacity 1.7s
+	&:nth-child(6)
+		-webkit-transition: transform 1.7s, opacity 1.9s 
+		-moz-transition: transform 1.7s, opacity 1.9s 
+		-ms-transition: transform 1.7s, opacity 1.9s 
+		-o-transition: transform 1.7s, opacity 1.9s 
+		transition: transform 1.7s, opacity 1.9s 
+
+.nav-link
+	font-size: 40px 
+	padding: 15px
+	color: #FFF
+	letter-spacing: 6px 
+	text-transform: uppercase
+	-webkit-transition: all 0.5s ease 
+	-moz-transition: all 0.5s ease 
+	-ms-transition: all 0.5s ease 
+	-o-transition: all 0.5s ease 
+	transition: all 0.5s ease 
+	&:hover
+		color: #000
+		background: #fff  
+
+.selected
+	color: #000
+	background: #FFF  
+	
+/****logotype*****/
+.logo-page
+	display: flex
+	font-size: 28px
+	text-transform: uppercase
+	a
+		color: #000
+		padding: 12px 15px
+/**************header page*********************/
+/*title logo*/
+.title-logo
+	height: 100vh
+	h1
+		-webkit-flex-wrap: wrap 
+		-ms-flex-wrap: wrap 
+		flex-wrap: wrap 
+		text-transform: uppercase
+		letter-spacing: 6px
+		font-size: 50px   
+		margin: auto
+		span
+			&:nth-child(1)
+				padding-right: 26px
+			&:nth-child(2)
+				overflow: hidden
+				padding: 0 35px
+				background: transparent  
+				position: relative
+				display: flex
+				-webkit-justify-content: center
+				justify-content: centers
+				width: 260px
+				-webkit-transition: background 1s 0.4s ease 
+				-moz-transition: background 1s 0.4s ease 
+				-ms-transition: background 1s 0.4s ease 
+				-o-transition: background 1s 0.4s ease 
+				transition: background 1s 0.4s ease 
+				i
+					-webkit-transition: transform 0.6s 0.8s ease-out
+					-moz-transition: transform 0.6s 0.8s ease-out
+					-ms-transition: transform 0.6s 0.8s ease-out
+					-o-transition: transform 0.6s 0.8s ease-out
+					transition: transform 0.6s 0.8s ease-out
+					color: #FFF
+					font-style: normal
+					&:nth-child(odd)
+						-webkit-transform: translateY(-100%) 
+						-moz-transform: translateY(-100%) 
+						-ms-transform: translateY(-100%) 
+						-o-transform: translateY(-100%) 
+						transform: translateY(-100%)
+					&:nth-child(even)
+						-webkit-transform: translateY(100%) 
+						-moz-transform: translateY(100%) 
+						-ms-transform: translateY(100%) 
+						-o-transform: translateY(100%) 
+						transform: translateY(100%)
