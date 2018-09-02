@@ -10,7 +10,7 @@
 body {
   line-height: 1.6;
   font-family: 'Orbitron', sans-serif;
-  background: url("../img/cube.png") repeat;
+  background: url("../img/background.png") repeat;
   font-size: 16px;
   overflow-x: hidden; }
 
@@ -96,7 +96,6 @@ a {
 /******list nav toggle*********/
 .wrap-nav {
   position: absolute;
-  overflow-y: scroll;
   top: 57px;
   left: 0;
   z-index: 100;
@@ -238,7 +237,10 @@ li.active-list {
     font-size: 50px;
     margin: auto; }
     .title-logo h1 span:nth-child(1) {
-      padding-right: 26px; }
+      padding: 0; }
+      @media screen and (min-width: 640px) {
+        .title-logo h1 span:nth-child(1) {
+          padding-right: 26px; } }
     .title-logo h1 span:nth-child(2) {
       overflow: hidden;
       padding: 0 35px;
@@ -273,3 +275,82 @@ li.active-list {
           -ms-transform: translateY(100%);
           -o-transform: translateY(100%);
           transform: translateY(100%); }
+
+/*******************footer page***********************/
+.footer-page {
+  background: #fff url("../img/background-2.png") repeat; }
+  .footer-page ul {
+    padding: 12px 15px; }
+  .footer-page li {
+    margin-bottom: 16px;
+    color: #838383; }
+  .footer-page a {
+    color: #838383; }
+
+.social-link li {
+  margin-right: 24px; }
+
+.fab {
+  font-size: 18px;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
+
+.fa-facebook-f:hover {
+  color: #4267b2; }
+
+.fa-linkedin-in:hover {
+  color: #0073b0; }
+
+.fa-twitter:hover {
+  color: #40cdd7; }
+
+.fa-youtube:hover {
+  color: #f00; }
+
+.copyright {
+  padding: 12px;
+  background: #e8e8e8;
+  font-size: 16px;
+  text-align: center; }
+
+/***********animation************/
+.liner-move {
+  display: block;
+  background: url("../img/squer.png") no-repeat;
+  animation: linerMove infinite ease-in-out;
+  animation-duration: 5.5s;
+  position: absolute;
+  top: 20px;
+  left: 40%;
+  width: 35px;
+  height: 35px; }
+
+@keyframes linerMove {
+  0% {
+    transform: translate(0px, 0px); }
+  50% {
+    transform: translate(-20px, 20px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
+.spin-move {
+  display: block;
+  background: url("../img/squer.png") no-repeat;
+  animation: spinMove infinite ease-in-out;
+  animation-duration: 20s;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  width: 35px;
+  height: 35px; }
+
+@keyframes spinMove {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(0deg); } }

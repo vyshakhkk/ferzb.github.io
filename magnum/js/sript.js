@@ -1,3 +1,7 @@
+$(document).ready(function(){
+	$('#pixel').css('background', '#000');
+	$('#pixel>i').css('transform', 'translateY(0%)');
+});
 $('.nav-toggle-block').click(function() {
 	$(this).toggleClass('open');
 	$('.nav-toggle-line').toggleClass('active-line');
@@ -6,7 +10,10 @@ $('.nav-toggle-block').click(function() {
 	$('.nav-page').toggleClass('background-black');
 	$('.logo-page>a').toggleClass('background-black');
 });
-$(document).ready(function(){
-	$('#pixel').css('background', '#000');
-	$('#pixel>i').css('transform', 'translateY(0%)');
-});
+
+$(window).scroll(function(){
+	var st = $(this).scrollTop()
+
+	$('.title-logo>h1').css('transform', 'translate(0%, -' + st + '%');
+})
+
