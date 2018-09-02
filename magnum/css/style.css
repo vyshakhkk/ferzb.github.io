@@ -96,6 +96,7 @@ a {
 /******list nav toggle*********/
 .wrap-nav {
   position: absolute;
+  overflow-y: scroll;
   top: 57px;
   left: 0;
   z-index: 100;
