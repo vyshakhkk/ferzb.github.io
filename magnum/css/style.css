@@ -2,7 +2,8 @@
 /*General*/
 body {
   font-family: 'Orbitron', sans-serif;
-  background: url("../img/background.png") repeat; }
+  background: url("../img/background.png") repeat;
+  overflow: hidden; }
 
 /*********navigator*********/
 .nav-page {
@@ -267,7 +268,8 @@ li.active-list {
 
 /******sections*********/
 .section {
-  position: relative; }
+  position: relative;
+  padding: 30px 0; }
 
 .page-number {
   color: #FFF;
@@ -295,17 +297,18 @@ li.active-list {
 .section-name {
   font-size: 32px;
   letter-spacing: 3px;
+  margin: 10px 0;
   text-transform: uppercase; }
 
 .section-text {
-  line-height: 28px;
-  margin: 30px 0; }
+  line-height: 28px; }
 
 .btn-see-more {
   font-size: 14px;
   display: inline-block;
   border: 1px solid #000;
   padding: 10px 20px;
+  margin: 16px 0;
   text-transform: uppercase; }
 
 /*******************footer page***********************/

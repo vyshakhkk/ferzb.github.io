@@ -30,18 +30,18 @@ ul {
   padding: 30px; }
 
 /*container*/
-.container {
+.wrapper {
   width: 80%;
   margin: 0 auto;
   padding: 10px; }
 
 /*wrapper*/
-.wrapper {
+.container {
   width: 100%;
   margin: 0 auto;
   padding: 10px; }
   @media screen and (min-width: 640px) {
-    .wrapper {
+    .container {
       width: 80%;
       padding: 30px; } }
 

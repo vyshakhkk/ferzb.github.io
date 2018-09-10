@@ -14,6 +14,15 @@ $(document).ready(function(){
 		}*/},
 	});
 });
+var oldWidth = window.innerWidth;
+window.onresize = function () {
+	var newWidth = window.innerWidth;
+	if (newWidth != oldWidth) {
+		window.location.reload();
+		oldWidth = newWidth;
+	}
+};
+
 $('.nav-toggle-block').click(function() {
 	$(this).toggleClass('open');
 	$('.nav-toggle-line').toggleClass('active-line');
