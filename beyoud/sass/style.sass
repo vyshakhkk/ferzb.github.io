@@ -1,0 +1,295 @@
+@import 'setting.sass';
+@import url('grid.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+/*General style*/
+html, body
+	font-size: $font-size
+	font-family: $font
+	
+/*header menu style*/
+header
+	font-size: $a-size
+	position: fixed
+	width: 100%
+	z-index: 100
+
+.logo //logotype styles
+	text-transform: uppercase
+	font-size: 26px
+	letter-spacing: -2px
+	width: 180px
+	color: #FFF 
+	a
+		font-weight: 800
+	&:before
+		content: " "
+		display: block
+		float: left
+		width: 30px
+		height: 30px
+		margin-top: 7px
+		background: url("../img/ico-page.png") center center no-repeat
+	i
+		font-style: normal
+		letter-spacing: -14px;
+		margin-right: 12px
+	span
+		font-size: 8px
+		display: block
+		letter-spacing: -1px
+		text-align: right
+		margin: -10px 14px 0px 0
+		 
+
+nav.flex //navigation styles
+	position: absolute
+	z-index: 100 
+	width: 100%
+	top: 75%
+	left: 0
+	padding: 0 10px
+	text-align: center 
+	display: none
+	opacity: 0
+	@media screen and (min-width: #{$dw-960})
+		position: static
+		width: auto 
+		display: flex
+		text-align: left
+		opacity: 1
+		color: #FFF 
+	li
+		margin: 2px 0
+		@media screen and (min-width: #{$dw-960})
+			margin-right: 30px
+		a //hyper text link styles
+			display: block
+			font-weight: 600 
+			padding: 10px 0px
+			@media screen and (min-width: #{$dw-960})
+				vertical-align: middle
+				-webkit-transform: translateZ(0)
+				transform: translateZ(0)
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+				-webkit-backface-visibility: hidden
+				backface-visibility: hidden
+				-moz-osx-font-smoothing: grayscale
+				position: relative
+				overflow: hidden
+				&:before
+					content: ""
+					position: absolute
+					z-index: -1
+					left: 50%
+					right: 50%
+					bottom: 0
+					background: #fff
+					height: 4px
+					-webkit-border-radius: 10px 
+					border-radius: 10px 
+					-webkit-transition-property: left, right
+					transition-property: left, right
+					-webkit-transition-duration: 0.3s
+					transition-duration: 0.3s
+					-webkit-transition-timing-function: ease-out
+					transition-timing-function: ease-out
+				&:hover
+					background: none
+					color: inherit  
+					&:before
+						left: 20%
+						right: 20%
+			&:hover
+				color: #fff
+				background: $accept
+			
+/*nav-toggle-block*/
+.header-menu-open
+	background: #FFF 
+	.logo
+		color: #000 
+.block-toggle
+	display: block
+	@media screen and (min-width: #{$dw-960})
+		display: none
+		
+.nav-toggle-block
+	margin: 15px
+	cursor: pointer
+	display: block
+	width: 29px
+	height: 27px
+	position: relative
+	-webkit-transition: all 0.35s ease 
+	-moz-transition: all 0.35s ease 
+	-ms-transition: all 0.35s ease 
+	-o-transition: all 0.35s ease 
+	transition: all 0.35s ease
+	
+.open
+	.nav-toggle-line
+		background: #888
+		
+nav.nav-open
+	display: block
+	opacity: 1
+	background: #FFF 
+	-webkit-transition: opacity 0.5s ease 
+	-moz-transition: opacity 0.5s ease 
+	-ms-transition: opacity 0.5s ease 
+	-o-transition: opacity 0.5s ease 
+	transition: opacity 0.5s ease
+
+.nav-toggle-line
+	width: 80%
+	-webkit-border-radius: 16px 
+	border-radius: 16px 
+	display: block
+	height: 3px
+	background: #fff
+	position: absolute
+	left: 3px
+	top: 0
+	-webkit-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-moz-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-ms-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-o-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	&:nth-child(1)
+		top: 5px
+	&:nth-child(2)
+		top: 12px
+	&:nth-child(3)
+		top: 19px
+		
+.active-line
+	-webkit-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-moz-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-ms-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-o-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	background: #FFF
+	&:nth-child(1)
+		top: 12px
+		-webkit-transform: rotate(45deg) 
+		-moz-transform: rotate(45deg) 
+		-ms-transform: rotate(45deg) 
+		-o-transform: rotate(45deg) 
+		transform: rotate(45deg) 
+	&:nth-child(2)
+		opacity: 0 
+	&:nth-child(3)
+		top: 12px
+		-webkit-transform: rotate(-45deg) 
+		-moz-transform: rotate(-45deg) 
+		-ms-transform: rotate(-45deg) 
+		-o-transform: rotate(-45deg) 
+		transform: rotate(-45deg)
+		
+/**********end nav toggle**************/
+
+/*header-block*/
+.header-block
+	background-image: url('../img/img1.jpg')
+	background-position: center
+	background-repeat: no-repeat  
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	min-height: 600px 
+	position: relative
+.overlay
+	position: absolute
+	z-index: 1
+	height: 100%
+	width: 100%
+	opacity: 0.8  
+	background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+.inner-block
+	color: #FFF
+	position: relative
+	z-index: 2
+	text-align: center 
+	p
+		font-weight: 800
+		font-size: 25px
+		width: 90%
+		margin: 0 auto
+		@media screen and (min-width: #{$dw-640})
+			font-size: 40px
+			width: 60%
+	a
+		border: 2px solid #fff
+		padding: 10px 25px
+		display: inline-block
+		margin-top: 55px
+		-webkit-border-radius: 40px 
+		border-radius: 40px 
+.partners
+	position: relative
+	z-index: 2
+	background: #FFF
+	-webkit-border-radius: 10px 
+	border-radius: 10px
+	width: 85%
+	padding: 30px 0
+	margin: -190px auto 0
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
+	a
+		display: block
+		width: 160px
+		margin: 25px 55px 25px 55px
+		
+/*****body content styles*******/
+
+/*****about styles*******/
+.content-inner
+	.container
+		text-align: center
+		
+.header-section
+	display: inline-block
+	font-size: $h3-size
+	margin: 16px 0
+	&:before
+		content: ""
+		float: left
+		display: none
+		width: 49px
+		height: 40px
+		background: $accept
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		margin: 10px 57px 0 0
+		@media screen and (min-width: #{$dw-640})
+			display: block 
+			
+.about
+	section
+		-webkit-border-radius: 10px 
+		border-radius: 10px
+		padding: 40px
+		&:hover
+			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
+		&:nth-child(1)
+			.about-img
+				background-image: url('../img/Ellipse 1.png')
+		&:nth-child(2)
+			.about-img
+				background-image: url('../img/Ellipse 1.png')
+		&:nth-child(3)
+			.about-img
+				background-image: url('../img/Ellipse 1.png')
+	h4
+		margin: 10px 0 20px
+		font-weight: 800
+		font-size: $h4-size
+	
+.about-img
+	width: 100%
+	height: 130px
+	background-position: center center
+	background-repeat: no-repeat   
