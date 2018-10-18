@@ -1,5 +1,7 @@
 @import 'setting.sass';
 @import url('grid.css');
+@import url('owl.theme.default.min.css');
+@import url('owl.carousel.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 /*General style*/
@@ -7,13 +9,81 @@ html, body
 	font-size: $font-size
 	font-family: $font
 	
+.border-radius
+	-webkit-border-radius: 10px 
+	border-radius: 10px
+
+.owl-carousel 
+	.owl-item 
+		img
+			width: inherit 
+.squer1, .squer2
+	display: none
+	position: absolute
+	z-index: -1
+	-webkit-border-radius: 20px 
+	border-radius: 20px
+	-webkit-transform: rotate(45deg) 
+	-moz-transform: rotate(45deg) 
+	-ms-transform: rotate(45deg) 
+	-o-transform: rotate(45deg) 
+	transform: rotate(45deg)
+	-webkit-transform-origin: center 
+	-moz-transform-origin: center 
+	-ms-transform-origin: center 
+	-o-transform-origin: center 
+	transform-origin: center 
+	@media screen and (min-width: #{$dw-960})
+		display: block
+.squer2
+	width: 1300px
+	height: 800px
+	left: -65%
+	top: 20%
+	background: #f7fdfe 
+.squer1
+	width: 375px
+	height: 375px
+	left: -15%
+	background-image: -moz-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+.squer3
+	height: 720px
+	width: 60%
+	background: #f7fdfe 
+	position: absolute
+	top: -10%
+	right: 0
+	z-index: -1
 /*header menu style*/
 header
 	font-size: $a-size
 	position: fixed
 	width: 100%
 	z-index: 100
-
+.header-fixed
+	background: #FFF
+	.logo
+		color: #000 
+	nav.flex
+		a
+		 	color: #000
+		 	&:before
+		 		background: #05aef5  
+		 	&:hover
+		 		color: #05aef5 
+		li
+			&:last-child
+				a
+					@media screen and (min-width: #{$dw-960})
+						color: #FFF 
+						background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+						background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+						background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+						
+	.nav-toggle-line
+		background: #000 
 .logo //logotype styles
 	text-transform: uppercase
 	font-size: 26px
@@ -41,7 +111,6 @@ header
 		text-align: right
 		margin: -10px 14px 0px 0
 		 
-
 nav.flex //navigation styles
 	position: absolute
 	z-index: 100 
@@ -62,7 +131,7 @@ nav.flex //navigation styles
 	li
 		margin: 2px 0
 		@media screen and (min-width: #{$dw-960})
-			margin-right: 30px
+			margin-right: 26px
 		a //hyper text link styles
 			display: block
 			font-weight: 600 
@@ -103,7 +172,30 @@ nav.flex //navigation styles
 			&:hover
 				color: #fff
 				background: $accept
-			
+		&:last-child
+			a
+				background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+				background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+				background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+				color: #05aef5
+				-webkit-border-radius: 20px 
+				border-radius: 20px
+				padding: 10px
+				width: 140px
+				color: #FFF
+				margin: 10px auto
+				&:before
+					display: none
+				&:hover
+					color: #fff
+				@media screen and (min-width: #{$dw-960})
+					background: #FFF
+					margin: 0
+					width: inherit 
+					color: #05aef5
+					&:hover
+						color: #05aef5
+						
 /*nav-toggle-block*/
 .header-menu-open
 	background: #FFF 
@@ -197,7 +289,7 @@ nav.nav-open
 	-webkit-background-size: cover 
 	-o-background-size: cover 
 	background-size: cover 
-	min-height: 600px 
+	min-height: 700px 
 	position: relative
 .overlay
 	position: absolute
@@ -212,7 +304,7 @@ nav.nav-open
 	color: #FFF
 	position: relative
 	z-index: 2
-	text-align: center 
+	text-align: center
 	p
 		font-weight: 800
 		font-size: 25px
@@ -220,7 +312,7 @@ nav.nav-open
 		margin: 0 auto
 		@media screen and (min-width: #{$dw-640})
 			font-size: 40px
-			width: 60%
+			width: 70%
 	a
 		border: 2px solid #fff
 		padding: 10px 25px
@@ -232,9 +324,8 @@ nav.nav-open
 	position: relative
 	z-index: 2
 	background: #FFF
-	-webkit-border-radius: 10px 
-	border-radius: 10px
 	width: 85%
+	max-width: $display-width 
 	padding: 30px 0
 	margin: -190px auto 0
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
@@ -269,8 +360,6 @@ nav.nav-open
 			
 .about
 	section
-		-webkit-border-radius: 10px 
-		border-radius: 10px
 		padding: 40px
 		&:hover
 			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
@@ -283,13 +372,287 @@ nav.nav-open
 		&:nth-child(3)
 			.about-img
 				background-image: url('../img/Ellipse 1.png')
-	h4
-		margin: 10px 0 20px
-		font-weight: 800
-		font-size: $h4-size
+.inner-header
+	margin: 10px 0 20px
+	font-weight: 800
+	font-size: $h4-size
 	
 .about-img
 	width: 100%
 	height: 130px
 	background-position: center center
 	background-repeat: no-repeat   
+	
+/*****our story styles*****/
+.story
+	padding: 0
+	margin: 0 auto
+	max-width: 1200px
+	-webkit-border-radius: 0px 
+	border-radius: 0px 
+	@media screen and (min-width: #{$dw-960})
+		margin: 0
+		max-width: 95%
+	
+.slide-show
+	position: relative
+	overflow: hidden
+	-webkit-border-top-right-radius: 10px 
+	border-top-right-radius: 10px
+	-webkit-border-bottom-right-radius: 10px 
+	border-bottom-right-radius: 10px 
+
+
+	.slide-1
+		height: 100%
+		background: url('../img/img1.jpg') center center no-repeat
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover  
+	img
+		height: 100%
+		opacity: 0
+
+.story-content
+	padding: 15px
+	h4
+		font-weight: 700
+		&:before
+			margin-right: 35px 
+.story-text
+	font-weight: 700 
+	margin: 30px 0
+	display: block
+	
+
+/*****services styles******/
+
+.services-img
+	height: 60px
+	width: 100%
+	background-repeat: no-repeat
+	background-position: left
+	margin: 30px 0
+.services
+	position: relative
+	margin-top: 170px 
+	text-align: center
+	section
+		text-align: left 
+		margin: 30px 0 
+		&:nth-child(1)
+			.services-img
+				background-image: url("../img/Programming.png")
+		&:nth-child(2)
+			.services-img
+				background-image: url("../img/Forma 1.png") 
+		&:nth-child(3)
+			.services-img
+				background-image: url("../img/Forma 2.png") 
+		&:nth-child(4)
+			.services-img
+				background-image: url("../img/L0001.png") 
+		&:nth-child(5)
+			.services-img
+				background-image: url("../img/L0002.png")
+		&:nth-child(6)
+			.services-img
+				background-image: url("../img/Forma 3.png") 
+.services-content
+	background: #FFF 
+	width: 90%
+	margin: 0 auto
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
+	@media screen and (min-width: #{$dw-640})
+		width: 100%
+		
+
+/*****circul section styles******/
+.circul-section
+	padding: 20px
+	max-width: 1500px
+	margin: 150px auto
+	text-align: center
+	section
+		margin: 50px 0
+
+.circul
+	margin: 0 auto
+	text-align: center
+	font-size: 48px
+	font-weight: 800
+	color: $accept    
+	border: 1px solid
+	border-top-color: #05aef4
+	border-right-color: #05aef4
+	border-bottom-color: $accept
+	border-left-color: $accept  
+	width: 170px
+	height: 170px
+	-webkit-border-radius: 50% 
+	border-radius: 50%
+	padding: 44px 0
+	p
+		font-weight: 800 
+
+/*******slider portfolio styles*******/
+.portfolio
+	position: relative
+	margin-bottom: 200px 
+.slider-portolio
+	background-image: -moz-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	
+.slider-image 
+	img
+		width: 100%!important
+.slider-content
+	margin-left: auto
+	min-height: 700px
+	padding: 70px
+	color: #FFF 
+	img
+		width: 200px!important
+		height: 75px
+	h5
+		font-size: 18px
+		font-weight: 800
+		margin: 30px 0
+	span
+		text-transform: uppercase
+		display: block
+		margin-bottom: 30px
+	a
+		display: block
+		width: 170px
+		text-align: center
+		-webkit-border-radius: 50px 
+		border-radius: 50px 
+		padding: 12px 0
+		margin: 62px 0
+		background: #FFF
+		border: 1px solid #fff 
+		color: #04407C 
+		&:before
+			content: ""
+			display: block
+			width: 21px
+			height: 21px
+			float: left
+			background: url('../img/GooglePlay.png') center no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100%
+			margin: 5px -2px 0px 24px
+			-webkit-transition: 0.3s ease
+			-moz-transition: 0.3s ease
+			-ms-transition: 0.3s ease
+			-o-transition: 0.3s ease
+			transition: 0.3s ease
+		&:hover
+			color: #FFF
+			background: transparent  
+			&:before
+				background: url('../img/GooglePlayHover.png') center no-repeat
+				-webkit-background-size: 100% 
+				-o-background-size: 100% 
+				background-size: 100%
+		
+.owl-dots
+	position: absolute
+	display: flex
+	bottom: 0
+	left: 50%
+	z-index: 50 
+	margin-left: -36px
+	button.owl-dot
+		-webkit-flex-basis: 8%
+		flex-basis: 8% 
+		height: 9px
+		display: block
+		width: 25px
+		margin: 10px 
+		-webkit-transition: all 0.3s ease 
+		-moz-transition: all 0.3s ease 
+		-ms-transition: all 0.3s ease 
+		-o-transition: all 0.3s ease 
+		transition: all 0.3s ease
+		&:hover
+			-webkit-flex-basis: 100% 
+			flex-basis: 100%
+			-webkit-border-radius: 20px 
+			border-radius: 20px
+			span
+				-webkit-border-radius: 20px 
+				border-radius: 20px 
+		span
+			-webkit-flex-basis: 100% 
+			flex-basis: 100%
+			display: block
+			height: 100%
+			-webkit-border-radius: 100% 
+			border-radius: 100% 
+			background: #FFF
+	button.active
+		-webkit-flex-basis: 100% 
+		flex-basis: 100%
+		-webkit-border-radius: 20px 
+		border-radius: 20px
+		span
+			-webkit-border-radius: 20px 
+			border-radius: 20px 
+
+
+.owl-nav [class*=owl-]:hover
+	background: none 
+.portfolio .owl-nav
+	position: absolute
+	bottom: 50%
+	width: 100%
+	display: none
+	justify-content: space-between
+	@media screen and (min-width: #{$dw-960})
+		display: flex
+	span
+		font-size: 50px
+		margin: 0 26px
+		color: #FFF
+		
+
+/*******users styles*******/
+.users
+	width: 300px
+	p
+		margin: 20px 0
+		span
+			margin: 20px 0
+	span
+		display: block
+.user-foto
+	width: 100px
+	height: 100px
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
+	background-repeat: no-repeat
+	margin-right: 30px 
+.user-info
+	h4
+		font-size: 20px
+		font-weight: 800
+	span
+		&:nth-child(3)
+			color: #05aef5 
+.user-1
+	.user-foto
+		background-image: url('../img/foto1.jpg')
+		background-position: -178px -55px
+.user-2
+	.user-foto
+		background-image: url('../img/foto2.jpg')
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100% 
