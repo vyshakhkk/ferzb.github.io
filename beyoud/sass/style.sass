@@ -2,6 +2,8 @@
 @import url('grid.css');
 @import url('owl.theme.default.min.css');
 @import url('owl.carousel.min.css');
+@import url('remodal.css');
+@import url('remodal-default-theme.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 /*General style*/
@@ -56,6 +58,34 @@ html, body
 	top: -10%
 	right: 0
 	z-index: -1
+.squer4
+	display: none
+	width: 65%
+	height: 400px
+	left: -20px
+	top: -100px
+	background-image: -moz-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	position: absolute
+	-webkit-border-radius: 20px 
+	border-radius: 20px 
+	@media screen and (min-width: #{$dw-960})
+		display: block
+.squer5
+	background-image: -moz-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	position: absolute
+	width: 50%
+	height: 50%
+	right: 0 
+	z-index: -1
+	-webkit-border-top-left-radius: 20px 
+	border-top-left-radius: 20px
+	@media screen and (min-width: #{$dw-640})
+		height: 100%
+
 /*header menu style*/
 header
 	font-size: $a-size
@@ -131,7 +161,7 @@ nav.flex //navigation styles
 	li
 		margin: 2px 0
 		@media screen and (min-width: #{$dw-960})
-			margin-right: 26px
+			margin-right: 24px
 		a //hyper text link styles
 			display: block
 			font-weight: 600 
@@ -172,6 +202,7 @@ nav.flex //navigation styles
 			&:hover
 				color: #fff
 				background: $accept
+			
 		&:last-child
 			a
 				background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
@@ -195,7 +226,9 @@ nav.flex //navigation styles
 					color: #05aef5
 					&:hover
 						color: #05aef5
-						
+
+.button
+	cursor: pointer						
 /*nav-toggle-block*/
 .header-menu-open
 	background: #FFF 
@@ -498,7 +531,9 @@ nav.nav-open
 /*******slider portfolio styles*******/
 .portfolio
 	position: relative
-	margin-bottom: 200px 
+	margin-bottom: 270px 
+	.owl-dots
+		bottom: 50px
 .slider-portolio
 	background-image: -moz-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
 	background-image: -webkit-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
@@ -565,10 +600,10 @@ nav.nav-open
 .owl-dots
 	position: absolute
 	display: flex
-	bottom: 0
+	bottom: 0px
 	left: 50%
 	z-index: 50 
-	margin-left: -36px
+	margin-left: -67px
 	button.owl-dot
 		-webkit-flex-basis: 8%
 		flex-basis: 8% 
@@ -624,14 +659,58 @@ nav.nav-open
 		
 
 /*******users styles*******/
+.solutions
+	text-align: center
+	position: relative
+	.squer3
+		top: -170px
+	h3
+		color: #000
+		margin-bottom: 30px 
+		font-size: 36px  
+		position: relative
+		z-index: 20
+		@media screen and (min-width: #{$dw-960})
+			color: #fff 
+		
+	.container
+		text-align: left 
 .users
-	width: 300px
+	margin: 10px
+	padding: 60px 20%
+	background: #fff 
+	-webkit-border-radius: 20px 
+	border-radius: 20px
+	box-shadow: 0px 0px 40px -8px rgba(0, 0, 0, 0.3)
+	position: relative
+	z-index: 50
 	p
 		margin: 20px 0
 		span
 			margin: 20px 0
 	span
 		display: block
+.user-slider
+	.owl-nav
+		display: none
+	.owl-dots
+		display: flex
+		position: static
+		width: 200px
+		margin: 20px auto
+		@media screen and (min-width: #{$dw-640})
+			display: none
+		.owl-dot span
+			background: #1ad4b7 
+	.owl-carousel
+		.owl-nav
+			display: none
+			@media screen and (min-width: #{$dw-640})
+				display: block
+			button
+				font-size: 60px
+			.owl-prev
+				margin-right: 190px 
 .user-foto
 	width: 100px
 	height: 100px
@@ -656,3 +735,146 @@ nav.nav-open
 		-webkit-background-size: 100% 
 		-o-background-size: 100% 
 		background-size: 100% 
+		
+/*****top firms styles******/
+
+.top-firms
+	margin-top: 200px
+	position: relative
+	p
+		display: block
+		margin: 20px 0
+	.squer1
+		bottom: 0
+		left: -30%
+.firm
+	text-align: center
+	margin: 0 auto 26px  
+	width: 230px
+	padding: 40px 0
+	box-shadow: 0px 0px 80px -5px rgba(0, 0, 0, 0.1)
+	-webkit-transition: transform 0.3s ease 
+	-moz-transition: transform 0.3s ease 
+	-ms-transition: transform 0.3s ease 
+	-o-transition: transform 0.3s ease 
+	transition: transform 0.3s ease 
+	a
+		font-weight: 700
+		color: #BDBDBD
+		font-size: 16px
+		margin: 16px 0 
+		display: block
+	p
+	 	font-size: 36px
+	 	color: #1BDEC0
+	 	font-weight: 800
+	 	margin: 0 
+	&:hover
+		-webkit-transform: translateY(-20px) 
+		-moz-transform: translateY(-20px) 
+		-ms-transform: translateY(-20px) 
+		-o-transform: translateY(-20px) 
+		transform: translateY(-20px)   
+.img-firm
+	margin: 0 auto
+	width: 130px
+	height: 130px
+	
+.up-div
+	margin-top: 0px 
+	@media screen and (min-width: #{$dw-640})
+		margin-top: -80px
+		
+/*contact*/
+.contact
+	position: relative
+.contact-block
+	background: #FFF 
+	text-align: center 
+	max-width: 970px
+	margin: 50px auto
+	padding: 60px 40px
+	-webkit-border-radius: 20px 
+	border-radius: 20px 
+	box-shadow: 0px 0px 80px -5px rgba(0, 0, 0, 0.1)
+	form
+		max-width: 570px
+		margin: 0 auto
+		textarea, input
+			display: block
+			margin: 7px 0
+			width: 100%
+			padding: 20px 18px
+			-webkit-border-radius: 20px 
+			border-radius: 20px
+			border: 1px solid #bdbdbd 
+	fieldset
+		border: none
+.submit-message
+	cursor: pointer
+	border: none 
+	color: #FFF
+	-webkit-border-radius: 20px 
+	border-radius: 20px  
+	display: block
+	width: 170px
+	height: 50px
+	text-align: center
+	margin: 35px auto
+	font-weight: 600
+	font-size: 16px 
+	background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+.soc
+	color: #000
+	margin-top: 30px
+	@media screen and (min-width: #{$dw-640})
+		color: #FFF 
+		margin-top: 0 
+	div
+		max-width: 400px 
+	a
+		display: flex
+		margin: 0px 20px 0 0
+		&:before
+			content: ""
+			display: inline-block
+			width: 30px
+			height: 30px
+			margin-right: 20px
+			background-repeat: no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100% 
+		&:nth-child(1)
+			&:before
+				background-image: url('../img/Fb.png') 
+		&:nth-child(2)
+			&:before
+				background-image: url('../img/Lnkdn.png') 
+		@media screen and (min-width: #{$dw-640})
+			&:nth-child(1)
+				&:before
+					background-image: url('../img/facebook.png') 
+			&:nth-child(2)
+				&:before
+					background-image: url('../img/linkidin.png') 
+		p
+			display: none
+			@media screen and (min-width: #{$dw-640})
+				display: inline
+				
+/*footer*/
+footer
+	text-align: left
+	padding: 40px 10px
+	font-size: 16px
+	color: #BDBDBD 
+	@media screen and (min-width: #{$dw-640})
+		text-align: center
+
+/*pop-up*/
+
+.remodal
+	background: none 

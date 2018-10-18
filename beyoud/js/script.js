@@ -9,12 +9,17 @@ $(function() {
 	$(window).scroll(function(){
 		if  ($(window).scrollTop() > 100)
 			$('header').addClass('header-fixed');
-
 		else
 			$('header').removeClass('header-fixed');
-
 	});
 });
+$(".nav-item").on("click","a", function (event) {
+        event.preventDefault();
+
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top-120}, 1500);
+    });
 var time = 2, show = 1 ;
 	$(window).scroll(function() {
 		$('#counter').each(function(){
@@ -55,8 +60,63 @@ $('.owl-carousel').owlCarousel({
 });
 
 $('.user-slider').owlCarousel({
-	items:2,
-    loop:false,
-    margin:10,
-    nav:false,
+	loop:true,
+	nav:false,
+	margin:30,
+	dots:false,
+	responsiveClass:true,
+	responsive:{
+		0:{
+			items:1
+		},
+		960:{
+			items:2
+		},
+	}
 })
+function validate() {
+	var userName = $('#userName');
+	var userEmail = $('#userEmail');
+	var userPhone = $('#userPhone');
+
+	if(!userName.value) {
+		userName.css('border', '1px solid red');
+		return false;
+	}
+
+	if(!userEmail.value) {
+		userEmail.css('border', '1px solid red');
+		return false;
+	}
+	if(!userPhone.value) {
+		userPhone.css('border', '1px solid red');
+		return false;
+	}
+
+	return true;
+
+}
+
+function validateRemodal() {
+	var userNameRemodal = $('#userNameRemodal');
+	var userEmailRemodal = $('#userEmailRemodal');
+	var userPhoneRemodal = $('#userPhoneRemodal');
+
+	if(!userName.value) {
+		userNameRemodal.css('border', '1px solid red');
+		return false;
+	}
+
+	if(!userEmail.value) {
+		userEmailRemodal.css('border', '1px solid red');
+		return false;
+	}
+	if(!userPhone.value) {
+		userPhoneRemodal.css('border', '1px solid red');
+		return false;
+	}
+
+	return true;
+
+}
+
