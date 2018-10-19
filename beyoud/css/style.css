@@ -421,7 +421,7 @@ nav.nav-open {
 }
 
 .partners a:nth-child(1):hover {
-  background-image: url("../img/BuyRailingsHover.png");
+  background-image: url("../img/buyRailingsHover.png");
 }
 
 .partners a:nth-child(2) {
