@@ -130,6 +130,47 @@ ul
 	@media screen and (min-width: #{$dw-640})
 		-webkit-justify-content: center
 		justify-content: center
+
+/*flex-block semi middle device*/
+
+.flex-smd-column
+	@media screen and (min-width: #{$dw-780})
+		-webkit-flex-direction: column 
+		-ms-flex-direction: column 
+		flex-direction: column
+	    
+.flex-smd-row
+	@media screen and (min-width: #{$dw-780})
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+
+.flex-smd-row-reverse
+	@media screen and (min-width: #{$dw-780})
+		-webkit-flex-direction: row-reverse
+		-ms-flex-direction: row-reverse
+		flex-direction: row-reverse
+	
+.flex-smd-column-reverse
+	@media screen and (min-width: #{$dw-780})
+		-webkit-flex-direction: column-reverse
+		-ms-flex-direction: column-reverse
+		flex-direction: column-reverse
+
+.flex-smd-sa
+	@media screen and (min-width: #{$dw-780})
+		-webkit-justify-content: space-around
+		justify-content: space-around
+	 
+.flex-smd-sb
+	@media screen and (min-width: #{$dw-780})
+		-webkit-justify-content: space-between
+		justify-content: space-between
+	    
+.flex-smd-center
+	@media screen and (min-width: #{$dw-780})
+		-webkit-justify-content: center
+		justify-content: center
 	
 /*flex-block large device*/
 
@@ -267,6 +308,33 @@ ul
 .col-md-12
 	+device-col($dw-640, $col-12, $offset)
 
+
+/*grid layout semimiddle device*/
+
+.col-smd-1
+	+device-col($dw-780, $col-1, $offset)
+.col-smd-2
+	+device-col($dw-780, $col-2, $offset)
+.col-smd-3
+	+device-col($dw-780, $col-3, $offset)
+.col-smd-4
+	+device-col($dw-780, $col-4, $offset)
+.col-smd-5
+	+device-col($dw-780, $col-5, $offset)
+.col-smd-6
+	+device-col($dw-780, $col-6, $offset)
+.col-smd-7
+	+device-col($dw-780, $col-7, $offset)
+.col-smd-8
+	+device-col($dw-780, $col-8, $offset)
+.col-smd-9
+	+device-col($dw-780, $col-9, $offset)
+.col-msd-10
+	+device-col($dw-780, $col-10, $offset)
+.col-msd-11
+	+device-col($dw-780, $col-11, $offset)
+.col-msd-12
+	+device-col($dw-780, $col-12, $offset)
 /*grid layout large device*/
 
 .col-ld-1
@@ -374,6 +442,33 @@ ul
 	+device-grid($dw-640, $col-11, $offset)
 .grid-md-12
 	+device-grid($dw-640, $col-12, $offset)
+	
+/*grid layout semi middle device*/
+
+.grid-smd-1
+	+device-grid($dw-780, $col-1, $offset)
+.grid-smd-2
+	+device-grid($dw-780, $col-2, $offset)
+.grid-smd-3
+	+device-grid($dw-780, $col-3, $offset)
+.grid-smd-4
+	+device-grid($dw-780, $col-4, $offset)
+.grid-smd-5
+	+device-grid($dw-780, $col-5, $offset)
+.grid-smd-6
+	+device-grid($dw-780, $col-6, $offset)
+.grid-smd-7
+	+device-grid($dw-780, $col-7, $offset)
+.grid-smd-8
+	+device-grid($dw-780, $col-8, $offset)
+.grid-smd-9
+	+device-grid($dw-780, $col-9, $offset)
+.grid-msd-10
+	+device-grid($dw-780, $col-10, $offset)
+.grid-msd-11
+	+device-grid($dw-780, $col-11, $offset)
+.grid-msd-12
+	+device-grid($dw-780, $col-12, $offset)
 
 /*grid layout large device*/
 

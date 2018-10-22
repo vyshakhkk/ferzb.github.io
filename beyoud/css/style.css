@@ -1397,7 +1397,9 @@ footer {
   }
 
   .header-fixed nav.flex a.button:hover {
-    background: #1bdec0;
+    background-image: -moz-linear-gradient(100deg, #1bdec0 0%, #1bdec0 100%);
+    background-image: -webkit-linear-gradient(100deg, #1bdec0 0%, #1bdec0 100%);
+    background-image: -ms-linear-gradient(100deg, #1bdec0 0%, #1bdec0 100%);
   }
 
   .block-toggle {

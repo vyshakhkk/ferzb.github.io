@@ -9,6 +9,7 @@
 html, body
 	font-size: $font-size
 	font-family: $font
+	color: $text-color 
 	
 .border-radius
 	-webkit-border-radius: 10px 
@@ -52,7 +53,7 @@ html, body
 .squer3
 	height: 720px
 	width: 60%
-	background: #f7fdfe 
+	background: #f8f9fd
 	position: absolute
 	top: -10%
 	right: 0
@@ -68,7 +69,21 @@ html, body
 	background-image: -ms-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
 	position: absolute
 	-webkit-border-radius: 20px 
-	border-radius: 20px 
+	border-radius: 20px
+	&:before
+		content: ""
+		display: block
+		width: 88px
+		margin-left: auto
+		margin-right: 370px
+		margin-top: 80px
+		opacity: .2 
+		height: 69px
+		background-image: url('../img/upDots.png')
+		background-repeat: no-repeat
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100%
 	@media screen and (min-width: #{$dw-960})
 		display: block
 .squer5
@@ -105,45 +120,23 @@ html, body
 	-ms-transform-origin: center 
 	-o-transform-origin: center 
 	transform-origin: center
-	width: 400px
-	height: 400px
-	position: relative
+	width: 300px
+	height: 300px
+	position: absolute
 	z-index: -2
-	margin: 0 auto
-	top: 70px
-	left: -28px
-	@media screen and (min-width: #{$dw-960})
-		margin: 0
-		top: 0
-		left: 0
+	top: 50%
+	left: 50%
+	margin-left: -150px 
+	margin-top: -150px 
+
+		
 /*header menu style*/
 header
 	font-size: $a-size
 	position: fixed
 	width: 100%
 	z-index: 100
-.header-fixed
-	background: #FFF
-	.logo
-		background-image: url('../img/Final-logo-gray.png') 
-	nav.flex
-		a
-		 	color: #000
-		 	&:before
-		 		background: #05aef5  
-		 	&:hover
-		 		color: #05aef5 
-		li
-			&:last-child
-				a
-					@media screen and (min-width: #{$dw-960})
-						color: #FFF 
-						background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
-						background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
-						background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
-						
-	.nav-toggle-line
-		background: #000 
+
 .logo //logotype styles
 	margin-top: 6px
 	background-image: url('../img/Final-logo-white.png') 
@@ -215,33 +208,62 @@ nav.flex //navigation styles
 			&:hover
 				color: #fff
 				background: $accept
-			
-		&:last-child
-			a
+
+nav.flex li a.button
+	cursor: pointer
+	background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	color: #05aef5
+	-webkit-border-radius: 40px 
+	border-radius: 40px
+	border: 1px solid #fff 
+	padding: 9px
+	width: 140px
+	color: #FFF
+	margin: 10px auto
+	&:before
+		display: none
+		content: none
+	&:hover
+		color: #fff
+		background: $accept 
+	@media screen and (min-width: #{$dw-960})
+		background-image: none
+		background-color: #FFF 
+		margin: 0
+		width: inherit 
+		color: #05aef5
+		&:hover
+			color: #fff
+			border-color: #FFF
+			background: transparent 
+					
+.header-fixed
+	background: #FFF
+	.logo
+		background-image: url('../img/Final-logo-gray.png') 
+	nav.flex
+		a
+		 	color: $text-color
+		 	&:before
+		 		background: #05aef5  
+		 	@media screen and (min-width: #{$dw-960})
+			 	&:hover
+			 		color: #05aef5 
+		a.button
+			@media screen and (min-width: #{$dw-960})
+				color: #FFF 
 				background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
 				background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
 				background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
-				color: #05aef5
-				-webkit-border-radius: 20px 
-				border-radius: 20px
-				padding: 10px
-				width: 140px
-				color: #FFF
-				margin: 10px auto
-				&:before
-					display: none
 				&:hover
-					color: #fff
-				@media screen and (min-width: #{$dw-960})
-					background: #FFF
-					margin: 0
-					width: inherit 
-					color: #05aef5
-					&:hover
-						color: #05aef5
-
-.button
-	cursor: pointer						
+					background-image: -moz-linear-gradient( 100deg, $accept 0%, $accept 100%)
+					background-image: -webkit-linear-gradient( 100deg, $accept 0%, $accept 100%)
+					background-image: -ms-linear-gradient( 100deg, $accept 0%, $accept 100%)
+	
+	.nav-toggle-line
+		background: #000 		
 /*nav-toggle-block*/
 .header-menu-open
 	background: #FFF 
@@ -355,6 +377,7 @@ nav.nav-open
 		font-weight: 800
 		font-size: 25px
 		width: 90%
+		max-width: 1000px 
 		margin: 0 auto
 		@media screen and (min-width: #{$dw-640})
 			font-size: 40px
@@ -378,9 +401,9 @@ nav.nav-open
 	background: #FFF
 	width: 85%
 	max-width: $display-width 
-	padding: 30px 0
+	padding: 75px 0
 	margin: -190px auto 0
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
+	box-shadow: 0px 20px 120px 0px rgba(0, 0, 0, 0.1)
 	a //partners links and hovers
 		display: block
 		width: 160px
@@ -423,13 +446,14 @@ nav.nav-open
 
 /*****about styles*******/
 .content-inner
+	margin-bottom: 80px
 	.container
 		text-align: center
 		
 .header-section
 	display: inline-block
 	font-size: $h3-size
-	margin: 16px 0
+	margin: 16px 0 50px
 	&:before
 		content: ""
 		float: left
@@ -439,7 +463,7 @@ nav.nav-open
 		background: $accept
 		-webkit-border-radius: 10px 
 		border-radius: 10px 
-		margin: 10px 57px 0 0
+		margin: 10px 40px 0 0
 		@media screen and (min-width: #{$dw-640})
 			display: block 
 			
@@ -452,7 +476,7 @@ nav.nav-open
 		-o-transition: 0.3s ease-out 
 		transition: 0.3s ease-out 
 		&:hover
-			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
+			box-shadow: 0px 20px 120px 0px rgba(0, 0, 0, 0.1)
 		&:nth-child(1)
 			.about-img
 				background-image: url('../img/Ellipse 1.png')
@@ -487,10 +511,13 @@ nav.nav-open
 .slide-show
 	position: relative
 	overflow: hidden
-	-webkit-border-top-right-radius: 10px 
-	border-top-right-radius: 10px
-	-webkit-border-bottom-right-radius: 10px 
-	border-bottom-right-radius: 10px 
+	-webkit-border-radius: 0px 
+	border-radius: 0px 
+	@media screen and (min-width: #{$dw-960})
+		-webkit-border-top-right-radius: 10px 
+		border-top-right-radius: 10px
+		-webkit-border-bottom-right-radius: 10px 
+		border-bottom-right-radius: 10px 
 
 
 	.slide-1
@@ -505,13 +532,17 @@ nav.nav-open
 
 .story-content
 	padding: 15px
+	max-width: 570px
+	margin: 0
+	@media screen and (min-width: #{$dw-960})
+		margin-left: 8%
 	h4
 		font-weight: 700
 		&:before
 			margin-right: 35px 
 .story-text
 	font-weight: 700 
-	margin: 30px 0
+	margin: 0 0 30px
 	display: block
 	
 
@@ -532,14 +563,12 @@ nav.nav-open
 		margin: 30px 0
 		padding: 0 16px 16px
 		-webkit-border-radius: 10px 
-		 border-radius: 10px  
-		-webkit-transition: 0.3s ease-out 
-		-moz-transition: 0.3s ease-out 
-		-ms-transition: 0.3s ease-out 
-		-o-transition: 0.3s ease-out 
-		transition: 0.3s ease-out 
-		&:hover
-			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
+		border-radius: 10px  
+		-webkit-transition: background-image 0.3s ease-out 
+		-moz-transition: background-image 0.3s ease-out 
+		-ms-transition: background-image 0.3s ease-out 
+		-o-transition: background-image 0.3s ease-out 
+		transition: background-image 0.3s ease-out 
 		&:nth-child(1)
 			.services-img
 				background-image: url("../img/Programming.png")
@@ -557,14 +586,42 @@ nav.nav-open
 				background-image: url("../img/L0002.png")
 		&:nth-child(6)
 			.services-img
-				background-image: url("../img/Forma 3.png") 
+				background-image: url("../img/Forma 3.png")
+		&:hover
+			background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+			background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+			background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+			.inner-header
+				color: #FFF
+			p
+				color: #FFF
+			&:nth-child(1)
+			.services-img
+				background-image: url("../img/ProgrammingHover.png")
+			&:nth-child(2)
+				.services-img
+					background-image: url("../img/Forma-1-hover.png") 
+			&:nth-child(3)
+				.services-img
+					background-image: url("../img/Forma-2-hover.png") 
+			&:nth-child(4)
+				.services-img
+					background-image: url("../img/L0001Hover.png") 
+			&:nth-child(5)
+				.services-img
+					background-image: url("../img/L0002Hover.png")
+			&:nth-child(6)
+				.services-img
+					background-image: url("../img/Forma-3-hover.png")
 .services-content
 	background: #FFF 
 	width: 90%
 	margin: 0 auto
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3)
+	box-shadow: 0px 20px 120px 0px rgba(0, 0, 0, 0.1)
 	@media screen and (min-width: #{$dw-640})
 		width: 100%
+	@media screen and (min-width: #{$dw-480})
+		padding: 30px 84px
 		
 
 /*****circul section styles******/
@@ -576,6 +633,7 @@ nav.nav-open
 	margin: 150px auto
 	text-align: center
 	position: relative
+	overflow: hidden
 	section
 		position: relative
 		margin: 50px 0
@@ -611,19 +669,22 @@ nav.nav-open
 	.owl-dots
 		bottom: 50px
 .slider-portolio
+	max-height: auto
 	background-image: -moz-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
 	background-image: -webkit-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
 	background-image: -ms-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
 	-webkit-background-size: cover 
 	-o-background-size: cover 
 	background-size: cover
+	@media screen and (min-width: #{$dw-960})
+		max-height: 900px 
 	
 .slider-image 
 	img
 		width: 100%!important
 .slider-content
-	margin-left: auto
 	min-height: 700px
+	max-width: 700px 
 	padding: 70px
 	color: #FFF 
 	img
@@ -681,9 +742,9 @@ nav.nav-open
 	z-index: 50 
 	margin-left: -67px
 	button.owl-dot
-		-webkit-flex-basis: 8%
-		flex-basis: 8% 
-		height: 9px
+		-webkit-flex-basis: 19%
+		flex-basis: 19% 
+		height: 10px
 		display: block
 		width: 25px
 		margin: 10px 
@@ -740,6 +801,34 @@ nav.nav-open
 	position: relative
 	.squer3
 		top: -170px
+		&:before
+			content: ""
+			display: block
+			width: 88px
+			position: absolute
+			top: 40px
+			left: -185px
+			opacity: .1 
+			height: 69px
+			background-image: url('../img/upDots.png')
+			background-repeat: no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100%
+			-webkit-transform: none 
+			-moz-transform: none 
+			-ms-transform: none 
+			-o-transform: none 
+			transform: none 
+			@media screen and (min-width: #{$dw-960})
+				top: 22%
+				left: 60%
+				-webkit-transform: rotate(180deg) 
+				-moz-transform: rotate(180deg) 
+				-ms-transform: rotate(180deg) 
+				-o-transform: rotate(180deg) 
+				transform: rotate(180deg) 
+
 	h3
 		color: #000
 		margin-bottom: 30px 
@@ -753,6 +842,7 @@ nav.nav-open
 		text-align: left 
 .users
 	margin: 10px
+	display: block
 	padding: 60px 20%
 	background: #fff 
 	-webkit-border-radius: 20px 
@@ -776,8 +866,10 @@ nav.nav-open
 		margin: 20px auto
 		@media screen and (min-width: #{$dw-640})
 			display: none
-		.owl-dot span
-			background: #1ad4b7 
+		.owl-dot
+			height: 14px
+			span
+				background: #1ad4b7 
 	.owl-carousel
 		.owl-nav
 			display: none
@@ -816,24 +908,27 @@ nav.nav-open
 
 .top-firms
 	margin-top: 200px
+	margin-bottom: 74px 
 	position: relative
 	p
 		display: block
-		margin: 20px 0
+		margin: 0px 0 20px
 	.squer1
 		bottom: 0
 		left: -30%
 .firm
 	text-align: center
 	margin: 0 auto 26px  
-	width: 230px
+	width: 100%
 	padding: 40px 0
 	box-shadow: 0px 0px 80px -5px rgba(0, 0, 0, 0.1)
 	-webkit-transition: transform 0.3s ease 
 	-moz-transition: transform 0.3s ease 
 	-ms-transition: transform 0.3s ease 
 	-o-transition: transform 0.3s ease 
-	transition: transform 0.3s ease 
+	transition: transform 0.3s ease
+	@media screen and (min-width: #{$dw-480})
+		width: 230px
 	a
 		font-weight: 700
 		color: #BDBDBD
@@ -864,6 +959,14 @@ nav.nav-open
 /*contact*/
 .contact
 	position: relative
+	padding: 20px 0px
+	.squer3
+		bottom: 0
+		left: 0
+		top: auto
+		width: 100%
+		@media screen and (min-width: #{$dw-640})
+			width: 50%
 .contact-block
 	background: #FFF 
 	text-align: center 
@@ -890,18 +993,24 @@ nav.nav-open
 	cursor: pointer
 	border: none 
 	color: #FFF
-	-webkit-border-radius: 20px 
-	border-radius: 20px  
+	-webkit-border-radius: 40px 
+	border-radius: 40px  
 	display: block
 	width: 170px
 	height: 50px
 	text-align: center
 	margin: 35px auto
 	font-weight: 600
-	font-size: 16px 
+	font-size: 16px
+	box-shadow: 0px 10px 40px -6px rgba(0, 0, 0, 0.2)
 	background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
 	background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
 	background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+
+.address
+	font-size: 16px
+	.inner-header
+		font-size: 16px 
 .soc
 	color: #000
 	margin-top: 30px
