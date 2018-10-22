@@ -1,0 +1,1063 @@
+@import 'setting.sass';
+@import url('grid.css');
+@import url('owl.carousel.min.css');
+@import url('remodal.css');
+@import url('remodal-default-theme.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+/*General style*/
+html, body
+	font-size: $font-size
+	font-family: $font
+	color: $text-color 
+	
+.border-radius
+	-webkit-border-radius: 10px 
+	border-radius: 10px
+
+.owl-carousel 
+	.owl-item 
+		img
+			width: inherit 
+.squer1, .squer2
+	display: none
+	position: absolute
+	z-index: -1
+	-webkit-border-radius: 20px 
+	border-radius: 20px
+	-webkit-transform: rotate(45deg) 
+	-moz-transform: rotate(45deg) 
+	-ms-transform: rotate(45deg) 
+	-o-transform: rotate(45deg) 
+	transform: rotate(45deg)
+	-webkit-transform-origin: center 
+	-moz-transform-origin: center 
+	-ms-transform-origin: center 
+	-o-transform-origin: center 
+	transform-origin: center 
+	@media screen and (min-width: #{$dw-960})
+		display: block
+.squer2
+	width: 1300px
+	height: 800px
+	left: -65%
+	top: 20%
+	background: #f7fdfe 
+.squer1
+	width: 375px
+	height: 375px
+	left: -15%
+	background-image: -moz-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+.squer3
+	height: 720px
+	width: 60%
+	background: #f8f9fd
+	position: absolute
+	top: -10%
+	right: 0
+	z-index: -1
+.squer4
+	display: none
+	width: 65%
+	height: 400px
+	left: -20px
+	top: -100px
+	background-image: -moz-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	position: absolute
+	-webkit-border-radius: 20px 
+	border-radius: 20px
+	&:before
+		content: ""
+		display: block
+		width: 88px
+		margin-left: auto
+		margin-right: 370px
+		margin-top: 80px
+		opacity: .2 
+		height: 69px
+		background-image: url('../img/upDots.png')
+		background-repeat: no-repeat
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100%
+	@media screen and (min-width: #{$dw-960})
+		display: block
+.squer5
+	background-image: -moz-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	position: absolute
+	width: 50%
+	height: 50%
+	right: 0 
+	z-index: -1
+	-webkit-border-top-left-radius: 20px 
+	border-top-left-radius: 20px
+	@media screen and (min-width: #{$dw-640})
+		height: 100%
+.squer6
+	width: 100%
+	height: 65%
+	background: #f8fdff
+	@media screen and (min-width: #{$dw-960})
+		width: 65%
+		height: 100%
+.squer7
+	background: #F8F9FD
+	-webkit-border-radius: 20px 
+	border-radius: 20px
+	-webkit-transform: rotate(45deg) 
+	-moz-transform: rotate(45deg) 
+	-ms-transform: rotate(45deg) 
+	-o-transform: rotate(45deg) 
+	transform: rotate(45deg)
+	-webkit-transform-origin: center 
+	-moz-transform-origin: center 
+	-ms-transform-origin: center 
+	-o-transform-origin: center 
+	transform-origin: center
+	width: 300px
+	height: 300px
+	position: absolute
+	z-index: -2
+	top: 50%
+	left: 50%
+	margin-left: -150px 
+	margin-top: -150px 
+
+		
+/*header menu style*/
+header
+	font-size: $a-size
+	position: fixed
+	width: 100%
+	z-index: 100
+
+.logo //logotype styles
+	margin-top: 6px
+	background-image: url('../img/Final-logo-white.png') 
+	width: 200px
+	height: 36px
+	-webkit-background-size: 100% 
+	-o-background-size: 100% 
+	background-size: 100% 
+	background-repeat: no-repeat 
+		 
+nav.flex //navigation styles
+	position: absolute
+	z-index: 100 
+	width: 100%
+	top: 75%
+	left: 0
+	padding: 0 10px
+	text-align: center 
+	display: none
+	opacity: 0
+	@media screen and (min-width: #{$dw-960})
+		position: static
+		width: auto 
+		display: flex
+		text-align: left
+		opacity: 1
+		color: #FFF 
+	li
+		margin: 2px 0
+		@media screen and (min-width: #{$dw-960})
+			margin-right: 24px
+		a //hyper text link styles
+			display: block
+			font-weight: 600 
+			padding: 10px 0px
+			@media screen and (min-width: #{$dw-960})
+				vertical-align: middle
+				-webkit-transform: translateZ(0)
+				transform: translateZ(0)
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+				-webkit-backface-visibility: hidden
+				backface-visibility: hidden
+				-moz-osx-font-smoothing: grayscale
+				position: relative
+				overflow: hidden
+				&:before
+					content: ""
+					position: absolute
+					z-index: -1
+					left: 50%
+					right: 50%
+					bottom: 0
+					background: #fff
+					height: 4px
+					-webkit-border-radius: 10px 
+					border-radius: 10px 
+					-webkit-transition-property: left, right
+					transition-property: left, right
+					-webkit-transition-duration: 0.3s
+					transition-duration: 0.3s
+					-webkit-transition-timing-function: ease-out
+					transition-timing-function: ease-out
+				&:hover
+					background: none
+					color: inherit  
+					&:before
+						left: 20%
+						right: 20%
+			&:hover
+				color: #fff
+				background: $accept
+
+nav.flex li a.button
+	cursor: pointer
+	background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	color: #05aef5
+	-webkit-border-radius: 40px 
+	border-radius: 40px
+	border: 1px solid #fff 
+	padding: 9px
+	width: 140px
+	color: #FFF
+	margin: 10px auto
+	&:before
+		display: none
+		content: none
+	&:hover
+		color: #fff
+		background: $accept 
+	@media screen and (min-width: #{$dw-960})
+		background-image: none
+		background-color: #FFF 
+		margin: 0
+		width: inherit 
+		color: #05aef5
+		&:hover
+			color: #fff
+			border-color: #FFF
+			background: transparent 
+					
+.header-fixed
+	background: #FFF
+	.logo
+		background-image: url('../img/Final-logo-gray.png') 
+	nav.flex
+		a
+		 	color: $text-color
+		 	&:before
+		 		background: #05aef5  
+		 	@media screen and (min-width: #{$dw-960})
+			 	&:hover
+			 		color: #05aef5 
+		a.button
+			@media screen and (min-width: #{$dw-960})
+				color: #FFF 
+				background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+				background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+				background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+				&:hover
+					background: $accept
+	
+	.nav-toggle-line
+		background: #000 		
+/*nav-toggle-block*/
+.header-menu-open
+	background: #FFF 
+	.logo
+		background-image: url('../img/Final-logo-gray.png') 
+.block-toggle
+	display: block
+	@media screen and (min-width: #{$dw-960})
+		display: none
+		
+.nav-toggle-block
+	margin: 15px
+	cursor: pointer
+	display: block
+	width: 29px
+	height: 27px
+	position: relative
+	-webkit-transition: all 0.35s ease 
+	-moz-transition: all 0.35s ease 
+	-ms-transition: all 0.35s ease 
+	-o-transition: all 0.35s ease 
+	transition: all 0.35s ease
+	
+.open
+	.nav-toggle-line
+		background: #888
+		
+nav.nav-open
+	display: block
+	opacity: 1
+	background: #FFF 
+	-webkit-transition: opacity 0.5s ease 
+	-moz-transition: opacity 0.5s ease 
+	-ms-transition: opacity 0.5s ease 
+	-o-transition: opacity 0.5s ease 
+	transition: opacity 0.5s ease
+
+.nav-toggle-line
+	width: 80%
+	-webkit-border-radius: 16px 
+	border-radius: 16px 
+	display: block
+	height: 3px
+	background: #fff
+	position: absolute
+	left: 3px
+	top: 0
+	-webkit-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-moz-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-ms-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	-o-transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	transition: background 0.3s, opacity 0.35s 0.2s, top 0.2s 0.4s, transform 0.2s 0.2s ease 
+	&:nth-child(1)
+		top: 5px
+	&:nth-child(2)
+		top: 12px
+	&:nth-child(3)
+		top: 19px
+		
+.active-line
+	-webkit-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-moz-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-ms-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	-o-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease 
+	background: #FFF
+	&:nth-child(1)
+		top: 12px
+		-webkit-transform: rotate(45deg) 
+		-moz-transform: rotate(45deg) 
+		-ms-transform: rotate(45deg) 
+		-o-transform: rotate(45deg) 
+		transform: rotate(45deg) 
+	&:nth-child(2)
+		opacity: 0 
+	&:nth-child(3)
+		top: 12px
+		-webkit-transform: rotate(-45deg) 
+		-moz-transform: rotate(-45deg) 
+		-ms-transform: rotate(-45deg) 
+		-o-transform: rotate(-45deg) 
+		transform: rotate(-45deg)
+		
+/**********end nav toggle**************/
+
+/*header-block*/
+.header-block
+	background-image: url('../img/img1.jpg')
+	background-position: center
+	background-repeat: no-repeat  
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	min-height: 700px 
+	position: relative
+.overlay
+	position: absolute
+	z-index: 1
+	height: 100%
+	width: 100%
+	opacity: 0.8  
+	background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+.inner-block
+	color: #FFF
+	position: relative
+	z-index: 2
+	text-align: center
+	p
+		font-weight: 800
+		font-size: 25px
+		width: 90%
+		max-width: 1000px 
+		margin: 0 auto
+		@media screen and (min-width: #{$dw-640})
+			font-size: 40px
+			width: 70%
+	a
+		border: 2px solid #fff
+		padding: 10px 25px
+		display: inline-block
+		margin-top: 55px
+		-webkit-border-radius: 40px 
+		border-radius: 40px
+		font-weight: 600 
+		&:hover
+			background: #FFF
+			color: #05AEF5 
+		
+/***partners block style*******/
+.partners
+	position: relative
+	z-index: 2
+	background: #FFF
+	width: 85%
+	max-width: $display-width 
+	padding: 75px 0
+	margin: -190px auto 0
+	box-shadow: 0px 20px 120px 0px rgba(0, 0, 0, 0.1)
+	a //partners links and hovers
+		display: block
+		width: 160px
+		min-height: 55px 
+		margin: 25px 55px 25px 55px
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100% 
+		background-repeat: no-repeat 
+		background-position: center 
+		&:nth-child(1)
+			background-image: url('../img/Buy-Railings.png') 
+			&:hover
+				background-image: url('../img/buyRailingsHover.png')
+		&:nth-child(2)
+			background-image: url('../img/FreightRun.png') 
+			&:hover
+				background-image: url('../img/FreightRunHover.png')
+		&:nth-child(3)
+			background-image: url('../img/pilot.png') 
+			&:hover
+				background-image: url('../img/pilotHover.png')
+		&:nth-child(4)
+			background-image: url('../img/MyCryptos.png') 
+			&:hover
+				background-image: url('../img/MyCryptosHover.png')
+		&:nth-child(5)
+			background-image: url('../img/Jooo3an.png') 
+			&:hover
+				background-image: url('../img/Jooo3anHover.png')
+		&:nth-child(6)
+			background-image: url('../img/Projectorquest.png') 
+			&:hover
+				background-image: url('../img/ProjectorquestHover.png')
+		&:nth-child(7)
+			background-image: url('../img/SeeUFit.png') 
+			&:hover
+				background-image: url('../img/SeeUFitHover.png')
+/*****body content styles*******/
+
+/*****about styles*******/
+.content-inner
+	margin-bottom: 80px
+	.container
+		text-align: center
+		
+.header-section
+	display: inline-block
+	font-size: $h3-size
+	margin: 16px 0 50px
+	&:before
+		content: ""
+		float: left
+		display: none
+		width: 49px
+		height: 40px
+		background: $accept
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		margin: 10px 40px 0 0
+		@media screen and (min-width: #{$dw-640})
+			display: block 
+			
+.about
+	section
+		padding: 40px
+		-webkit-transition: 0.3s ease-out 
+		-moz-transition: 0.3s ease-out 
+		-ms-transition: 0.3s ease-out 
+		-o-transition: 0.3s ease-out 
+		transition: 0.3s ease-out 
+		&:hover
+			box-shadow: 0px 20px 120px 0px rgba(0, 0, 0, 0.1)
+		&:nth-child(1)
+			.about-img
+				background-image: url('../img/Ellipse 1.png')
+		&:nth-child(2)
+			.about-img
+				background-image: url('../img/Ellipse 1.png')
+		&:nth-child(3)
+			.about-img
+				background-image: url('../img/Ellipse 1.png')
+.inner-header
+	margin: 10px 0 20px
+	font-weight: 800
+	font-size: $h4-size
+	
+.about-img
+	width: 100%
+	height: 130px
+	background-position: center center
+	background-repeat: no-repeat   
+	
+/*****our story styles*****/
+.story
+	padding: 0
+	margin: 0 auto
+	max-width: 1200px
+	-webkit-border-radius: 0px 
+	border-radius: 0px 
+	@media screen and (min-width: #{$dw-960})
+		margin: 0
+		max-width: 95%
+	
+.slide-show
+	position: relative
+	overflow: hidden
+	-webkit-border-radius: 0px 
+	border-radius: 0px 
+	@media screen and (min-width: #{$dw-960})
+		-webkit-border-top-right-radius: 10px 
+		border-top-right-radius: 10px
+		-webkit-border-bottom-right-radius: 10px 
+		border-bottom-right-radius: 10px 
+
+
+	.slide-1
+		height: 100%
+		background: url('../img/img1.jpg') center center no-repeat
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover  
+	img
+		height: 100%
+		opacity: 0
+
+.story-content
+	padding: 15px
+	max-width: 570px
+	margin: 0
+	@media screen and (min-width: #{$dw-960})
+		margin-left: 8%
+	h4
+		font-weight: 700
+		&:before
+			margin-right: 35px 
+.story-text
+	font-weight: 700 
+	margin: 0 0 30px
+	display: block
+	
+
+/*****services styles******/
+
+.services-img
+	height: 60px
+	width: 100%
+	background-repeat: no-repeat
+	background-position: left
+	margin: 30px 0
+.services
+	position: relative
+	margin-top: 170px 
+	text-align: center
+	section
+		text-align: left 
+		margin: 30px 0
+		padding: 0 16px 16px
+		-webkit-border-radius: 10px 
+		border-radius: 10px  
+		-webkit-transition: background-image 0.3s ease-out 
+		-moz-transition: background-image 0.3s ease-out 
+		-ms-transition: background-image 0.3s ease-out 
+		-o-transition: background-image 0.3s ease-out 
+		transition: background-image 0.3s ease-out 
+		&:nth-child(1)
+			.services-img
+				background-image: url("../img/Programming.png")
+		&:nth-child(2)
+			.services-img
+				background-image: url("../img/Forma 1.png") 
+		&:nth-child(3)
+			.services-img
+				background-image: url("../img/Forma 2.png") 
+		&:nth-child(4)
+			.services-img
+				background-image: url("../img/L0001.png") 
+		&:nth-child(5)
+			.services-img
+				background-image: url("../img/L0002.png")
+		&:nth-child(6)
+			.services-img
+				background-image: url("../img/Forma 3.png")
+		&:hover
+			background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+			background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+			background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+			.inner-header
+				color: #FFF
+			p
+				color: #FFF
+			&:nth-child(1)
+			.services-img
+				background-image: url("../img/ProgrammingHover.png")
+			&:nth-child(2)
+				.services-img
+					background-image: url("../img/Forma-1-hover.png") 
+			&:nth-child(3)
+				.services-img
+					background-image: url("../img/Forma-2-hover.png") 
+			&:nth-child(4)
+				.services-img
+					background-image: url("../img/L0001Hover.png") 
+			&:nth-child(5)
+				.services-img
+					background-image: url("../img/L0002Hover.png")
+			&:nth-child(6)
+				.services-img
+					background-image: url("../img/Forma-3-hover.png")
+.services-content
+	background: #FFF 
+	width: 90%
+	margin: 0 auto
+	box-shadow: 0px 20px 120px 0px rgba(0, 0, 0, 0.1)
+	@media screen and (min-width: #{$dw-640})
+		width: 100%
+	@media screen and (min-width: #{$dw-480})
+		padding: 30px 84px
+		
+
+/*****circul section styles******/
+.global-circle-block
+	position: relative
+.circul-section
+	padding: 20px
+	max-width: 1500px
+	margin: 150px auto
+	text-align: center
+	position: relative
+	overflow: hidden
+	section
+		position: relative
+		margin: 50px 0
+.bg-squer
+	position: absolute
+	left: 0
+	top: 0
+	overflow: hidden
+	width: 100%
+	height: 100%
+	z-index: -1
+.circul
+	margin: 0 auto
+	text-align: center
+	font-size: 48px
+	font-weight: 800
+	color: $accept
+	border: 1px solid     
+	border-top-color: $accept
+	border-right-color: $accept 	 
+	width: 170px
+	height: 170px
+	-webkit-border-radius: 50% 
+	border-radius: 50%
+	padding: 44px 0
+	p
+		font-weight: 800 
+
+/*******slider portfolio styles*******/
+.portfolio
+	position: relative
+	margin-bottom: 270px 
+	.owl-dots
+		bottom: 50px
+.slider-portolio
+	max-height: auto
+	background-image: -moz-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 130deg, rgb(4,64,124) 0%, rgb(5,174,245) 100%)
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	@media screen and (min-width: #{$dw-960})
+		max-height: 900px 
+	
+.slider-image 
+	img
+		width: 100%!important
+.slider-content
+	min-height: 700px
+	max-width: 700px 
+	padding: 70px
+	color: #FFF 
+	img
+		width: 200px!important
+		height: 75px
+	h5
+		font-size: 18px
+		font-weight: 800
+		margin: 30px 0
+	span
+		text-transform: uppercase
+		display: block
+		margin-bottom: 30px
+	a
+		display: block
+		width: 170px
+		text-align: center
+		-webkit-border-radius: 50px 
+		border-radius: 50px 
+		padding: 12px 0
+		margin: 62px 0
+		background: #FFF
+		border: 1px solid #fff 
+		color: #04407C 
+		&:before
+			content: ""
+			display: block
+			width: 21px
+			height: 21px
+			float: left
+			background: url('../img/GooglePlay.png') center no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100%
+			margin: 5px -2px 0px 24px
+			-webkit-transition: 0.3s ease
+			-moz-transition: 0.3s ease
+			-ms-transition: 0.3s ease
+			-o-transition: 0.3s ease
+			transition: 0.3s ease
+		&:hover
+			color: #FFF
+			background: transparent  
+			&:before
+				background: url('../img/GooglePlayHover.png') center no-repeat
+				-webkit-background-size: 100% 
+				-o-background-size: 100% 
+				background-size: 100%
+		
+.owl-dots
+	position: absolute
+	display: flex
+	bottom: 0px
+	left: 50%
+	z-index: 50 
+	margin-left: -67px
+	button.owl-dot
+		-webkit-flex-basis: 19%
+		flex-basis: 19% 
+		height: 10px
+		display: block
+		width: 25px
+		margin: 10px 
+		-webkit-transition: all 0.3s ease 
+		-moz-transition: all 0.3s ease 
+		-ms-transition: all 0.3s ease 
+		-o-transition: all 0.3s ease 
+		transition: all 0.3s ease
+		&:hover
+			-webkit-flex-basis: 100% 
+			flex-basis: 100%
+			-webkit-border-radius: 20px 
+			border-radius: 20px
+			span
+				-webkit-border-radius: 20px 
+				border-radius: 20px 
+		span
+			-webkit-flex-basis: 100% 
+			flex-basis: 100%
+			display: block
+			height: 100%
+			-webkit-border-radius: 100% 
+			border-radius: 100% 
+			background: #FFF
+	button.active
+		-webkit-flex-basis: 100% 
+		flex-basis: 100%
+		-webkit-border-radius: 20px 
+		border-radius: 20px
+		span
+			-webkit-border-radius: 20px 
+			border-radius: 20px 
+
+
+.owl-nav [class*=owl-]:hover
+	background: none 
+.portfolio .owl-nav
+	position: absolute
+	bottom: 50%
+	width: 100%
+	display: none
+	justify-content: space-between
+	@media screen and (min-width: #{$dw-960})
+		display: flex
+	span
+		font-size: 50px
+		margin: 0 26px
+		color: #FFF
+		
+
+/*******users styles*******/
+.solutions
+	text-align: center
+	position: relative
+	.squer3
+		top: -170px
+		&:before
+			content: ""
+			display: block
+			width: 88px
+			position: absolute
+			top: 40px
+			left: -185px
+			opacity: .1 
+			height: 69px
+			background-image: url('../img/upDots.png')
+			background-repeat: no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100%
+			-webkit-transform: none 
+			-moz-transform: none 
+			-ms-transform: none 
+			-o-transform: none 
+			transform: none 
+			@media screen and (min-width: #{$dw-960})
+				top: 22%
+				left: 60%
+				-webkit-transform: rotate(180deg) 
+				-moz-transform: rotate(180deg) 
+				-ms-transform: rotate(180deg) 
+				-o-transform: rotate(180deg) 
+				transform: rotate(180deg) 
+
+	h3
+		color: #000
+		margin-bottom: 30px 
+		font-size: 36px  
+		position: relative
+		z-index: 20
+		@media screen and (min-width: #{$dw-960})
+			color: #fff 
+		
+	.container
+		text-align: left 
+.users
+	margin: 10px
+	display: block
+	padding: 60px 20%
+	background: #fff 
+	-webkit-border-radius: 20px 
+	border-radius: 20px
+	box-shadow: 0px 0px 40px -8px rgba(0, 0, 0, 0.3)
+	position: relative
+	z-index: 50
+	p
+		margin: 20px 0
+		span
+			margin: 20px 0
+	span
+		display: block
+.user-slider
+	.owl-nav
+		display: none
+	.owl-dots
+		display: flex
+		position: static
+		width: 200px
+		margin: 20px auto
+		@media screen and (min-width: #{$dw-640})
+			display: none
+		.owl-dot
+			height: 14px
+			span
+				background: #1ad4b7 
+	.owl-carousel
+		.owl-nav
+			display: none
+			@media screen and (min-width: #{$dw-640})
+				display: block
+			button
+				font-size: 60px
+			.owl-prev
+				margin-right: 190px 
+.user-foto
+	width: 100px
+	height: 100px
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
+	background-repeat: no-repeat
+	margin-right: 30px 
+.user-info
+	h4
+		font-size: 20px
+		font-weight: 800
+	span
+		&:nth-child(3)
+			color: #05aef5 
+.user-1
+	.user-foto
+		background-image: url('../img/foto1.jpg')
+		background-position: -178px -55px
+.user-2
+	.user-foto
+		background-image: url('../img/foto2.jpg')
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100% 
+		
+/*****top firms styles******/
+
+.top-firms
+	margin-top: 200px
+	margin-bottom: 74px 
+	position: relative
+	p
+		display: block
+		margin: 0px 0 20px
+	.squer1
+		bottom: 0
+		left: -30%
+.firm
+	text-align: center
+	margin: 0 auto 26px  
+	width: 100%
+	padding: 40px 0
+	box-shadow: 0px 0px 80px -5px rgba(0, 0, 0, 0.1)
+	-webkit-transition: transform 0.3s ease 
+	-moz-transition: transform 0.3s ease 
+	-ms-transition: transform 0.3s ease 
+	-o-transition: transform 0.3s ease 
+	transition: transform 0.3s ease
+	@media screen and (min-width: #{$dw-480})
+		width: 230px
+	a
+		font-weight: 700
+		color: #BDBDBD
+		font-size: 16px
+		margin: 16px 0 
+		display: block
+	p
+	 	font-size: 36px
+	 	color: #1BDEC0
+	 	font-weight: 800
+	 	margin: 0 
+	&:hover
+		-webkit-transform: translateY(-20px) 
+		-moz-transform: translateY(-20px) 
+		-ms-transform: translateY(-20px) 
+		-o-transform: translateY(-20px) 
+		transform: translateY(-20px)   
+.img-firm
+	margin: 0 auto
+	width: 130px
+	height: 130px
+	
+.up-div
+	margin-top: 0px 
+	@media screen and (min-width: #{$dw-640})
+		margin-top: -80px
+		
+/*contact*/
+.contact
+	position: relative
+	padding: 20px 0px
+	.squer3
+		bottom: 0
+		left: 0
+		top: auto
+		width: 100%
+		@media screen and (min-width: #{$dw-640})
+			width: 50%
+.contact-block
+	background: #FFF 
+	text-align: center 
+	max-width: 970px
+	margin: 50px auto
+	padding: 60px 40px
+	-webkit-border-radius: 20px 
+	border-radius: 20px 
+	box-shadow: 0px 0px 80px -5px rgba(0, 0, 0, 0.1)
+	form
+		max-width: 570px
+		margin: 0 auto
+		textarea, input
+			display: block
+			margin: 7px 0
+			width: 100%
+			padding: 20px 18px
+			-webkit-border-radius: 20px 
+			border-radius: 20px
+			border: 1px solid #bdbdbd 
+	fieldset
+		border: none
+.submit-message
+	cursor: pointer
+	border: none 
+	color: #FFF
+	-webkit-border-radius: 40px 
+	border-radius: 40px  
+	display: block
+	width: 170px
+	height: 50px
+	text-align: center
+	margin: 35px auto
+	font-weight: 600
+	font-size: 16px
+	box-shadow: 0px 10px 40px -6px rgba(0, 0, 0, 0.2)
+	background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+
+.address
+	font-size: 16px
+	.inner-header
+		font-size: 16px 
+.soc
+	color: #000
+	margin-top: 30px
+	@media screen and (min-width: #{$dw-640})
+		color: #FFF 
+		margin-top: 0 
+	div
+		max-width: 400px 
+	a
+		display: flex
+		margin: 0px 20px 0 0
+		&:before
+			content: ""
+			display: inline-block
+			width: 30px
+			height: 30px
+			margin-right: 20px
+			background-repeat: no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100% 
+		&:nth-child(1)
+			&:before
+				background-image: url('../img/Fb.png') 
+		&:nth-child(2)
+			&:before
+				background-image: url('../img/Lnkdn.png') 
+		@media screen and (min-width: #{$dw-640})
+			&:nth-child(1)
+				&:before
+					background-image: url('../img/facebook.png') 
+			&:nth-child(2)
+				&:before
+					background-image: url('../img/linkidin.png') 
+		p
+			display: none
+			@media screen and (min-width: #{$dw-640})
+				display: inline
+				
+/*footer*/
+footer
+	text-align: left
+	padding: 40px 10px
+	font-size: 16px
+	color: #BDBDBD 
+	@media screen and (min-width: #{$dw-640})
+		text-align: center
+
+/*pop-up*/
+
+.remodal
+	background: none 

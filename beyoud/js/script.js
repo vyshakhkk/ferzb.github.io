@@ -50,8 +50,7 @@ var time = 2, show = 1 ;
 			}
 		});
 });
-
-$('.owl-carousel').owlCarousel({
+$('.portfolio-sliders').owlCarousel({
     items:1,
     lazyLoad:true,
     loop:true,
@@ -59,15 +58,14 @@ $('.owl-carousel').owlCarousel({
     margin:10
 });
 
-$('.user-slider').owlCarousel({
+$('.testimonials').owlCarousel({
 	loop:true,
-	nav:false,
+	nav:true,
 	margin:30,
 	dots:false,
-	responsiveClass:true,
 	responsive:{
 		0:{
-			items:1
+			items:2
 		},
 		960:{
 			items:2
