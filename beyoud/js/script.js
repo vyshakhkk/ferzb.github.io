@@ -60,14 +60,16 @@ $('.portfolio-sliders').owlCarousel({
 
 $('.testimonials').owlCarousel({
 	loop:true,
-	nav:true,
 	margin:30,
-	dots:false,
 	responsive:{
 		0:{
-			items:2
+			items:1,
+			dots:true,
+			nav:false
 		},
 		960:{
+			nav:true,
+			dots:false,
 			items:2
 		},
 	}

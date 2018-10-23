@@ -6,14 +6,6 @@
 
 /*Typography*/
 
-@import url("grid.css");
-
-@import url("owl.carousel.min.css");
-
-@import url("remodal.css");
-
-@import url("remodal-default-theme.css");
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 
 /*General style*/
@@ -986,10 +978,6 @@ nav.nav-open {
   display: block;
 }
 
-.user-slider .owl-nav {
-  display: none;
-}
-
 .user-slider .owl-dots {
   display: flex;
   position: static;
@@ -1264,14 +1252,6 @@ footer {
     width: 100%;
   }
 
-  .user-slider .owl-dots {
-    display: none;
-  }
-
-  .user-slider .owl-carousel .owl-nav {
-    display: block;
-  }
-
   .up-div {
     margin-top: -80px;
   }
@@ -1327,7 +1307,7 @@ footer {
   }
 
   nav.flex li {
-    margin-right: 24px;
+    margin-right: 20px;
   }
 
   nav.flex li a {
@@ -1442,5 +1422,13 @@ footer {
 
   .solutions h3 {
     color: #fff;
+  }
+
+  .user-slider .owl-dots {
+    display: none;
+  }
+
+  .user-slider .owl-carousel .owl-nav {
+    display: block;
   }
 }
