@@ -1,0 +1,687 @@
+@import 'setting.sass';
+@import url('grid.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:300,400,600,700,800');
+/************************************************************/
+
+/** header stylesheet **/
+header
+	background: url('../img/bgHeader.png') center no-repeat
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	max-height: 850px
+	margin-bottom: 200px  
+	font-size: 14px
+	@media screen and (min-width: #{$dw-960})
+		margin-bottom: auto 
+	.grid-ld-8
+		-webkit-align-items: flex-start 
+		align-items: flex-start 
+		@media screen and (min-width: #{$dw-1100})
+			-webkit-align-items: center 
+			align-items: center 
+
+/*header top style*/
+	
+.logo-page //logotype page style
+	font-size: 14px
+	color: $h-color
+	font-weight: 700 
+	font-family: $font2
+	@media screen and (min-width: #{$dw-640})
+		font-size: 20px 
+	span
+		background: #FFF
+		color: #0098E4
+		padding: 6px
+		-webkit-border-radius: 4px 
+		border-radius: 4px
+		margin-right: 8px
+		@media screen and (min-width: #{$dw-640})
+			padding: 9px 
+		&:before
+			content: ""
+			display: inline-block
+			width: 16px
+			height: 16px
+			margin: 0px 7px -4px 0px
+			background-image: url('../img/bed.png')
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100% 
+			@media screen and (min-width: #{$dw-640})
+				width: 20px
+				height: 20px
+			
+.social-links //socila links style
+	display: none
+	-webkit-align-items: center
+	align-items: center
+	@media screen and (min-width: 860px)
+		display: flex
+	@media screen and (min-width: #{$dw-1100})
+		margin-top: 0
+	a
+		margin-right: 8px 
+		display: inline-block
+		width: 26px
+		height: 26px
+		background-image: url('../img/sprite.png')
+		background-repeat: no-repeat
+	.facebook
+		margin-left: 13px 
+		background-position: -50px 0px
+	.twitter
+		background-position: -100px 0px
+	.instagram
+		background-position: -150px 0px
+	.gmail
+		background-position: -200px 0px
+		
+.phones-number //phone number style
+	display: block
+	@media screen and (min-width: #{$dw-1100})
+		display: flex
+	.flex
+		place-items: flex-start
+	p
+		width: 110px
+		font-size: 10px
+		line-height: 16px 
+		@media screen and (min-width: #{$dw-640})
+			font-size: 14px
+			width: 160px
+	a
+		display: block
+		color: #FFF
+		-webkit-border-radius: 4px 
+		border-radius: 4px
+		margin: 2px
+		font-weight: 600
+		font-size: 10px
+		@media screen and (min-width: #{$dw-640})
+			font-size: 14px
+		@media screen and (min-width: #{$dw-1100})
+			display: inline-block
+		&:before
+			content: ""
+			display: inline-block
+			background-repeat: no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100%  
+		&:nth-child(1)
+			background: #27d0c2
+			padding: 6px 13px
+			&:before
+				margin: 0px 8px -2px 0px 
+				width: 13px
+				height: 13px
+				background-image: url('../img/icon_call.png')
+		&:nth-child(2)
+			background: #27d045
+			padding: 6px 11px
+			&:before
+				margin: 0px 9px -3px 0px
+				width: 16px
+				height: 16px
+				background-image: url('../img/icon_whatsapp.png')
+				
+.login //login link style
+	color: #0098E4
+	font-weight: bold
+	display: none
+	margin-top: 7px 
+	@media screen and (min-width: #{$dw-640})
+		display: inline
+	@media screen and (min-width: #{$dw-1100})
+		margin-top: 0
+
+
+/*header content style*/
+
+.header-logo
+	margin-top: 24px 
+	padding-left: 24px
+	max-width: 320px 
+	@media screen and (min-width: #{$dw-640})
+		margin-top: 80px 
+		padding-left: 0px
+		max-width: 440px
+	h1
+		font-family: $font2
+		font-weight: 900
+		font-size: 26px 
+		color: $h-color
+		@media screen and (min-width: #{$dw-640})
+			font-size: $h1-size
+		span
+			color: $accept 
+
+
+
+/*header form style*/
+.form.form-header
+	margin-right: inherit
+	margin: 160px auto 40px 
+	max-width: 400px
+	@media screen and (min-width: #{$dw-960})
+		margin: 160px 0px 40px 
+	.form-title
+		h4
+			text-align: center 
+	.form-call
+		display: block
+
+/** main stylesheet **/
+
+.services //services style
+	padding: 100px 0
+	font-family: $font2 
+	max-width: 800px
+	margin: 0 auto
+	background-repeat: no-repeat
+	-webkit-background-size: 45% 
+	-o-background-size: 45% 
+	background-size: 45%
+	background-image: none
+	@media screen and (min-width: #{$dw-780})
+		background-image: url('../img/roadMap.png')
+		background-position: 125px 230px
+	section
+		padding: 10px
+		margin: 20px auto
+		display: block
+		@media screen and (min-width: #{$dw-780})
+			display: flex
+		&:nth-child(2n)
+			-webkit-flex-direction: row-reverse 
+			-ms-flex-direction: row-reverse 
+			flex-direction: row-reverse 
+			-webkit-justify-content: flex-start 
+			justify-content: flex-start 
+		&:nth-child(2n+1) //text-block style
+			padding: 0
+			-webkit-justify-content: space-between
+			justify-content: space-between
+			.text-block
+				margin-top: -85px
+				@media screen and (min-width: #{$dw-780})
+					margin-top: 0
+				b
+					color: #FFF
+					background: #8ee58f
+					-webkit-border-radius: 4px 
+					border-radius: 4px 
+					padding: 2px 6px
+				i
+					font-style: normal
+					color: #8EE58F
+				a
+					font-weight: bold
+					background: #8EE58F
+					-webkit-border-radius: 4px 
+					border-radius: 4px 
+					padding: 2px 4px
+					margin-top: 6px
+					display: inline-block
+					&:before
+						content: ""
+						display: inline-block
+						width: 13px
+						height: 13px
+						margin: 0px 4px -1px 4px
+						background-image: url('../img/call.png')
+						-webkit-background-size: 100% 
+						-o-background-size: 100% 
+						background-size: 100%
+						background-repeat: no-repeat    
+		div
+			width: 280px
+			margin: 0 auto
+			@media screen and (min-width: #{$dw-780})
+				margin: 0
+		h3
+			font-size: 18px
+			font-weight: 900
+			margin: 16px 0 
+		p
+			font-size: 14px 
+.services-img
+	width: 280px
+	margin: 0 auto 
+	img
+		width: 100%
+.h-block
+	text-align: center
+	font-size: 22px
+	font-weight: 900
+	margin-bottom: 50px 
+
+/*s-price style*/
+.s-price
+	background: #F8FAFD 
+	section
+		text-align: center 
+		margin: 24px 0 
+		&:nth-child(1)
+			.s-price-img
+				background-image: url('../img/service-img-5.png')
+		&:nth-child(2)
+			.s-price-img
+				background-image: url('../img/service-img-6.png')
+		&:nth-child(3)
+			.s-price-img
+				background-image: url('../img/service-img-7.png')
+		h4
+			font-family: $font2
+			font-size: 18px
+			color: #629EF3
+			font-weight: 900 
+			margin: 16px 0
+.s-price-img
+	width: 235px
+	height: 170px
+	margin: 0 auto
+	-webkit-background-size: contain
+	-o-background-size: contain
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center center
+	
+/*s-bugs style*/
+.s-bugs
+	background: #EAEFF5
+	padding: 85px 0 
+.inner-bugs
+	border-top: 10px solid #8ce18d
+	border-right: none
+	border-bottom: 10px solid #8ce18d
+	border-left: none
+	background: url('../img/bgService.jpg') center no-repeat 
+	@media screen and (min-width: #{$dw-1100})
+		border-top: 10px solid #8ce18d
+		border-right: 10px solid #8ce18d
+		border-bottom: 10px solid #8ce18d
+		border-left: 10px solid #8ce18d 
+
+.bugs
+	margin: 30px auto
+	width: 300px
+	color: #FFF
+	@media screen and (min-width: #{$dw-640})
+		width: 590px
+	@media screen and (min-width: #{$dw-960})
+		margin-right: auto
+	p
+		padding: 10px
+		margin: 20px 0
+
+.bugs-items
+	display: none
+.bugs-items.owl-carousel
+	display: none
+.bug
+	padding-top: 35px 
+	width: 170px
+	height: 170px
+	-webkit-border-radius: 10px 
+	border-radius: 10px
+	background: #F8FAFD
+	margin: 10px
+	color: #D5805E
+	font-family: $font2
+	text-align: center
+	margin: 0 auto
+	@media screen and (min-width: #{$dw-640})
+		margin: 10px
+	p
+		font-weight: bold
+		margin: 10px 0
+.item1
+	.img-bug
+		background-position: -11px -59px
+.item2
+	.img-bug
+		width: 84px
+		background-position: -197px -59px
+.item3
+	.img-bug
+		background-position: -399px -59px
+.item4
+	.img-bug
+		height: 74px
+		padding-top: 30px
+		background-position: -11px -246px
+.item5
+	.img-bug
+		height: 75px
+		padding-top: 30px
+		background-position: -208px -239px
+.item6
+	.img-bug
+		height: 76px
+		padding-top: 30px
+		background-position: -401px -238px
+.img-bug
+	background-repeat: no-repeat
+	-webkit-background-size: 473px 
+	-o-background-size: 473px 
+	background-size: 473px 
+	width: 65px
+	height: 70px
+	margin: 0 auto	
+	background-image: url('../img/Pest_control.svg') 
+
+
+.owl-dots
+	width: 100%
+	text-align: center
+	margin: 20px 0 0
+.owl-dot
+	height: 16px
+	width: 16px
+	margin: 4px 
+	&:focus
+		outline: none 
+	span
+		display: block
+		height: 16px
+		width: 16px
+		-webkit-border-radius: 50% 
+		border-radius: 50% 
+		background: #FFF
+		-webkit-transition: background 0.2s ease 
+		-moz-transition: background 0.2s ease 
+		-ms-transition: background 0.2s ease 
+		-o-transition: background 0.2s ease 
+		transition: background 0.2s ease 
+		&:hover
+			background: #13D399 
+.owl-dot.active
+	span
+		background: #13d399
+
+.bugs-tabs
+	margin: 10px auto
+	@media screen and (min-width: #{$dw-960})
+		margin-left: auto
+.tabs
+	width: 200px
+	background: #FFF 
+.bug-tab
+	cursor: pointer
+	text-transform: uppercase
+	display: block
+	padding: 16px 32px
+	border-bottom: 1px solid #c9c9c9
+	-webkit-transition: background-color 0.2s, color 0.2s, background-image 0.2s ease 
+	-moz-transition: background-color 0.2s, color 0.2s, background-image 0.2s ease 
+	-ms-transition: background-color 0.2s, color 0.2s, background-image 0.2s ease 
+	-o-transition: background-color 0.2s, color 0.2s, background-image 0.2s ease 
+	transition: background-color 0.2s, color 0.2s, background-image 0.2s ease 
+	&:hover
+		color: #FFF
+		font-weight: bold
+		background-color: #8ce18d
+		background-image: url('../img/icon_arrow.png')
+		background-repeat: no-repeat 
+		background-position: 14px center 
+	&:last-child
+		border-bottom: none 
+		
+.active-bug
+	color: #FFF
+	font-weight: bold
+	background: #8ce18d url('../img/icon_arrow.png') 14px center no-repeat
+
+/*s-rooms style*/
+
+.s-rooms
+	padding: 80px 0 0
+	position: relative
+	.wrapper
+		padding: 0px
+		@media screen and (min-width: #{$dw-480})
+			padding: 10px 10px 0
+
+
+.s-room-border-bottom
+	width: 100%
+	background: #dceaff
+	position: absolute
+	bottom: 0
+	padding: 2% 0
+	z-index: 2
+
+.price-rooms
+	background: #edf5ff
+	-webkit-border-radius: none 
+	border-radius: none 
+	@media screen and (min-width: #{$dw-480})
+		-webkit-border-radius: 10px 
+		border-radius: 10px
+	div:nth-child(1)
+		max-width: 360px
+		min-height: 160px 
+		margin: 10px auto
+		text-align: center
+		h3
+			color: #629EF3
+			font-size: 24px
+			font-weight: 800
+			margin: 20px 0
+		p
+			font-family: $font2
+			color: #5A5A5A  
+			
+/*form style*/
+.form-block
+	background: #C4DCFB 
+	padding: 30px 10px 
+.form
+	max-width: 700px
+	margin: 0 auto 
+	background: #FFF
+	padding: 20px 40px
+	-webkit-border-radius: 10px 
+	border-radius: 10px
+	border: 1px solid #D1D1D1 
+	form
+		position: relative
+		label
+			color: #2F2F2F
+			margin: 10px 0
+			display: block  
+.value, .value-header
+	display: inline-block
+	background: #12E2A3
+	color: #fff
+	font-size: 14px
+	-webkit-border-radius: 4px 
+	border-radius: 4px  
+	padding: 2px 8px
+	position: absolute
+	left: 20%
+	margin-left: -20px
+.form-title
+	h4
+		font-size: 18px
+		font-weight: 800 
+		margin: 10px auto
+		text-align: center 
+		@media screen and (min-width: #{$dw-640})
+			margin: 0
+			text-align: left
+	.form-call
+		display: none
+		margin: 0
+		text-align: left
+		@media screen and (min-width: #{$dw-780})
+			display: block
+		a
+			color: #629EF3
+			&:before
+				content: ""
+				display: inline-block
+				width: 15px
+				height: 17px
+				margin: -1px 4px -2px 0px
+				background-image: url('../img/icon_phone.png')
+				-webkit-background-size: 100% 
+				-o-background-size: 100% 
+				background-size: 100%
+				background-repeat: no-repeat 
+.form-call
+	margin: 14px 0 
+	display: block
+	text-align: center
+	@media screen and (min-width: #{$dw-780})
+		display: none
+	a
+		display: block
+		color: #12e2a3 
+		font-size: 22px
+		font-weight: 600
+		line-height: 16px 
+
+/*range stylesheet*/
+.form-range //for Chrome
+	margin: 40px 0 0px
+	-webkit-appearance: none
+	width: 100%
+	height: 8px
+	-webkit-border-radius: 10px 
+	border-radius: 10px
+	background: -webkit-linear-gradient(left, #13d399 0%, #13d399 20%, #f3f5f9 20%, #f3f5f9 100%)
+	outline: none
+	
+.form-range::-moz-range-track//For Mazzila
+	-moz-appearance: none
+	background: transparent 
+	
+.form-range::-webkit-slider-thumb //For Chrome
+	-webkit-appearance: none
+	background: #12e2a3
+	height: 22px
+	width: 22px
+	-webkit-border-radius: 100% 
+	border-radius: 100% 
+	cursor: pointer	
+	
+.form-range::-moz-range-thumb //For Mazzila
+	-moz-appearance: none
+	background: #12e2a3
+	height: 22px
+	width: 22px
+	-webkit-border-radius: 100% 
+	border-radius: 100% 
+	cursor: pointer	
+	
+/*end range stylesheet*/
+/*fieldset style*/
+.time-form
+	margin: 12px 0 
+.form-at-time
+	border: none
+	-webkit-border-radius: 4px 
+	border-radius: 4px
+	background: #F3F5F9   
+	padding: 16px 40px
+	outline: none
+	font-size: 16px 
+	font-family: $font2
+	color: #2F2F2F
+	margin: 10px 0 
+	
+.date
+	background-image: url('../img/Icon_calendar.png')
+	background-repeat: no-repeat
+	-webkit-background-size: auto 
+	-o-background-size: auto 
+	background-size: auto 
+	background-position: 10px center  
+
+.button-block
+	background: #12E2A3
+	-webkit-border-radius: 4px 
+	border-radius: 4px
+	color: #FFF 
+	a
+		display: flex
+		text-align: center
+		padding: 10px
+		-webkit-justify-content: center 
+		justify-content: center 
+		span
+			background: #71eec8
+			display: inline-block
+			-webkit-border-radius: 4px 
+			border-radius: 4px
+			padding: 4px 10px
+			font-weight: 800
+		em
+			height: 100%
+			margin: 0 12px
+			border-right: 1px solid #0DBC87
+			border-left: 1px solid #71eec8 
+.number-price
+	font-weight: 800  
+
+.pay
+	margin: 30px 0 0 
+	p
+		margin: 0px 10px 10px 0px	
+.pay-method
+	display: inline-block
+	li
+		display: inline-block
+	a
+		display: block
+		width: 48px
+		height: 28px
+		background-image: url('../img/sprite.png')
+		background-repeat: no-repeat
+.paypal
+	background-position: -350px 0px
+.mastercard
+	background-position: -350px -50px 
+.chiscover
+	background-position: -350px -100px
+.visa
+	background-position: -350px -150px 
+/** footer stylesheet **/
+
+footer
+	background: #677588
+	color: #fff
+	.container
+		padding: 20px
+		@media screen and (min-width: #{$dw-640})
+			padding: 30px
+	p
+		font-size: 12px
+		margin: 12px 0
+		max-width: 320px 
+	div
+		margin: 20px 0 
+	li
+		margin-bottom: 6px 
+		font-family: $font2
+		color: #CCDBEF
+	.logo-page
+		margin: 0px 0px 22px 0px
+		color: #FFF
+		font-size: 16px
+		span
+			padding: 4px
+			margin-left: 2px 
+	.social-links
+		display: flex
+	.footer-links
+		margin-left: 60px
+		@media screen and (min-width: #{$dw-640})
+			margin-left: 0
+		a:hover
+			text-decoration: underline 
+		
