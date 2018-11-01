@@ -1270,8 +1270,8 @@ footer {
 
 .industry-content section {
   min-height: 340px;
-  -webkit-align-items: left;
-  align-items: left;
+  -webkit-align-items: inherit;
+  align-items: inherit;
   margin: 50px 0;
 }
 
