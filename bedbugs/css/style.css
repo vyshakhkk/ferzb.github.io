@@ -295,11 +295,11 @@ header .grid-ld-8 {
 }
 
 .treads {
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
-  transform: scale(1.4);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .h-block {
@@ -943,6 +943,14 @@ footer .footer-links a:hover {
 
   .services section div {
     margin: 0;
+  }
+
+  .treads {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
   }
 
   .form-title .form-call {
