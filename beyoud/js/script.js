@@ -13,13 +13,6 @@ $(function() {
 			$('header').removeClass('header-fixed');
 	});
 });
-$(".nav-item").on("click","a", function (event) {
-        event.preventDefault();
-
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top-120}, 1500);
-    });
 var time = 2, show = 1 ;
 	$(window).scroll(function() {
 		$('#counter').each(function(){
