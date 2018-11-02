@@ -67,6 +67,39 @@ $('.testimonials').owlCarousel({
 		},
 	}
 })
+
+$('.skillsAboutSlider').owlCarousel({
+	loop:true,
+	margin:50,
+	dots:false,
+	responsive:{
+		0:{
+			items:2
+		},
+		640:{
+			items:4
+		},
+		960:{
+			items:6
+		},
+	}
+})
+$('.expect-slider').owlCarousel({
+	loop:true,
+	margin:0,
+	dots:false,
+	responsive:{
+		0:{
+			items:1
+		},
+		640:{
+			items:2
+		},
+		960:{
+			items:3
+		},
+	}
+})
 function validate() {
 	var userName = $('#userName');
 	var userEmail = $('#userEmail');

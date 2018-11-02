@@ -64,6 +64,22 @@ button {
   outline: none;
 }
 
+textarea::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+textarea::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+textarea:-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+textarea:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
 /*container-block*/
 
 .container-block {
@@ -127,6 +143,16 @@ button {
 .flex-center {
   -webkit-justify-content: center;
   justify-content: center;
+}
+
+.flex-vertical-center {
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.flex-vertical-bottom {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
 }
 
 /*flex-block middle device*/
@@ -304,6 +330,16 @@ button {
     justify-content: center;
   }
 
+  .flex-md-vertical-center {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .flex-md-vertical-bottom {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  }
+
   .col-md-1 {
     width: calc(8.33333% - 50px);
   }
@@ -439,6 +475,16 @@ button {
   .flex-smd-center {
     -webkit-justify-content: center;
     justify-content: center;
+  }
+
+  .flex-smd-vertical-center {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .flex-smd-vertical-bottom {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
   }
 
   .col-smd-1 {
@@ -578,6 +624,16 @@ button {
     justify-content: center;
   }
 
+  .flex-ld-vertical-center {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .flex-ld-vertical-bottom {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  }
+
   .col-ld-1 {
     width: calc(8.33333% - 50px);
   }
@@ -713,6 +769,16 @@ button {
   .flex-xld-center {
     -webkit-justify-content: center;
     justify-content: center;
+  }
+
+  .flex-xld-vertical-center {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .flex-xld-vertical-bottom {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
   }
 
   .col-xld-1 {
