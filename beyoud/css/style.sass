@@ -15,10 +15,6 @@ html, body
 	-webkit-border-radius: 10px 
 	border-radius: 10px
 
-.owl-carousel 
-	.owl-item 
-		img
-			width: inherit 
 .squer1, .squer2
 	display: none
 	position: absolute
@@ -163,11 +159,11 @@ nav.flex //navigation styles
 		display: flex
 		text-align: left
 		opacity: 1
-		color: #FFF 
+		color: #FFF
 	li
 		margin: 2px 0
 		@media screen and (min-width: #{$dw-960})
-			margin-right: 24px
+			margin-right: 20px
 		a //hyper text link styles
 			display: block
 			font-weight: 600 
@@ -209,6 +205,16 @@ nav.flex //navigation styles
 				color: #fff
 				background: $accept
 
+nav.flex a.nav-item-active
+	color: #fff
+	background: $accept
+	@media screen and (min-width: #{$dw-960})
+		color: #FFF
+		background: none 
+		&:before
+			left: 20%
+			right: 20% 
+
 nav.flex li a.button
 	cursor: pointer
 	background-image: -moz-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
@@ -244,6 +250,12 @@ nav.flex li a.button
 	.logo
 		background-image: url('../img/Final-logo-gray.png') 
 	nav.flex
+		.nav-item-active
+			color: $text-color
+			@media screen and (min-width: #{$dw-960})
+			 	color: #05aef5
+			&:before
+		 		background: #05aef5
 		a
 		 	color: $text-color
 		 	&:before
@@ -258,7 +270,9 @@ nav.flex li a.button
 				background-image: -webkit-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
 				background-image: -ms-linear-gradient( 100deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
 				&:hover
-					background: $accept
+					background-image: -moz-linear-gradient( 100deg, $accept 0%, $accept 100%)
+					background-image: -webkit-linear-gradient( 100deg, $accept 0%, $accept 100%)
+					background-image: -ms-linear-gradient( 100deg, $accept 0%, $accept 100%)
 	
 	.nav-toggle-line
 		background: #000 		
@@ -298,6 +312,9 @@ nav.nav-open
 	-ms-transition: opacity 0.5s ease 
 	-o-transition: opacity 0.5s ease 
 	transition: opacity 0.5s ease
+	overflow-y: scroll 
+	@media screen and (min-height: 450px)
+		overflow-y: none  
 
 .nav-toggle-line
 	width: 80%
@@ -855,14 +872,12 @@ nav.nav-open
 	span
 		display: block
 .user-slider
-	.owl-nav
-		display: none
 	.owl-dots
 		display: flex
 		position: static
 		width: 200px
 		margin: 20px auto
-		@media screen and (min-width: #{$dw-640})
+		@media screen and (min-width: #{$dw-960})
 			display: none
 		.owl-dot
 			height: 14px
@@ -871,7 +886,7 @@ nav.nav-open
 	.owl-carousel
 		.owl-nav
 			display: none
-			@media screen and (min-width: #{$dw-640})
+			@media screen and (min-width: #{$dw-960})
 				display: block
 			button
 				font-size: 60px
@@ -984,7 +999,7 @@ nav.nav-open
 			padding: 20px 18px
 			-webkit-border-radius: 20px 
 			border-radius: 20px
-			border: 1px solid #bdbdbd 
+			border: 1px solid #bdbdbd
 	fieldset
 		border: none
 .submit-message
@@ -1061,3 +1076,414 @@ footer
 
 .remodal
 	background: none 
+	
+
+
+
+/******************next page for document About Us*********************/
+.about-us-circle-block
+	position: relative
+	z-index: 20
+	.circul-section 
+		margin-bottom: 0px
+	.circul
+		border-color: #FFF 
+		color: #FFF
+	.inner-header
+		color: #FFF 
+.about-us-services
+	margin: 100px 0	
+.about-us-services-item
+	position: relative 
+	width: 300px
+	height: 300px
+	margin: 20px
+	text-align: center 
+	position: relative
+	z-index: 2
+	-webkit-border-radius: 15px 
+	border-radius: 15px 
+	box-shadow: 0px 8px 40px 4px rgba(0, 0, 0, 0.15)
+	@media screen and (min-width: #{$dw-480})
+		width: 340px
+		height: 340px
+	&:nth-child(1)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-1.png')
+	&:nth-child(2)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-2.png')
+	&:nth-child(3)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-3.png')
+	&:nth-child(4)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-4.png')
+	&:nth-child(5)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-5.png')
+	&:nth-child(6)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-6.png')
+	&:nth-child(7)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-7.png')
+	&:nth-child(8)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-5.png')
+	&:nth-child(9)
+		.about-us-services-item-img
+			background-image: url('../img/about-us-item-img-4.png')
+	&:hover
+		.bg-hover-item-about
+			-webkit-transform:  rotate(4deg) translate(-10px, 20px)
+			-moz-transform:  rotate(4deg) translate(-10px, 20px)
+			-ms-transform:  rotate(4deg) translate(-10px, 20px)
+			-o-transform:  rotate(4deg) translate(-10px, 20px)
+			transform:  rotate(4deg) translate(-10px, 20px)
+		&:nth-child(1)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-1.png')
+		&:nth-child(2)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-2.png')
+		&:nth-child(3)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-3.png')
+		&:nth-child(4)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-4.png')
+		&:nth-child(5)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-5.png')
+		&:nth-child(6)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-6.png')
+		&:nth-child(7)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-7.png')
+		&:nth-child(8)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-5.png')
+		&:nth-child(9)
+			.about-us-services-item-img
+				background-image: url('../img/about-us-item-img-hover-4.png')
+		
+.about-us-services-item-img
+	width: 120px
+	height: 120px
+	margin: 12px auto
+	-webkit-transition: background 0.5s ease 
+	-moz-transition: background 0.5s ease 
+	-ms-transition: background 0.5s ease 
+	-o-transition: background 0.5s ease 
+	transition: background 0.5s ease 
+	-webkit-background-size: contain 
+	-o-background-size: contain 
+	background-size: contain
+	background-repeat: no-repeat 
+.about-inner-block-item
+	background: #FFF
+	-webkit-border-radius: 15px 
+	border-radius: 15px 
+	width: 100%
+	height: 100%
+	padding: 22px
+	h5
+		font-size: 18px
+		font-weight: bold
+		margin: 12px 0 
+.bg-hover-item-about
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: -1
+	-webkit-border-radius: 15px 
+	border-radius: 15px 
+	-webkit-transition: transform 0.5s ease
+	-moz-transition:  transform 0.5s ease
+	-ms-transition: transform 0.5s ease
+	-o-transition: transform 0.5s ease
+	transition: transform 0.5s ease
+	background-image: -moz-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(27,222,192) 0%, rgb(5,174,245) 100%)
+/*********next page for document Industry************/
+
+.industry
+	min-height: 600px 
+	position: relative
+	.overlay
+		opacity: 1
+		top: 0
+	.inner-block 
+		p:nth-child(2)
+			font-size: 30px
+			font-weight: normal  
+
+.industry-content
+	padding: 150px 0
+	background-image: none
+	-webkit-background-size: 100% 
+	-o-background-size: 100% 
+	background-size: 100% 
+	background-repeat: no-repeat 
+	@media screen and (min-width: #{$dw-640})
+		background-image: url('../img/industry-inner-bg.png') 
+	section
+		min-height: 340px
+		-webkit-align-items: inherit 
+		align-items: inherit
+		margin: 50px 0
+		@media screen and (min-width: #{$dw-640})
+			-webkit-align-items: center 
+			align-items: center
+		&:nth-child(2n)
+			-webkit-flex-direction: column-reverse
+			-ms-flex-direction: column-reverse
+			flex-direction: column-reverse
+			min-height: 340px  
+			@media screen and (min-width: #{$dw-960})
+				min-height: 660px
+				-webkit-flex-direction: row-reverse
+				-ms-flex-direction: row-reverse
+				flex-direction: row-reverse
+			.industry-inner-content-img
+					left: 50%
+					top: 50%
+					margin-top: -65px
+					margin-left: -80px
+			.industry-inner-content
+				&:nth-child(2)
+					min-height: 340px
+					background-image: none
+					-webkit-background-size: 300px 
+					-o-background-size: 300px 
+					background-size: 300px
+					background-repeat: no-repeat
+					background-position: right   
+					@media screen and (min-width: #{$dw-960})
+						background-image: url('../img/border-dots.png') 
+						min-height: 660px
+						min-width: 50% 
+/*general industry inner content style*/
+.industry-inner-content
+	position: relative
+	text-align: center
+	min-height: 300px 
+	@media screen and (min-width: #{$dw-640})
+		text-align: left
+	&:nth-child(1)
+		max-width: 440px
+		margin: 20px auto
+		@media screen and (min-width: #{$dw-640})
+			margin: 0
+	h5
+		font-size: 36px
+		font-weight: 600
+		margin: 16px 0px
+		position: relative
+		i
+			color: $accept
+			font-weight: 800
+			display: block
+			@media screen and (min-width: #{$dw-640})
+				display: inline
+		&:after
+			content: ""
+			display: none
+			position: absolute
+			top: -14px
+			left: -10px
+			width: 50px
+			height: 40px
+			-webkit-border-radius: 10px 
+			border-radius: 10px
+			background: #e1f6f7
+			z-index: 0
+			@media screen and (min-width: #{$dw-640})
+				display: block
+		&:before
+			content: ""
+			height: 60px
+			width: 60px
+			margin: 20px 0 
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100%
+			background-repeat: no-repeat    
+			display: none
+			position: relative
+			z-index: 1 
+			@media screen and (min-width: #{$dw-640})
+				display: block
+	.squer7
+		margin-left: -100px
+		margin-top: -100px
+		width: 200px
+		height: 200px
+		background: #E6F7FE
+		z-index: 0
+		@media screen and (min-width: #{$dw-480})
+			margin-left: -125px
+			margin-top: -125px
+			width: 250px
+			height: 250px
+	.industry-inner-content-img
+		width: 190px
+		height: 194px
+		position: absolute
+		bottom: 10px
+		left: 10%
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100%   
+		background-repeat: no-repeat 
+		background-position: bottom 
+		
+/*industry inner content style*/
+/*add img in section*/
+.industry-inner-1 //add svg img in section 1
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/threePerson.svg')	
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-1.png')
+			
+.industry-inner-2 //add svg img in section 2
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/TwoPersons.svg')
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-2.png')
+
+.industry-inner-3 //add svg img in section 3
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/OnePerson.svg')
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-3.png')
+		
+.industry-inner-4 //add svg img in section 4
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/threePerson.svg')
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-4.png')
+			
+.industry-inner-5 //add svg img in section 5
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/threePerson.svg')
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-5.png')
+
+.industry-inner-6 //add svg img in section 6
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/threePerson.svg')
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-6.png')
+
+.industry-inner-7 //add svg img in section 7
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/threePerson.svg')
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-7.png')
+
+.industry-inner-8 //add svg img in section 8
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/threePerson.svg')
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-8.png')
+
+.industry-inner-9 //add svg img in section 9
+	.industry-inner-content
+		&:nth-child(1)
+			h5
+				&:before
+					background-image: url('../img/threePerson.svg')
+		.industry-inner-content-img
+			background-image: url('../img/industry-inner-img-9.png')
+			
+
+.address-industry
+		width: 100%
+		background: #FFF
+		position: absolute
+		bottom: 0
+		@media screen and (min-width: #{$dw-640})
+			background: transparent
+			color: #FFF 
+.industry-contact
+	position: relative
+	background-image: none
+	-webkit-background-size: 100% 
+	-o-background-size: 100% 
+	background-size: 100%
+	background-repeat: no-repeat
+	@media screen and (min-width: #{$dw-640})
+		background-image: url('../img/img2.jpg')
+	.overlay
+		height: 95%
+		top: 0
+		@media screen and (min-width: #{$dw-640})
+			height: 100%
+	.container
+		position: relative
+		z-index: 20
+	.contact-block
+		background: rgba(255, 255, 255, 0.1)
+		-webkit-box-shadow: none 
+		box-shadow: none 
+		color: #FFF
+		input, textarea, .submit-message
+			color: #FFF
+			border: 1px solid #FFF
+			-webkit-box-shadow: none 
+			box-shadow: none   
+			background: transparent
+			font-weight: normal
+		input::-webkit-input-placeholder
+			color: #fff
+		input::-moz-placeholder
+			color: #fff
+		input:-moz-placeholder
+			color: #fff
+		input:-ms-input-placeholder
+			color: #fff
+		textarea::-webkit-input-placeholder
+			color: #fff
+			font-family: $font
+		textarea::-moz-placeholder
+			color: #fff
+			font-family: $font
+		textarea:-moz-placeholder
+			color: #fff
+			font-family: $font
+		textarea:-ms-input-placeholder
+			color: #fff
+			font-family: $font
+	.header-section
+		&:before
+			display: none
+		
+
