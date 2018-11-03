@@ -59,6 +59,7 @@ html, body
 .date-time
 	color: #1DA1F3
 	font-size: 34px
+	text-align: left 
 	label
 		cursor: pointer
 .p-date-time
@@ -78,6 +79,28 @@ html, body
 .chart-item
 	font-size: 40px
 	text-align: center
+	
+.tab-chart-block 
+		display: none
+		text-align: center
+		font-size: 50px
+		padding: 40px  
+
+.tabs
+	p
+		cursor: pointer
+		margin-right: 30px
+		-webkit-transition: 0.2s 
+		-moz-transition: 0.2s 
+		-ms-transition: 0.2s 
+		-o-transition: 0.2s 
+		transition: 0.2s 
+		&:hover
+			border-bottom: 2px solid  #464E5F
+			font-weight: bold 
+	.active-tab
+		border-bottom: 2px solid  #464E5F
+		font-weight: bold 
 
 .controller
 	width: 100%
