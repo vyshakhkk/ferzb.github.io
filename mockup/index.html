@@ -10,6 +10,7 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800&amp;subset=hebrew" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
@@ -23,12 +24,12 @@
 				<div class="flex flex-column flex-center flex-row-reverse flex-md-sb">
 					<div class="buttons flex flex-sb grid-12 grid-md-6 grid-ld-5">
 						<div class="grid-6">
-							<div class="button-img"></div>
+							<div class="button-img megaphone"></div>
 							<a data-remodal-target="buttons" class="link-button">צירת מבצע</a>
 							<p>החודש פרסמת<span>12</span>קמפיינים</p>
 						</div>
 						<div class="grid-6">
-							<div class="button-img"></div>
+							<div class="button-img batcket"></div>
 							<a data-remodal-target="buttons" class="link-button">הקדמת תשלומים</a>
 							<p>55 תווים לטקסט חופשי לורם איפסום דולור סיט אמט, קונסקט</p>
 						</div>
@@ -40,8 +41,8 @@
 						<h3 class="h3-header">התפלגות תקבולים</h3>
 					</div>
 					<div class="date-time grid-12 grid-md-6 grid-ld-3">
-						<label data-remodal-target="modal" for="dateStart">date</label>
-						<p data-remodal-target="modal" class="p-date-time">01/09/18-13/09/18</p>
+						<label for="data"> - נתונים נכון ל</label>
+						<input id="data" class="date-range" type="text" name="daterange" oninput="date()" />
 					</div>
 				</div>
 			</div>
@@ -52,12 +53,16 @@
 			<div class="charts flex flex-column flex-vertical-center flex-ld-row flex-sb">
 				<div class="grid-12 grid-ld-6">
 					<h3 class="h3-header">הכנסות</h3>
-					<div class="chart-item">
-						chart
+					<div class="chart-item chart-first">
+						<div class="chart-item-img"></div>
+						620K
 					</div>
 				</div>
 				<div class="grid-12 grid-ld-6">
 					<h3 class="h3-header">התפלגות מכירות</h3>
+					<div class="chart-item">
+						chart
+					</div>
 				</div>
 				<div class="grid-12 grid-ld-6">
 					<h3 class="h3-header">הנחות</h3>
@@ -72,7 +77,7 @@
 						<p class="tab-chart" name="tab-2">גיל</p>
 						<p class="tab-chart" name="tab-3">מגורים</p>
 					</div>
-					<div class="charts-item">
+					<div class="chart-item">
 						<div id="tab-1" class="tab-chart-block" style="display:block">
 							chart 1
 						</div>
@@ -86,19 +91,14 @@
 				</div>
 			</div>
 		</article>
-		<div class="date-popup remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
-				<p>From</p>
-				<input id="dateStart" type="date" oninput="date()">
-				<p>To</p>
-				<input id="dateFinal" type="date" oninput="date()">
-			</div>
-		</div>
 		<div class="popup-button remodal" data-remodal-id="buttons" data-remodal-options="hashTracking: false">
 			<div class="popup-content">
 				<h1>Popup</h1>
 			</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 		<script src="js/remodal.min.js"></script>	
 		<script src="js/script.js"></script>
 	</body>

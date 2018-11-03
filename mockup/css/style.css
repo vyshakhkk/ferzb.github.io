@@ -65,8 +65,21 @@ body {
 }
 
 .button-img {
+  margin: 0 auto;
   width: 145px;
-  height: 130px;
+  height: 150px;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.megaphone {
+  background-image: url("../img/button1.png");
+}
+
+.batcket {
+  background-image: url("../img/button2.png");
 }
 
 .link-button {
@@ -81,14 +94,41 @@ body {
   padding: 22px 10px;
 }
 
-.date-time {
+.date-range {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  display: block;
   color: #1DA1F3;
-  font-size: 34px;
+  font-size: 24px;
+}
+
+.daterangepicker.ltr.show-calendar.opensleft {
+  width: 500px;
+}
+
+.date-time {
   text-align: left;
 }
 
 .date-time label {
   cursor: pointer;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.date-time label:before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/calendar.png");
 }
 
 .p-date-time {
@@ -108,11 +148,36 @@ body {
 
 .charts .grid-12 {
   height: 500px;
+  padding: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
 }
 
 .chart-item {
   font-size: 40px;
-  text-align: center;
+  height: 100%;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.chart-first {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.chart-item-img {
+  width: 150px;
+  height: 250px;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/img-chart.png");
 }
 
 .tab-chart-block {
