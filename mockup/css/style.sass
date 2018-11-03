@@ -64,18 +64,18 @@ html, body
 	text-align: center
 	padding: 22px 10px
 
+.charts-circle
+	padding: 10px
+
 .date-range
-	background: transparent
-	border: none
-	font-weight: bold
-	display: block 
-	color: #1DA1F3
-	font-size: 24px 
-	
+	opacity: 0
+	position: absolute 
+		
 .daterangepicker.ltr.show-calendar.opensleft
 	width: 500px
 .date-time
 	text-align: left 
+	position: relative
 	label
 		cursor: pointer
 		display: flex
@@ -93,10 +93,9 @@ html, body
 			background-repeat: no-repeat
 			background-image: url('../img/calendar.png') 
 .p-date-time
-	font-weight: 800 
-	cursor: pointer
-
-	
+	font-weight: 800
+	color: #1DA1F3
+	font-size: 36px 
 .bolck-charts
 	background: #FFF
 	padding: 0
@@ -107,8 +106,48 @@ html, body
 	.grid-12
 		height: 500px
 		padding: 10px
-		box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2)
-		margin: 10px 0 
+		margin: 50px 0 
+
+.searching
+	position: relative
+	height: 38px
+	width: 250px
+	margin: 10px 0 10px auto
+.search-btn
+	display: block
+	width: 38px
+	height: 38px
+	-webkit-background-size: 100% 
+	-o-background-size: 100% 
+	background-size: 100% 
+	background-repeat: no-repeat
+	background-image: url('../img/search.png') 
+	position: absolute
+	right: 0
+	cursor: pointer
+	-webkit-transition: all 0.2s ease 
+	-moz-transition: all 0.2s ease 
+	-ms-transition: all 0.2s ease 
+	-o-transition: all 0.2s ease 
+	transition: all 0.2s ease 
+
+.search-open
+	left: 0
+	-webkit-transition: all 0.2s ease 
+	-moz-transition: all 0.2s ease 
+	-ms-transition: all 0.2s ease 
+	-o-transition: all 0.2s ease 
+	transition: all 0.2s ease 
+.search-open ~ 	#search
+	opacity: 1
+	display: block
+#search
+	opacity: 0
+	display: none
+	height: 100%
+	width: 70%
+	margin-left: auto
+	padding: 4px 10px
 .chart-item
 	font-size: 40px
 	height: 100%
@@ -116,7 +155,13 @@ html, body
 	-webkit-justify-content: center 
 	justify-content: center 
 	-webkit-align-items: center 
-	align-items: center 
+	align-items: center
+	img
+		width: 50%
+	
+.box
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2)
+	height: 100%
 
 .chart-first
 	-webkit-flex-direction: column 
@@ -137,7 +182,9 @@ html, body
 		display: none
 		text-align: center
 		font-size: 50px
-		padding: 40px  
+		padding: 40px 
+		img
+			width: 100% 
 .tabs
 	p
 		cursor: pointer

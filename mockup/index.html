@@ -36,13 +36,16 @@
 					</div>
 					<div class="charts-circle grid-12 grid-md-6 grid-ld-2">
 						<h3 class="h3-header">התפלגות תקבולים</h3>
+						<div class="box"></div>
 					</div>
 					<div class="charts-circle grid-12 grid-md-6 grid-ld-2">
 						<h3 class="h3-header">התפלגות תקבולים</h3>
+						<div class="box"></div>
 					</div>
 					<div class="date-time grid-12 grid-md-6 grid-ld-3">
 						<label for="data"> - נתונים נכון ל</label>
-						<input id="data" class="date-range" type="text" name="daterange" oninput="date()" />
+						<input id="data" class="date-range" type="text" name="daterange"/>
+						<p class="p-date-time">11/03/2018 - 11/03/2018</p>
 					</div>
 				</div>
 			</div>
@@ -53,39 +56,57 @@
 			<div class="charts flex flex-column flex-vertical-center flex-ld-row flex-sb">
 				<div class="grid-12 grid-ld-6">
 					<h3 class="h3-header">הכנסות</h3>
-					<div class="chart-item chart-first">
+					<div class="searching">
+						<label class="search-btn" for="search"></label>
+						<input id="search" type="search">
+					</div>
+					<div class="chart-item box chart-first">
 						<div class="chart-item-img"></div>
 						620K
 					</div>
 				</div>
 				<div class="grid-12 grid-ld-6">
 					<h3 class="h3-header">התפלגות מכירות</h3>
-					<div class="chart-item">
-						chart
+					<div class="searching">
+						<label class="search-btn" for="search"></label>
+						<input id="search" type="search">
+					</div>
+					<div class="chart-item box">
+						<img src="img/chart2.png" alt="">
 					</div>
 				</div>
 				<div class="grid-12 grid-ld-6">
 					<h3 class="h3-header">הנחות</h3>
-					<div class="chart-item">
-						chart
+					<div class="searching">
+						<label class="search-btn" for="search"></label>
+						<input id="search" type="search">
+					</div>
+					<div class="chart-item box">
+						<img src="img/chart1.png" alt="">
 					</div>
 				</div>
 				<div class="grid-12 grid-ld-6">
 					<h3 class="h3-header">התפלגות לקוחות</h3>
-					<div class="tabs flex flex-center">
-						<p class="tab-chart active-tab" name="tab-1">מגדר</p>
-						<p class="tab-chart" name="tab-2">גיל</p>
-						<p class="tab-chart" name="tab-3">מגורים</p>
+					<div class="searching">
+						<label class="search-btn" for="search"></label>
+						<input id="search" type="search">
 					</div>
-					<div class="chart-item">
-						<div id="tab-1" class="tab-chart-block" style="display:block">
-							chart 1
+					<div class="box">
+						<div class="tabs flex flex-center">
+							<p class="tab-chart active-tab" name="tab-1">מגדר</p>
+							<p class="tab-chart" name="tab-2">גיל</p>
+							<p class="tab-chart" name="tab-3">מגורים</p>
 						</div>
-						<div id="tab-2" class="tab-chart-block">
-							chart 2
-						</div>
-						<div id="tab-3" class="tab-chart-block">
-							chart 3
+						<div class="chart-item">
+							<div id="tab-1" class="tab-chart-block" style="display:block">
+								<img src="img/chart2.png" alt="">
+							</div>
+							<div id="tab-2" class="tab-chart-block">
+								<img src="img/chart1.png" alt="">
+							</div>
+							<div id="tab-3" class="tab-chart-block">
+								<img src="img/chart2.png" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
