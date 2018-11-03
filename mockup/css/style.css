@@ -159,6 +159,7 @@ body {
   height: 38px;
   width: 250px;
   margin: 10px 0 10px auto;
+  display: none;
 }
 
 .search-btn {
