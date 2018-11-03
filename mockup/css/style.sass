@@ -1,5 +1,7 @@
 @import 'setting.sass';
 @import url('grid.css');
+@import url('remodal.css');
+@import url('remodal-default-theme.css');
 
 html, body
 	direction: ltr
@@ -21,7 +23,7 @@ html, body
 		margin-right: 30px  
 
 .buttons
-	max-width: 300px
+	max-width: 586px
 	
 .h3-header
 	font-weight: bold
@@ -52,12 +54,16 @@ html, body
 	border-radius: 4px
 	color: #fff 
 	text-align: center
-	padding: 4px 10px
+	padding: 22px 10px
 
 .date-time
 	color: #1DA1F3
-	font-size: 60px
-	font-weight: 800  
+	font-size: 34px
+	label
+		cursor: pointer
+.p-date-time
+	font-weight: 800 
+	cursor: pointer
 
 	
 .bolck-charts
@@ -69,6 +75,9 @@ html, body
 	padding: 50px 30px
 	.grid-12
 		height: 500px
+.chart-item
+	font-size: 40px
+	text-align: center
 
 .controller
 	width: 100%
