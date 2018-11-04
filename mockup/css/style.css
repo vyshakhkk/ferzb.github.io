@@ -26,7 +26,6 @@ body {
 
 .top-of-page-text {
   text-align: left;
-  margin: 20px 0 50px;
 }
 
 .top-of-page-text p {
@@ -41,7 +40,7 @@ body {
 
 .buttons {
   max-width: 586px;
-  margin: 40px auto;
+  margin: 10px auto 30px;
   -webkit-order: 0;
   -ms-order: 0;
   order: 0;
@@ -64,13 +63,13 @@ body {
 
 .charts-circle,
 .date-time {
-  margin: 40px 0;
+  margin: 10px 0 30px;
 }
 
 .button-img {
   margin: 0 auto;
-  width: 145px;
-  height: 150px;
+  width: 80px;
+  height: 81px;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
@@ -94,7 +93,7 @@ body {
   border-radius: 4px;
   color: #fff;
   text-align: center;
-  padding: 22px 10px;
+  padding: 10px;
 }
 
 .charts-circle {
@@ -124,8 +123,8 @@ body {
 .date-time label:before {
   content: "";
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 57px;
+  height: 57px;
   margin-right: 10px;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
@@ -142,33 +141,31 @@ body {
 
 .bolck-charts {
   background: #FFF;
-  padding: 0;
-  margin: 50px auto;
+  padding: 0 0 45px;
+  margin: 0px auto;
 }
 
 .charts {
-  padding: 50px 30px;
+  padding: 0px 30px;
 }
 
 .charts .grid-12 {
-  height: 500px;
+  height: 170px;
   width: 100%;
-  padding: 10px;
-  margin: 50px 0;
+  margin: 16px 50px 60px;
 }
 
 .searching {
   position: relative;
-  display: none;
-  height: 38px;
-  width: 250px;
-  margin: 10px 0 10px auto;
+  display: block;
+  height: 28px;
+  margin: 2px 0 6px auto;
 }
 
 .search-btn {
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
@@ -177,34 +174,6 @@ body {
   position: absolute;
   right: 0;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.search-open {
-  left: 0;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.search-open ~ #search {
-  opacity: 1;
-  display: block;
-}
-
-#search {
-  opacity: 0;
-  display: none;
-  height: 100%;
-  width: 70%;
-  margin-left: auto;
-  padding: 4px 10px;
 }
 
 .chart-item {
@@ -218,7 +187,33 @@ body {
 }
 
 .chart-item img {
-  width: 50%;
+  width: 200px;
+}
+
+.popup-chart {
+  max-width: 80%;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.popup-chart img {
+  width: 40%;
+}
+
+.box.popup-chart {
+  max-width: 80%;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.box.popup-chart img {
+  width: 140%;
 }
 
 .box {
@@ -235,10 +230,11 @@ body {
 
 .chart-item-img {
   width: 150px;
-  height: 250px;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  height: 150px;
+  background-position: center;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../img/img-chart.png");
 }
@@ -251,7 +247,7 @@ body {
 }
 
 .tab-chart-block img {
-  width: 100%;
+  width: 180px;
 }
 
 .tabs p {
@@ -276,7 +272,7 @@ body {
 
 .controller {
   width: 100%;
-  height: 105px;
+  height: 55px;
   background: #464E5F;
 }
 

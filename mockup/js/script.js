@@ -15,9 +15,6 @@ $(function() {
   	$('.p-date-time').text(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
   });
 });
-$('.search-btn').click(function() {
-	$(this).toggleClass('search-open');
-});
 var date = moment();
 $('.p-date-time').text(date.format("DD/MM/YYYY")+ ' - '+date.format("DD/MM/YYYY"))
 $('.tab-chart').click(function() {
@@ -28,3 +25,10 @@ $('.tab-chart').click(function() {
 	$('div[id=' +id+ ']').fadeIn().css({
 		display: 'block'
 	});});
+
+var wPopupChart = $('.popup-chart').width()
+var hPopupChart = $('.popup-chart').height()
+$('.popup-chart').css({
+  'margin-left': '-' + wPopupChart/2 + 'px',
+  'margin-top': '-' + hPopupChart/2 + 'px'
+});

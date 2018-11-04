@@ -53,45 +53,69 @@
 	<!--contant page -->
 		<article class="bolck-charts wrapper">
 			<div class="controller"></div>
-			<div class="charts flex flex-column flex-vertical-center flex-ld-row flex-sb">
-				<div class="grid-12 grid-ld-6">
+			<div class="charts flex flex-column flex-vertical-center flex-ld-row flex-center">
+				<div class="grid-12 grid-ld-4">
 					<h3 class="h3-header">הכנסות</h3>
 					<div class="searching">
-						<label class="search-btn" for="search"></label>
-						<input id="search" type="search">
+						<span class="search-btn" data-remodal-target="button-chart-0"></span>
 					</div>
 					<div class="chart-item box chart-first">
 						<div class="chart-item-img"></div>
 						620K
 					</div>
+					<div class="chart-item box chart-first remodal popup-chart" data-remodal-id="button-chart-0" data-remodal-options="hashTracking: false">
+						<div class="chart-item-img"></div>
+						620K
+					</div>
 				</div>
-				<div class="grid-12 grid-ld-6">
+				<div class="grid-12 grid-ld-4">
 					<h3 class="h3-header">התפלגות מכירות</h3>
 					<div class="searching">
-						<label class="search-btn" for="search"></label>
-						<input id="search" type="search">
+						<span class="search-btn" data-remodal-target="button-chart-1"></span>
 					</div>
 					<div class="chart-item box">
 						<img src="img/chart2.png" alt="">
 					</div>
+					<div class="chart-item remodal popup-chart" data-remodal-id="button-chart-1" data-remodal-options="hashTracking: false">
+						<img src="img/chart2.png" alt="">
+					</div>
 				</div>
-				<div class="grid-12 grid-ld-6">
+				<div class="grid-12 grid-ld-4">
 					<h3 class="h3-header">הנחות</h3>
 					<div class="searching">
-						<label class="search-btn" for="search"></label>
-						<input id="search" type="search">
+						<span class="search-btn" data-remodal-target="button-chart-2"></span>
 					</div>
 					<div class="chart-item box">
 						<img src="img/chart1.png" alt="">
 					</div>
+					<div class="chart-item remodal popup-chart" data-remodal-id="button-chart-2" data-remodal-options="hashTracking: false">
+						<img src="img/chart1.png" alt="">
+					</div>
 				</div>
-				<div class="grid-12 grid-ld-6">
+				<div class="grid-12 grid-ld-4">
 					<h3 class="h3-header">התפלגות לקוחות</h3>
 					<div class="searching">
-						<label class="search-btn" for="search"></label>
-						<input id="search" type="search">
+						<span class="search-btn" data-remodal-target="button-chart-3"></span>
 					</div>
 					<div class="box">
+						<div class="tabs flex flex-center">
+							<p class="tab-chart active-tab" name="tab-1">מגדר</p>
+							<p class="tab-chart" name="tab-2">גיל</p>
+							<p class="tab-chart" name="tab-3">מגורים</p>
+						</div>
+						<div class="chart-item">
+							<div id="tab-1" class="tab-chart-block" style="display:block">
+								<img src="img/chart2.png" alt="">
+							</div>
+							<div id="tab-2" class="tab-chart-block">
+								<img src="img/chart1.png" alt="">
+							</div>
+							<div id="tab-3" class="tab-chart-block">
+								<img src="img/chart2.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="box remodal popup-chart" data-remodal-id="button-chart-3" data-remodal-options="hashTracking: false">
 						<div class="tabs flex flex-center">
 							<p class="tab-chart active-tab" name="tab-1">מגדר</p>
 							<p class="tab-chart" name="tab-2">גיל</p>
