@@ -106,10 +106,6 @@ body {
   position: absolute;
 }
 
-.daterangepicker.ltr.show-calendar.opensleft {
-  width: 500px;
-}
-
 .date-time {
   text-align: left;
   position: relative;
