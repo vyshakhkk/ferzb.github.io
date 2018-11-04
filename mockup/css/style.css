@@ -41,17 +41,10 @@ body {
 
 .buttons {
   max-width: 586px;
-}
-
-.h3-header {
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.buttons,
-.charts-circle,
-.date-time {
-  margin: 40px 0;
+  margin: 40px auto;
+  -webkit-order: 0;
+  -ms-order: 0;
+  order: 0;
 }
 
 .buttons div {
@@ -62,6 +55,16 @@ body {
   display: block;
   font-weight: bold;
   font-size: 22px;
+}
+
+.h3-header {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.charts-circle,
+.date-time {
+  margin: 40px 0;
 }
 
 .button-img {
@@ -110,6 +113,9 @@ body {
 .date-time {
   text-align: left;
   position: relative;
+  -webkit-order: -1;
+  -ms-order: -1;
+  order: -1;
 }
 
 .date-time label {
@@ -150,16 +156,17 @@ body {
 
 .charts .grid-12 {
   height: 500px;
+  width: 100%;
   padding: 10px;
   margin: 50px 0;
 }
 
 .searching {
   position: relative;
+  display: none;
   height: 38px;
   width: 250px;
   margin: 10px 0 10px auto;
-  display: none;
 }
 
 .search-btn {
@@ -275,4 +282,26 @@ body {
   width: 100%;
   height: 105px;
   background: #464E5F;
+}
+
+@media screen and (min-width: 780px) {
+  .buttons {
+    -webkit-order: -1;
+    -ms-order: -1;
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .buttons {
+    -webkit-order: 0;
+    -ms-order: 0;
+    order: 0;
+  }
+
+  .date-time {
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+  }
 }
