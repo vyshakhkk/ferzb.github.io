@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6,p,a,i,em,strong
 	margin: 0
 
 a
+	cursor: pointer
 	-webkit-transition: all 0.3s ease 
 	-moz-transition: all 0.3s ease 
 	-ms-transition: all 0.3s ease 
@@ -35,8 +36,16 @@ ul
 	list-style: none 
 
 input, textarea, button
-	outline: none 
-
+	outline: none
+	
+textarea::-webkit-input-placeholder
+	font-family: $font
+textarea::-moz-placeholder
+	font-family: $font
+textarea:-moz-placeholder
+	font-family: $font
+textarea:-ms-input-placeholder
+	font-family: $font
 /*container-block*/
 .container-block
 	margin: 15px
@@ -93,6 +102,13 @@ input, textarea, button
 	-webkit-justify-content: center 
 	justify-content: center
 
+.flex-vertical-center
+	-webkit-align-items: center 
+	align-items: center 
+
+.flex-vertical-bottom
+	-webkit-align-items: flex-end 
+	align-items: flex-end 
 /*flex-block middle device*/
 
 .flex-md-column
@@ -133,6 +149,16 @@ input, textarea, button
 	@media screen and (min-width: #{$dw-640})
 		-webkit-justify-content: center
 		justify-content: center
+	    
+.flex-md-vertical-center
+	@media screen and (min-width: #{$dw-640})
+		-webkit-align-items: center 
+		align-items: center
+	  
+.flex-md-vertical-bottom
+	@media screen and (min-width: #{$dw-640})
+		-webkit-align-items: flex-end 
+		align-items: flex-end 
 
 /*flex-block semi middle device*/
 
@@ -174,6 +200,16 @@ input, textarea, button
 	@media screen and (min-width: #{$dw-780})
 		-webkit-justify-content: center
 		justify-content: center
+
+.flex-smd-vertical-center
+	@media screen and (min-width: #{$dw-780})
+		-webkit-align-items: center 
+		align-items: center 
+	   
+.flex-smd-vertical-bottom
+	@media screen and (min-width: #{$dw-780})
+		-webkit-align-items: flex-end 
+		align-items: flex-end 
 	
 /*flex-block large device*/
 
@@ -215,6 +251,16 @@ input, textarea, button
 	@media screen and (min-width: #{$dw-960})
 		-webkit-justify-content: center
 		justify-content: center
+	    
+.flex-ld-vertical-center
+	@media screen and (min-width: #{$dw-960})
+		-webkit-align-items: center 
+		align-items: center 
+	  
+.flex-ld-vertical-bottom
+	@media screen and (min-width: #{$dw-960})
+		-webkit-align-items: flex-end 
+		align-items: flex-end 
 
 /*flex-block extra large device*/
 
@@ -256,6 +302,16 @@ input, textarea, button
 	@media screen and (min-width: #{$dw-1100})
 		-webkit-justify-content: center
 		justify-content: center
+	   
+.flex-xld-vertical-center
+	@media screen and (min-width: #{$dw-1100})
+		-webkit-align-items: center 
+		align-items: center
+
+.flex-xld-vertical-bottom
+	@media screen and (min-width: #{$dw-1100})
+		-webkit-align-items: flex-end 
+		align-items: flex-end 
 	    
 /*grid layout with width*/
 
@@ -283,6 +339,33 @@ input, textarea, button
 	+col($col-11, $offset)	
 .col-12
 	+col($col-12, $offset)
+
+/*grid layout middle device*/
+
+.col-sd-1
+	+device-col($dw-480, $col-1, $offset)
+.col-sd-2
+	+device-col($dw-480, $col-2, $offset)
+.col-sd-3
+	+device-col($dw-480, $col-3, $offset)
+.col-sd-4
+	+device-col($dw-480, $col-4, $offset)
+.col-sd-5
+	+device-col($dw-480, $col-5, $offset)
+.col-sd-6
+	+device-col($dw-480, $col-6, $offset)
+.col-sd-7
+	+device-col($dw-480, $col-7, $offset)
+.col-sd-8
+	+device-col($dw-480, $col-8, $offset)
+.col-sd-9
+	+device-col($dw-480, $col-9, $offset)
+.col-sd-10
+	+device-col($dw-480, $col-10, $offset)
+.col-sd-11
+	+device-col($dw-480, $col-11, $offset)
+.col-sd-12
+	+device-col($dw-480, $col-12, $offset)
 	
 /*grid layout middle device*/
 
@@ -418,6 +501,33 @@ input, textarea, button
 	+grid($col-11, $offset)
 .grid-12
 	+grid($col-12, $offset)
+
+/*grid layout small device*/
+
+.grid-sd-1
+	+device-grid($dw-480, $col-1, $offset)
+.grid-sd-2
+	+device-grid($dw-480, $col-2, $offset)
+.grid-sd-3
+	+device-grid($dw-480, $col-3, $offset)
+.grid-sd-4
+	+device-grid($dw-480, $col-4, $offset)
+.grid-sd-5
+	+device-grid($dw-480, $col-5, $offset)
+.grid-sd-6
+	+device-grid($dw-480, $col-6, $offset)
+.grid-sd-7
+	+device-grid($dw-480, $col-7, $offset)
+.grid-sd-8
+	+device-grid($dw-480, $col-8, $offset)
+.grid-sd-9
+	+device-grid($dw-480, $col-9, $offset)
+.grid-sd-10
+	+device-grid($dw-480, $col-10, $offset)
+.grid-sd-11
+	+device-grid($dw-480, $col-11, $offset)
+.grid-md-12
+	+device-grid($dw-640, $col-12, $offset)
 	
 /*grid layout middle device*/
 

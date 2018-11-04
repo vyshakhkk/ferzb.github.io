@@ -1253,9 +1253,17 @@ footer {
   margin: 100px auto 0px;
 }
 
+.about-us-circle-block .circul-section section {
+  margin: 20px 0;
+}
+
 .about-us-circle-block .circul {
   border-color: #FFF;
   color: #FFF;
+  font-size: 28px;
+  padding: 34px 0px;
+  width: 110px;
+  height: 110px;
 }
 
 .about-us-circle-block .inner-header {
@@ -1426,13 +1434,28 @@ footer {
   display: block;
 }
 
+.skillsAboutSlider .owl-dots,
+.expert-slider .owl-dots {
+  bottom: -70px;
+}
+
+.skillsAboutSlider .owl-dots span,
+.expert-slider .owl-dots span {
+  background: #1ad4b7	!important;
+}
+
 .story.about-us-beyondroot {
   width: 100%;
+  text-align: left;
 }
 
 .story.about-us-beyondroot .story-content {
-  margin-left: 0;
+  margin-left: auto;
   margin-right: 8%;
+}
+
+.story.about-us-beyondroot .story-text {
+  font-size: 20px;
 }
 
 .story.about-us-beyondroot .story-show {
@@ -1464,7 +1487,7 @@ footer {
   border-bottom-left-radius: 0px;
 }
 
-.abouts-us-our-expect {
+.abouts-us-our-expert {
   text-align: center;
   background-image: url("../img/Blue-triangle-teft.png");
   -webkit-background-size: auto;
@@ -1474,20 +1497,106 @@ footer {
   background-position: left 70px;
 }
 
-.expect-slider-item {
+.expert-slider .owl-nav.disabled {
+  display: none;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: auto;
+}
+
+.expert-slider .owl-nav.disabled span {
+  font-size: 60px;
+}
+
+.expert-slider-item {
   text-align: left;
 }
 
-.expect-slider-item .expect-item-img {
-  width: 300px;
+.expert-slider-item .expert-item-img {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
-.expect-slider-item p {
+.expert-slider-item .expert-item-img img {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.expert-slider-item p {
   font-size: 14px;
 }
 
 .about-us-solutions {
   margin-top: 500px;
+}
+
+.communication {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.communication .story-show {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.communication .story-show .overlay {
+  opacity: 0.3;
+}
+
+.communication .story-show .story-show-inner {
+  background-image: url("../img/communication-.png");
+}
+
+.communication-inner {
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+.communication-inner-disc {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.communication-block-disc {
+  margin: 20px auto;
+}
+
+.communication-text {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  margin: 10px;
+  max-width: 1100px;
+}
+
+.communication-img {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.communication-inner-second div {
+  margin: 20px auto;
+}
+
+.communication-inner-second div:nth-child(1) {
+  margin: 40px 0;
+}
+
+.communication-inner-second div:nth-child(2) {
+  max-width: 400px;
+}
+
+.communication-inner-second div:nth-child(3) {
+  text-align: left;
+  max-width: 100%;
+  -webkit-order: -1;
+  -ms-order: -1;
+  order: -1;
+  margin: 20px 30px;
 }
 
 /*********next page for document Industry************/
@@ -1793,6 +1902,10 @@ footer {
     height: 340px;
   }
 
+  .story.about-us-beyondroot .story-text {
+    font-size: 30px;
+  }
+
   .industry-inner-content .squer7 {
     margin-left: -125px;
     margin-top: -125px;
@@ -1848,6 +1961,17 @@ footer {
     text-align: center;
   }
 
+  .about-us-circle-block .circul-section section {
+    margin: 50px 0;
+  }
+
+  .about-us-circle-block .circul {
+    width: 170px;
+    height: 170px;
+    font-size: 48px;
+    padding: 44px 0;
+  }
+
   .industry-content {
     background-image: url("../img/industry-inner-bg.png");
   }
@@ -1888,6 +2012,25 @@ footer {
 
   .industry-contact .overlay {
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .communication-inner-second div {
+    margin: 40px 10px;
+  }
+
+  .communication-inner-second div:nth-child(1) {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
+
+  .communication-inner-second div:nth-child(3) {
+    margin: 20px 10px;
+    max-width: 270px;
+    -webkit-order: 0;
+    -ms-order: 0;
+    order: 0;
   }
 }
 
@@ -2087,6 +2230,10 @@ footer {
     border-bottom-left-radius: 10px;
   }
 
+  .expert-slider .owl-nav.disabled {
+    display: flex;
+  }
+
   .industry-content section:nth-child(2n) {
     min-height: 660px;
     -webkit-flex-direction: row-reverse;
@@ -2098,6 +2245,27 @@ footer {
     background-image: url("../img/border-dots.png");
     min-height: 660px;
     min-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .communication-inner {
+    width: 95%;
+    margin-left: auto;
+  }
+
+  .communication-inner-disc {
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+  }
+
+  .communication-block-disc {
+    margin: 0px 0 20px;
+  }
+
+  .communication-inner-second div:nth-child(1) {
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
   }
 }
 

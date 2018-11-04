@@ -72,11 +72,14 @@ $('.skillsAboutSlider').owlCarousel({
 	loop:true,
 	margin:50,
 	dots:false,
+	autoplay:true,
 	responsive:{
 		0:{
+			dots:true,
 			items:2
 		},
 		640:{
+			dots:true,
 			items:4
 		},
 		960:{
@@ -84,15 +87,17 @@ $('.skillsAboutSlider').owlCarousel({
 		},
 	}
 })
-$('.expect-slider').owlCarousel({
+$('.expert-slider').owlCarousel({
 	loop:true,
-	margin:0,
+	margin:50,
 	dots:false,
 	responsive:{
 		0:{
+			dots:true,
 			items:1
 		},
 		640:{
+			dots:true,
 			items:2
 		},
 		960:{
