@@ -156,9 +156,11 @@ body {
 }
 
 .searching {
-  position: relative;
+  position: absolute;
   display: block;
   height: 28px;
+  top: 2px;
+  right: 2px;
   margin: 2px 0 6px auto;
 }
 
@@ -219,6 +221,7 @@ body {
 .box {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   height: 100%;
+  position: relative;
 }
 
 .chart-first {

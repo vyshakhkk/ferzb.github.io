@@ -26,9 +26,18 @@ $('.tab-chart').click(function() {
 		display: 'block'
 	});});
 
+var oldWidth = window.innerWidth;
+window.onresize = function () {
+  var newWidth = window.innerWidth;
+  if (newWidth != oldWidth) {
+    window.location.reload();
+    oldWidth = newWidth;
+  }
+};
 var wPopupChart = $('.popup-chart').width()
 var hPopupChart = $('.popup-chart').height()
+var wPc = (wPopupChart/2)+36
 $('.popup-chart').css({
-  'margin-left': '-' + wPopupChart/2 + 'px',
+  'margin-left': '-' + wPc + 'px',
   'margin-top': '-' + hPopupChart/2 + 'px'
 });
