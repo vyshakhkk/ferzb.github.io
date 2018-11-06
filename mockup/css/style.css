@@ -89,7 +89,6 @@ body {
 }
 
 .link-button {
-  min-width: 130px;
   margin: 8px 0;
   display: block;
   background: #1DA1F3;
@@ -304,7 +303,7 @@ body {
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1100px) {
   .buttons {
     -webkit-order: 0;
     -ms-order: 0;
