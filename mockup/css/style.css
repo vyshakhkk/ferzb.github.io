@@ -226,6 +226,15 @@ body {
   width: 140%;
 }
 
+.remodal-close {
+  right: 0 !important;
+  left: initial;
+}
+
+.remodal-close:before {
+  font-size: 50px;
+}
+
 .box {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   height: 100%;
