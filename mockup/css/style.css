@@ -24,6 +24,10 @@ body {
 
 /***********header page***********/
 
+.top-of-page {
+  margin-bottom: 30px;
+}
+
 .top-of-page-text {
   text-align: left;
 }
@@ -193,16 +197,20 @@ body {
 }
 
 .popup-chart {
+  opacity: 0;
   max-width: 80%;
   width: 80%;
   height: 80%;
   top: 50%;
   left: 50%;
-  position: absolute;
 }
 
 .popup-chart img {
   width: 40%;
+}
+
+.popup-chart.remodal-is-opened {
+  opacity: 1;
 }
 
 .box.popup-chart {
