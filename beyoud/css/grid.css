@@ -146,6 +146,21 @@ textarea:-ms-input-placeholder {
   justify-content: center;
 }
 
+.flex-start {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-vertical-top {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
 .flex-vertical-center {
   -webkit-align-items: center;
   align-items: center;
@@ -427,6 +442,21 @@ textarea:-ms-input-placeholder {
     justify-content: center;
   }
 
+  .flex-md-start {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .flex-md-end {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+
+  .flex-md-vertical-top {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+
   .flex-md-vertical-center {
     -webkit-align-items: center;
     align-items: center;
@@ -578,6 +608,21 @@ textarea:-ms-input-placeholder {
     justify-content: center;
   }
 
+  .flex-smd-start {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .flex-smd-end {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+
+  .flex-smd-vertical-top {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+
   .flex-smd-vertical-center {
     -webkit-align-items: center;
     align-items: center;
@@ -725,6 +770,21 @@ textarea:-ms-input-placeholder {
     justify-content: center;
   }
 
+  .flex-ld-start {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .flex-ld-end {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+
+  .flex-ld-vertical-top {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+
   .flex-ld-vertical-center {
     -webkit-align-items: center;
     align-items: center;
@@ -870,6 +930,21 @@ textarea:-ms-input-placeholder {
   .flex-xld-center {
     -webkit-justify-content: center;
     justify-content: center;
+  }
+
+  .flex-xld-start {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .flex-xld-end {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+
+  .flex-xld-vertical-top {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
   }
 
   .flex-xld-vertical-center {

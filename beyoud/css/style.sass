@@ -94,7 +94,7 @@ html, body
 	-webkit-border-top-left-radius: 20px 
 	border-top-left-radius: 20px
 	@media screen and (min-width: #{$dw-640})
-		height: 100%
+		height: 98%
 .squer6
 	width: 100%
 	height: 65%
@@ -119,7 +119,7 @@ html, body
 	width: 300px
 	height: 300px
 	position: absolute
-	z-index: -2
+	z-index: 0
 	top: 50%
 	left: 50%
 	margin-left: -150px 
@@ -408,7 +408,21 @@ nav.nav-open
 		&:hover
 			background: #FFF
 			color: #05AEF5 
-		
+.btn-global
+	color: #FFF
+	font-size: 16px
+	width: 170px
+	min-height: 50px 
+	display: flex
+	-webkit-justify-content: center
+	justify-content: center
+	-webkit-align-items: center 
+	align-items: center 
+	-webkit-border-radius: 30px 
+	border-radius: 30px
+	background-image: -moz-linear-gradient(100deg, #1bdec0 0%, #05aef5 100%)
+	background-image: -webkit-linear-gradient(100deg, #1bdec0 0%, #05aef5 100%)
+	background-image: -ms-linear-gradient(100deg, #1bdec0 0%, #05aef5 100%)
 /***partners block style*******/
 .partners
 	position: relative
@@ -464,7 +478,8 @@ nav.nav-open
 	margin-bottom: 80px
 	.container
 		text-align: center
-		
+.h3-block
+	text-align: center		
 .header-section
 	display: inline-block
 	font-size: $h3-size
@@ -504,6 +519,7 @@ nav.nav-open
 .inner-header
 	margin: 10px 0 20px
 	font-weight: 800
+	position: relative
 	font-size: $h4-size
 	
 .about-img
@@ -537,7 +553,7 @@ nav.nav-open
 
 	.story-show-inner
 		height: 100%
-		background: url('../img/img1.jpg') center center no-repeat
+		background: url('../img/img1.jpg') top center no-repeat
 		-webkit-background-size: cover 
 		-o-background-size: cover 
 		background-size: cover  
@@ -571,8 +587,15 @@ nav.nav-open
 	margin: 30px 0
 .services
 	position: relative
-	margin-top: 170px 
+	margin-top: 130px 
 	text-align: center
+	padding-top: 100px 
+	background-image: url('../img/Rectangle-9.png')
+	-webkit-background-size: 75% 
+	-o-background-size: 75% 
+	background-size: 75%  
+	background-repeat: no-repeat
+	background-position: top right  
 	section
 		text-align: left 
 		margin: 30px 0
@@ -642,8 +665,14 @@ nav.nav-open
 /*****circul section styles******/
 .global-circle-block
 	position: relative
+	background-image: url('../img/Rectangle-11.png')
+	-webkit-background-size: 75% 
+	-o-background-size: 75% 
+	background-size: 75%  
+	background-repeat: no-repeat
+	background-position: top left 
 .circul-section
-	padding: 20px
+	padding: 38px 20px
 	max-width: 1500px
 	margin: 150px auto
 	text-align: center
@@ -652,15 +681,8 @@ nav.nav-open
 	section
 		position: relative
 		margin: 50px 0
-.bg-squer
-	position: absolute
-	left: 0
-	top: 0
-	overflow: hidden
-	width: 100%
-	height: 100%
-	z-index: -1
 .circul
+	position: relative
 	margin: 0 auto
 	text-align: center
 	font-size: 48px
@@ -856,13 +878,11 @@ nav.nav-open
 	.container
 		text-align: left 
 .users
-	margin: 10px
 	display: block
 	padding: 60px 20%
 	background: #fff 
 	-webkit-border-radius: 20px 
 	border-radius: 20px
-	box-shadow: 0px 0px 40px -8px rgba(0, 0, 0, 0.3)
 	position: relative
 	z-index: 50
 	p
@@ -892,6 +912,10 @@ nav.nav-open
 				font-size: 60px
 			.owl-prev
 				margin-right: 190px 
+	.owl-carousel .owl-stage-outer
+		-webkit-border-radius: 20px 
+		border-radius: 20px 
+		box-shadow: 0px 20px 115px 20px rgba(0, 0, 0, 0.1)
 .user-foto
 	width: 100px
 	height: 100px
@@ -1024,6 +1048,7 @@ nav.nav-open
 	font-size: 16px
 	.inner-header
 		font-size: 16px 
+		margin: 10px 0
 .soc
 	color: #000
 	margin-top: 30px
@@ -1084,6 +1109,7 @@ footer
 .about-us-circle-block
 	position: relative
 	z-index: 20
+	background: none
 	.circul-section 
 		margin: 100px auto 0px
 		section
@@ -1251,7 +1277,11 @@ footer
 		width: 95% 
 	.story-content
 		margin-left: auto
-		margin-right: 8%
+		margin-right: auto
+		max-width: 100%
+		@media screen and (min-width: #{$dw-960})
+			margin-right: 8%
+			max-width: 570px 
 	.story-text
 		font-size: 20px
 		@media screen and (min-width: #{$dw-480})
@@ -1272,8 +1302,9 @@ footer
 			margin-left: auto
 			background-image: url('../img/about-image-bg-pink.png')
 		.story-show-inner
+			height: 410px
 			position: relative
-			background-image: url('../img/communication-4.png')
+			background-image: none
 			width: 100%
 			margin-left: 0
 			-webkit-border-top-left-radius: 0px 
@@ -1331,27 +1362,28 @@ footer
 	p
 		font-size: 14px 
 .about-us-solutions
-	margin-top: 500px
+	margin-top: 220px
 	
 .communication
 	text-align: center
-	margin-top: 100px
+	margin: 60px 0
 	.story-show
 		-webkit-flex-grow: 1
 		flex-grow: 1
 		-webkit-border-radius: 0px 
 		border-radius: 0px
-		.overlay
-			opacity: 0.3
+		padding: 20px 0
 		.story-show-inner
 			background-image: url('../img/communication-.png') 
 .communication-inner
 	text-align: left
 	width: 100%
-	margin: 0
-	@media screen and (min-width: #{$dw-1100})
-		width: 95%
+	max-height: 100% 
+	@media screen and (min-width: 1100px)
+		max-height: 670px 
+		width: 90%
 		margin-left: auto
+		
 .communication-inner-disc
 	-webkit-flex-grow: 1
 	flex-grow: 1
@@ -1359,17 +1391,34 @@ footer
 		-webkit-flex-grow: 0
 		flex-grow: 0
 .communication-block-disc
-		margin: 20px auto
+		-webkit-flex-basis: 300px 
+		flex-basis: 300px 
+		margin: 20px
+		-webkit-flex-grow: 1
+		flex-grow: 1
+		@media screen and (min-width: #{$dw-780})
+			-webkit-flex-grow: 0 
+			flex-grow: 0 
 		@media screen and (min-width: #{$dw-1100})
 			margin: 0px 0 20px
+		
+.communication-block-disc.flex-column-reverse
+	-webkit-order: 1 
+	-ms-order: 1 
+	order: 1
+	@media screen and (min-width: #{$dw-780})
+		-webkit-order: 0 
+		-ms-order: 0 
+		order: 0 
 .communication-text
-	-webkit-flex-grow: 1 
-	flex-grow: 1
-	margin: 10px
-	max-width: 1100px 
+	margin: 40px 16px
+	text-align: left
 .communication-img
-	-webkit-flex-grow: 1
-	flex-grow: 1
+	width: 100%
+	margin: 0
+	@media screen and (min-width: #{$dw-780})
+		width: 300px
+		margin: 0 16px
 .communication-inner-second
 	div
 		margin: 20px auto
@@ -1398,6 +1447,56 @@ footer
 				-webkit-order: 0 
 				-ms-order: 0 
 				order: 0 
+.communication-inner-three
+	.communication-img
+		width: 100%
+		-webkit-flex-grow: 1 
+		flex-grow: 1
+		margin: 0
+		img
+			height: 100%
+	.communication-text
+		width: 300px
+.communication-inner-first-block
+	margin: 30px 0
+	@media screen and (min-width: #{$dw-960})
+		margin: 0
+.communication-inner-img-three 
+	margin: 0
+	-webkit-flex-grow: 1 
+	flex-grow: 1 
+	@media screen and (min-width: #{$dw-960})
+		margin: 0 0 0 10px
+	&:nth-child(1)
+		margin-right: 5px
+	&:nth-child(2)
+		margin-left: 5px 
+.communication-inner-three-right
+	-webkit-flex-grow: 1
+	flex-grow: 1
+	@media screen and (min-width: #{$dw-960})
+		-webkit-flex-grow: 0
+		flex-grow: 0
+.communication-inner-three-img
+	height: 100%
+	
+.about-us-last-section
+	margin: 20px 0
+	padding: 40px 0
+	background: #f5fcfe
+	h3
+		font-size: 38px
+		font-weight: bold
+		text-transform: uppercase
+	a
+		display: block
+		width: 44px
+		height: 33px
+		background: url('../img/carrer-right-arrow.png') no-repeat
+.about-us-last
+	margin: 30px auto
+	@media screen and (min-width: #{$dw-640})
+		margin: 0px 0px 0px auto
 /*********next page for document Industry************/
 
 .industry
@@ -1409,6 +1508,7 @@ footer
 	.inner-block 
 		p:nth-child(2)
 			font-size: 30px
+			width: 600px
 			font-weight: normal  
 
 .industry-content
@@ -1442,7 +1542,7 @@ footer
 					left: 50%
 					top: 50%
 					margin-top: -65px
-					margin-left: -80px
+					margin-left: -150px
 			.industry-inner-content
 				&:nth-child(2)
 					min-height: 340px
@@ -1530,7 +1630,12 @@ footer
 		background-size: 100%   
 		background-repeat: no-repeat 
 		background-position: bottom 
-		
+	
+.industry-content
+	section
+		&:nth-child(2n)
+			.squer7
+				background: #E8FCF9 
 /*industry inner content style*/
 /*add img in section*/
 .industry-inner-1 //add svg img in section 1
@@ -1672,4 +1777,240 @@ footer
 		&:before
 			display: none
 		
+/*********next page for document Career************/
 
+.career
+	min-height: 600px 
+	.overlay
+		opacity: 0.8
+		top: 0
+	.inner-block 
+		p
+			font-size: 38px
+			max-width: 740px
+			font-weight: normal
+			&:nth-child(1)
+				font-weight: 700 
+.recent-jobs-section
+	background: #f7f9f9
+	@media screen and (min-width: #{$dw-480})
+		background: #FFF 
+.recent-jobs-list
+	font-size: 30px
+	box-shadow: 0 10px 16px 1px rgba(0, 0, 0, 0.1)
+	-webkit-border-bottom-left-radius: 10px 
+	border-bottom-left-radius: 10px
+	-webkit-border-bottom-right-radius: 10px 
+	border-bottom-right-radius: 10px
+	li
+		background: #FFF 
+		padding: 40px 10px
+		@media screen and (min-width: #{$dw-480})
+			padding: 40px 25px 
+		@media screen and (min-width: #{$dw-640})
+			padding: 40px 0px 
+		@media screen and (min-width: #{$dw-780})
+			padding: 40px 50px 
+		&:nth-child(1)
+			background: #EEE!important
+			-webkit-border-top-left-radius: 10px 
+			border-top-left-radius: 10px
+			-webkit-border-top-right-radius: 10px 
+			border-top-right-radius: 10px
+			display: none
+			@media screen and (min-width: #{$dw-640})
+				display: flex
+			p
+				text-transform: uppercase
+				&:nth-child(2)
+					display: block
+					margin-left: -105px 
+		&:last-child
+			-webkit-border-bottom-left-radius: 10px 
+			border-bottom-left-radius: 10px
+			-webkit-border-bottom-right-radius: 10px 
+			border-bottom-right-radius: 10px
+		&:nth-child(2n+1)
+			background: #f7fdfe 
+	h5
+		font-weight: 700
+		margin: 6px
+	span
+		margin: 6px
+	a
+		margin: 6px
+		
+.succeed-together-block
+	text-align: center
+	margin: 0px 0 60px
+	padding: 30px
+	-webkit-transition: 0.2s 
+	-moz-transition: 0.2s 
+	-ms-transition: 0.2s 
+	-o-transition: 0.2s 
+	transition: 0.2s
+	&:hover
+		color: #FFF 
+		background-image: -moz-linear-gradient(100deg, #1bdec0 0%, #05aef5 100%)
+		background-image: -webkit-linear-gradient(100deg, #1bdec0 0%, #05aef5 100%)
+		background-image: -ms-linear-gradient(100deg, #1bdec0 0%, #05aef5 100%)
+		.succeed-together-img
+			background-image: url('../img/success-hover.png')
+	.succeed-together-img
+		width: 155px
+		height: 155px
+		margin: 20px auto
+		background-image: url('../img/success.png')
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100%
+		background-repeat: no-repeat
+		-webkit-transition: 0.5s 
+		-moz-transition: 0.5s 
+		-ms-transition: 0.5s 
+		-o-transition: 0.5s 
+		transition: 0.5s 
+	.inner-header
+		text-transform: uppercase
+		font-size: 30px
+		font-weight: 700 
+
+.career-slider-section
+	margin: 60px 0
+	.inner-header
+		font-size: 30px
+		font-weight: 700
+		max-width: 900px
+.career-img 
+	width: 100%
+	padding: 0 20px 
+	margin: 0 auto
+	@media screen and (min-width: #{$dw-960})
+		width: 450px
+		margin: 0
+	@media screen and (min-width: #{$dw-1100})
+		width: 510px
+	@media screen and (min-width:1200px)
+		width: auto
+
+.career-slider
+	margin: 70px 0
+	width: 100%
+	@media screen and (min-width: #{$dw-960})
+		margin: -97px 0px 0px 30px
+		width: 50%
+		display: flex!important
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+	.owl-nav
+		@media screen and (min-width: #{$dw-960})
+			display: flex
+			-webkit-justify-content: space-between
+			justify-content: space-between
+			width: 200px
+			margin: 0 auto
+			-webkit-order: -1
+			-ms-order: -1
+			order: -1
+		span
+			font-size: 60px
+	.owl-dots
+		bottom: -50px
+		span
+			background: #1ad4b7	!important;
+			
+#downloadFile
+	display: block
+	opacity: 0
+	width: 1px
+	position: absolute
+	zoom: -999
+	
+.block-download
+	display: flex
+	-webkit-justify-content: space-between
+	justify-content: space-between
+	-webkit-align-items: center 
+	align-items: center 
+	cursor: pointer
+	padding: 16px 18px
+	margin: 7px 0
+	-webkit-border-radius: 20px 
+	border-radius: 20px 
+	border: 1px solid #bdbdbd
+.text-download
+	font-size: 14px
+	display: block
+.img-download
+	width: 15px
+	height: 18px
+	display: block
+	background-image: url('../img/download.png')
+	background-repeat: no-repeat
+	-webkit-background-size: 100% 
+	-o-background-size: 100% 
+	background-size: 100%  
+
+.custom-select
+	position: relative
+
+.custom-select select
+	display: none
+
+.select-selected
+	width: 100%
+	border-radius: 20px
+	border: 1px solid #bdbdbd
+
+.select-selected
+	&:after
+		position: absolute
+		content: ""
+		top: 24px
+		right: 18px
+		width: 11px
+		height: 8px
+		background-image: url('../img/arrow-select.png')
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100%
+		background-repeat: no-repeat 
+  
+.select-selected.select-arrow-active
+	&:after
+		-webkit-transform: rotate(180deg) 
+		-moz-transform: rotate(180deg) 
+		-ms-transform: rotate(180deg) 
+		-o-transform: rotate(180deg) 
+		transform: rotate(180deg) 
+		top: 24px
+
+.select-items div, .select-selected
+	color: #ffffff
+	padding: 16px 16px
+	cursor: pointer
+	user-select: none
+	text-align: left
+	font-size: 14px
+	color: $text-color 
+
+.select-items
+	position: absolute
+	width: 100%
+	background-color: #fff!important 
+	top: 100%
+	left: 0px
+	right: 0
+	z-index: 99
+	div
+		border-bottom: 1px solid #bdbdbd 
+
+.select-hide
+	display: none
+.select-items
+	div
+		&:hover
+			background-color: rgba(0, 0, 0, 0.1)
+.same-as-selected
+	background-color: rgba(0, 0, 0, 0.1)
