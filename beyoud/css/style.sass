@@ -1420,33 +1420,30 @@ footer
 		width: 300px
 		margin: 0 16px
 .communication-inner-second
+	margin: 40px 0
 	div
-		margin: 20px auto
-		@media screen and (min-width: #{$dw-780})
-			margin: 40px 10px
-		&:nth-child(1)
-			margin: 40px 0
-			@media screen and (min-width: #{$dw-780})
-				-webkit-flex-grow: 1
-				flex-grow: 1
-			@media screen and (min-width: #{$dw-1100})
-				-webkit-flex-grow: 0
-				flex-grow: 0
-		&:nth-child(2)
-			max-width: 400px
-		&:nth-child(3)
-			text-align: left
-			max-width: 100%
-			-webkit-order: -1 
-			-ms-order: -1 
-			order: -1 
-			margin: 20px 30px 
-			@media screen and (min-width: #{$dw-780})
-				margin: 20px 10px
-				max-width: 270px
-				-webkit-order: 0 
-				-ms-order: 0 
-				order: 0 
+		margin: 30px 0
+	img
+		height: 100%
+	.communication-text, .img-communication-5
+		width: 100%
+		margin: 0
+		@media screen and (min-width: #{$dw-640})
+			width: 280px
+			margin: 0 10px
+	.communication-text
+		padding: 0 16px 
+	.img-communication-4, .img-communication-5
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover
+		background-repeat: no-repeat 
+		img
+			opacity: 0
+	.img-communication-5
+		background-image: url('../img/communication-5.png')
+	.img-communication-4
+		background-image: url('../img/communication-4.png')
 .communication-inner-three
 	.communication-img
 		width: 100%
