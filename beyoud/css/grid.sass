@@ -121,6 +121,10 @@ textarea:-ms-input-placeholder
 .flex-vertical-bottom
 	-webkit-align-items: flex-end 
 	align-items: flex-end 
+	
+.flex-vertical-stretch
+	-webkit-align-items: stretch
+	align-items: stretch
 /*flex-block middle device*/
 
 .flex-md-column
@@ -187,6 +191,11 @@ textarea:-ms-input-placeholder
 		-webkit-align-items: flex-end 
 		align-items: flex-end 
 
+.flex-md-vertical-stretch
+	@media screen and (min-width: #{$dw-640})
+		-webkit-align-items: stretch
+		align-items: stretch
+	    
 /*flex-block semi middle device*/
 
 .flex-smd-column
@@ -252,6 +261,11 @@ textarea:-ms-input-placeholder
 	@media screen and (min-width: #{$dw-780})
 		-webkit-align-items: flex-end 
 		align-items: flex-end 
+	   
+.flex-smd-vertical-stretch
+	@media screen and (min-width: #{$dw-780})
+		-webkit-align-items: stretch
+		align-items: stretch
 	
 /*flex-block large device*/
 
@@ -319,6 +333,11 @@ textarea:-ms-input-placeholder
 		-webkit-align-items: flex-end 
 		align-items: flex-end 
 
+.flex-ld-vertical-stretch
+	@media screen and (min-width: #{$dw-960})
+		-webkit-align-items: stretch
+		align-items: stretch
+	    
 /*flex-block extra large device*/
 
 .flex-xld-column
@@ -384,7 +403,11 @@ textarea:-ms-input-placeholder
 	@media screen and (min-width: #{$dw-1100})
 		-webkit-align-items: flex-end 
 		align-items: flex-end 
-	    
+
+.flex-xld-vertical-stretch
+	@media screen and (min-width: #{$dw-1100})
+		-webkit-align-items: stretch
+		align-items: stretch    
 /*grid layout with width*/
 
 .col-1
@@ -410,7 +433,7 @@ textarea:-ms-input-placeholder
 .col-11
 	+col($col-11, $offset)	
 .col-12
-	+col($col-12, $offset)
+	+col($col-12, 30px)
 
 /*grid layout middle device*/
 

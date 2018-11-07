@@ -171,6 +171,11 @@ textarea:-ms-input-placeholder {
   align-items: flex-end;
 }
 
+.flex-vertical-stretch {
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
 /*flex-block middle device*/
 
 /*flex-block semi middle device*/
@@ -226,7 +231,7 @@ textarea:-ms-input-placeholder {
 }
 
 .col-12 {
-  width: calc(100% - 50px);
+  width: calc(100% - 30px);
 }
 
 /*grid layout middle device*/
@@ -467,6 +472,11 @@ textarea:-ms-input-placeholder {
     align-items: flex-end;
   }
 
+  .flex-md-vertical-stretch {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
+
   .col-md-1 {
     width: calc(8.33333% - 50px);
   }
@@ -633,6 +643,11 @@ textarea:-ms-input-placeholder {
     align-items: flex-end;
   }
 
+  .flex-smd-vertical-stretch {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
+
   .col-smd-1 {
     width: calc(8.33333% - 50px);
   }
@@ -795,6 +810,11 @@ textarea:-ms-input-placeholder {
     align-items: flex-end;
   }
 
+  .flex-ld-vertical-stretch {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
+
   .col-ld-1 {
     width: calc(8.33333% - 50px);
   }
@@ -955,6 +975,11 @@ textarea:-ms-input-placeholder {
   .flex-xld-vertical-bottom {
     -webkit-align-items: flex-end;
     align-items: flex-end;
+  }
+
+  .flex-xld-vertical-stretch {
+    -webkit-align-items: stretch;
+    align-items: stretch;
   }
 
   .col-xld-1 {
