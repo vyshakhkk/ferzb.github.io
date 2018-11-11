@@ -1,0 +1,43 @@
+ @media (max-width: 1200px) {
+ 	.boxpadding {
+ 		padding: 0px;
+ 		text-align: center;
+ 	}
+
+ 	.headerhero {
+ 		background-size: cover;
+ 	}
+
+ 	.logo {
+ 		display: inline-block;
+ 		margin-top: 20px;
+ 		margin-bottom: 15px;
+ 		width: 100%;
+ 	}
+
+ 	.LoginBoxHeader {
+ 		float: none;
+ 		margin: 50px auto 0px auto;
+ 		overflow: hidden;
+ 		background-color: rgba(255, 255, 255, 0.8);
+ 	}
+
+ 	.sectionTitle {
+ 		text-align: center;
+ 	}
+ }
+
+ @media (max-width: 768px) {
+	.boxpadding {
+		margin-bottom: 25px;
+		padding: 0px 40px;
+	}
+ }
+ @media (max-width: 480px) {
+	.boxpadding {
+	 
+		padding: 0px;
+	} 
+	.sectionTitle{ margin-bottom: 30px;}
+	.footerLinks{ margin-top: 30px;}
+ }
