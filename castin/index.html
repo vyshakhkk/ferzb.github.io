@@ -43,14 +43,53 @@
          </div>
          </div>
          <img src="images/waveheader.svg" alt="waves" class="waveheader">
-      </header>
-      <section class="sectionpaddig modelcastingSection">
-         <div class="container">
+    </header>
+    <section class="sectionpaddig modelcastingSection">
+        <div class="container">
             <div class="row">
                <div class="col-lg-12 col-xs-12 col-sm-12">
                   <h2 class="sectionTitle">Find models and castings everywhere !</h2>
                </div>
-               <div class="col-lg-4 col-xs-12 col-sm-4">
+               <div class="sectionBox col-lg-4 col-xs-12 col-sm-4">
+               		<div class="inner-box">
+               			<div class="img-box">
+               				<img src="images/model1.png" alt="model1">
+               			</div>
+               			<div class="inner-text">
+               				<h4>Nath88</h4>
+               				<blockquote>
+               					"Lorem ipsum dolor sit amet, consectetur."
+               				</blockquote>	
+               			</div>
+               		</div>
+               </div>
+               <div class="sectionBox col-lg-4 col-xs-12 col-sm-4">
+               		<div class="inner-box">
+               			<div class="img-box">
+               				<img src="images/model1.png" alt="model1">
+               			</div>
+               			<div class="inner-text">
+               				<h4>Nath88</h4>
+               				<blockquote>
+               					"Lorem ipsum dolor sit amet, consectetur."
+               				</blockquote>	
+               			</div>
+               		</div>
+               </div>
+               <div class="sectionBox col-lg-4 col-xs-12 col-sm-4">
+               		<div class="inner-box">
+               			<div class="img-box">
+               				<img src="images/model1.png" alt="model1">
+               			</div>
+               			<div class="inner-text">
+               				<h4>Nath88</h4>
+               				<blockquote>
+               					"Lorem ipsum dolor sit amet, consectetur."
+               				</blockquote>	
+               			</div>
+               		</div>
+               </div>
+               <div class="sectionBox col-lg-4 col-xs-12 col-sm-4">
                   <div class="boxpadding">
                      <div class="castingBoxes">
                         <div class="labelbox">Models</div>
@@ -58,7 +97,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-4 col-xs-12 col-sm-4">
+               <div class="sectionBox col-lg-4 col-xs-12 col-sm-4">
                   <div class="boxpadding">
                      <div class="castingBoxes">
                         <div class="labelbox">Clients</div>
@@ -66,7 +105,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-4 col-xs-12 col-sm-4">
+               <div class="sectionBox col-lg-4 col-xs-12 col-sm-4">
                   <div class="boxpadding">
                      <div class="castingBoxes">
                         <div class="labelbox">Jobs</div>
@@ -86,10 +125,8 @@
 			<p data-remodal-action="close">
 				<img src="images/close_btn.png" class="closebtn">
 			</p>
-			<div class="logo">
-				<a href="#">
-					Sing Up
-				</a>
+			<div class="signup_outer">
+				<h2>Sign Up</h2>
 			</div>
 			<div class="title">
 				<h3>You are</h3>
@@ -97,7 +134,7 @@
 			<div class="model_list">
 				<ul>
 					<li>
-						<a href="#" data-remodal-target="main_bg">
+						<a href="#" data-remodal-target="main_bg_model">
 							<div class="model_img">
 								<img src="images/model1.png" alt="">
 							</div>
@@ -105,7 +142,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" data-remodal-target="main_bg">
+						<a href="#" data-remodal-target="main_bg_client">
 							<div class="model_img">
 								<img src="images/model2.png" alt="">
 							</div>
@@ -118,7 +155,7 @@
 		</div>
 <!--end popup choose sing up-->
 <!--popup choose model sing up-->
-	<div class="main_bg remodal" data-remodal-id="main_bg" data-remodal-options="hashTracking: false">
+	<div id="singup-model" class="main_bg main_bg_model remodal" data-remodal-id="main_bg_model" data-remodal-options="hashTracking: false">
 		<div class="signup_outer">
 			<a href="#" data-remodal-action="close">
 				<img src="images/close_btn.png" class="closebtn">
@@ -138,20 +175,66 @@
 					<input type="password" class="form_control" required="required"  placeholder="Password" name="password">
 				</div>
 				<div class="form_input">
+					<input type="text" id="location" class="form_control" placeholder="location" name="location" value="">
+					<input type="hiden" style="display:none !important" autocomplete="on" required="required" name="type" value="client">
+				</div>
+				<div class="form_input">
 					<div class="box">
 						<input type="file" required="required" name="id_picture" id="file-7" class="inputfile inputfile-6"/>
 						<label for="file-7"><span>ID Picture</span> <img src="images/camera.png" alt=""></label>
 					</div>
+				</div>
+				<div class="form_input">
+					<p>By signing up you confirm that you accept the</p>
+					<div><a href="#">Terms</a> & <a href="#">Conditions</a></div>
 				</div>
 				<div class="login_input text-center">
 					<button class="btn btn_pink" type="submit" style="margin-top:50px;">Done</button>
 				</div>
 			</form>
 		</div>
-
 <!--end popup choose model sing up-->
 <!--popup choose client sing up-->
+	<div id="singup-client" class="main_bg main_bg_client remodal" data-remodal-id="main_bg_client" data-remodal-options="hashTracking: false">
+		<div class="signup_outer">
+			<a href="#" data-remodal-action="close">
+				<img src="images/close_btn.png" class="closebtn">
+			</a>
+			<h2>Sign Up</h2>
+			<form action="/signup" method="POST" enctype="multipart/form-data" id="sign-up-form" class="sing-up-model-form">
+				<div class="form_input">
+					<input type="text" class="form_control" required="required"  placeholder="Full name" name="full_name" value="">
+				</div>
+				<div class="form_input">
+					<input type="email" class="form_control" placeholder="Email" required="required" name="email" value="">
+				</div>
+				<div class="form_input">
+					<input type="text" class="form_control" required="required"  placeholder="Username" name="username" value="">
+				</div>
+				<div class="form_input">
+					<input type="password" class="form_control" required="required"  placeholder="Password" name="password">
+				</div>
+				<div class="form_input">
+					<input type="text" id="location" class="form_control" placeholder="location" name="location" value="">
+					<input type="hiden" style="display:none !important" autocomplete="on" required="required" name="type" value="client">
+				</div>
+				<div class="form_input">
+					<div class="box">
+						<input type="file" required="required" name="id_picture" id="file-7" class="inputfile inputfile-6"/>
+						<label for="file-7"><span>ID Picture</span> <img src="images/camera.png" alt=""></label>
+					</div>
+				</div>
+				<div class="form_input">
+					<p>By signing up you confirm that you accept the</p>
+					<div><a href="#">Terms</a> & <a href="#">Conditions</a></div>
+				</div>
+				<div class="login_input text-center">
+					<button class="btn btn_pink" type="submit" style="margin-top:50px;">Done</button>
+				</div>
+			</form>
+		</div>
 <!--end popup choose client sing up-->
+
       <script src="js/jquery.js"></script>
       <script src="js/remodal.min.js"></script>	
       <script src="js/custom.js" type="text/javascript"></script>

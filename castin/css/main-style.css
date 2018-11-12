@@ -389,13 +389,36 @@
  .modelcastingSection {
  	background-image: url('../images/')
  }
-
+.sectionBox{
+	margin: 16px 0;
+}
  .sectionTitle {
  	font-family: 'Avenir';
  	font-size: 36px;
  	color: #555555;
  	margin-bottom: 98px;
  }
+ .img-box{
+ 	margin: 0 auto;
+ 	width: 168px;
+ 	height: 168px;
+ 	border: 2px solid #f85ab6;
+ 	-webkit-border-radius: 50%;
+	border-radius: 50%;
+ }
+.inner-text{
+	text-align: center;
+	margin: 10px auto;
+	max-width: 320px;
+}
+.inner-text h4{
+	font-weight: 500;
+	font-size: 22px;
+}
+.inner-text blockquote{
+	font-style: italic;
+	font-weight: lighter;
+}
 
  .castingBoxes {
  	color: #fff;
@@ -405,9 +428,6 @@
  	-moz-border-radius: 5px;
  	padding: 20px;
  	min-height: 170px;
-
-
-
  	background: rgba(137, 222, 252, 1);
  	background: -moz-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
  	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(137, 222, 252, 1)), color-stop(100%, rgba(110, 79, 191, 0.8)));

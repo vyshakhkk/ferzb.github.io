@@ -25,9 +25,9 @@ a{
 	top: 0;
 	left: 0;
 	min-height: 700px;
-	height: 100%;
+	height: auto;
 	width: 100%;
-	padding: 15px;
+	padding: 60px;
 	min-height: 700px;
 }
 .signup_outer{
@@ -90,6 +90,14 @@ a{
 	position: relative;
 	max-width: 420px;
 	margin: 0 auto;
+}
+.form_input p{
+	font-style: italic;
+	margin-top: 16px;
+}
+.form_input div{
+	font-style: italic;
+	font-weight: 600;
 }
 .form_input img{
 	position: absolute;
@@ -171,6 +179,9 @@ a{
 .logo{
 	text-align: center;
 	margin-top: -33px;
+}
+.logo p{
+	
 }
 .login_top_bar{
     text-align: right;
@@ -514,7 +525,7 @@ a{
 	height: 38px;
 	border: 0px;
 	border-radius: 5px;
-	padding: 0px 19px 0px 8px;
+	padding: 0px 8px 0px 8px;
 	margin-left: 19px;
 	display: inline-block;
 	vertical-align: middle;
@@ -627,8 +638,12 @@ select.attr_control{
 	margin: 0 auto;
 }
 .profile_top_header ul{
-	font-size: 0px;
-	margin-top: 1px;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
 }
 .profile_top_header li{
 	display: inline-block;
@@ -719,7 +734,7 @@ select.attr_control{
 }
 .user_more_info .profile_attr{
 	max-width: 842px;
-	margin: 75px auto 0px;
+	margin: 45px auto 0px;
 }
 .user_more_info .attr_right {
     padding-right: 143px;
@@ -1297,6 +1312,9 @@ select.attr_control{
 }
 .client_job_list{
 	max-width: 1118px;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 	margin: 132px auto 40px;
 }
 .client_job_list li{
@@ -1304,6 +1322,9 @@ select.attr_control{
 	position: relative;
 	padding-bottom: 20px;
 	margin-bottom: 30px;
+}
+.client_job_list .btn{
+	width: auto;
 }
 .client_job_list li:after{
 	height: 1px;
@@ -2767,15 +2788,17 @@ select.pay_control {
 	}
 	.attr_outer {
     	margin-bottom: 20px;
+    	padding-left: 8px;
 	}
 	.attr_outer label {
     	font-size: 18px;
     	text-align: left;
     	width: 90px;
+    	margin: 0px 0px 4pxfv -8px;
 	}
 	.attr_control {
-    	width: calc(100% - 102px);
-    	margin-left: 8px;
+    	width: 100%;
+    	margin: 0;
     	font-size: 15px;
     }
     .attr_right {
@@ -2881,7 +2904,7 @@ select.pay_control {
     	margin-top: 35px;
 	}
 	.user_more_info .profile_attr {
-    	margin: 30px 0px 0px;
+    	margin: 10px 0px 0px;
     	padding: 0px 15px;
 	}
 	.user_more_info .attr_right {

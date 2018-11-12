@@ -32,8 +32,6 @@ $(document).ready(function(e){
 	$("#imageUpload").change(function() {
 		readURL(this);
 	});
-
-
 });
 ;( function ( document, window, index )
 {
