@@ -2301,6 +2301,11 @@ select.pay_control {
 	border: 1px solid #843cf6;
 	width: 120px !important;
 }
+@media(min-width: 1200px){
+	.container{
+		max-width: 1260px;
+	}
+}
 @media(min-width: 1200px) and (max-width:1350px){
 	.message_info {
     	width: calc(70% - 57px);
@@ -3408,10 +3413,10 @@ select.pay_control {
     	margin: 0px 10px 8px !important;
 	}
 	.profile_top_header li a {
-    	font-size: 11px;
+    	font-size: 12px;
 	}
 	.profile_top_header li a img{
-		width: 17px;
+		width: 12px;
 	}
 	/*----------- Edit Profile Page CSS End ------------*/
 	.clientprofile .profile_top_header li {
