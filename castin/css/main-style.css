@@ -392,6 +392,17 @@
 .sectionBox{
 	margin: 16px 0;
 }
+.section-row-box{
+	margin: 0 auto;
+	background: rgba(137, 222, 252, 1);
+ 	background: -moz-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
+ 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(137, 222, 252, 1)), color-stop(100%, rgba(110, 79, 191, 0.8)));
+ 	background: -webkit-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
+ 	background: -o-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
+ 	background: -ms-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
+ 	background: linear-gradient(135deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
+ 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89defc', endColorstr='#6e4fbf', GradientType=1);
+}
  .sectionTitle {
  	font-family: 'Avenir';
  	font-size: 36px;
@@ -400,12 +411,17 @@
  }
  .img-box{
  	margin: 0 auto;
+ 	overflow: hidden;
  	width: 168px;
  	height: 168px;
  	border: 2px solid #f85ab6;
  	-webkit-border-radius: 50%;
 	border-radius: 50%;
  }
+.img-box img{
+	height: 100%;
+	width: 100%;
+}
 .inner-text{
 	text-align: center;
 	margin: 10px auto;
@@ -428,14 +444,7 @@
  	-moz-border-radius: 5px;
  	padding: 20px;
  	min-height: 170px;
- 	background: rgba(137, 222, 252, 1);
- 	background: -moz-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
- 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(137, 222, 252, 1)), color-stop(100%, rgba(110, 79, 191, 0.8)));
- 	background: -webkit-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
- 	background: -o-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
- 	background: -ms-linear-gradient(-45deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
- 	background: linear-gradient(135deg, rgba(137, 222, 252, 1) 0%, rgba(110, 79, 191, 0.8) 100%);
- 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89defc', endColorstr='#6e4fbf', GradientType=1);
+ 	background: transparent;
  }
 
  .labelbox {

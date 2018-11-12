@@ -156,6 +156,7 @@ a{
 }
 .inputfile-6 + label span {
     width: 100%;
+    font-style: normal;
     display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -2517,14 +2518,14 @@ select.pay_control {
     	margin-top: 9px;
 	}
 	.star-ratings-sprite {
-    	height: 23px;
+    	height: 24px;
     	width: 123px;
     	margin: 0 auto 10px;
     	background-size: 25px 43px;
 	}
 	.star-ratings-sprite-rating{
 		background-size: 25px 43px;
-		height: 20px;
+		height: 24px;
 	}
 	.browseModelsList p ,.browseModelsList a{
     	font-size: 15px;
@@ -3079,14 +3080,14 @@ select.pay_control {
     	margin-top: 9px;
 	}
 	.star-ratings-sprite {
-    	height: 20px;
+    	height: 24px;
     	width: 123px;
     	margin: 0 auto 10px;
     	background-size: 25px 43px;
 	}
 	.star-ratings-sprite-rating{
 		background-size: 25px 43px;
-		height: 20px;
+		height: 24px;
 	}
 	.browseModelsList p ,.browseModelsList a{
     	font-size: 15px;
@@ -3407,7 +3408,7 @@ select.pay_control {
     	margin: 0px 10px 8px !important;
 	}
 	.profile_top_header li a {
-    	font-size: 17px;
+    	font-size: 11px;
 	}
 	.profile_top_header li a img{
 		width: 17px;
