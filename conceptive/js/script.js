@@ -15,11 +15,20 @@ $(document).ready(function() {
 
     $(function() {
 		$(window).scroll(function(){
-			if  ($(window).scrollTop() > 100)
+			if  ($(window).scrollTop() > 10)
 				$('header').addClass('page-fixed-header');
 			else
 				$('header').removeClass('page-fixed-header');
 		});
 		if  ($(window).scrollTop() > 100){$('header').addClass('page-fixed-header')}			
+	});
+	$(function(){
+		var input = $('.input-global')
+		input.each(function() {
+			var this_input = $(this);
+			this_input.click(function() {
+				this_input.addClass('input-focus')
+			});
+		});
 	});
 });

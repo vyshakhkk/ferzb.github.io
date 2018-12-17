@@ -67,11 +67,28 @@
 					<div class="col-12 col-smd-6">
 						<h2 class="h-section">Contact</h2>
 						<p>Share your details and find out more about how we can help you</p>
-						<form action="post">
-							<input id="userName" type="name" placeholder="Name">
-							<input id="userEmail" type="email" placeholder="E-mail">
-							<input id="userCompany" type="text" placeholder="Company (optional)">
-							<textarea name="message" id="userMessage" rows="6" placeholder="Your Message"></textarea>
+						<form action="send.php" method="post">
+							<span class="input-global">
+								<input id="userName" type="name" name="userName">
+								<label for="userName"><span>Name</span></label>
+							</span>
+							
+							<span class="input-global">
+								<input id="userEmail" name="userEmail" type="email">
+								<label for="userName"><span>E-mail</span></label>
+							</span>
+
+							<span class="input-global">
+								<input id="userCompany" name="userCompany" type="text">
+								<label for="userName"><span>Company (optional)</span></label>
+							</span>
+
+							<span class="input-global">
+								<textarea name="message" id="userMessage" rows="4"></textarea>
+								<label for="userName"><span>Your Message</span></label>
+							</span>
+							
+							
 							<input id="submitForm" type="submit" value="submit">
 						</form>
 					</div>

@@ -10,6 +10,31 @@
 
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&subset=latin-ext");
 
+.bcg-parallax,
+.bcg-parallax-1 {
+  overflow: hidden;
+  position: relative;
+  min-height: 600px;
+  min-width: 100%;
+}
+
+.bcg,
+.bcg-1 {
+  position: absolute !important;
+  height: 100%;
+  min-height: 500px !important;
+  width: 100%;
+  top: 50%;
+}
+
+.bcg-1 {
+  top: 0 !important;
+}
+
+.arrow-down {
+  z-index: 100;
+}
+
 /*****=====header page style=====*****/
 
 .page-header {
@@ -669,6 +694,58 @@ nav li .active:before {
   background: #f35e19;
 }
 
+/*****=====A B O U T page style=====*****/
+
+.about-conception-about-page {
+  background-image: url("../img/Layer-191.jpg");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-conception-about-page h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-desc-about-page {
+  margin: 20px 0px;
+}
+
+.our-process-about {
+  margin-top: 60px;
+  background-image: url("../img/process-map.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+
+.our-process-about .flex {
+  height: 220px;
+  padding: 0px 18px 0px 37px;
+}
+
+.our-process-item {
+  font-size: 14px;
+  border-left: 1px solid #f35e19;
+  padding-left: 10px;
+  max-height: 95px;
+}
+
+.our-process-item:nth-child(2n) {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+}
+
+.our-process-item h4 {
+  color: #f35e19;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
 /*****=====C O N T A C T page style=====*****/
 
 .contact-top-page .overlay {
@@ -686,23 +763,115 @@ nav li .active:before {
   display: none;
 }
 
-.contact-body-contact-page form input,
-.contact-body-contact-page form textarea {
+.input-global {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  max-width: 525px;
+  width: 100%;
+  display: block;
+  margin-top: 50px;
+}
+
+.input-global input,
+.input-global textarea {
   border: none;
   background: transparent;
   display: block;
   width: 100%;
-  margin-top: 50px;
-  padding: 10px 0;
+  margin-top: 1em;
+  padding: 0.85em 0.15em;
   font-size: 18px;
   color: #999;
-  border-bottom: 1px solid #999999;
 }
 
-.contact-body-contact-page #submitForm {
+.input-global label {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 1em);
+  pointer-events: none;
+}
+
+.input-global label:before,
+.input-global label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 10px);
+  border-bottom: 1px solid #999;
+}
+
+.input-global label:after {
+  border-bottom: 4px solid #00aaff;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.input-global label span {
+  display: block;
+  padding: 0.6em 0;
+  width: 100%;
+  position: relative;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input-focus label:after {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.input-focus span {
+  -webkit-transform: translateY(-65%) !important;
+  -moz-transform: translateY(-65%) !important;
+  -ms-transform: translateY(-65%) !important;
+  -o-transform: translateY(-65%) !important;
+  transform: translateY(-65%) !important;
+}
+
+#submitForm {
   border: none;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+  margin-top: 40px;
+  cursor: pointer;
   background: #f35e19;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
   color: #FFF;
+}
+
+#submitForm:hover {
+  background: #d94806;
 }
 
 @media screen and (min-width: 480px) {
