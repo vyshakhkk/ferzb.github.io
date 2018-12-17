@@ -786,7 +786,7 @@ nav li .active:before {
 }
 
 .input-global label:after {
-  border-bottom: 4px solid #00aaff;
+  border-bottom: 2px solid #f35e19;
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
