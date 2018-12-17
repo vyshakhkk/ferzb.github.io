@@ -761,7 +761,7 @@ nav li .active:before {
   margin-top: 1em;
   padding: 0.85em 0.15em;
   font-size: 18px;
-  color: #999 !important;
+  color: #2c3e4e !important;
 }
 
 .input-global label {
@@ -803,6 +803,7 @@ nav li .active:before {
   display: block;
   padding: 0.6em 0;
   width: 100%;
+  color: #999;
   position: relative;
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
