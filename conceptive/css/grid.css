@@ -484,7 +484,7 @@ textarea:-ms-input-placeholder {
 @media screen and (min-width: 640px) {
   .container {
     max-width: 1165px;
-    padding: 30px;
+    padding: 20px;
   }
 
   .flex-md-column {

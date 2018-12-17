@@ -10,31 +10,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&subset=latin-ext");
 
-.bcg-parallax,
-.bcg-parallax-1 {
-  overflow: hidden;
-  position: relative;
-  min-height: 600px;
-  min-width: 100%;
-}
-
-.bcg,
-.bcg-1 {
-  position: absolute !important;
-  height: 100%;
-  min-height: 500px !important;
-  width: 100%;
-  top: 50%;
-}
-
-.bcg-1 {
-  top: 0 !important;
-}
-
-.arrow-down {
-  z-index: 100;
-}
-
 /*****=====header page style=====*****/
 
 .page-header {
@@ -48,6 +23,10 @@
   -o-transition: background 0.5s ease;
   transition: background 0.5s ease;
   background: transparent;
+}
+
+.page-header .container {
+  padding: 16px;
 }
 
 .page-header .logo {
@@ -782,7 +761,7 @@ nav li .active:before {
   margin-top: 1em;
   padding: 0.85em 0.15em;
   font-size: 18px;
-  color: #999;
+  color: #999 !important;
 }
 
 .input-global label {
