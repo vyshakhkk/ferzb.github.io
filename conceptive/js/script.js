@@ -31,4 +31,19 @@ $(document).ready(function() {
 			});
 		});
 	});
+
+
+	$(function () { // wait for document ready
+		// init
+		var controller = new ScrollMagic.Controller();
+
+		$('.panel').each(function() {
+			new ScrollMagic.Scene({
+				triggerElement: this,
+				triggerHook: 0.75
+			})
+			.setClassToggle(this, 'fade-in')
+			.addTo(controller);
+		});
+	});
 });
