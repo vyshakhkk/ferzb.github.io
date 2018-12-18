@@ -10,6 +10,7 @@ $(document).ready(function() {
 
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
+            top = top/1.3
         $('body,html').animate({scrollTop: top}, 1000);
     });
 
