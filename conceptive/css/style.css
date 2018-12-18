@@ -359,11 +359,16 @@ nav li .active:before {
   font-weight: 600;
   margin: 49px 0px;
   -webkit-border-radius: 50px;
-  -webkit-border-radius-border-radius: 50px;
+  border-radius: 50px;
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .arrow-down {
@@ -387,6 +392,19 @@ nav li .active:before {
   background-image: url("../img/arrow.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.home-page .global-btn:hover {
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-4px) scale(1.05);
+  -moz-transform: translateY(-4px) scale(1.05);
+  -ms-transform: translateY(-4px) scale(1.05);
+  -o-transform: translateY(-4px) scale(1.05);
+  transform: translateY(-4px) scale(1.05);
+}
+
+.focus-domains-section-technology-page .global-btn:hover {
+  background: #D94806;
 }
 
 .section-block {
