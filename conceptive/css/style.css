@@ -408,7 +408,7 @@ nav li .active:before {
 }
 
 .section-block {
-  padding: 130px 38px;
+  padding: 50px 38px;
 }
 
 /*****=====about head page style=====*****/
@@ -546,6 +546,7 @@ nav li .active:before {
 .global-middle-block .img {
   overflow: hidden;
   margin-right: 20px;
+  margin-bottom: 20px;
   min-width: 56px;
 }
 
@@ -949,12 +950,20 @@ nav li .active:before {
     font-size: 48px;
   }
 
+  .global-middle-block .img {
+    margin-bottom: 0px;
+  }
+
   .footer-head-page .desc {
     margin-left: auto;
   }
 }
 
 @media screen and (min-width: 780px) {
+  .section-block {
+    padding: 130px 38px;
+  }
+
   .our-services-desc-block .img {
     margin-bottom: 0;
   }
