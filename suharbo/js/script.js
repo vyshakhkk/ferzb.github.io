@@ -3,15 +3,41 @@ $(document).ready(function() {
 		$(this).toggleClass('open');
 		$('.nav-toggle-line').toggleClass('active-line');
 		$('.nav-list>li').toggleClass('active-list');
-		$('.wrap-nav').toggleClass('wrap-nav-open');
-		$('.nav-page').toggleClass('background-black');
+		$('.menu-list').slideToggle();
 	});
 
 	$('.sections-produse').owlCarousel({
-	    items:5,
 	    lazyLoad:true,
 	    loop:true,
-	    nav:true,
-	    margin:10
+	    nav:false,
+	    margin:10,
+	    responsive:{
+			0:{
+				items:2
+			},
+			640:{
+				items:4
+			},
+			960:{
+				items:5
+			}
+		}
+	});
+	$('.sections-produse-item-page').owlCarousel({
+	    lazyLoad:true,
+	    loop:true,
+	    nav:false,
+	    margin:10,
+	    responsive:{
+			0:{
+				items:2
+			},
+			640:{
+				items:4
+			},
+			960:{
+				items:5
+			}
+		}
 	});
 });
