@@ -26,7 +26,7 @@ img{
 }
 .top-page{
 	height: 500px;
-	background-image: url('img-bg.png');
+	background-image: url('img/img-bg.png');
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
