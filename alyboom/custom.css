@@ -1,5 +1,7 @@
 html, body{
 	font-family: 'Lato', sans-serif;
+	color: #444;
+	line-height: 24px;
 }
 img{
 	width: 100%;
@@ -38,7 +40,9 @@ img{
 	margin-left: auto;
 	font-weight: lighter;
 }
-
+.section-block{
+	padding: 30px 0px;
+}
 .top-page-desc h2{
 	max-width: 370px;
 	text-align: center;
@@ -64,6 +68,7 @@ img{
 	border: 1px solid #fff;
 	background: #FFF;
 	color: #000;
+	display: inline-block;
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
 	padding: 10px 30px;
@@ -88,4 +93,61 @@ img{
 .music-language .img{
 	max-width: 400px;
 	margin: 0 auto;
+}
+
+.contact-us .global-btn{
+	background: transparent;
+	color: #444;
+	border-color: #666;
+	max-width: 230px;
+	width: 100%;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.contact-us .global-btn:hover{
+	background: #666;
+	color: #fff;
+	border-color: #666;
+}
+
+.join{
+	margin-bottom: 40px;
+}
+.join span{
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contact-us .img{
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	overflow: hidden;
+	max-width: 320px;
+}
+footer{
+	background: #2a2a2a;
+	color: #FFF;
+}
+footer .soc-links{
+	margin: 10px 0;
+}
+footer .links a{
+	margin-right: 20px;
+}
+footer .soc-links a, footer .card a{
+	margin-right: 10px;
+}
+footer i{
+	font-size: 28px;
+}
+footer .card{
+	margin-bottom: 20px;	
+}
+.copyright{
+	text-align: center;
+	font-size: 16px;
+	font-weight: lighter;
 }
