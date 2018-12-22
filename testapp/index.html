@@ -13,7 +13,25 @@
   </head>
   <body>
     <header>
-      <div></div>
+      <div class="account-manage">
+        <div class="flex">
+          <div class="logo-page">
+            <img src="logo.png" alt="logo">
+            <a href="#">CPaaS</a>
+          </div>
+          <div class="account-control">
+            <div class="credit">
+              <p>Credit: <span>$13.78</span> <span class="payed"></span></p>
+            </div>
+            <div class="events">
+              <span class="event-span"><span class="event-active"></span></span>
+            </div>
+            <div class="user-accuont">
+              <span>My Accuont</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav class="nav-global">
         <div class="container nav">
           <a class="nav-link" href="#">dashboard</a>
@@ -29,6 +47,7 @@
       </nav>
     </header>
     <main>
+    <!--START LEFT NAV SECTION-->
       <section class="left-nav">
         <div class="dropdown-button-left-nav">
           <div class="dropdown">
@@ -85,17 +104,23 @@
           </li>
         </ul>
       </section>
+    <!--END LEFT NAV SECTION-->
+    <!--START MIDDLE SECTION-->
       <section class="middle-section">
-        <div class="chart">
-          <div class="chart-item">
+      <!--Start Chart block-->
+        <div class="chart global-block-style">
+          <!--Blocks Tabs-->
+          <div class="chart-item padding-global">
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <!--Head block-->
                 <h2 class="h-block">SMS Usage</h2>
                 <div>
                   <img src="Shape-16-copy.png" alt="">
                 </div>
               </div>
               <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                <!--Head block-->
                 <h2 class="h-block">Voice Usage</h2>
                 <div>
                   <img src="Shape-16-copy.png" alt="">
@@ -103,34 +128,53 @@
               </div>
             </div>
           </div>
-          <div class="list-group" id="list-tab" role="tablist">
+          <!--Links Tabs-->
+          <div class="list-group padding-global" id="list-tab" role="tablist">
             <a class="active show" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Sms</a>
             <a data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Voice</a>
-            <a class="view-detailed" href="#">View detailed usage</a>
+            <a class="global-link-more" href="#">View detailed usage</a>
           </div>
         </div>
-        <div class="project-keys">
+      <!--End Chart block-->
+      <!--Start Project keys block-->
+        <div class="project-keys global-block-style padding-global">
+          <!--Head block-->
           <h2 class="h-block">Project keys</h2>
-            <div class="row">
-              <h5 class="col-4 h-name-project">Project ID <span>:</span></h5>
-              <span class="col-4 id-name-project">aid_0f20934f_c736_46e8_b1b1_e2bdb20db736</span>
+          <!--Start global section's blocks-->
+          <!--block 1-->
+          <div class="row row-block">
+            <h5 class="col-4 h-name-project-keys">Project ID <span>:</span></h5>
+            <span class="col-4 id-project-keys">aid_0f20934f_c736_46e8_b1b1_e2bdb20db736</span>
+            <div class="copy-priject-keys"></div>
           </div>
-          <div class="row">
-              <h5 class="col-4 h-name-project">Project Name<span>:</span></h5>
-              <span class="col-4 id-name-project">Test android app</span>
+          <!--block 2-->
+          <div class="row row-block">
+            <h5 class="col-4 h-name-project-keys">Project Name<span>:</span></h5>
+            <span class="col-4 id-project-keys">Test android app</span>
+            <div class="copy-priject-keys"></div>
           </div>
-          <div class="row">
-              <h5 class="col-4 h-name-project">Project  Secret Key<span>:</span></h5>
-              <span class="col-4 id-name-project">0343720b_37aa_4663_a433_cb61eef26ae9</span>
+          <!--block 3-->
+          <div class="row row-block">
+            <h5 class="col-4 h-name-project-keys">Project  Secret Key<span>:</span></h5>
+            <span class="col-4 id-project-keys">0343720b_37aa_4663_a433_cb61eef26ae9</span>
+            <div class="copy-priject-keys"></div>
           </div>
-          <div class="row">
-              <h5 class="col-4 h-name-project">Developer  ID<span>:</span></h5>
-              <span class="col-4 id-name-project">did_cdd51451_74be_462a_b263_636d497a828f</span>
+          <!--block 4-->
+          <div class="row row-block">
+            <h5 class="col-4 h-name-project-keys">Developer  ID<span>:</span></h5>
+            <span class="col-4 id-project-keys">did_cdd51451_74be_462a_b263_636d497a828f</span>
+            <div class="copy-priject-keys"></div>
           </div>
         </div>
-        <div class="push-notifications project-keys">
+        <!--End global section's blocks-->
+      <!--End Project keys block-->
+      <!--Start Push notifications block--> 
+        <div class="push-notifications global-block-style padding-global">
+          <!--Head block-->
           <h2 class="h-block">Push notifications</h2>
+          <!--Start global section's blocks-->
           <div class="row">
+            <!--block 1-->
             <div class="push col-6">
               <form action="#">
                 <div class="img">
@@ -145,6 +189,7 @@
                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
               </form>  
             </div>
+            <!--block 2-->
             <div class="push col-6">
               <form action="#">
                 <div class="img">
@@ -158,13 +203,164 @@
               </form>  
             </div>
           </div>
+          <!--End global section's blocks-->
         </div>
+      <!--End Push notifications block-->  
       </section>
+    <!--END MIDDLE SECTION-->
+    <!--START RIGHT SECTION-->
       <section class="right-section">
-        <div class="project-keys">
-          <h2 class="h-block">Project details</h2>
+      <!--Start Project details block-->  
+        <div class="project-details global-block-style">
+          <!--Start global section's blocks-->
+          <div class="padding-global">
+            <!--Head block-->
+            <h2 class="h-block">Project details</h2>
+            <!--block 1-->
+            <div class="row row-block">
+              <h5 class="col-6 h-name-project-details">Developer  ID<span>:</span></h5>
+              <span class="col-6">Test android app</span>
+            </div>
+            <!--block 2-->
+            <div class="row row-block">
+              <h5 class="col-6 h-name-project-details">App store link<span>:</span></h5>
+              <span class="col-6">- NA-</span>
+            </div>
+            <!--block 3-->
+            <div class="row row-block">
+              <h5 class="col-6 h-name-project-details">Website<span>:</span></h5>
+              <span class="col-6">- NA-</span>
+            </div>
+            <!--block 4-->
+            <div class="row row-block">
+              <h5 class="col-6 h-name-project-details">Add products<span>:</span></h5>
+              <span class="col-6">2</span>
+            </div>
+            <!--block 5-->
+            <div class="row row-block">
+              <h5 class="col-6 h-name-project-details">Total Users<span>:</span></h5>
+              <span class="col-6">5</span>
+            </div>
+            <!--block 6-->
+            <div class="row row-block">
+              <h5 class="col-6 h-name-project-details">Available credit<span>:</span></h5>
+              <span class="col-6 price-project-details">$03.78</span>
+            </div>
+          </div>
+          <!--End global section's blocks-->
+        <!--Start bottom block section's blocks-->
+          <div class="padding-global bottom-block">
+            <div class="block-global-link">
+              <a class="global-link-more" href="#">Edit project</a>
+            </div>
+          </div>
+        <!--End bottom block section's blocks-->
         </div>
+      <!--End Project details block-->
+      <!--Start Team block-->    
+        <div class="team global-block-style">
+        <!--Start global section's blocks-->
+          <div class="padding-global">
+            <!--Head block-->
+            <h2 class="h-block">Team</h2>
+            <!--user 1-->
+            <div class="row row-block user-team-descriptions">
+              <div class="user-team-icon">S</div>
+              <div class="user-team-info">
+                <div class="user-team-inner">
+                  <h4 class="user-team-name">Srikanth</h4>
+                  <div class="user-team-border"></div>
+                  <span class="user-team-mail">skju8980@gmail.com</span>  
+                </div>
+                <span class="user-team-possition">Developer</span>
+              </div>
+              <div class="user-team-edit"></div>
+            </div>
+            <!--user 2-->
+            <div class="row row-block user-team-descriptions">
+              <div class="user-team-icon">S</div>
+              <div class="user-team-info">
+                <div class="user-team-inner">
+                  <h4 class="user-team-name">Srikanth</h4>
+                  <div class="user-team-border"></div>
+                  <span class="user-team-mail">skju8980@gmail.com</span>  
+                </div>
+                <span class="user-team-possition">Developer</span>
+              </div>
+              <div class="user-team-edit"></div>
+            </div>
+            <!--user 3-->
+            <div class="row row-block user-team-descriptions">
+              <div class="user-team-icon">S</div>
+              <div class="user-team-info">
+                <div class="user-team-inner">
+                  <h4 class="user-team-name">Srikanth</h4>
+                  <div class="user-team-border"></div>
+                  <span class="user-team-mail">skju8980@gmail.com</span>  
+                </div>
+                <span class="user-team-possition">Developer</span>
+              </div>
+              <div class="user-team-edit"></div>
+            </div>
+          </div>
+        <!--End global section's blocks-->
+        <!--Start bottom block section's blocks-->
+          <div class="padding-global bottom-block">
+            <div class="block-global-link">
+              <a class="global-link-more" href="#">Manage users</a>
+            </div>
+          </div>
+        <!--End bottom block section's blocks-->
+        </div>
+      <!--End Team block-->
+      <!--Start Invite a team member block-->
+        <div class="invite-team-member global-block-style">
+        <!--Start global section's blocks-->
+          <div class="padding-global">
+            <!--Head block-->
+              <h2 class="h-block">Invite a team member</h2>
+              <div class="input-group">
+                <input type="email" class="form-control" aria-label="Text input with dropdown button" placeholder="Enter email">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">developer</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">developer</a>
+                    <a class="dropdown-item" href="#">accounts</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <!--End global section's blocks-->
+        <!--Start bottom block section's blocks-->
+          <div class="padding-global bottom-block invite">
+            <div class="block-global-link">
+              <a class="btn btn-primary" href="#">Send invite</a>
+            </div>
+          </div>
+        <!--End bottom block section's blocks-->
+        </div>
+      <!--End Invite a team member block-->
+      <!--Start Delete project block-->
+        <div class="delete-project global-block-style">
+        <!--Start global section's blocks-->
+          <div class="padding-global">
+            <!--Head block-->
+              <h2 class="h-block">Delete project</h2>
+              <p>Not interested in this project any more?</p>
+          </div>
+        <!--End global section's blocks-->
+        <!--Start bottom block section's blocks-->
+          <div class="padding-global bottom-block">
+            <div class="block-global-link">
+              <a class="delete-project-link" href="#">Delete project</a>
+            </div>
+          </div>
+        <!--End bottom block section's blocks-->
+        </div>
+      <!--End Delete project block-->  
       </section>
+    <!--END RIGHT SECTION-->
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
