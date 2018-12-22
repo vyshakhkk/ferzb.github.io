@@ -96,7 +96,10 @@ img{
 	line-height: 42px;
 	margin-bottom: 24px;
 }
-
+.top-page-desc .global-btn{
+	font-size: 38px;
+    padding: 20px 36px;
+}
 .global-btn{
 	font-size: 24px;
 	border: 1px solid #cc1402;
