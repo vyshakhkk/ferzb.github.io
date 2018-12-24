@@ -19,15 +19,4 @@ $(document).ready(function() {
         $('body,html').animate({scrollTop: top}, 1000);
     });
 
-    $(function() {
-		$(window).scroll(function(){
-			if  ($(window).scrollTop() > 10)
-				$('header').addClass('page-fixed-header');
-			else
-				$('header').removeClass('page-fixed-header');
-		});
-		if  ($(window).scrollTop() > 100){$('header').addClass('page-fixed-header')}			
-	});
-
-
 });
