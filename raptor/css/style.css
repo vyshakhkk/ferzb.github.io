@@ -173,7 +173,7 @@ nav .menu-list a {
 .top-page {
   background-color: #6e2a8f;
   background-image: url("../img/raptor-logo.png");
-  background-position: center -100px;
+  background-position: 45% -100px;
   background-repeat: no-repeat;
   min-height: 700px;
 }
@@ -548,6 +548,12 @@ footer span:last-child {
 
   .nav-toggle-block {
     display: none;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .top-page {
+    background-position: 50% -100px;
   }
 }
 
