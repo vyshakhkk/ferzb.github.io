@@ -173,7 +173,7 @@ nav .menu-list a {
 .top-page {
   background-color: #6e2a8f;
   background-image: url("../img/raptor-logo.png");
-  background-position: center center;
+  background-position: center -100px;
   background-repeat: no-repeat;
   min-height: 700px;
 }
@@ -410,6 +410,25 @@ nav .menu-list a {
   max-height: 300px;
 }
 
+.gallery li img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .col-smd-4 img,
+.gallery .col-smd-5 img {
+  width: auto;
+}
+
+.gallery .col-smd-8 img,
+.gallery .col-smd-7 img,
+.gallery .col-smd-9 img,
+.gallery .col-smd-10 img,
+.gallery .col-smd-11 img,
+.gallery .col-smd-12 img {
+  height: auto;
+}
+
 /*=lightbox*/
 
 .gallery .lightbox {
@@ -466,12 +485,14 @@ footer {
   text-align: center;
   color: #FFF;
   line-height: 36px;
+  padding: 20px 0px;
 }
 
 footer .links {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
+  margin: 10px 0;
 }
 
 footer .links a {

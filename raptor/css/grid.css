@@ -44,7 +44,7 @@ strong {
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 42px;
 }
 
 h2 {
@@ -352,6 +352,10 @@ textarea:-ms-input-placeholder {
 /*grid layout extra large device*/
 
 @media screen and (min-width: 480px) {
+  h1 {
+    font-size: 65px;
+  }
+
   .flex-sd-column {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
