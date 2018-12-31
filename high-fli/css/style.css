@@ -117,47 +117,7 @@ header {
   top: 19px;
 }
 
-.active-line {
-  -webkit-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease;
-  -moz-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease;
-  -ms-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease;
-  -o-transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease;
-  transition: background 0.3s, opacity 0.35s 0.4s, top 0.2s 0.2s, transform 0.3s 0.4s ease;
-  background: #0e2c4d;
-}
-
-.active-line:nth-child(1) {
-  top: 12px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.active-line:nth-child(2) {
-  opacity: 0;
-}
-
-.active-line:nth-child(3) {
-  top: 12px;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
 /**********end nav toggle**************/
-
-nav {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 125px;
-  width: 100%;
-  background: #FFF;
-}
 
 nav a {
   vertical-align: middle;
@@ -199,6 +159,153 @@ nav a:hover:before {
   right: 0%;
 }
 
+/**********start nav toggle animate**************/
+
+.navigation {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+  -webkit-transition-delay: 300ms;
+  transition-delay: 300ms;
+  left: 0;
+}
+
+.navigation.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.navigation.active .navigation__inner {
+  background-color: transition;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: background-color 0s linear 599ms, -webkit-transform 300ms linear;
+  transition: background-color 0s linear 599ms, -webkit-transform 300ms linear;
+  transition: transform 300ms linear, background-color 0s linear 599ms;
+  transition: transform 300ms linear, background-color 0s linear 599ms, -webkit-transform 300ms linear;
+}
+
+.navigation.active .navigation__inner:after {
+  width: 300%;
+  border-radius: 50%;
+  -webkit-animation: elastic 150ms ease 300.5ms both;
+  animation: elastic 150ms ease 300.5ms both;
+}
+
+.navigation__inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 999999;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  -webkit-transition: background-color 0s linear 300ms, -webkit-transform 300ms linear;
+  transition: background-color 0s linear 300ms, -webkit-transform 300ms linear;
+  transition: transform 300ms linear, background-color 0s linear 300ms;
+  transition: transform 300ms linear, background-color 0s linear 300ms, -webkit-transform 300ms linear;
+}
+
+.navigation__inner:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  background-image: -moz-linear-gradient(90deg, #fc988e 0%, #f7ffc1 100%);
+  background-image: -webkit-linear-gradient(90deg, #fc988e 0%, #f7ffc1 100%);
+  background-image: -ms-linear-gradient(90deg, #fc988e 0%, #f7ffc1 100%);
+}
+
+@-webkit-keyframes elastic {
+  0% {
+    border-radius: 50%;
+  }
+
+  45% {
+    border-radius: 0;
+  }
+
+  65% {
+    border-top-right-radius: 40px 50%;
+    border-bottom-right-radius: 40px 50%;
+  }
+
+  80% {
+    border-radius: 0;
+  }
+
+  90% {
+    border-top-right-radius: 20px 50%;
+    border-bottom-right-radius: 20px 50%;
+  }
+
+  100% {
+    border-radius: 0;
+  }
+}
+
+@keyframes elastic {
+  0% {
+    border-radius: 50%;
+  }
+
+  45% {
+    border-radius: 0;
+  }
+
+  65% {
+    border-top-right-radius: 40px 50%;
+    border-bottom-right-radius: 40px 50%;
+  }
+
+  80% {
+    border-radius: 0;
+  }
+
+  90% {
+    border-top-right-radius: 20px 50%;
+    border-bottom-right-radius: 20px 50%;
+  }
+
+  100% {
+    border-radius: 0;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 5px;
+  display: block;
+}
+
+.menu-list {
+  padding: 25px;
+}
+
+.menu-list li {
+  margin: 0px 0px 10px 0px;
+}
+
+/**********end nav toggle animate**************/
+
 .home {
   display: block;
   width: 17px;
@@ -211,12 +318,12 @@ nav a:hover:before {
 }
 
 .our-mail {
-  font-size: 14px;
+  font-size: 16px;
   display: none;
 }
 
 .list-our-mail {
-  font-size: 14px;
+  font-size: 16px;
   display: block;
 }
 
@@ -281,7 +388,7 @@ nav a:hover:before {
 
 .services .queries {
   font-size: 16px;
-  max-width: 410px;
+  max-width: 334px;
   margin: 0 auto;
 }
 
@@ -445,11 +552,29 @@ footer .inner-block p {
     display: none;
   }
 
-  nav {
-    display: block;
-    background: none;
+  .navigation {
     position: static;
     width: auto;
+    visibility: visible;
+    overflow: auto;
+    opacity: 1;
+  }
+
+  .navigation__inner {
+    position: static;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .menu-list li {
+    margin-right: 27px;
   }
 
   .our-mail {
