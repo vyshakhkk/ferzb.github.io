@@ -1,44 +1,20 @@
 $(document).ready(function() {
-	var remodal = $('.remodal'),
-		remodalOverlay = $('.remodal-overlay'),
-		remodalWrap = $('.remodal-wrapper'),
-		openRamodal = $('.toggle'),
-		link = $('.remodal-link'),
-		menuList = $('.menu-list').find('> li'),
+	var menuList = $('.menu-list').find('> li'),
 		links = menuList.find('> a'),
 		btn = $('.global-btn');
 
-	openRamodal.click(function() {
-		
-		remodal.removeClass('remodal-is-closed');
-		remodal.addClass('remodal-is-opened');
-		
-		remodalOverlay.removeClass('remodal-is-closed').removeAttr('style');
-		remodalOverlay.addClass('remodal-is-opened').css('display', 'block');
-		
-		remodalWrap.removeClass('remodal-is-closed').removeAttr('style');
-		remodalWrap.addClass('remodal-is-opened').css('display', 'block');
+	$('.nav-toggle-block').click(function() {
+		$('.nav-toggle-line').toggleClass('active-line');
+		$('header').toggleClass('page-fixed-header-open');
+		$('.logo').toggleClass('logo-open');
+		$('nav').slideToggle();
 	});
 
-	function closeRemodal() {
-		remodal.addClass('remodal-is-closed');
-		remodal.removeClass('remodal-is-opened');
-		
-		remodalOverlay.addClass('remodal-is-closed').css('display', 'none');
-		remodalOverlay.removeClass('remodal-is-opened').removeAttr('style');
-		
-		remodalWrap.addClass('remodal-is-closed').css('display', 'none');
-		remodalWrap.removeClass('remodal-is-opened').removeAttr('style');
-	}
-	remodalWrap.click(closeRemodal);
-
-	link.click(function() {
-		remodal.removeClass('remodal-is-opened');
-		remodal.addClass('remodal-is-closed');
-		remodalOverlay.removeClass('remodal-is-opened').removeAttr('style');
-		remodalOverlay.addClass('remodal-is-closed').css('display', 'none');;
-		remodalWrap.removeClass('remodal-is-opened').removeAttr('style');
-		remodalWrap.addClass('remodal-is-closed').css('display', 'none');;
+	$(window).resize(function() {
+		if ($(window).width() > 780) {
+			$('nav').removeAttr('style')
+			$('.page-header').removeClass('page-fixed-header-open');
+		}
 	});
 
 	links.on("click", function (event) {
@@ -46,6 +22,9 @@ $(document).ready(function() {
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
+        $('header').toggleClass('page-fixed-header-open');
+        $('.nav-toggle-line').toggleClass('active-line');
+        $('nav').slideToggle();
     });
     btn.on("click", function (event) {
         event.preventDefault();
