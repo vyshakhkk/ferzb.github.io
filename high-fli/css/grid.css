@@ -21,7 +21,7 @@
 html,
 body {
   min-width: 320px;
-  font-family: "Mariad Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #0e2c4d;
   font-size: 18px;
   position: relative;
@@ -96,23 +96,23 @@ input,
 textarea,
 button {
   outline: none;
-  font-family: "Mariad Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 textarea::-webkit-input-placeholder {
-  font-family: "Mariad Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 textarea::-moz-placeholder {
-  font-family: "Mariad Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 textarea:-moz-placeholder {
-  font-family: "Mariad Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 textarea:-ms-input-placeholder {
-  font-family: "Mariad Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*container-block*/
