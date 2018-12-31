@@ -63,6 +63,7 @@ header {
 
 .toggle {
   display: block;
+  cursor: pointer;
   width: 26px;
   height: 25px;
   background-image: url("../img/home.png");
@@ -120,10 +121,36 @@ nav a:hover:before {
 .remodal {
   text-align: left;
   width: 65%;
+  margin: 0 auto;
+  background: #FFF;
+  display: none;
 }
 
 .remodal li {
   margin-bottom: 16px;
+}
+
+.remodal-is-opened {
+  display: block;
+}
+
+.remodal-overlay {
+  background: rgba(43, 46, 56, 0.9);
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
 }
 
 .home {
@@ -173,8 +200,8 @@ nav a:hover:before {
 /***====services stylesheet====***/
 
 .about img {
-  margin-top: 30px;
   width: 100%;
+  display: none;
 }
 
 .about h3 {
@@ -332,5 +359,9 @@ footer .inner-block p {
 
   .list-our-mail {
     display: none;
+  }
+
+  .about img {
+    display: block;
   }
 }

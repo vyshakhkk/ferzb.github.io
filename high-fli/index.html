@@ -15,17 +15,7 @@
 	<!--start header page section-->
 		<header>
 			<div class="container flex flex-vertical-center flex-sb">
-				<div data-remodal-target="modal" class="toggle"></div>
-				<nav class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
-					<ul class="menu-list">
-						<li><a class="remodal-link" href="index.html">Home</a></li>
-						<li><a class="remodal-link" href="#about">About</a></li>
-						<li><a class="remodal-link" href="#services">Services</a></li>
-						<li><a class="remodal-link" href="#whyUs">Why we</a></li>
-						<li><a class="remodal-link" href="#contact">Contact</a></li>
-						<li class="list-our-mail"><a href="mailto:info@highflitravel.com">info@highflitravel.com</a></li>
-					</ul>
-				</nav>
+				<div class="toggle"></div>
 				<nav>
 					<ul class="menu-list flex flex-vertical-center">
 						<li><a class="home" href="#"></a></li>
@@ -216,8 +206,23 @@
 			</div>
 		</footer>
 	<!--end footer section-->
+
+	<!--start popup nav section-->
+		<div class="remodal-overlay" style="display: none;"></div>
+		<div class="remodal-wrapper" style="display: none;">
+			<nav class="remodal">
+				<ul class="menu-list">
+					<li><a class="remodal-link" href="index.html">Home</a></li>
+					<li><a class="remodal-link" href="#about">About</a></li>
+					<li><a class="remodal-link" href="#services">Services</a></li>
+					<li><a class="remodal-link" href="#whyUs">Why we</a></li>
+					<li><a class="remodal-link" href="#contact">Contact</a></li>
+					<li class="list-our-mail"><a href="mailto:info@highflitravel.com">info@highflitravel.com</a></li>
+				</ul>
+			</nav>
+		</div>
+	<!--end popup nav section-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/remodal.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
