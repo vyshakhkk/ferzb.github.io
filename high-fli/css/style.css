@@ -10,10 +10,6 @@
 
 @import url("grid.css");
 
-@import url("remodal.css");
-
-@import url("remodal-default-theme.css");
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 @font-face {
@@ -421,25 +417,6 @@ footer .inner-block p {
 }
 
 @media screen and (min-width: 780px) {
-  .block-toggle {
-    display: none;
-  }
-
-  nav {
-    display: block;
-    background: none;
-    position: static;
-    width: auto;
-  }
-
-  .our-mail {
-    display: block;
-  }
-
-  .list-our-mail {
-    display: none;
-  }
-
   .about img {
     display: block;
   }
@@ -460,5 +437,29 @@ footer .inner-block p {
 
   .services .inner-block:nth-child(6) {
     border-right: none !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .block-toggle {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    background: none;
+    position: static;
+    width: auto;
+  }
+
+  .our-mail {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .list-our-mail {
+    display: none;
   }
 }
