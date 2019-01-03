@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width initial-scale=1.0"">
+		<title>TRYP | Upgrade</title>
+		<link rel="shortcut icon" href="">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<!--[if gt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+	<!--start header page section-->
+		<header>
+			<div class="container">
+				<div class="flex flex-vertical-center">
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo.png" alt="logo">
+						</a>
+					</div>
+					<div id="show" class="block-toggle">
+						<span class="nav-toggle-block">
+							<i class="nav-toggle-line"></i>
+							<i class="nav-toggle-line"></i>
+							<i class="nav-toggle-line"></i>
+						</span>
+					</div>
+					<nav id="nav" class="navigation">
+						<div class="navigation__inner">
+							<ul class="menu-list flex flex-column flex-ld-row flex-ld-vertical-center">
+								<li><a href="#">Dashboard</a></li>
+								<li><a href="#">Upgrade</a></li>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Logout</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="profile-info flex flex-vertical-center">
+						<span class="user-name">
+							David Test
+						</span>
+						<div class="user-foto">
+							<img src="img/Layer-2.jpg" alt="foto">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	<!--end header page section-->
+
+	<main>
+	<!--start personal information form section-->
+		<section class="personal-info-section section-block">
+			<div class="container flex flex-sb">
+				<h2 class="h-section">Personal Information</h2>
+				<form id="globalForm" action="post" method="post">
+					<fieldset class="fieldset active-form">
+						<label for="firstName">First Name</label>
+						<input type="name" id="firstName" placeholder="Name">
+					</fieldset>
+
+					<fieldset class="fieldset">
+						<label for="middleName">Middle Name</label>
+						<input type="name" id="middleName" placeholder="Name">
+					</fieldset>
+
+					<fieldset class="fieldset">
+						<label for="lastName">Last Name</label>
+						<input type="name" id="lastName" placeholder="Name">
+					</fieldset>
+
+					<fieldset class="fieldset">
+						<label for="email">Email</label>
+						<input type="name" id="email" placeholder="text@test.com">
+					</fieldset>
+
+
+					<fieldset class="fieldset">
+						<div class="form-group">
+						    <label for="userPhone">Mobile Phone Number</label>
+						    <div class="input-group mb-3">
+								<select class="form-control" id="selectCode">
+									<option>United States (+1)</option>
+									<option>United States (+2)</option>
+									<option>United States (+3)</option>
+									<option>United States (+4)</option>
+									<option>United States (+5)</option>
+							    </select>
+							    <span class="arrow"></span>
+							</div>
+						    <input type="phone" id="userPhone" placeholder="12345678">
+						  </div>
+					</fieldset>
+
+					<fieldset class="fieldset">
+						<div class="form-group">
+						    <label for="selectCountry">Country</label>
+						    <div class="input-group mb-3">
+								<select class="form-control" id="selectCountry">
+									<option>United States</option>
+									<option>United States</option>
+									<option>United States</option>
+									<option>United States</option>
+									<option>United States</option>
+							    </select>
+							    <span class="arrow"></span>
+							</div>
+						  </div>
+					</fieldset>
+
+					<fieldset class="fieldset">
+						<div class="form-group">
+						    <label for="selectState">State</label>
+						    <div class="input-group mb-3">
+								<select class="form-control" id="selectState">
+									<option>Alaska</option>
+									<option>Alaska</option>
+									<option>Alaska</option>
+									<option>Alaska</option>
+									<option>Alaska</option>
+							    </select>
+							    <span class="arrow"></span>
+							</div>
+						  </div>
+					</fieldset>
+
+					<fieldset class="fieldset">
+						<div class="form-group">
+						    <label for="selectCity">City</label>
+						    <div class="input-group mb-3">
+								<select class="form-control" id="selectCity">
+									<option>Alaska</option>
+									<option>Alaska</option>
+									<option>Alaska</option>
+									<option>Alaska</option>
+									<option>Alaska</option>
+							    </select>
+							    <span class="arrow"></span>
+							</div>
+						  </div>
+					</fieldset>
+
+					<fieldset class="fieldset">
+					    <label for="userZipCode">Zip Code</label>
+					    <input type="text" placeholder="123456" id="userZipCode">
+					</fieldset>
+
+					<fieldset class="fieldset">
+					    <label for="userAddressOne">Address 1</label>
+					    <input type="text" placeholder="Test blvr" id="userAddressOne">
+					</fieldset>
+
+					<fieldset class="fieldset">
+					    <label for="userAddressTwo">Address 2</label>
+					    <input type="text" placeholder="Test blvr" id="userAddressTwo">
+					</fieldset>
+
+					<fieldset class="fieldset">
+					    <label for="userBirth">Date of Birth</label>
+					    <input type="date" id="userBirth">
+					</fieldset>
+
+					<fieldset class="fieldset">
+					    <label for="userSSN">SSN or Federal Tax ID</label>
+					    <input type="text" placeholder="9999-99-99" id="userSSN">
+					</fieldset>
+
+					<fieldset class="fieldset">
+					    <label for="userBusiness">Business Name</label>
+					    <input type="text" placeholder="Test blvr" id="userBusiness">
+					</fieldset>
+				</form>
+				<span><i>01</i>/02</span>
+			</div>
+		</section>
+		<div style="height: 2600px"></div>
+	<!--end personal information form section-->
+
+
+	<!--start personal information form section-->
+		<section class="account-information-section personal-info-section section-block">
+			<div class="container flex flex-sb">
+				<h2 class="h-section">Personal Information</h2>
+				<form id="globalFormSecond" action="post" method="post">
+					<fieldset class="fieldset active-form">
+					    <label for="userLinkAccount">Bank Name</label>
+					    <input type="button" class="global-btn" value="link account" id="userLinkAccount">
+					</fieldset>
+					<fieldset class="fieldset">
+					    <label for="userRouting">Routing Number</label>
+					    <input type="text" placeholder="123456789" id="userRouting">
+					</fieldset>
+					<fieldset class="fieldset">
+					    <label for="userRoutingSecond">Routing Number</label>
+					    <input type="text" placeholder="1111111222222223333" id="userRoutingSecond">
+					</fieldset>
+					<fieldset class="fieldset last-fieldset">
+						<p>You’ve done it! Your application has been submitted. Your future with Tryp is right around the corner. We can’t wait to see you there!</p>
+					    <input type="button" class="global-btn" value="finish" id="finishForm">
+					</fieldset>
+				</form>
+				<span><i>02</i>/02</span>
+			</div>
+		</section>
+		<div style="height: 600px"></div>
+	<!--end personal information form section-->
+	</main>
+
+	<!--start footer page section-->
+		<footer class="section-block">
+			<div class="container flex flex-column flex-center flex-vertical-center">
+				<span>Copyright &copy; 2019 Tryp Technologies Inc. All rights reserved.</span>
+				<span class="flex">
+					<a href="#">Terms of use</a>
+					<div>|</div>
+					<a href="#">Privacy Policy</a>
+				</span>
+			</div>
+		</footer>
+	<!--start footer page section-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
