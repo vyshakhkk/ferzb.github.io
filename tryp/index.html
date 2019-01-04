@@ -55,11 +55,15 @@
 
 	<main>
 	<!--start personal information form section-->
-		<section class="personal-info-section section-block">
+		<section class="section-block">
 			<div class="wrap-con">
-				<div class="container flex flex-sb">
-					<h2 class="h-section go-top">Personal Information</h2>
-					<span class="go-top"><i>01</i>/02</span>
+				<div class="container flex flex-sb personal-info">
+					<h2 class="h-section">Personal Information</h2>
+					<span>01<i>/02</i></span>
+				</div>
+				<div class="container flex flex-sb account-info">
+					<h2 class="h-section">Account Information</h2>
+					<span><i>02</i>/02</span>
 				</div>
 			</div>
 			<form id="globalForm" action="post" method="post">
@@ -68,7 +72,7 @@
 						<input type="name" id="firstName" placeholder="Name">
 					</fieldset>
 
-					<fieldset class="fieldset fieldset2">
+					<fieldset class="fieldset fieldset2 opacity-form">
 						<label for="middleName">Middle Name</label>
 						<input type="name" id="middleName" placeholder="Name">
 					</fieldset>
@@ -178,20 +182,6 @@
 					    <label for="userBusiness">Business Name</label>
 					    <input type="text" placeholder="Test blvr" id="userBusiness">
 					</fieldset>
-				</form>
-		</section>
-	<!--end personal information form section-->
-
-
-	<!--start personal information form section-->
-		<section class="account-information-section section-block">
-			<div class="wrap-con2">
-				<div class="container flex flex-sb">
-					<h2 class="h-section">Account Information</h2>
-					<span><i>02</i>/02</span>
-				</div>
-			</div>
-			<form id="globalFormSecond" action="post" method="post">
 					<fieldset class="fieldset fieldset15">
 					    <label for="userLinkAccount">Bank Name</label>
 					    <input type="button" class="global-btn" value="link account" id="userLinkAccount">
@@ -204,7 +194,7 @@
 					    <label for="userRoutingSecond">Routing Number</label>
 					    <input type="text" placeholder="1111111222222223333" id="userRoutingSecond">
 					</fieldset>
-					<fieldset class="fieldset fieldset19 last-fieldset">
+					<fieldset class="fieldset fieldset18 last-fieldset">
 						<p>You’ve done it! Your application has been submitted. Your future with Tryp is right around the corner. We can’t wait to see you there!</p>
 					    <input type="button" class="global-btn" value="finish" id="finishForm">
 					</fieldset>
@@ -214,7 +204,7 @@
 	</main>
 
 	<!--start footer page section-->
-		<footer class="section-block">
+		<footer>
 			<div class="container flex flex-column flex-center flex-vertical-center">
 				<span>Copyright &copy; 2019 Tryp Technologies Inc. All rights reserved.</span>
 				<span class="flex">
