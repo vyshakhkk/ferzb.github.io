@@ -300,7 +300,7 @@ header {
 }
 
 .personal-info-section span {
-  font-size: 36px;
+  font-size: 20px;
   color: #c2eaff;
 }
 
@@ -309,7 +309,8 @@ header {
 }
 
 .h-section {
-  max-width: 200px;
+  max-width: 100%;
+  font-size: 20px;
 }
 
 .account-information-section {
@@ -323,13 +324,16 @@ header {
   top: 90px;
   width: 100%;
   height: 340px;
+}
+
+.account-information-section .wrap-con-active {
   background-image: -moz-linear-gradient(right, #7bcffa 0%, #685fe5 100%);
   background-image: -webkit-linear-gradient(right, #7bcffa 0%, #685fe5 100%);
   background-image: -ms-linear-gradient(right, #7bcffa 0%, #685fe5 100%);
 }
 
 .account-information-section span {
-  font-size: 36px;
+  font-size: 20px;
   color: #c2eaff;
 }
 
@@ -535,7 +539,34 @@ footer a {
     display: none;
   }
 
+  .personal-info-section span {
+    font-size: 24px;
+  }
+
+  .h-section {
+    font-size: 28px;
+    max-width: 200px;
+  }
+
+  .account-information-section span {
+    font-size: 24px;
+  }
+
   fieldset.active-form {
     padding: 65px 30px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .personal-info-section span {
+    font-size: 36px;
+  }
+
+  .h-section {
+    font-size: 40px;
+  }
+
+  .account-information-section span {
+    font-size: 36px;
   }
 }

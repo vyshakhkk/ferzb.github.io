@@ -27,10 +27,10 @@ $(document).ready(function() {
 		if ($(window).scrollTop() < 100){
 			$('.wrap-con').removeAttr('style');
 		}
-		if ($(window).scrollTop() < 2850){
+		if ($(window).scrollTop() < 2930){
 			$('.wrap-con').css('opacity', '1');
 		}
-		if ($(window).scrollTop() > 2850){
+		if ($(window).scrollTop() > 2930){
 			$('.wrap-con').css('opacity', '0');
 		}
 		if ($(window).scrollTop() > 2930){
@@ -38,10 +38,10 @@ $(document).ready(function() {
 		}
 //scroll wrap-con2
 		if ($(window).scrollTop() > 2930){
-			$('.wrap-con2').css('position', 'fixed');
+			$('.wrap-con2').css('position', 'fixed').addClass('wrap-con-active');
 		}
 		if ($(window).scrollTop() < 2930){
-			$('.wrap-con2').removeAttr('style');
+			$('.wrap-con2').removeAttr('style').removeClass('wrap-con-active');
 		}
 		if ($(window).scrollTop() > 4200){
 			$('.wrap-con2').css('position', 'relative');
@@ -53,10 +53,10 @@ $(document).ready(function() {
 		if ($(window).scrollTop() < 230){
 			$('.fieldset1').addClass('active-form');
 		}
-		if ($(window).scrollTop() > 250){
+		if ($(window).scrollTop() > 230){
 			$('.fieldset1').addClass('top');
 		}
-		if ($(window).scrollTop() < 250){
+		if ($(window).scrollTop() < 230){
 			$('.fieldset1').removeClass('top');
 		}
 //scroll fieldset2
@@ -268,8 +268,11 @@ $(document).ready(function() {
 			$('.fieldset14').removeClass('top');
 		}
 //scroll fieldset15
-		if ($(window).scrollTop() > 2900){
+		if ($(window).scrollTop() > 2850){
 			$('.fieldset15').addClass('active-form');
+		}
+		if ($(window).scrollTop() < 2850){
+			$('.fieldset15').removeClass('active-form');
 		}
 		if ($(window).scrollTop() > 3000){
 			$('.fieldset15').removeClass('active-form');
