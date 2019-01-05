@@ -124,11 +124,13 @@ $(document).ready(function() {
 	$('.fieldset17').click(function(event) {
 		$(this).addClass('active-form');
 		$('form').css('transform', 'translate(-50%, -3108px)');
+		$('.section-block').css('min-height', '820px');
 		$('.fieldset16').removeClass('active-form').addClass('top');
 		$('.fieldset18').addClass('opacity-form');
 	});
 	$('.fieldset18').click(function(event) {
 		$(this).addClass('active-form');
+		$('.section-block').css('min-height', '520px');
 		$('form').css('transform', 'translate(-50%, -3324px)');
 		$('.fieldset17').removeClass('active-form').addClass('top');
 	});
