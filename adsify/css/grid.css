@@ -589,7 +589,7 @@ textarea:-ms-input-placeholder {
   }
 
   .container {
-    max-width: 90%;
+    max-width: 1050px;
     padding: 20px;
   }
 
