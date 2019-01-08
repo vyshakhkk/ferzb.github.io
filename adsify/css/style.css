@@ -33,7 +33,7 @@
 /***===header page stylesheet===***/
 
 body {
-  background: #F7F9FE;
+  background: #fff;
 }
 
 header {
@@ -344,24 +344,29 @@ header a {
 
 .top-page p {
   margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .border {
-  background: #08f;
+  background: transparent;
+  -webkit-box-shadow: 0px 20px 0px 20px #f7f9fe;
+  box-shadow: 0px 20px 0px 20px #f7f9fe;
   width: 100%;
   position: relative;
-  height: 35px;
-  top: 60px;
+  height: 20px;
+  top: -38px;
   -webkit-border-radius: 0px 0px 100% 100%;
   border-radius: 0px 0px 100% 100%;
 }
 
 .border-top {
-  background: #2387ff;
+  background: transparent;
+  -webkit-box-shadow: 0px 40px 0px 20px #fff;
+  box-shadow: 0px 40px 0px 20px #fff;
   width: 100%;
   position: relative;
   height: 35px;
-  top: 18px;
+  top: -15px;
   -webkit-border-radius: 0px 0px 100% 100%;
   border-radius: 0px 0px 100% 100%;
 }
@@ -393,19 +398,30 @@ header a {
 
 .container-wrap {
   width: 100%;
-  max-width: 1255px;
-  margin: 0 auto 0 auto;
+  max-width: 1600px;
+  margin: 0 0 0 auto;
   padding: 0px 22px;
+  overflow: hidden;
+}
+
+.container-wrap img {
+  width: 104%;
 }
 
 /***===choose page section stylesheet===***/
 
 .choose {
+  margin-top: 40px;
   color: #21449F;
   overflow: hidden;
   background: #FFF;
   -webkit-border-radius: 0px 0px 0px 0px;
   border-radius: 0px 0px 0px 0px;
+}
+
+.choose .container {
+  border-top: 2px dashed rgba(221, 221, 221, 0.5);
+  padding-top: 40px;
 }
 
 .choose h3 {
@@ -433,6 +449,11 @@ header a {
 .different {
   color: #21449F;
   background: #FFF;
+}
+
+.different .container {
+  border-top: 2px dashed rgba(221, 221, 221, 0.5);
+  padding-top: 40px;
 }
 
 .different h2 {
@@ -478,10 +499,15 @@ header a {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   color: #FFF;
+  padding: 90px 0px 0px 0px;
   -webkit-border-radius: 120px 0px 0px 0px;
   border-radius: 120px 0px 0px 0px;
+}
+
+.features .container {
+  border-top: 2px dashed rgba(221, 221, 221, 0.5);
+  padding-top: 40px;
 }
 
 .features .h-section {
@@ -515,6 +541,21 @@ header a {
 .video-block {
   background: #FFF;
   padding: 80px 0px;
+  position: relative;
+}
+
+.video-block .bg-img-video-block {
+  position: absolute;
+  right: 0;
+  top: -134px;
+  width: 163px;
+  height: 320px;
+  z-index: 0;
+  background-image: url("../img/1_objects_18.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 }
 
 .video {
@@ -525,9 +566,9 @@ header a {
   background-image: url("../img/2_objects.png");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
 }
 
 .video .play {
@@ -561,10 +602,16 @@ header a {
 
 .price {
   background-image: url("../img/1_objects_17.png");
-  -webkit-background-size: auto;
-  -o-background-size: auto;
-  background-size: auto;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-position: right bottom;
   background-repeat: no-repeat;
+}
+
+.price .container {
+  border-top: 2px dashed rgba(221, 221, 221, 0.5);
+  padding-top: 40px;
 }
 
 .price .h-section {
@@ -718,6 +765,11 @@ header a {
   background: #F7F9FE;
 }
 
+.join-adsify .container {
+  border-top: 2px dashed rgba(221, 221, 221, 0.5);
+  padding-top: 40px;
+}
+
 .join-adsify .wrap {
   text-align: center;
   margin: 0 auto;
@@ -749,6 +801,20 @@ footer {
   background-repeat: no-repeat;
   min-height: 400px;
   color: #FFF;
+  position: relative;
+}
+
+footer .bg-img-footer-block {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/1_objects_20.png");
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 footer .footer-content {
@@ -802,6 +868,45 @@ footer .logo img {
   text-align: center;
 }
 
+.btn-up {
+  display: block;
+  background: #3469f1;
+  border-radius: 90%;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  right: 10px;
+  bottom: -50px;
+  cursor: pointer;
+  outline: 0 !important;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+
+.btn-up:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.btn-up.active {
+  bottom: 10px;
+}
+
 @media screen and (min-width: 480px) {
   .price .inner-item .global-btn {
     width: 260px;
@@ -827,6 +932,16 @@ footer .logo img {
 }
 
 @media screen and (min-width: 780px) {
+  .top-page {
+    padding-top: 150px;
+  }
+
+  .container-wrap {
+    padding-left: 140px;
+  }
+}
+
+@media screen and (min-width: 960px) {
   .logo {
     margin: 0;
   }
@@ -852,13 +967,11 @@ footer .logo img {
   .block-toggle {
     display: none;
   }
+}
 
-  .top-page {
-    padding-top: 150px;
-  }
-
+@media screen and (min-width: 1600px) {
   .container-wrap {
-    padding-left: 40px;
-    margin: 0 0 0 auto;
+    margin: 0 auto 0 auto;
+    padding: 40px;
   }
 }
