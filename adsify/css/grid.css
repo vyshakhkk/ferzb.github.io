@@ -102,8 +102,7 @@ img {
 }
 
 nav ul li {
-  margin-right: 0px;
-  margin-left: 46px;
+  margin: 10px 0px;
 }
 
 input,
@@ -793,6 +792,11 @@ textarea:-ms-input-placeholder {
 }
 
 @media screen and (min-width: 780px) {
+  nav ul li {
+    margin-right: 0px;
+    margin-left: 46px;
+  }
+
   .flex-smd-column {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;

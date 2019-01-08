@@ -32,6 +32,10 @@
 
 /***===header page stylesheet===***/
 
+body {
+  background: #F7F9FE;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -42,6 +46,10 @@ header {
 
 header a {
   font-weight: bold;
+}
+
+.logo {
+  margin: 30px 0px;
 }
 
 .logo a {
@@ -339,11 +347,21 @@ header a {
 }
 
 .border {
-  background: #000;
+  background: #08f;
   width: 100%;
   position: relative;
-  height: 20px;
-  top: -15px;
+  height: 35px;
+  top: 60px;
+  -webkit-border-radius: 0px 0px 100% 100%;
+  border-radius: 0px 0px 100% 100%;
+}
+
+.border-top {
+  background: #2387ff;
+  width: 100%;
+  position: relative;
+  height: 35px;
+  top: 18px;
   -webkit-border-radius: 0px 0px 100% 100%;
   border-radius: 0px 0px 100% 100%;
 }
@@ -494,9 +512,13 @@ header a {
 
 /***===video page section stylesheet===***/
 
+.video-block {
+  background: #FFF;
+  padding: 80px 0px;
+}
+
 .video {
   background-color: #FFF;
-  margin: 50px 0px;
   min-height: 100vh;
   height: 100%;
   max-height: 1300px;
@@ -538,7 +560,11 @@ header a {
 /***===price page section stylesheet===***/
 
 .price {
-  background-color: #FFF;
+  background-image: url("../img/1_objects_17.png");
+  -webkit-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .price .h-section {
@@ -801,6 +827,10 @@ footer .logo img {
 }
 
 @media screen and (min-width: 780px) {
+  .logo {
+    margin: 0;
+  }
+
   .navigation {
     position: static;
     width: auto;
