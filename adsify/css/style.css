@@ -449,6 +449,7 @@ header a {
 .different {
   color: #21449F;
   background: #FFF;
+  overflow: hidden;
 }
 
 .different .inner-block {
@@ -458,6 +459,10 @@ header a {
 .different .container {
   border-top: 2px dashed rgba(221, 221, 221, 0.5);
   padding-top: 40px;
+}
+
+.different img {
+  width: 100%;
 }
 
 .different h2 {
@@ -950,6 +955,10 @@ footer .logo img {
 
   .container-wrap {
     padding-left: 140px;
+  }
+
+  .different img {
+    width: 125%;
   }
 }
 
