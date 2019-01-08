@@ -349,12 +349,12 @@ header a {
 
 .border {
   background: transparent;
-  -webkit-box-shadow: 0px 20px 0px 20px #f7f9fe;
-  box-shadow: 0px 20px 0px 20px #f7f9fe;
+  -webkit-box-shadow: 0px 10px 0px 10px #f7f9fe;
+  box-shadow: 0px 10px 0px 10px #f7f9fe;
   width: 100%;
   position: relative;
-  height: 20px;
-  top: -38px;
+  height: 10px;
+  top: -10px;
   -webkit-border-radius: 0px 0px 100% 100%;
   border-radius: 0px 0px 100% 100%;
 }
@@ -405,7 +405,7 @@ header a {
 }
 
 .container-wrap img {
-  width: 104%;
+  width: 110%;
 }
 
 /***===choose page section stylesheet===***/
@@ -449,6 +449,10 @@ header a {
 .different {
   color: #21449F;
   background: #FFF;
+}
+
+.different .inner-block {
+  margin: 40px 0px;
 }
 
 .different .container {
@@ -540,12 +544,13 @@ header a {
 
 .video-block {
   background: #FFF;
-  padding: 80px 0px;
+  padding: 60px 0px 40px;
   position: relative;
 }
 
 .video-block .bg-img-video-block {
   position: absolute;
+  opacity: .4;
   right: 0;
   top: -134px;
   width: 163px;
@@ -560,15 +565,15 @@ header a {
 
 .video {
   background-color: #FFF;
-  min-height: 100vh;
+  min-height: 80vh;
   height: 100%;
   max-height: 1300px;
   background-image: url("../img/2_objects.png");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: 50%;
+  -o-background-size: 50%;
+  background-size: 50%;
 }
 
 .video .play {
@@ -585,12 +590,7 @@ header a {
   display: block;
   width: 100px;
   text-transform: uppercase;
-  -webkit-transform: translateX(-10px);
-  -moz-transform: translateX(-10px);
-  -ms-transform: translateX(-10px);
-  -o-transform: translateX(-10px);
-  transform: translateX(-10px);
-  margin: -65px auto 0px;
+  margin: -25px auto 0px;
   position: relative;
 }
 
@@ -770,6 +770,26 @@ header a {
   padding-top: 40px;
 }
 
+.join-adsify .global-btn {
+  position: relative;
+}
+
+.join-adsify .global-btn:after {
+  position: absolute;
+  content: "";
+  display: none;
+  background-image: url("../img/hend.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  width: 110px;
+  height: 110px;
+  top: 30px;
+  right: -75px;
+  z-index: 1;
+}
+
 .join-adsify .wrap {
   text-align: center;
   margin: 0 auto;
@@ -794,6 +814,7 @@ header a {
 /***===JOIN ADSIFY page section stylesheet===***/
 
 footer {
+  z-index: 2;
   background-image: url("../img/bg-footer.png");
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -802,19 +823,6 @@ footer {
   min-height: 400px;
   color: #FFF;
   position: relative;
-}
-
-footer .bg-img-footer-block {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../img/1_objects_20.png");
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 footer .footer-content {
@@ -910,6 +918,10 @@ footer .logo img {
 @media screen and (min-width: 480px) {
   .price .inner-item .global-btn {
     width: 260px;
+  }
+
+  .join-adsify .global-btn:after {
+    display: block;
   }
 
   .copyright {
