@@ -576,9 +576,9 @@ header a {
   background-image: url("../img/2_objects.png");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 50%;
-  -o-background-size: 50%;
-  background-size: 50%;
+  -webkit-background-size: 90%;
+  -o-background-size: 90%;
+  background-size: 90%;
 }
 
 .video .play {
@@ -921,6 +921,12 @@ footer .logo img {
 }
 
 @media screen and (min-width: 480px) {
+  .video {
+    -webkit-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
+  }
+
   .price .inner-item .global-btn {
     width: 260px;
   }
@@ -955,6 +961,12 @@ footer .logo img {
 
   .container-wrap {
     padding-left: 140px;
+  }
+
+  .video {
+    -webkit-background-size: 50%;
+    -o-background-size: 50%;
+    background-size: 50%;
   }
 }
 
