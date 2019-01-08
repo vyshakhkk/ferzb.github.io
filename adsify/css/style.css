@@ -50,7 +50,7 @@ header a {
 
 .logo img {
   margin-right: 12px;
-  max-width: 70px;
+  max-height: 70px;
 }
 
 .menu-list li:last-child {
@@ -58,6 +58,23 @@ header a {
   padding: 12px 46px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.menu-list li:last-child:hover {
+  background: #66FBFF;
+}
+
+.menu-list li:last-child a:hover {
+  color: #fff;
+}
+
+.menu-list li a:hover {
+  color: #66FBFF;
 }
 
 /***===start navigation page stylesheet===***/
@@ -289,19 +306,24 @@ header a {
   border-radius: 40px;
   font-size: 20px;
   letter-spacing: 4px;
-  margin: 12px 0px;
+  margin: 70px 0px;
+}
+
+.global-btn:hover {
+  background: #66FBFF;
 }
 
 /***===top page stylesheet===***/
 
 .top-page {
-  padding-top: 80px;
-  min-height: 520px;
   background-image: url("../img/bg-header.png");
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 80px;
+  min-height: 620px;
 }
 
 .top-page h1 {
@@ -314,6 +336,16 @@ header a {
 
 .top-page p {
   margin-bottom: 30px;
+}
+
+.border {
+  background: #000;
+  width: 100%;
+  position: relative;
+  height: 20px;
+  top: -15px;
+  -webkit-border-radius: 0px 0px 100% 100%;
+  border-radius: 0px 0px 100% 100%;
 }
 
 /***===global stylesheet===***/
@@ -341,10 +373,21 @@ header a {
   margin: 24px 0px;
 }
 
+.container-wrap {
+  width: 100%;
+  max-width: 1255px;
+  margin: 0 auto 0 auto;
+  padding: 0px 22px;
+}
+
 /***===choose page section stylesheet===***/
 
 .choose {
   color: #21449F;
+  overflow: hidden;
+  background: #FFF;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 .choose h3 {
@@ -371,6 +414,7 @@ header a {
 
 .different {
   color: #21449F;
+  background: #FFF;
 }
 
 .different h2 {
@@ -412,11 +456,14 @@ header a {
 
 .features {
   background-image: url("../img/bg-main.png");
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #FFF;
+  -webkit-border-radius: 120px 0px 0px 0px;
+  border-radius: 120px 0px 0px 0px;
 }
 
 .features .h-section {
@@ -448,6 +495,7 @@ header a {
 /***===video page section stylesheet===***/
 
 .video {
+  background-color: #FFF;
   margin: 50px 0px;
   min-height: 100vh;
   height: 100%;
@@ -488,6 +536,10 @@ header a {
 }
 
 /***===price page section stylesheet===***/
+
+.price {
+  background-color: #FFF;
+}
 
 .price .h-section {
   max-width: 320px;
@@ -698,14 +750,14 @@ footer .soc-link a {
   font-size: 22px;
 }
 
-footer .logo a {
-  font-size: 18px;
-  font-weight: bold;
+footer .soc-link a:hover {
+  color: #66FBFF;
 }
 
 footer .logo img {
+  width: auto;
   margin-right: 6px;
-  max-width: 40px;
+  max-height: 30px;
 }
 
 .footer-nav {
@@ -773,5 +825,10 @@ footer .logo img {
 
   .top-page {
     padding-top: 150px;
+  }
+
+  .container-wrap {
+    padding-left: 40px;
+    margin: 0 0 0 auto;
   }
 }
