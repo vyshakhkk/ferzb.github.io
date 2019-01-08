@@ -956,10 +956,6 @@ footer .logo img {
   .container-wrap {
     padding-left: 140px;
   }
-
-  .different img {
-    width: 125%;
-  }
 }
 
 @media screen and (min-width: 960px) {
