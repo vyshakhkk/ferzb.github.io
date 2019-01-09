@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width initial-scale=1.0"">
-		<title>Adsify | Login</title>
+		<title>Adsify | Registration</title>
 		<link rel="shortcut icon" href="img/ico.ico">
 		<!--[if gt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,7 +42,7 @@
 								<li><a href="index.html">Features</a></li>
 								<li><a href="index.html">Video</a></li>
 								<li><a href="index.html">Pricing</a></li>
-								<li><a class="active" href="login.html">Login</a></li>
+								<li><a href="login.html">Login</a></li>
 								<li><a href="index.html">Try it Now</a></li>
 							</ul>
 						</nav>
@@ -60,7 +60,7 @@
 			<section class="top-page login-page">
 				<div class="container-wrap flex flex-column flex-ld-row flex-sb">
 					<div class="col-12 col-smd-6">
-						<h1>Welcome to <span>Login!</span></h1>
+						<h1>Welcome to <span>Registration!</span></h1>
 					</div>
 				</div>
 				<div class="border-top"></div>
@@ -72,27 +72,25 @@
 				<div class="container">
 					<form action="post">
 						<span class="input-global">
-							<input id="userMail" type="mail" name="userMail">
-							<label for="userMail">
+							<input id="regName" type="mail" name="regName">
+							<label for="regName">
+								<span>Name</span>
+							</label>
+						</span>
+						<span class="input-global">
+							<input id="regMail" type="mail" name="regMail">
+							<label for="regMail">
 								<span>E-mail</span>
 							</label>
 						</span>
 						<span class="input-global">
-							<input id="userPass" type="password" name="userPass">
-							<label for="userPass">
+							<input id="regPass" type="password" name="regPass">
+							<label for="regPass">
 								<span>Password</span>
 							</label>
 						</span>
-						<span class="checkbox">
-							<input type="checkbox" id="userChecked" name="userChecked">
-							<label for="userChecked">
-								Remember me
-							</label>
-							<a href="#">Forgot my password</a>
-						</span>
 						<div class="flex submit-block">
-							<a href="register.html" class="global-btn">Sing Up</a>
-							<input type="submit" name="btn-send" class="global-btn" value="Login">
+							<input type="submit" name="btn-send" class="global-btn" value="Sing Up">
 							
 						</div>
 
