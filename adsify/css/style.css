@@ -1123,9 +1123,17 @@ footer .logo img {
 .submit-block span {
   font-size: 20px;
   color: #21449F;
-  font-weight: 600;
   display: block;
   margin-top: 60px;
+}
+
+.submit-block span a {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.submit-block span a:hover {
+  color: #66FBFF;
 }
 
 .submit-block .global-btn {
