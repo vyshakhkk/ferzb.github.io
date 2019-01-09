@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var toggleBlock = $('.nav-toggle-block'),
 		toggleLine = $('.nav-toggle-line'),
 		menuList = $('.menu-list').find('> li'),
-		links = menuList.find('> a'),
+		links = $('.scroll'),
 		nav = $('#nav');
 
 	toggleBlock.on('click', function(event) {
@@ -43,5 +43,14 @@ $(document).ready(function() {
 		else{
 			$('.btn-up').removeClass('active');
 		}
+	});
+	$(function(){
+		var input = $('.input-global')
+		input.each(function() {
+			var this_input = $(this);
+			this_input.click(function() {
+				this_input.addClass('input-focus')
+			});
+		});
 	});
 });

@@ -794,7 +794,7 @@ textarea:-ms-input-placeholder {
 @media screen and (min-width: 780px) {
   nav ul li {
     margin-right: 0px;
-    margin-left: 46px;
+    margin-left: 40px;
   }
 
   .flex-smd-column {

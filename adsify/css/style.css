@@ -32,10 +32,6 @@
 
 /***===header page stylesheet===***/
 
-body {
-  background: #fff;
-}
-
 header {
   position: absolute;
   top: 0;
@@ -61,7 +57,7 @@ header a {
   max-height: 70px;
 }
 
-.menu-list li:last-child {
+.menu-list li:nth-child(5) {
   background: rgba(255, 255, 255, 0.1);
   padding: 12px 46px;
   -webkit-border-radius: 40px;
@@ -73,15 +69,19 @@ header a {
   transition: all .3s ease;
 }
 
-.menu-list li:last-child:hover {
+.menu-list li:nth-child(5):hover {
   background: #66FBFF;
 }
 
-.menu-list li:last-child a:hover {
+.menu-list li:nth-child(5) a:hover {
   color: #fff;
 }
 
 .menu-list li a:hover {
+  color: #66FBFF;
+}
+
+.menu-list li a.active {
   color: #66FBFF;
 }
 
@@ -918,6 +918,221 @@ footer .logo img {
 
 .btn-up.active {
   bottom: 10px;
+}
+
+.login-page {
+  min-height: 100%;
+}
+
+.login-page .border-top {
+  -webkit-box-shadow: 0px 40px 0px 20px #F7F9FE;
+  box-shadow: 0px 40px 0px 20px #F7F9FE;
+}
+
+.form-login {
+  background: #F7F9FE;
+}
+
+.input-global {
+  position: relative;
+  display: block;
+  z-index: 1;
+  margin: 30px auto 110px;
+  max-width: 420px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  z-index: 1;
+  margin: 30px auto 110px;
+  max-width: 420px;
+  width: calc(100% - 2em);
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox input:checked + label:before {
+  background-color: #21449F;
+  background-image: url("../img/click.png");
+}
+
+.checkbox label,
+.checkbox a {
+  display: block;
+  margin-bottom: 30px;
+  color: #21449F;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.checkbox a:hover {
+  color: #66FBFF;
+}
+
+.checkbox label {
+  cursor: pointer;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.checkbox label:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #21449F;
+  margin-right: 20px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-global input,
+.input-global textarea {
+  z-index: 10;
+  height: 39px;
+  margin-bottom: 0;
+  width: 100%;
+  background: transparent;
+  color: #f5f5f5;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: relative;
+  display: block;
+  padding: 0.8em;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.input-global textarea {
+  min-height: 44px;
+}
+
+.input-global textarea:hover {
+  min-height: 44px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.input-global input:focus {
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+
+.input-global label {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  color: #21449F;
+  text-align: left;
+  display: inline-block;
+  float: right;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 70.25%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input-global label span {
+  font-size: 22px;
+}
+
+.input-global label:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background: #08f;
+  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input-global label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.25em;
+  background: #08f;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input-focus input,
+.input-focus textarea {
+  opacity: 1;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.input-focus label {
+  pointer-events: none;
+}
+
+.input-focus label:before {
+  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+  transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+}
+
+.input-focus label:after {
+  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
+  transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
+}
+
+.submit-block {
+  max-width: 600px;
+  margin: auto;
+}
+
+.submit-block .global-btn {
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  margin: 20px auto;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.submit-block .global-btn:hover {
+  background: #21449F;
 }
 
 @media screen and (min-width: 480px) {
