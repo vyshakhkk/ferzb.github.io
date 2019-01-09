@@ -1120,13 +1120,23 @@ footer .logo img {
   margin: auto;
 }
 
+.submit-block span {
+  font-size: 20px;
+  color: #21449F;
+  font-weight: 600;
+  display: block;
+  margin-top: 60px;
+}
+
 .submit-block .global-btn {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   width: 180px;
   height: 55px;
   border: none;
   cursor: pointer;
   color: #FFF;
-  margin: 20px auto;
+  margin: 20px 0px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
