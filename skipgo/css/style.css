@@ -1,0 +1,135 @@
+/****Grid layout settings****/
+
+/*General for documetn settings*/
+
+/*Color*/
+
+/*Typography*/
+
+/*h1*/
+
+/*nav block*/
+
+/*section block*/
+
+/*container block*/
+
+/*wrapper block*/
+
+/*nav toggle*/
+
+/*btn up*/
+
+@import url("grid.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.menu-list {
+  text-transform: uppercase;
+  max-width: 926px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.menu-list a:hover {
+  color: #ec5d2b;
+}
+
+.top-page {
+  min-height: 100vh;
+  padding-top: 18%;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.top-page .wrapper {
+  background-color: #ec5d2b;
+  margin-bottom: 15%;
+}
+
+.top-page .title {
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.top-page .box {
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+.top-page .box:last-child {
+  margin-bottom: 0px;
+}
+
+.top-page .inner-box {
+  padding: 20px;
+}
+
+.top-page .inner-box p {
+  max-width: 280px;
+}
+
+.top-page .inner-box h4 {
+  color: #ec5d2b;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.top-page .inner-box h4 span {
+  font-size: 20px;
+  text-transform: none;
+  color: #000;
+}
+
+.top-page .inner-box .img {
+  text-align: right;
+}
+
+.top-page .inner-box img {
+  height: auto;
+  width: auto;
+}
+
+.top-page .inner-box .ves {
+  font-weight: bold;
+  display: block;
+  margin: 26px 0px 10px;
+}
+
+.top-page .bottom-box {
+  padding: 14px 20px;
+  color: #fff;
+  background-color: #7365ac;
+}
+
+.top-page .bottom-box span,
+.top-page .bottom-box a {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.top-page .bottom-box span i {
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.top-page .bottom-box a {
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #ec5d2b;
+  color: #FFF;
+}
