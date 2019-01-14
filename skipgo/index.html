@@ -16,14 +16,32 @@
 	<body>
 	<!-- start header nav -->
 		<header>
-			<nav class="container">
-				<ul class="menu-list flex flex-sa">
-					<li><a href="#">go home</a></li>
-					<li><a href="#">go about</a></li>
-					<li class="logo"><a href="#"><img src="img/logo.jpg" alt="logo"></a></li>
-					<li><a href="#">go locate</a></li>
-					<li><a href="#">go holler</a></li>
-				</ul>
+			<div class="flex flex-sb container">
+				<div class="logo">
+					<img src="img/logo.jpg" alt="logo">
+				</div>
+				<!--start toggle block page-->
+				<div id="show" class="block-toggle">
+					<span class="nav-toggle-block">
+						<i class="nav-toggle-line"></i>
+						<i class="nav-toggle-line"></i>
+						<i class="nav-toggle-line"></i>
+					</span>
+				</div>
+				<!--end toggle block page-->
+				
+			</div>
+			
+			<nav id="nav" class="container navigation">
+				<div class="navigation-inner">
+					<ul class="menu-list flex flex-column flex-smd-row flex-sa">
+						<li><a href="#">go home</a></li>
+						<li><a href="#">go about</a></li>
+						<li class="list-logo"><a href="#"><img src="img/logo.jpg" alt="logo"></a></li>
+						<li><a href="#">go locate</a></li>
+						<li><a href="#">go holler</a></li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 	<!-- end header nav -->
@@ -38,13 +56,13 @@
 							<h2>select your skip</h2>
 						</div>
 						<div class="box">
-							<div class="inner-box flex flex-sb flex-vertical-center">
-								<div class="col-8">
+							<div class="inner-box flex flex-sb flex-column flex-md-row flex-vertical-center">
+								<div class="col-md-6 col-12">
 									<h4>standart-<span>General Clean-Ups</span></h4>
 									<span class="ves">500 kg</span>
 									<p>Perfect for general household rubbish Upto 1 wheelbarrow of heavy stuff</p>
 								</div>
-								<div class="col-4 img">
+								<div class="col-md-6 col-12 img">
 									<img src="img/png1.png" alt="pic">
 								</div>
 							</div>
@@ -55,13 +73,13 @@
 						</div>
 							
 						<div class="box">
-							<div class="inner-box flex flex-sb flex-vertical-center">
-								<div class="col-8">
+							<div class="inner-box flex flex-sb lex-column flex-md-row flex-vertical-center">
+								<div class="col-md-6 col-12">
 									<h4>HEAVY-<span>Building/Renovating</span></h4>
 									<span class="ves">1000 kg</span>
 									<p>Great for Builders Waste Upto 5 wheelbarrows of heavy stuff</p>
 								</div>
-								<div class="col-4 img">
+								<div class="col-md-6 col-12 img">
 									<img src="img/pic1.png" alt="pic">
 								</div>
 							</div>
