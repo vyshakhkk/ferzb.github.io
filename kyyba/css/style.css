@@ -1,0 +1,472 @@
+/****Grid layout settings****/
+
+/*General for documetn settings*/
+
+/*Color*/
+
+/*Typography*/
+
+/*h1*/
+
+/*nav block*/
+
+/*section block*/
+
+/*container block*/
+
+/*wrapper block*/
+
+/*nav toggle*/
+
+/*btn up*/
+
+@import url("grid.css");
+
+@font-face {
+  font-family: 'KozGoPro Regular';
+  src: url("../fonts/KozGoPro-Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaMedium';
+  src: url("../fonts/HelveticaNeueCyr-Roman.ttf");
+  font-weight: normal;
+}
+
+.bg-img {
+  background-image: url("../img/bg-body.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 42%;
+  right: 0;
+  max-width: 236px;
+  width: 100%;
+  height: 283px;
+  z-index: -1;
+}
+
+.bg-img1 {
+  background-image: url("../img/bg-body1.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: none;
+  top: 80%;
+  left: -220px;
+  max-width: 888px;
+  width: 100%;
+  height: 100%;
+  max-height: 746px;
+  z-index: -1;
+}
+
+p,
+h5 {
+  font-family: 'HelveticaMedium';
+  line-height: 28px;
+}
+
+header {
+  background: #000;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+  left: 0;
+  top: 107px;
+  background: #000;
+}
+
+.menu-list li {
+  text-align: center;
+}
+
+.menu-list a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 6px 0px;
+}
+
+.menu-list a:hover {
+  background: none;
+  color: #fff;
+}
+
+.menu-list a:hover:before {
+  left: 0%;
+  right: 0%;
+}
+
+.how-we-change h1 {
+  margin-bottom: 30px;
+}
+
+.how-we-change h1:before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/img0.jpg");
+  background-repeat: no-repeat;
+  margin: 30px 0px;
+}
+
+.how-we-change h2 {
+  margin-bottom: 20px;
+}
+
+.how-we-change p {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.how-we-change .img {
+  text-align: center;
+}
+
+.how-we-change .img img {
+  max-width: 415px;
+}
+
+.second-section .title {
+  text-align: center;
+  margin-bottom: 120px;
+  background-image: url("../img/bg-h.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.second-section .box {
+  background: #FFF;
+  max-width: 290px;
+  margin: 15px 0px;
+  padding: 20px;
+  -webkit-box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.second-section .box-title {
+  margin-bottom: 45px;
+}
+
+.second-section .box-title .img {
+  margin-right: 12px;
+  height: 57px;
+  width: 57px;
+}
+
+.video-section {
+  margin-top: 170px;
+}
+
+.video-section .title {
+  margin-bottom: 120px;
+}
+
+.video-section .title h4 {
+  line-height: 40px;
+}
+
+.video-section .box {
+  margin: 15px 0px;
+  padding: 30px;
+  -webkit-box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.video-section .box:hover {
+  background-image: -moz-linear-gradient(90deg, #03156c 0%, #035df5 100%);
+  background-image: -webkit-linear-gradient(90deg, #03156c 0%, #035df5 100%);
+  background-image: -ms-linear-gradient(90deg, #03156c 0%, #035df5 100%);
+  color: #FFF;
+}
+
+.video-section .box:hover h3 {
+  color: #FFF;
+}
+
+.video-section .box:hover .img img:first-child {
+  opacity: 0;
+}
+
+.video-section .box:hover .img img:last-child {
+  opacity: 1;
+}
+
+.video-section .box h3 {
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #2558c6;
+  margin-bottom: 30px;
+}
+
+.video-section .box .img {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.video-section .box .img img {
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-section .box .img img:first-child {
+  opacity: 1;
+}
+
+.video-section .box .img img:last-child {
+  opacity: 0;
+}
+
+.contact .title {
+  margin-bottom: 50px;
+  background-image: url("../img/bg-h1.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.contact .title h4 {
+  line-height: 40px;
+}
+
+.contact .location {
+  margin-left: 0px;
+}
+
+.contact .inner-block {
+  font-size: 18px;
+}
+
+.contact .inner-block span {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.contact .inner-block span:before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 37px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+
+.contact .inner-block:nth-child(1) span:before {
+  background-image: url("../img/phone.png");
+}
+
+.contact .inner-block:nth-child(2) span:before {
+  background-image: url("../img/location.png");
+}
+
+footer {
+  margin-top: 200px45;
+}
+
+footer .links ul {
+  font-size: 23px;
+}
+
+footer .links ul li:first-child {
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 50px;
+}
+
+footer .links ul li {
+  color: #000;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+
+footer .social a {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 18px;
+  color: #000;
+}
+
+footer .social a:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer .social li {
+  margin-left: 0px !important;
+}
+
+footer .social li:nth-child(2) a:before {
+  background-image: url("../img/facebook1.png");
+}
+
+footer .social li:nth-child(3) a:before {
+  background-image: url("../img/youtube1.png");
+}
+
+footer .social li:nth-child(4) a:before {
+  background-image: url("../img/twitter1.png");
+}
+
+footer .copyright span {
+  font-size: 23px;
+  color: #3F3F3F;
+}
+
+footer .logo {
+  margin-bottom: 12px;
+}
+
+footer .logo img {
+  margin: auto;
+  display: block;
+  max-width: 159px;
+}
+
+@media screen and (min-width: 480px) {
+  .second-section .box {
+    margin: 15px;
+  }
+
+  .contact .inner-block {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .nav {
+    display: block;
+    position: static;
+    width: auto;
+  }
+
+  .menu-list li {
+    text-align: left;
+  }
+
+  .menu-list a {
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .menu-list a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #e3c715;
+    height: 3px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .second-section .box {
+    margin: 0;
+  }
+
+  .contact .location {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bg-img1 {
+    display: block;
+  }
+
+  footer .links ul li {
+    color: #FFF;
+  }
+
+  footer .social a {
+    color: #FFF;
+  }
+
+  footer .social li:nth-child(2) a:before {
+    background-image: url("../img/facebook.png");
+  }
+
+  footer .social li:nth-child(3) a:before {
+    background-image: url("../img/youtube.png");
+  }
+
+  footer .social li:nth-child(4) a:before {
+    background-image: url("../img/twitter.png");
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .bg-img1 {
+    display: none;
+  }
+
+  footer .links ul li {
+    color: #000;
+  }
+
+  footer .social a {
+    color: #000;
+  }
+
+  footer .social li:nth-child(2) a:before {
+    background-image: url("../img/facebook1.png");
+  }
+
+  footer .social li:nth-child(3) a:before {
+    background-image: url("../img/youtube1.png");
+  }
+
+  footer .social li:nth-child(4) a:before {
+    background-image: url("../img/twitter1.png");
+  }
+}
