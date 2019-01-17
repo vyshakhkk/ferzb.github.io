@@ -744,103 +744,103 @@ textarea:-ms-input-placeholder {
   }
 
   .col-sd-1 {
-    width: calc(8.33333% - 50px);
+    width: calc(8.33333% - 5px);
   }
 
   .col-sd-2 {
-    width: calc(16.66667% - 50px);
+    width: calc(16.66667% - 5px);
   }
 
   .col-sd-2-5 {
-    width: calc(20% - 50px);
+    width: calc(20% - 5px);
   }
 
   .col-sd-3 {
-    width: calc(25% - 50px);
+    width: calc(25% - 5px);
   }
 
   .col-sd-4 {
-    width: calc(33.33333% - 50px);
+    width: calc(33.33333% - 5px);
   }
 
   .col-sd-5 {
-    width: calc(41.66667% - 50px);
+    width: calc(41.66667% - 5px);
   }
 
   .col-sd-6 {
-    width: calc(50% - 50px);
+    width: calc(50% - 5px);
   }
 
   .col-sd-7 {
-    width: calc(58.33333% - 50px);
+    width: calc(58.33333% - 5px);
   }
 
   .col-sd-8 {
-    width: calc(66.66667% - 50px);
+    width: calc(66.66667% - 5px);
   }
 
   .col-sd-9 {
-    width: calc(75% - 50px);
+    width: calc(75% - 5px);
   }
 
   .col-sd-10 {
-    width: calc(83.33333% - 50px);
+    width: calc(83.33333% - 5px);
   }
 
   .col-sd-11 {
-    width: calc(91.66667% - 50px);
+    width: calc(91.66667% - 5px);
   }
 
   .col-sd-12 {
-    width: calc(100% - 50px);
+    width: calc(100% - 5px);
   }
 
   .grid-sd-1 {
-    flex-basis: calc(8.33333% - 50px);
+    flex-basis: calc(8.33333% - 5px);
   }
 
   .grid-sd-2 {
-    flex-basis: calc(16.66667% - 50px);
+    flex-basis: calc(16.66667% - 5px);
   }
 
   .grid-sd-2-5 {
-    flex-basis: calc(20% - 50px);
+    flex-basis: calc(20% - 5px);
   }
 
   .grid-sd-3 {
-    flex-basis: calc(25% - 50px);
+    flex-basis: calc(25% - 5px);
   }
 
   .grid-sd-4 {
-    flex-basis: calc(33.33333% - 50px);
+    flex-basis: calc(33.33333% - 5px);
   }
 
   .grid-sd-5 {
-    flex-basis: calc(41.66667% - 50px);
+    flex-basis: calc(41.66667% - 5px);
   }
 
   .grid-sd-6 {
-    flex-basis: calc(50% - 50px);
+    flex-basis: calc(50% - 5px);
   }
 
   .grid-sd-7 {
-    flex-basis: calc(58.33333% - 50px);
+    flex-basis: calc(58.33333% - 5px);
   }
 
   .grid-sd-8 {
-    flex-basis: calc(66.66667% - 50px);
+    flex-basis: calc(66.66667% - 5px);
   }
 
   .grid-sd-9 {
-    flex-basis: calc(75% - 50px);
+    flex-basis: calc(75% - 5px);
   }
 
   .grid-sd-10 {
-    flex-basis: calc(83.33333% - 50px);
+    flex-basis: calc(83.33333% - 5px);
   }
 
   .grid-sd-11 {
-    flex-basis: calc(91.66667% - 50px);
+    flex-basis: calc(91.66667% - 5px);
   }
 }
 
@@ -953,111 +953,111 @@ textarea:-ms-input-placeholder {
   }
 
   .col-md-1 {
-    width: calc(8.33333% - 50px);
+    width: calc(8.33333% - 5px);
   }
 
   .col-md-2 {
-    width: calc(16.66667% - 50px);
+    width: calc(16.66667% - 5px);
   }
 
   .col-md-2-5 {
-    width: calc(20% - 50px);
+    width: calc(20% - 5px);
   }
 
   .col-md-3 {
-    width: calc(25% - 50px);
+    width: calc(25% - 5px);
   }
 
   .col-md-4 {
-    width: calc(33.33333% - 50px);
+    width: calc(33.33333% - 5px);
   }
 
   .col-md-5 {
-    width: calc(41.66667% - 50px);
+    width: calc(41.66667% - 5px);
   }
 
   .col-md-6 {
-    width: calc(50% - 50px);
+    width: calc(50% - 5px);
   }
 
   .col-md-7 {
-    width: calc(58.33333% - 50px);
+    width: calc(58.33333% - 5px);
   }
 
   .col-md-8 {
-    width: calc(66.66667% - 50px);
+    width: calc(66.66667% - 5px);
   }
 
   .col-md-9 {
-    width: calc(75% - 50px);
+    width: calc(75% - 5px);
   }
 
   .col-md-10 {
-    width: calc(83.33333% - 50px);
+    width: calc(83.33333% - 5px);
   }
 
   .col-md-11 {
-    width: calc(91.66667% - 50px);
+    width: calc(91.66667% - 5px);
   }
 
   .col-md-12 {
-    width: calc(100% - 50px);
+    width: calc(100% - 5px);
   }
 
   .grid-md-12 {
-    flex-basis: calc(100% - 50px);
+    flex-basis: calc(100% - 5px);
   }
 
   .grid-md-1 {
-    flex-basis: calc(8.33333% - 50px);
+    flex-basis: calc(8.33333% - 5px);
   }
 
   .grid-md-2 {
-    flex-basis: calc(16.66667% - 50px);
+    flex-basis: calc(16.66667% - 5px);
   }
 
   .grid-md-2-5 {
-    flex-basis: calc(20% - 50px);
+    flex-basis: calc(20% - 5px);
   }
 
   .grid-md-3 {
-    flex-basis: calc(25% - 50px);
+    flex-basis: calc(25% - 5px);
   }
 
   .grid-md-4 {
-    flex-basis: calc(33.33333% - 50px);
+    flex-basis: calc(33.33333% - 5px);
   }
 
   .grid-md-5 {
-    flex-basis: calc(41.66667% - 50px);
+    flex-basis: calc(41.66667% - 5px);
   }
 
   .grid-md-6 {
-    flex-basis: calc(50% - 50px);
+    flex-basis: calc(50% - 5px);
   }
 
   .grid-md-7 {
-    flex-basis: calc(58.33333% - 50px);
+    flex-basis: calc(58.33333% - 5px);
   }
 
   .grid-md-8 {
-    flex-basis: calc(66.66667% - 50px);
+    flex-basis: calc(66.66667% - 5px);
   }
 
   .grid-md-9 {
-    flex-basis: calc(75% - 50px);
+    flex-basis: calc(75% - 5px);
   }
 
   .grid-md-10 {
-    flex-basis: calc(83.33333% - 50px);
+    flex-basis: calc(83.33333% - 5px);
   }
 
   .grid-md-11 {
-    flex-basis: calc(91.66667% - 50px);
+    flex-basis: calc(91.66667% - 5px);
   }
 
   .grid-md-12 {
-    flex-basis: calc(100% - 50px);
+    flex-basis: calc(100% - 5px);
   }
 }
 
@@ -1147,107 +1147,107 @@ textarea:-ms-input-placeholder {
   }
 
   .col-smd-1 {
-    width: calc(8.33333% - 50px);
+    width: calc(8.33333% - 5px);
   }
 
   .col-smd-2 {
-    width: calc(16.66667% - 50px);
+    width: calc(16.66667% - 5px);
   }
 
   .col-smd-2-5 {
-    width: calc(20% - 50px);
+    width: calc(20% - 5px);
   }
 
   .col-smd-3 {
-    width: calc(25% - 50px);
+    width: calc(25% - 5px);
   }
 
   .col-smd-4 {
-    width: calc(33.33333% - 50px);
+    width: calc(33.33333% - 5px);
   }
 
   .col-smd-5 {
-    width: calc(41.66667% - 50px);
+    width: calc(41.66667% - 5px);
   }
 
   .col-smd-6 {
-    width: calc(50% - 50px);
+    width: calc(50% - 5px);
   }
 
   .col-smd-7 {
-    width: calc(58.33333% - 50px);
+    width: calc(58.33333% - 5px);
   }
 
   .col-smd-8 {
-    width: calc(66.66667% - 50px);
+    width: calc(66.66667% - 5px);
   }
 
   .col-smd-9 {
-    width: calc(75% - 50px);
+    width: calc(75% - 5px);
   }
 
   .col-smd-10 {
-    width: calc(83.33333% - 50px);
+    width: calc(83.33333% - 5px);
   }
 
   .col-smd-11 {
-    width: calc(91.66667% - 50px);
+    width: calc(91.66667% - 5px);
   }
 
   .col-smd-12 {
-    width: calc(100% - 50px);
+    width: calc(100% - 5px);
   }
 
   .grid-smd-1 {
-    flex-basis: calc(8.33333% - 50px);
+    flex-basis: calc(8.33333% - 5px);
   }
 
   .grid-smd-2 {
-    flex-basis: calc(16.66667% - 50px);
+    flex-basis: calc(16.66667% - 5px);
   }
 
   .grid-smd-2-5 {
-    flex-basis: calc(20% - 50px);
+    flex-basis: calc(20% - 5px);
   }
 
   .grid-smd-3 {
-    flex-basis: calc(25% - 50px);
+    flex-basis: calc(25% - 5px);
   }
 
   .grid-smd-4 {
-    flex-basis: calc(33.33333% - 50px);
+    flex-basis: calc(33.33333% - 5px);
   }
 
   .grid-smd-5 {
-    flex-basis: calc(41.66667% - 50px);
+    flex-basis: calc(41.66667% - 5px);
   }
 
   .grid-smd-6 {
-    flex-basis: calc(50% - 50px);
+    flex-basis: calc(50% - 5px);
   }
 
   .grid-smd-7 {
-    flex-basis: calc(58.33333% - 50px);
+    flex-basis: calc(58.33333% - 5px);
   }
 
   .grid-smd-8 {
-    flex-basis: calc(66.66667% - 50px);
+    flex-basis: calc(66.66667% - 5px);
   }
 
   .grid-smd-9 {
-    flex-basis: calc(75% - 50px);
+    flex-basis: calc(75% - 5px);
   }
 
   .grid-msd-10 {
-    flex-basis: calc(83.33333% - 50px);
+    flex-basis: calc(83.33333% - 5px);
   }
 
   .grid-msd-11 {
-    flex-basis: calc(91.66667% - 50px);
+    flex-basis: calc(91.66667% - 5px);
   }
 
   .grid-msd-12 {
-    flex-basis: calc(100% - 50px);
+    flex-basis: calc(100% - 5px);
   }
 }
 
@@ -1360,107 +1360,107 @@ textarea:-ms-input-placeholder {
   }
 
   .col-ld-1 {
-    width: calc(8.33333% - 50px);
+    width: calc(8.33333% - 5px);
   }
 
   .col-ld-2 {
-    width: calc(16.66667% - 50px);
+    width: calc(16.66667% - 5px);
   }
 
   .col-ld-2-5 {
-    width: calc(20% - 50px);
+    width: calc(20% - 5px);
   }
 
   .col-ld-3 {
-    width: calc(25% - 50px);
+    width: calc(25% - 5px);
   }
 
   .col-ld-4 {
-    width: calc(33.33333% - 50px);
+    width: calc(33.33333% - 5px);
   }
 
   .col-ld-5 {
-    width: calc(41.66667% - 50px);
+    width: calc(41.66667% - 5px);
   }
 
   .col-ld-6 {
-    width: calc(50% - 50px);
+    width: calc(50% - 5px);
   }
 
   .col-ld-7 {
-    width: calc(58.33333% - 50px);
+    width: calc(58.33333% - 5px);
   }
 
   .col-ld-8 {
-    width: calc(66.66667% - 50px);
+    width: calc(66.66667% - 5px);
   }
 
   .col-ld-9 {
-    width: calc(75% - 50px);
+    width: calc(75% - 5px);
   }
 
   .col-ld-10 {
-    width: calc(83.33333% - 50px);
+    width: calc(83.33333% - 5px);
   }
 
   .col-ld-11 {
-    width: calc(91.66667% - 50px);
+    width: calc(91.66667% - 5px);
   }
 
   .col-ld-12 {
-    width: calc(100% - 50px);
+    width: calc(100% - 5px);
   }
 
   .grid-ld-1 {
-    flex-basis: calc(8.33333% - 50px);
+    flex-basis: calc(8.33333% - 5px);
   }
 
   .grid-ld-2 {
-    flex-basis: calc(16.66667% - 50px);
+    flex-basis: calc(16.66667% - 5px);
   }
 
   .grid-ld-2-5 {
-    flex-basis: calc(20% - 50px);
+    flex-basis: calc(20% - 5px);
   }
 
   .grid-ld-3 {
-    flex-basis: calc(25% - 50px);
+    flex-basis: calc(25% - 5px);
   }
 
   .grid-ld-4 {
-    flex-basis: calc(33.33333% - 50px);
+    flex-basis: calc(33.33333% - 5px);
   }
 
   .grid-ld-5 {
-    flex-basis: calc(41.66667% - 50px);
+    flex-basis: calc(41.66667% - 5px);
   }
 
   .grid-ld-6 {
-    flex-basis: calc(50% - 50px);
+    flex-basis: calc(50% - 5px);
   }
 
   .grid-ld-7 {
-    flex-basis: calc(58.33333% - 50px);
+    flex-basis: calc(58.33333% - 5px);
   }
 
   .grid-ld-8 {
-    flex-basis: calc(66.66667% - 50px);
+    flex-basis: calc(66.66667% - 5px);
   }
 
   .grid-ld-9 {
-    flex-basis: calc(75% - 50px);
+    flex-basis: calc(75% - 5px);
   }
 
   .grid-ld-10 {
-    flex-basis: calc(83.33333% - 50px);
+    flex-basis: calc(83.33333% - 5px);
   }
 
   .grid-ld-11 {
-    flex-basis: calc(91.66667% - 50px);
+    flex-basis: calc(91.66667% - 5px);
   }
 
   .grid-ld-12 {
-    flex-basis: calc(100% - 50px);
+    flex-basis: calc(100% - 5px);
   }
 }
 
@@ -1550,106 +1550,106 @@ textarea:-ms-input-placeholder {
   }
 
   .col-xld-1 {
-    width: calc(8.33333% - 50px);
+    width: calc(8.33333% - 5px);
   }
 
   .col-xld-2 {
-    width: calc(16.66667% - 50px);
+    width: calc(16.66667% - 5px);
   }
 
   .col-xld-2-5 {
-    width: calc(20% - 50px);
+    width: calc(20% - 5px);
   }
 
   .col-xld-3 {
-    width: calc(25% - 50px);
+    width: calc(25% - 5px);
   }
 
   .col-xld-4 {
-    width: calc(33.33333% - 50px);
+    width: calc(33.33333% - 5px);
   }
 
   .col-xld-5 {
-    width: calc(41.66667% - 50px);
+    width: calc(41.66667% - 5px);
   }
 
   .col-xld-6 {
-    width: calc(50% - 50px);
+    width: calc(50% - 5px);
   }
 
   .col-xld-7 {
-    width: calc(58.33333% - 50px);
+    width: calc(58.33333% - 5px);
   }
 
   .col-xld-8 {
-    width: calc(66.66667% - 50px);
+    width: calc(66.66667% - 5px);
   }
 
   .col-xld-9 {
-    width: calc(75% - 50px);
+    width: calc(75% - 5px);
   }
 
   .col-xld-10 {
-    width: calc(83.33333% - 50px);
+    width: calc(83.33333% - 5px);
   }
 
   .col-xld-11 {
-    width: calc(91.66667% - 50px);
+    width: calc(91.66667% - 5px);
   }
 
   .col-xld-12 {
-    width: calc(100% - 50px);
+    width: calc(100% - 5px);
   }
 
   .grid-xld-1 {
-    flex-basis: calc(8.33333% - 50px);
+    flex-basis: calc(8.33333% - 5px);
   }
 
   .grid-xld-2 {
-    flex-basis: calc(16.66667% - 50px);
+    flex-basis: calc(16.66667% - 5px);
   }
 
   .grid-xld-2-5 {
-    flex-basis: calc(20% - 50px);
+    flex-basis: calc(20% - 5px);
   }
 
   .grid-xld-3 {
-    flex-basis: calc(25% - 50px);
+    flex-basis: calc(25% - 5px);
   }
 
   .grid-xld-4 {
-    flex-basis: calc(33.33333% - 50px);
+    flex-basis: calc(33.33333% - 5px);
   }
 
   .grid-xld-5 {
-    flex-basis: calc(41.66667% - 50px);
+    flex-basis: calc(41.66667% - 5px);
   }
 
   .grid-xld-6 {
-    flex-basis: calc(50% - 50px);
+    flex-basis: calc(50% - 5px);
   }
 
   .grid-xld-7 {
-    flex-basis: calc(58.33333% - 50px);
+    flex-basis: calc(58.33333% - 5px);
   }
 
   .grid-xld-8 {
-    flex-basis: calc(66.66667% - 50px);
+    flex-basis: calc(66.66667% - 5px);
   }
 
   .grid-xld-9 {
-    flex-basis: calc(75% - 50px);
+    flex-basis: calc(75% - 5px);
   }
 
   .grid-xld-10 {
-    flex-basis: calc(83.33333% - 50px);
+    flex-basis: calc(83.33333% - 5px);
   }
 
   .grid-xld-11 {
-    flex-basis: calc(91.66667% - 50px);
+    flex-basis: calc(91.66667% - 5px);
   }
 
   .grid-xld-12 {
-    flex-basis: calc(100% - 50px);
+    flex-basis: calc(100% - 5px);
   }
 }

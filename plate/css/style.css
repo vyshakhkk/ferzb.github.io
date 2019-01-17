@@ -220,7 +220,6 @@ input[type=search] {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   overflow-x: scroll;
-  max-height: 90vh;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -284,6 +283,116 @@ input[type=search] {
 
 .categories-table #categoriesActions {
   width: 120px;
+}
+
+.view-profile {
+  padding: 0;
+}
+
+.view-profile .edit-link {
+  color: #ff4c00;
+}
+
+.view-profile .edit-link:hover {
+  text-decoration: underline;
+}
+
+.view-profile .btn {
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+.view-profile table {
+  max-width: 100%;
+  min-width: 1px;
+}
+
+.view-profile table small {
+  font-weight: bold;
+}
+
+.view-profile tr th {
+  border-bottom: 1px solid #ddd;
+}
+
+.view-profile tr td {
+  border: none;
+}
+
+.details-profile {
+  padding: 0;
+}
+
+.details-profile .btn {
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+.details-profile .details-link {
+  color: #ff4c00;
+}
+
+.details-profile .details-link:hover {
+  text-decoration: underline;
+}
+
+.details-profile .pay-price {
+  color: #ff4c00;
+}
+
+.details-profile table {
+  max-width: 100%;
+  min-width: 1px;
+}
+
+.details-profile table #addDetails {
+  width: 160px;
+}
+
+.details-profile .title {
+  background: #D8D8D8 !important;
+}
+
+.details-profile .title td {
+  padding: 4px 10px;
+}
+
+.edit-map {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 19px;
+  max-width: 520px;
+  width: 100%;
+  min-height: 200px;
+  background: #ddd;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.edit-menu-table a {
+  color: #ff4c00;
+}
+
+.edit-menu-table #addDetails {
+  width: 100px !important;
+}
+
+.edit-menu-table .name-menu-edit {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.edit-menu-table .name-menu-edit:before {
+  content: "\2630";
+  display: block;
+  font-size: 26px;
+  margin-right: 10px;
 }
 
 .paginator {
@@ -382,6 +491,14 @@ footer {
   padding: 8px 24px;
   font-size: 12px;
   border: 1px solid #ddd;
+}
+
+.col-md-6,
+.col-12 {
+  -webkit-flex: inherit;
+  -ms-flex: inherit;
+  flex: inherit;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 480px) {
