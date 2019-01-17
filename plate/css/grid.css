@@ -72,7 +72,7 @@ h3 {
 }
 
 h4 {
-  font-size: 26px;
+  font-size: 13px;
 }
 
 h5 {
@@ -167,7 +167,7 @@ textarea:-ms-input-placeholder {
 
 .section-block {
   margin: 0px;
-  padding: 20px 0px;
+  padding: 20px 10px;
 }
 
 .img img {
@@ -865,7 +865,7 @@ textarea:-ms-input-placeholder {
 
   .section-block {
     margin: 0px;
-    padding: 40px 0px;
+    padding: 20px 20px;
   }
 
   .flex-md-column {

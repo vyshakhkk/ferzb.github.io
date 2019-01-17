@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie-edge">
 		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
-		<title>Plate</title>
+		<title>Plate | Edit User</title>
 		<link rel="shortcut icon" href="">
 		<!--[if gt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -116,10 +116,47 @@
 				<!-- global nav page -->
 				<nav id="global-nav">
 					<ul class="flex">
-						<li>Dashboard</li>
+						<li>Users</li>
+						<li>App Users</li>
+						<li>Edit Users</li>
 					</ul>
 				</nav>
 				<!-- /global nav page -->
+
+				<!-- main content page -->
+				<section class="section-block">
+					<form action="edit" id="editUser">
+						<h4>Edit Profile</h4>
+						<div class="form-profile">
+							<fieldset>
+								<label for="editFirstName">First Name</label>
+								<input type="name" id="editFirstName">
+							</fieldset>
+							<fieldset>
+								<label for="editLastName">Last Name</label>
+								<input type="name" id="editLastName">
+							</fieldset>
+							<fieldset>
+								<label for="editEmail">Email</label>
+								<input type="email" id="editEmail">
+							</fieldset>
+							<fieldset>
+								<label for="editPhone">Phone Number</label>
+								<input type="tel" id="editPhone">
+							</fieldset>
+							<fieldset>
+								<label for="editUsername">Username</label>
+								<input type="text" id="editUsername">
+							</fieldset>
+							<fieldset>
+								<label for="editLocation">Location</label>
+								<input type="text" id="editLocation">
+							</fieldset>
+							<button type="button" class="btn btn-primary">Update</button>
+						</div>
+					</form>
+				</section>
+				<!-- /main content page -->
     		</div>
     		<!-- /#wrapper -->
 		</main>
