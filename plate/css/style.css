@@ -273,6 +273,19 @@ input[type=search] {
   width: 100%;
 }
 
+.categories-block {
+  max-width: 500px;
+}
+
+.categories-table table {
+  max-width: 100%;
+  min-width: 1px;
+}
+
+.categories-table #categoriesActions {
+  width: 120px;
+}
+
 .paginator {
   -webkit-order: 1;
   -ms-order: 1;
