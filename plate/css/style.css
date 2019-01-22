@@ -540,12 +540,43 @@ input[type=search] {
   font-size: 15px;
 }
 
-#editOptionSingleSelect .btn {
+#editOptionSingleSelect .btn,
+#updateOptionItemSelect .btn {
   margin: 0px 20px;
 }
 
-#editOptionSingleSelect .btn-secondary {
+#editOptionSingleSelect .btn-secondary,
+#updateOptionItemSelect .btn-secondary {
   background: #9B9B9B;
+}
+
+#editOptionSingleSelect .updateAED,
+#updateOptionItemSelect .updateAED {
+  position: relative;
+}
+
+#editOptionSingleSelect .updateAED input,
+#updateOptionItemSelect .updateAED input {
+  padding: 10px 45px 10px 35px;
+}
+
+#editOptionSingleSelect .updateAED i,
+#updateOptionItemSelect .updateAED i {
+  position: absolute;
+  color: #9b9b9b;
+  font-weight: bold;
+}
+
+#editOptionSingleSelect .updateAED i:first-child,
+#updateOptionItemSelect .updateAED i:first-child {
+  left: 12px;
+  top: 11px;
+}
+
+#editOptionSingleSelect .updateAED i:last-child,
+#updateOptionItemSelect .updateAED i:last-child {
+  right: 12px;
+  top: 11px;
 }
 
 /*footer*/

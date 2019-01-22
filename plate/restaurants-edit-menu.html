@@ -234,17 +234,17 @@
 										<tr>
 											<td>Onions</td>
 											<td>+2.00 AED</td>
-											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#" data-toggle="modal" data-target="#updateOptionItemSelect">Remove</a></td>
 										</tr>
 										<tr>
 											<td>Onions</td>
 											<td>+2.00 AED</td>
-											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#" data-toggle="modal" data-target="#updateOptionItemSelect">Remove</a></td>
 										</tr>
 										<tr>
 											<td>Onions</td>
 											<td>+2.00 AED</td>
-											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#" data-toggle="modal" data-target="#updateOptionItemSelect">Remove</a></td>
 										</tr>
 										<tr class="title-options">
 											<td>Add Ons <small>Single Select</small></td>
@@ -254,12 +254,12 @@
 										<tr>
 											<td>Onions</td>
 											<td>+2.00 AED</td>
-											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#" data-toggle="modal" data-target="#updateOptionItemSelect">Remove</a></td>
 										</tr>
 										<tr>
 											<td>Onions</td>
 											<td>+2.00 AED</td>
-											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#" data-toggle="modal" data-target="#updateOptionItemSelect">Remove</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -356,12 +356,12 @@
 		</div>
 	<!-- /Modal Option Single Select -->
 
-	<!-- Modal Option Single Select -->
+	<!-- Modal Edit Options Category Select -->
 		<div class="modal fade" id="editOptionSingleSelect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered option-category" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalCenterTitle">Add Options Category</h5>
+						<h5 class="modal-title" id="exampleModalCenterTitle">Edit Options Category</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -369,12 +369,12 @@
 					<div class="modal-body editUser">
 						<div class="form-profile">
 							<fieldset>
-								<label for="editMenuName">Category Name</label>
-								<input type="name" id="editMenuName">
+								<label for="editCategoryName">Category Name</label>
+								<input type="name" id="editCategoryName">
 							</fieldset>
 
 							<fieldset>
-								<label for="editMenuName">Category Name</label>
+								<label for="exampleFormControlSelect1">Category Name</label>
 								<select class="form-control" id="exampleFormControlSelect1">
 									<option>Single Select</option>
 									<option>Single Select</option>
@@ -392,7 +392,44 @@
 				</div>
 			</div>
 		</div>
-	<!-- /Modal Option Single Select -->
+	<!-- /Modal Edit Options Category Select -->
+
+	<!-- Modal Update Option Item Select -->
+		<div class="modal fade" id="updateOptionItemSelect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered option-category" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Update Option Item</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body editUser">
+						<div class="form-profile">
+							<fieldset>
+								<label for="optionName">Category Name</label>
+								<input type="name" id="optionName">
+							</fieldset>
+
+							<fieldset>
+								<label for="optionPrice">Category Name</label>
+								<div class="updateAED">
+									<i>+</i>
+									<input type="name" id="optionPrice" placeholder="2.00">
+									<i>AED</i>
+								</div>
+								
+							</fieldset>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Update</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- /Modal Update Option Item Select -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/script.js"></script>
