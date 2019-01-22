@@ -325,13 +325,13 @@ input[type=search]
 			border-left: 12px solid $orange
 
 
-#editUser
-	border: 1px solid #ddd
-	-webkit-border-radius: 10px 
-	border-radius: 10px
+.editUser
 	max-width: 550px
 	width: 100%
-	padding-bottom: 20px
+	padding-bottom: 20px 
+	a
+		&:hover
+			text-decoration: underline 
 	.btn
 		width: 92%
 		display: block
@@ -353,7 +353,47 @@ input[type=search]
 			color: #9B9B9B  
 			cursor: pointer
 			display: block
-			
+
+.restaurant-edit-menu
+	padding-bottom: 0
+	table
+		margin-top: 40px
+		tr
+			th:last-child
+				width: 130px
+				text-align: right
+			td:last-child
+				text-align: right
+				a
+					color: #9B9B9B 
+	.title
+		th:first-child
+			color: #9B9B9B
+	.title-options 
+		td
+			a
+				color: $orange!important
+			&:first-child
+				color: $orange
+				font-size: 15px 
+				small
+					font-size: 9px 
+					color: #9B9B9B
+					
+.option-category
+	.btn
+		width: 100%
+
+.modal
+	.modal-title
+		color: #9b9b9b
+		font-size: 15px
+		
+#editOptionSingleSelect
+	.btn
+		margin: 0px 20px
+	.btn-secondary
+		background: #9B9B9B 
 /*footer*/
 footer
 	margin-top: auto

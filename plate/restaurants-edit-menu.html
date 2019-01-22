@@ -193,29 +193,78 @@
 						</div>
 
 						<div class="col-12 col-xld-6">
-							<form action="edit" id="editUser">
-								<h4>Add Item</h4>
-								<div class="form-profile">
-									<fieldset>
-										<label for="editMenuName">Name</label>
-										<input type="name" id="editMenuName">
-									</fieldset>
-									<fieldset>
-										<label for="editMenuDescription">Description</label>
-										<input type="name" id="editMenuDescription">
-									</fieldset>
-									<fieldset>
-										<label for="editMenuPrice">Price</label>
-										<input type="name" id="editMenuPrice">
-									</fieldset>
-									<fieldset>
-										<label for="editMenuCooking">Cooking Time</label>
-										<input type="name" id="editMenuCooking">
-									</fieldset>
-									
-									<button type="button" class="btn btn-primary">Update</button>
-								</div>
-							</form>
+							<div class="table-responsive user-apps details-profile editUser restaurant-edit-menu">
+								<form action="edit" id="editUser">
+									<h4>Add Item</h4>
+									<div class="form-profile">
+										<fieldset>
+											<label for="editMenuName">Name</label>
+											<input type="name" id="editMenuName">
+										</fieldset>
+										<fieldset>
+											<label for="editMenuDescription">Description</label>
+											<input type="name" id="editMenuDescription">
+										</fieldset>
+										<fieldset>
+											<label for="editMenuPrice">Price</label>
+											<input type="name" id="editMenuPrice">
+										</fieldset>
+										<fieldset>
+											<label for="editMenuCooking">Cooking Time</label>
+											<input type="name" id="editMenuCooking">
+										</fieldset>
+										
+										<button type="button" class="btn btn-primary">Update</button>
+									</div>
+								</form>
+								<table class="table table-striped table-sm edit-menu-table">
+									<thead>
+										<tr class="title">
+											<th>Item Options</th>
+											<th></th>
+											<th><a class="details-link" href="#">+ Option Category</a></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="title-options">
+											<td>Toppings <small>Multi-Select</small></td>
+											<td></td>
+											<td><a href="#" data-toggle="modal" data-target="#addOptionMultiSelect">Add Option</a></td>
+										</tr>
+										<tr>
+											<td>Onions</td>
+											<td>+2.00 AED</td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+										</tr>
+										<tr>
+											<td>Onions</td>
+											<td>+2.00 AED</td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+										</tr>
+										<tr>
+											<td>Onions</td>
+											<td>+2.00 AED</td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+										</tr>
+										<tr class="title-options">
+											<td>Add Ons <small>Single Select</small></td>
+											<td></td>
+											<td><a href="#" data-toggle="modal" data-target="#addOptionSingleSelect">Add Option</a></td>
+										</tr>
+										<tr>
+											<td>Onions</td>
+											<td>+2.00 AED</td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+										</tr>
+										<tr>
+											<td>Onions</td>
+											<td>+2.00 AED</td>
+											<td><a href="#" data-toggle="modal" data-target="#editOptionSingleSelect">Edit</a> / <a href="#">Remove</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
 						</div>
 					</div>
 						
@@ -232,6 +281,118 @@
 		</footer>
 	<!-- end footer page -->
 
+
+	<!-- Modal Option Multi Select -->
+		<div class="modal fade" id="addOptionMultiSelect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered option-category" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Add Options Category</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body editUser">
+						<div class="form-profile">
+							<fieldset>
+								<label for="editMenuName">Category Name</label>
+								<input type="name" id="editMenuName">
+							</fieldset>
+
+							<fieldset>
+								<label for="editMenuName">Category Name</label>
+								<select class="form-control" id="exampleFormControlSelect1">
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+								</select>
+							</fieldset>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Add Category</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- /Modal Option Multi Select -->
+
+	<!-- Modal Option Single Select -->
+		<div class="modal fade" id="addOptionSingleSelect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered option-category" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Add Options Category</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body editUser">
+						<div class="form-profile">
+							<fieldset>
+								<label for="editMenuName">Category Name</label>
+								<input type="name" id="editMenuName">
+							</fieldset>
+
+							<fieldset>
+								<label for="editMenuName">Category Name</label>
+								<select class="form-control" id="exampleFormControlSelect1">
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+								</select>
+							</fieldset>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Add Category</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- /Modal Option Single Select -->
+
+	<!-- Modal Option Single Select -->
+		<div class="modal fade" id="editOptionSingleSelect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered option-category" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Add Options Category</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body editUser">
+						<div class="form-profile">
+							<fieldset>
+								<label for="editMenuName">Category Name</label>
+								<input type="name" id="editMenuName">
+							</fieldset>
+
+							<fieldset>
+								<label for="editMenuName">Category Name</label>
+								<select class="form-control" id="exampleFormControlSelect1">
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+									<option>Single Select</option>
+								</select>
+							</fieldset>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Update</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- /Modal Option Single Select -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/script.js"></script>

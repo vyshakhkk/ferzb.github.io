@@ -451,32 +451,33 @@ input[type=search] {
   border-left: 12px solid #ff4c00;
 }
 
-#editUser {
-  border: 1px solid #ddd;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+.editUser {
   max-width: 550px;
   width: 100%;
   padding-bottom: 20px;
 }
 
-#editUser .btn {
+.editUser a:hover {
+  text-decoration: underline;
+}
+
+.editUser .btn {
   width: 92%;
   display: block;
   margin: 0 auto;
 }
 
-#editUser h4 {
+.editUser h4 {
   padding: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
 
-#editUser fieldset {
+.editUser fieldset {
   padding: 16px 20px;
 }
 
-#editUser fieldset input {
+.editUser fieldset input {
   border: 1px solid #ddd;
   width: 100%;
   -webkit-border-radius: 6px;
@@ -484,11 +485,67 @@ input[type=search] {
   padding: 20px;
 }
 
-#editUser fieldset label {
+.editUser fieldset label {
   font-size: 11px;
   color: #9B9B9B;
   cursor: pointer;
   display: block;
+}
+
+.restaurant-edit-menu {
+  padding-bottom: 0;
+}
+
+.restaurant-edit-menu table {
+  margin-top: 40px;
+}
+
+.restaurant-edit-menu table tr th:last-child {
+  width: 130px;
+  text-align: right;
+}
+
+.restaurant-edit-menu table tr td:last-child {
+  text-align: right;
+}
+
+.restaurant-edit-menu table tr td:last-child a {
+  color: #9B9B9B;
+}
+
+.restaurant-edit-menu .title th:first-child {
+  color: #9B9B9B;
+}
+
+.restaurant-edit-menu .title-options td a {
+  color: #ff4c00 !important;
+}
+
+.restaurant-edit-menu .title-options td:first-child {
+  color: #ff4c00;
+  font-size: 15px;
+}
+
+.restaurant-edit-menu .title-options td:first-child small {
+  font-size: 9px;
+  color: #9B9B9B;
+}
+
+.option-category .btn {
+  width: 100%;
+}
+
+.modal .modal-title {
+  color: #9b9b9b;
+  font-size: 15px;
+}
+
+#editOptionSingleSelect .btn {
+  margin: 0px 20px;
+}
+
+#editOptionSingleSelect .btn-secondary {
+  background: #9B9B9B;
 }
 
 /*footer*/
