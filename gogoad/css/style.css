@@ -50,6 +50,10 @@ body {
   font-size: 15px;
 }
 
+.global-btn:hover {
+  background: #9b9b9b;
+}
+
 /*header*/
 
 header {
@@ -106,7 +110,7 @@ header ul {
 
 .top-page {
   position: relative;
-  height: 520px;
+  height: 395px;
 }
 
 .overlay {
@@ -200,6 +204,7 @@ header ul {
 
 .inner-block span {
   font-size: 19px;
+  margin-bottom: 10px;
 }
 
 .carousel-title {
@@ -213,6 +218,11 @@ header ul {
   border: 1px solid #fff;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+}
+
+.carousel-btn:hover {
+  background: #fff;
+  color: #000;
 }
 
 /*category section*/
@@ -269,6 +279,61 @@ header ul {
   margin-left: 6px;
 }
 
+.popular-tags a:hover {
+  background: #d0d0d0;
+}
+
+.popular-block-carousel .owl-nav {
+  display: block !important;
+  position: absolute;
+  z-index: 0;
+  top: 45%;
+  max-width: 1150px;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.popular-block-carousel .owl-nav button.owl-prev,
+.popular-block-carousel .owl-nav button.owl-next {
+  background: #f9bf08 !important;
+  padding: 0px 18px 5px !important;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.popular-block-carousel .owl-nav button:hover {
+  background: #9b9b9b !important;
+}
+
+.popular-block-carousel .owl-nav button span {
+  color: #000 !important;
+}
+
+.popular-block-carousel .owl-nav button:nth-child(1) {
+  position: absolute;
+  left: -26px;
+}
+
+.popular-block-carousel .owl-nav button:nth-child(2) {
+  position: absolute;
+  right: -26px;
+}
+
+.popular-block-carousel .owl-nav button span {
+  font-size: 40px;
+  color: #FFF;
+}
+
 .title {
   text-align: center;
   line-height: 36px;
@@ -285,12 +350,18 @@ header ul {
   font-weight: bold;
 }
 
+.category-btn {
+  padding: 25px 86px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
 .category-site {
   margin-top: 30px;
   margin-bottom: 50px;
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: 25% 40% 35%;
+  grid-template-columns: 307px 40% 35%;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -307,23 +378,31 @@ header ul {
 .category-site .category-item.item-1 {
   grid-row-start: 1;
   grid-row-end: 3;
-  min-height: 400px;
+  min-height: 452px;
   background-image: url("https://source.unsplash.com/random/1");
 }
 
 .category-site .category-item.item-2 {
+  width: 450px;
+  text-align: right;
   background-image: url("https://source.unsplash.com/random/2");
 }
 
 .category-site .category-item.item-3 {
+  width: 400px;
+  text-align: right;
+  justify-self: flex-end;
   background-image: url("https://source.unsplash.com/random/3");
 }
 
 .category-site .category-item.item-4 {
+  width: 600px;
   background-image: url("https://source.unsplash.com/random/4");
 }
 
 .category-site .category-item.item-5 {
+  width: 250px;
+  justify-self: flex-end;
   background-image: url("https://source.unsplash.com/random/5");
 }
 
@@ -396,12 +475,34 @@ header ul {
 
 /*classifieds section*/
 
-.classifieds {
+.classifieds-home-page {
   background: #FFF;
 }
 
 .classifieds-carousel {
   margin-top: 40px;
+}
+
+.classifieds-carousel .owl-dots {
+  margin-top: 20px;
+  display: flex !important;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.classifieds-carousel .owl-dots .owl-dot {
+  margin: 0px 2px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.classifieds-carousel .owl-dots .owl-dot.active {
+  background: #f9bf08;
 }
 
 .classifieds-item {
@@ -543,6 +644,10 @@ footer {
 
 .list-footer li {
   margin-bottom: 3px;
+}
+
+.list-footer a:hover {
+  text-decoration: underline;
 }
 
 .title-footer-list {
