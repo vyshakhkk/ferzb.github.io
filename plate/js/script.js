@@ -16,4 +16,8 @@ $(document).ready(function() {
 	    $("#wrapper").toggleClass("toggled");
 	});
 
+	$(".profile-box").click(function() {
+		$(".dropdown-profile").slideToggle()
+	});
+
 });
