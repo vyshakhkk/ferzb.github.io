@@ -600,7 +600,7 @@ footer {
   position: relative;
 }
 .dropdown-profile{
-  display: block;
+  display: none;
   position: absolute;
   background: #FFF;
   width: 107%;
