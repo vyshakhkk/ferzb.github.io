@@ -29,7 +29,7 @@
 					</ul>
 					<a href="#" class="user-info header-message"></a>
 					<a href="#" class="user-info header-event"></a>
-					<a class="global-btn btn-header" href="#">+ post an ad</a>
+					<a class="global-btn btn-header" href="../../ad-builder.html">+ post an ad</a>
 				</div>
 			</div>
 		</header>
@@ -53,10 +53,10 @@
 					<ul class="page-nav flex">
 						<li><a href="../../index.html">Home</a></li>
 						<li><a href="../classifieds.html">Classifieds</a></li>
-						<li class="active"><a href="automobile.html">Automobiles</a></li>
+						<li class="active"><a href="automobile.html">Recruitment</a></li>
 					</ul>
 					<div class="flex flex-sb flex-vertical-center">
-						<span id="pageName">All Classifieds - <span>200</span> Ads in Automobiles</span>
+						<span id="pageName">Recruitment - <span>50</span> Ads</span>
 						<div id="sort" class="sort">
 							<span>Sort by</span>
 						</div>
@@ -76,7 +76,7 @@
 							<ul class="category-list">
 								<!-- start list category real estate-->
 								<li class="title-list">
-									<a href="#" class="title-real-estate">Real Estate (456)</a>
+									<a href="../real-estate/real-estate.html" class="title-real-estate">Real Estate (456)</a>
 									<span></span>
 									<ul>
 										<li>
@@ -96,12 +96,12 @@
 								<!-- end list category real estate-->
 
 								<!-- start list category automobiles-->
-								<li class="title-list active">
-									<a href="#" class="title-automobiles">Automobiles (456)</a>
+								<li class="title-list">
+									<a href="../automobiles/automobile.html" class="title-automobiles">Automobiles (456)</a>
 									<span></span>
-									<ul style="display: block;">
+									<ul>
 										<li>
-											<a href="cars/cars.html">Cars <span>(111)</span></a>
+											<a href="../automobiles/cars/cars.html">Cars <span>(111)</span></a>
 										</li>
 										<li>
 											<a href="#">Commercial Vehicles <span>(111)</span></a>
@@ -118,9 +118,9 @@
 
 								<!-- start list category recruitment-->
 								<li class="title-list">
-									<a href="#" class="title-recruitment">Recruitment (456)</a>
+									<a href="recruitment.html" class="title-recruitment active">Recruitment (456)</a>
 									<span></span>
-									<ul>
+									<ul style="display: block;">
 										<li>
 											<a href="#">Full Time <span>(111)</span></a>
 										</li>
@@ -142,7 +142,7 @@
 
 								<!-- start list category matrimony-->
 								<li class="title-list">
-									<a href="#" class="title-matrimony">Matrimony (456)</a>
+									<a href="../matrimony/matrimony.html" class="title-matrimony">Matrimony (456)</a>
 									<span></span>
 									<ul>
 										<li>
@@ -157,7 +157,7 @@
 
 								<!-- start list category services-->
 								<li class="title-list">
-									<a href="#" class="title-services">Services (456)</a>
+									<a href="../services/services.html" class="title-services">Services (456)</a>
 									<span></span>
 									<ul>
 										<li>
@@ -184,96 +184,78 @@
 							<label for="showADPhoto">Show  ADs only with photos</label>
 						</div>
 						<!-- end category-block -->
-							
+
 						<!-- start category-block -->
 						<div class="category-block toggle-category-block global-box-shadow">
-							<h5 class="category-title active">POSTED BY</h5>
+							<h5 class="category-title active">JOB ROLES</h5>
 							<div>
-								<input type="checkbox" id="postAgent">
-								<label for="postAgent">Agent</label>
-								<input type="checkbox" id="showADPhoto">
-								<label for="showADPhoto">Individual</label>
+								<input type="checkbox" id="jobAssistant">
+								<label for="jobAssistant">Assistant Manager</label>
+
+								<input type="checkbox" id="jobManager">
+								<label for="jobManager">Manager</label>
+
+								<input type="checkbox" id="jobCounsellor">
+								<label for="jobCounsellor">Counsellor</label>
+
+								<input type="checkbox" id="job">
+								<label for="job">Basketball Court</label>
+
+								<input type="checkbox" id="jobExecutive">
+								<label for="jobExecutive">Executive</label>
+
+								<input type="checkbox" id="jobOffice Assistant">
+								<label for="jobOffice Assistant">Supermarket</label>
+
+								<input type="checkbox" id="jobReceiptionist">
+								<label for="jobReceiptionist">Receiptionist</label>
+
+								<input type="checkbox" id="jobMarketing">
+								<label for="jobMarketing">Marketing Manager</label>
+
+								<span class="see-more">more...</span>
 							</div>
 						</div>
 						<!-- end category-block -->
 						
 						<!-- start category-block -->
 						<div class="category-block category-price global-box-shadow">
-							<h5 class="category-title active">price</h5>
+							<h5 class="category-title active">SALARY</h5>
 							<form class="flex flex-sb">
 								<fieldset class="col-sd-6">
-									<i>₹</i>
 									<input class="col-12" type="text" placeholder="min">
 								</fieldset>
 								<fieldset class="col-sd-6">
-									<i>₹</i>
 									<input class="col-12" type="text" placeholder="max">
 								</fieldset>
 							</form>
 						</div>
 						<!-- end category-block -->
-						
-						<!-- start category-block -->
-						<div class="category-block category-kilometers global-box-shadow">
-							<h5 class="category-title active">kilometers</h5>
-							<div class="flex flex-sb">
-								<input class="col-sd-6" type="text" placeholder="min kms">
-								<input class="col-sd-6" type="text" placeholder="max kms">
-							</div>
-						</div>
-						<!-- end category-block -->
-						
-						<!-- start category-block -->
-						<div class="category-block toggle-category-block global-box-shadow">
-							<h5 class="category-title active">VEHICLE TYPE</h5>
-							<div>
-								<input type="checkbox" id="typeSUV">
-								<label for="typeSUV">SUV</label>
-
-								<input type="checkbox" id="typeHatchback">
-								<label for="typeHatchback">Hatchback</label>
-
-								<input type="checkbox" id="typeSedan">
-								<label for="typeSedan">Sedan</label>
-
-								<input type="checkbox" id="typeMUV">
-								<label for="typeMUV">MUV</label>
-
-								<input type="checkbox" id="typeLuxury">
-								<label for="typeLuxury">Luxury</label>
-
-								<input type="checkbox" id="typeHybrids">
-								<label for="typeHybrids">Hybrids</label>
-
-								<input type="checkbox" id="typeConvertibles">
-								<label for="typeConvertibles">Convertibles</label>
-							</div>
-						</div>
-						<!-- end category-block -->
 
 						<!-- start category-block -->
 						<div class="category-block toggle-category-block global-box-shadow">
-							<h5 class="category-title active">Brand</h5>
+							<h5 class="category-title active">QUALIFICATIONS</h5>
 							<div>
-								<input class="col-12" type="search" placeholder="search a brand">
+								<input type="checkbox" id="qualificationsDiploma">
+								<label for="qualificationsDiploma">Diploma</label>
 
-								<input type="checkbox" id="brandMaruti">
-								<label for="brandMaruti">Maruti</label>
+								<input type="checkbox" id="qualificationsFreshGraduate">
+								<label for="qualificationsFreshGraduate">Fresh Graduate</label>
 
-								<input type="checkbox" id="brandHyundai">
-								<label for="brandHyundai">Hyundai</label>
+								<input type="checkbox" id="qualificationsGraduate">
+								<label for="qualificationsGraduate">Graduate</label>
 
-								<input type="checkbox" id="brandHonda">
-								<label for="brandHonda">Honda</label>
+								<input type="checkbox" id="qualificationsMBA">
+								<label for="qualificationsMBA">MBA</label>
 
-								<input type="checkbox" id="brandAudi">
-								<label for="brandAudi">Audi</label>
+								<input type="checkbox" id="qualificationsMBBS">
+								<label for="qualificationsMBBS">MBBS</label>
 
-								<input type="checkbox" id="brandToyoto">
-								<label for="brandToyoto">Toyoto</label>
+								<input type="checkbox" id="qualificationsBSc">
+								<label for="qualificationsBSc">BSc.</label>
 
-								<input type="checkbox" id="brandTata">
-								<label for="brandTata">Tata</label>
+								<input type="checkbox" id="qualificationsPhD">
+								<label for="qualificationsPhD">PhD.</label>
 
 								<span class="see-more">more...</span>
 							</div>
@@ -281,30 +263,96 @@
 						<!-- end category-block -->
 
 						<!-- start category-block -->
-						<div class="category-block toggle-category-block global-box-shadow">
-							<h5 class="category-title active">FUEL TYPE</h5>
-							<div>
-								<input type="checkbox" id="fuelDiesel">
-								<label for="fuelDiesel">Diesel</label>
+						<div class="category-block global-box-shadow">
+							<div class="toggle-category-block ">
+								<h5 class="category-title active">NEWSPAPERS & EDITIONS</h5>
+								<div>
+									<div class="filter-search">
+										<input type="search" id="locationLookup" placeholder="Newspaper Lookup">
+										<label for="locationLookup"></label>
+									</div>
+								</div>
+							</div>
+							<div class="toggle-category-block ">
+								<h5 class="category-title active">DECCAN CHRONICLE</h5>
+								<div>
 
-								<input type="checkbox" id="fuelPetrol">
-								<label for="fuelPetrol">Petrol</label>
+									<input type="checkbox" id="deccanHyderabad">
+									<label for="deccanHyderabad">Hyderabad</label>
 
-								<input type="checkbox" id="fuelCNG">
-								<label for="fuelCNG">CNG</label>
+									<input type="checkbox" id="deccanDelhi">
+									<label for="deccanDelhi">Delhi</label>
 
-								<input type="checkbox" id="fuelLPG">
-								<label for="fuelLPG">LPG</label>
+									<input type="checkbox" id="deccanAurangabad">
+									<label for="deccanAurangabad">Aurangabad</label>
 
-								<input type="checkbox" id="fuelElectrical">
-								<label for="fuelElectrical">Electrical</label>
+									<input type="checkbox" id="deccanLucknow">
+									<label for="deccanLucknow">Lucknow</label>
+
+									<span class="see-more"><span class="length-categorys-block">90 </span> more...</span>
+								</div>
+							</div>
+							<div class="times-block">
+								<h5 class="category-title active">Times of India</h5>
+								<h5 class="category-title active">Hindustan Times</h5>
 							</div>
 						</div>
 						<!-- end category-block -->
+
+						<!-- start category-block -->
+						<div class="category-block toggle-category-block global-box-shadow">
+							<h5 class="category-title active">LOCATION</h5>
+							<div>
+
+								<div class="filter-search">
+									<input type="search" id="locationLookup" placeholder="Location Lookup">
+									<label for="locationLookup"></label>
+								</div>
+
+								<input type="checkbox" id="areaAttapur">
+								<label for="areaAttapur">Attapur</label>
+
+								<input type="checkbox" id="areaBanjaraHills">
+								<label for="areaBanjaraHills">Banjara Hills</label>
+
+								<input type="checkbox" id="areaJubileeHills">
+								<label for="areaJubileeHills">Jubilee Hills</label>
+
+								<input type="checkbox" id="areaMadhapur">
+								<label for="areaMadhapur">Madhapur</label>
+
+								<input type="checkbox" id="areaKondapur">
+								<label for="areaKondapur">Kondapur</label>
+
+								<input type="checkbox" id="areaBegumpet">
+								<label for="areaBegumpet">Begumpet</label>
+
+								<input type="checkbox" id="areaGachibowli">
+								<label for="areaGachibowli">Gachibowli</label>
+
+								<span class="see-more"><span class="length-categorys-block">90 </span> more...</span>
+							</div>
+						</div>
+						<!-- end category-block -->
+
+						<!-- start category-block -->
+						<div class="category-block global-box-shadow">
+							<input type="checkbox" id="adsPhotos">
+							<label for="adsPhotos">ADS WITH PHOTOS</label>
+						</div>
+						<!-- end category-block -->
+
+						<!-- start category-block -->
+						<div class="category-block global-box-shadow">
+							<input type="checkbox" id="adsInfo">
+							<label for="adsInfo">ADS WITH ADDITIONAL INFO</label>
+						</div>
+						<!-- end category-block -->
+
 					</article>
 					<article class="search-result">
 						<div class="flex">
-							<span class="filter-item">Automobiles <i class="close">+</i></span>
+							<span class="filter-item">Recruitment <i class="close">+</i></span>
 						</div>
 
 						<div class="searching-result">
@@ -312,8 +360,8 @@
 								<div class="inner-content flex">
 									<div class="innter-description">
 										<a href="#">
-											<h4 class="title-h4 title-item title-automobiles">Hyundai Accent 2009 model for sale</h4>
-											<p>Single owner driven hyundai accent is for sale in very good condition, all documents available with proper check</p>
+											<h4 class="title-h4 title-item title-recruitment">Manager Required</h4>
+											<p>NEW-Spacious 2300 sft flat 3 Bed room,drawing, dining, 2 balconies, exclusive servant qrts and 2 car parking available for rent in...</p>
 										</a>
 									</div>
 									<div class="img">
@@ -326,7 +374,6 @@
 									<span class="location"><i class="fas fa-map-marker-alt"></i>SOMAJIGUDA</span>
 									<span>2 DAYS AGO</span>
 									<span class="expire"><a href="#">2 days to expire,&#10084; save to view later</a></span>
-									<span class="item-price">₹200,000</span>
 								</div>
 							</div>
 							
@@ -336,8 +383,8 @@
 								<div class="inner-content flex">
 									<div class="innter-description">
 										<a href="#">
-											<h4 class="title-h4 title-item title-automobiles">Hyundai Accent 2009 model for sale</h4>
-											<p>Single owner driven hyundai accent is for sale in very good condition, all documents available with proper check</p>
+											<h4 class="title-h4 title-item title-recruitment">Manager Required</h4>
+											<p>NEW-Spacious 2300 sft flat 3 Bed room,drawing, dining, 2 balconies, exclusive servant qrts and 2 car parking available for rent in...</p>
 										</a>
 									</div>
 									<div class="img">
@@ -349,7 +396,6 @@
 									<span class="user-post"><i class="fas fa-heart"></i>ID: XBYQR</span>
 									<span class="location"><i class="fas fa-map-marker-alt"></i>SOMAJIGUDA</span>
 									<span>2 DAYS AGO</span>
-									<span class="item-price">₹200,000</span>
 								</div>
 							</div>
 
@@ -357,8 +403,8 @@
 								<div class="inner-content flex">
 									<div class="innter-description">
 										<a href="#">
-											<h4 class="title-h4 title-item title-automobiles">Hyundai Accent 2009 model for sale</h4>
-											<p>Single owner driven hyundai accent is for sale in very good condition, all documents available with proper check</p>
+											<h4 class="title-h4 title-item title-recruitment">Manager Required</h4>
+											<p>NEW-Spacious 2300 sft flat 3 Bed room,drawing, dining, 2 balconies, exclusive servant qrts and 2 car parking available for rent in...</p>
 										</a>
 									</div>
 									<div class="img">
@@ -370,7 +416,6 @@
 									<span class="user-post"><i class="fas fa-heart"></i>ID: XBYQR</span>
 									<span class="location"><i class="fas fa-map-marker-alt"></i>SOMAJIGUDA</span>
 									<span>2 DAYS AGO</span>
-									<span class="item-price">₹200,000</span>
 								</div>
 							</div>
 
@@ -378,8 +423,8 @@
 								<div class="inner-content flex">
 									<div class="innter-description">
 										<a href="#">
-											<h4 class="title-h4 title-item title-automobiles">Hyundai Accent 2009 model for sale</h4>
-											<p>Single owner driven hyundai accent is for sale in very good condition, all documents available with proper check</p>
+											<h4 class="title-h4 title-item title-recruitment">Manager Required</h4>
+											<p>NEW-Spacious 2300 sft flat 3 Bed room,drawing, dining, 2 balconies, exclusive servant qrts and 2 car parking available for rent in...</p>
 										</a>
 									</div>
 									<div class="img">
@@ -391,32 +436,8 @@
 									<span class="user-post"><i class="fas fa-heart"></i>ID: XBYQR</span>
 									<span class="location"><i class="fas fa-map-marker-alt"></i>SOMAJIGUDA</span>
 									<span>2 DAYS AGO</span>
-									<span class="item-price">₹200,000</span>
 								</div>
 							</div>
-
-							<div class="item-search-result global-box-shadow">
-								<div class="inner-content flex">
-									<div class="innter-description">
-										<a href="#">
-											<h4 class="title-h4 title-item title-automobiles">Hyundai Accent 2009 model for sale</h4>
-											<p>Single owner driven hyundai accent is for sale in very good condition, all documents available with proper check</p>
-										</a>
-									</div>
-									<div class="img">
-										<span><i class="fas fa-camera"></i>30</span>
-										<img src="https://source.unsplash.com/random/1" alt="">
-									</div>
-								</div>
-								<div class="result-info flex">
-									<span class="user-post"><i class="fas fa-heart"></i>ID: XBYQR</span>
-									<span class="location"><i class="fas fa-map-marker-alt"></i>SOMAJIGUDA</span>
-									<span>2 DAYS AGO</span>
-									<span class="item-price">₹200,000</span>
-								</div>
-							</div>
-
-
 
 							<a href="#" class="global-btn load-btn">Load next 10 ADs</a>
 						</div>

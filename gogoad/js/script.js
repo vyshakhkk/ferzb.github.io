@@ -3,7 +3,8 @@ $(document).ready(function() {
 		categoryTitleListSpan = $('.title-list').find('span'),
 		categoryBlock = $('.category-block'),
 		toggleCategoryBlock = $('.toggle-category-block'),
-		toggleTopSearch = $('.toggle-top-search');
+		toggleTopSearch = $('.toggle-top-search'),
+		toggleTitleBuilder = $('.title-builder');
 
 	categoryBlock.each(function() {
 		var this_categoryBlock = $(this);
@@ -12,7 +13,7 @@ $(document).ready(function() {
 			$(this).toggleClass('active');
 		});
 	});
-	
+
 	categoryTitleListSpan.each(function() {
 		var this_categoryTitleListSpan = $(this)
 		this_categoryTitleListSpan.click(function() {
@@ -26,11 +27,22 @@ $(document).ready(function() {
 	toggleCategoryBlock.each(function() {
 		var this_toggleCategoryBlock = $(this);
 		var this_categoryTitle = this_toggleCategoryBlock.find('.category-title');
-		var this_categoryBlock = this_toggleCategoryBlock.find('div');
+		var this_categoryBlock = this_categoryTitle.siblings('div');
 		
 		this_categoryTitle.click(function() {
 			$(this).toggleClass('active');
 			this_categoryBlock.slideToggle();
+		});
+	});
+
+	toggleTitleBuilder.each(function() {
+		var this_toggleTitleBuilder = $(this);
+		var this_selectItem = this_toggleTitleBuilder.parents('.select-item');
+		var this_containerItem = this_toggleTitleBuilder.siblings('.container-item');
+		
+		this_toggleTitleBuilder.click(function() {
+			this_selectItem .toggleClass('active');
+			this_containerItem.slideToggle();
 		});
 	});
 
