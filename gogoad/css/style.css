@@ -150,10 +150,6 @@ header {
   color: #fff;
 }
 
-header .container {
-  padding-top: 20px;
-}
-
 header ul {
   font-size: 17px;
   margin-right: 20px;
@@ -1175,12 +1171,41 @@ footer {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   cursor: pointer;
+  position: relative;
 }
 
 .menu-filter label.active:after {
   background-color: #3DC892;
   border-color: #7EC6AA;
-  background-image: url("../img/click.png");
+}
+
+.menu-filter label.active:before {
+  opacity: 1;
+}
+
+.menu-filter label:before {
+  content: "";
+  width: 2px;
+  height: 6px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  position: absolute;
+  right: 8px;
+  top: 3px;
 }
 
 .menu-filter label:after {
@@ -1296,10 +1321,13 @@ footer {
   position: absolute;
   display: inline-block;
   width: 31px;
-  height: 25px;
+  height: 28px;
   left: 0px;
   top: -5px;
   background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 }
 
 .title-list ul {
@@ -1317,32 +1345,28 @@ footer {
 }
 
 .title-list li {
-  font-size: 12px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .title-real-estate:before {
-  background-image: url("../img/sprite.png");
-  background-position: 3px center;
+  background-image: url("../img/real-estate.svg");
 }
 
 .title-automobiles:before {
-  background-image: url("../img/sprite.png");
-  background-position: -40px center;
+  background-image: url("../img/automobiles.svg");
 }
 
 .title-recruitment:before {
-  background-image: url("../img/sprite.png");
-  background-position: -84px center;
+  background-image: url("../img/recruitment.svg");
 }
 
 .title-matrimony:before {
-  background-image: url("../img/sprite.png");
-  background-position: -121px center;
+  background-image: url("../img/matrimony.svg");
 }
 
 .title-services:before {
-  background-image: url("../img/sprite.png");
-  background-position: -158px center;
+  background-image: url("../img/services.svg");
 }
 
 .toggle-category-block .category-title {
@@ -1493,9 +1517,12 @@ footer {
   content: "";
   display: block;
   width: 31px;
-  height: 25px;
+  height: 28px;
   margin-right: 16px;
   background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 }
 
 .item-search-result .innter-description p {
