@@ -46,6 +46,10 @@ $(document).ready(function() {
 		});
 	});
 
+	$('.dropdown-link').click(function() {
+		$('.dropdown-block').slideToggle();
+	});
+
 	$(function() {
 		$(window).scroll(function(){
 			if  ($(window).scrollTop() > 180)

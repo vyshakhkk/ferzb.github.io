@@ -1069,7 +1069,7 @@ footer {
 }
 
 .page-nav {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .page-nav li {
@@ -1080,6 +1080,10 @@ footer {
 
 .page-nav li a {
   color: #999;
+}
+
+.page-nav li a:hover {
+  color: #000;
 }
 
 .page-nav li:first-child:before {
@@ -1120,9 +1124,10 @@ footer {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   margin-left: auto;
+  position: relative;
 }
 
-.sort span {
+.sort .dropdown-link {
   color: #282828;
   display: flex;
   -webkit-align-items: center;
@@ -1131,7 +1136,7 @@ footer {
   justify-content: space-between;
 }
 
-.sort span:after {
+.sort .dropdown-link:after {
   content: "";
   display: block;
   margin: 0px 6px;
@@ -1144,6 +1149,74 @@ footer {
   transform: rotate(135deg);
   border-top: 2px solid #151515;
   border-right: 2px solid #151515;
+}
+
+.sort .dropdown-block {
+  top: 45px;
+  position: absolute;
+  background: #FFF;
+  z-index: 2;
+  width: 100%;
+  display: none;
+  left: 0;
+  padding: 10px;
+  border: 1px solid #f6c900;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(246, 201, 0, 0.5);
+  box-shadow: 0px 0px 5px 1px rgba(246, 201, 0, 0.5);
+}
+
+.sort .dropdown-block ul {
+  padding-left: 14px;
+}
+
+.sort .dropdown-block ul li {
+  padding: 4px 0px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 6px;
+}
+
+.sort .dropdown-block ul li:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+.sort .dropdown-block ul li a {
+  color: #999;
+  position: relative;
+  display: block;
+}
+
+.sort .dropdown-block ul li a:before {
+  content: "";
+  width: 2px;
+  height: 6px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #3dc892;
+  border-bottom: 2px solid #3dc892;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  position: absolute;
+  right: 8px;
+  top: 3px;
+}
+
+.sort .dropdown-block ul li a:hover {
+  color: #000;
+}
+
+.sort .dropdown-block ul li a:hover:before {
+  opacity: 1;
 }
 
 .wrappper-category {
