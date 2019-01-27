@@ -805,6 +805,7 @@ footer
 	cursor: pointer
 	-webkit-border-radius: 6px 
 	border-radius: 6px 
+	margin-left: auto 
 	span
 		color: #282828
 		display: flex
@@ -828,7 +829,7 @@ footer
 
 .wrappper-category
 	display: grid
-	grid-gap: 30px
+	grid-gap: 20px
 	grid-template-columns: 1fr 1fr 1fr 1fr
 	padding-top: 0px
 
@@ -862,11 +863,13 @@ footer
 
 .search-result
 	grid-column: 2/5
+	&>div.flex.flex-vertical-top
+		margin-bottom: 25px 
 
 .category-block
 	margin-bottom: 20px
 	background: #FFF
-	padding: 24px 22px
+	padding: 14px 22px
 	-webkit-border-radius: 2px 
 	border-radius: 2px
 	input[type='text']
@@ -992,7 +995,7 @@ footer
 			&:after
 				content: "-" 
 	div
-		margin-top: 20px 
+		margin: 10px 0px 20px 0px 
 		display: block
 		label
 			margin-bottom: 12px
@@ -1016,7 +1019,6 @@ footer
 	-webkit-border-radius: 4px 
 	border-radius: 4px
 	padding: 2px 14px
-	margin-bottom: 25px 
 	display: flex
 	-webkit-align-items: center
 	align-items: center
@@ -1034,7 +1036,7 @@ footer
 	
 .item-search-result
 	background: #FFF
-	margin-bottom: 30px
+	margin-bottom: 20px
 	-webkit-border-radius: 4px 
 	border-radius: 4px
 	-webkit-transition: 0.3s ease-out 
@@ -1043,7 +1045,7 @@ footer
 	-o-transition: 0.3s ease-out 
 	transition: 0.3s ease-out 
 	.inner-content
-		padding: 30px
+		padding: 25px 30px
 		border-bottom: 1px solid #ddd
 	.result-info
 		padding-left: 30px 
@@ -1063,9 +1065,13 @@ footer
 			border-right: 1px solid #ddd
 			&.location
 				svg
-					font-size: 18px  
+					font-size: 18px 
+			&.user-post
+				padding-left: 1px
+			&.like
+				border: none 
 			&:first-child
-				padding-left: 18px!important
+				padding-left: 0px!important
 				cursor: pointer
 				&:hover
 					svg
@@ -1244,7 +1250,7 @@ footer
 		color: #999
 		
 .expire
-	margin-left: auto
+	margin-left: 16px
 	padding: 0px!important 
 	border-right: 0px!important
 	margin-right: 10px  
