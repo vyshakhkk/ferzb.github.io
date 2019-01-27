@@ -1056,12 +1056,26 @@ footer
 		span
 			padding: 16px 
 			display: flex
+			color: #999
+			font-size: 12px  
 			-webkit-align-items: center
 			align-items: center
-			border-right: 1px solid #ddd 
+			border-right: 1px solid #ddd
+			&.location
+				svg
+					font-size: 18px  
 			&:first-child
-				padding-left: 0!important 
+				padding-left: 18px!important
+				cursor: pointer
+				&:hover
+					svg
+						color: #ff3333 
 		svg
+			-webkit-transition: .3s ease 
+			-moz-transition: .3s ease 
+			-ms-transition: .3s ease 
+			-o-transition: .3s ease 
+			transition: .3s ease 
 			margin-right: 10px 
 			font-size: 20px 
 	.title-item
@@ -1234,7 +1248,7 @@ footer
 	padding: 0px!important 
 	border-right: 0px!important
 	margin-right: 10px  
-	color: #ff3333
+	color: #ff3333!important
 	a
 		background: #ffcccc
 		padding: 8px 12px
