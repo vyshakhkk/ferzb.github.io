@@ -831,57 +831,40 @@ footer
 			border-top: 2px solid #151515
 			border-right: 2px solid #151515
 	.dropdown-block
-		top: 45px
+		top: 30px
+		padding-top: 15px 
 		position: absolute
 		background: #FFF
 		z-index: 2
 		width: 100%
 		display: none
 		left: 0
-		padding: 10px
-		border: 1px solid #f6c900
-		-webkit-box-shadow: 0px 0px 5px 1px rgba(246, 201, 0, 0.5)
-		box-shadow: 0px 0px 5px 1px rgba(246, 201, 0, 0.5)
+		-webkit-border-bottom-right-radius: 6px 
+		border-bottom-right-radius: 6px 
+		-webkit-border-bottom-left-radius: 6px 
+		border-bottom-left-radius: 6px 
 		ul
-			padding-left: 14px
 			li
-				padding: 4px 0px 
-				border-bottom: 1px solid #ddd
 				margin-bottom: 6px
 				&:last-child
 					border: none
 					margin-bottom: 0
+					-webkit-border-bottom-right-radius: 6px 
+					border-bottom-right-radius: 6px 
+					-webkit-border-bottom-left-radius: 6px 
+					border-bottom-left-radius: 6px
+					a
+						-webkit-border-bottom-right-radius: 6px 
+						border-bottom-right-radius: 6px 
+						-webkit-border-bottom-left-radius: 6px 
+						border-bottom-left-radius: 6px
 				a
-					color: #999
+					padding: 4px 16px 
+					color: #000
 					position: relative
 					display: block
-					&:before
-						content: "" 
-						width: 2px
-						height: 6px
-						opacity: 0
-						-webkit-transition: 0.3s ease 
-						-moz-transition: 0.3s ease 
-						-ms-transition: 0.3s ease 
-						-o-transition: 0.3s ease 
-						transition: 0.3s ease 
-						border-top: 2px solid transparent
-						border-left: 2px solid transparent
-						border-right: 2px solid #3dc892
-						border-bottom: 2px solid #3dc892
-						-webkit-transform: rotate(40deg)
-						transform: rotate(40deg)
-						-webkit-backface-visibility: hidden
-						backface-visibility: hidden
-						-webkit-transform-origin: 100% 100%
-						transform-origin: 100% 100%
-						position: absolute
-						right: 8px
-						top: 3px 
 					&:hover
-						color: #000
-						&:before
-							opacity: 1 
+						background: #ddd 
 
 .wrappper-category
 	display: grid
