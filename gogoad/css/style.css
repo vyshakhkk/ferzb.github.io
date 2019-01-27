@@ -44,8 +44,8 @@ body {
 .global-btn {
   background: #f6c900;
   padding: 20px 28px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   color: #100F0E;
   font-size: 15px;
   display: inline-block;
@@ -127,11 +127,11 @@ body {
 
 .toggle-top-search.visibility,
 .toggle-top-home-search.visibility {
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  -o-transform: translateY(0%);
-  transform: translateY(0%);
+  -webkit-transform: translateY(-2%);
+  -moz-transform: translateY(-2%);
+  -ms-transform: translateY(-2%);
+  -o-transform: translateY(-2%);
+  transform: translateY(-2%);
 }
 
 .global-box-shadow {
@@ -148,6 +148,10 @@ header {
   left: 0;
   width: 100%;
   color: #fff;
+}
+
+header .container {
+  padding-top: 20px;
 }
 
 header ul {
@@ -241,7 +245,9 @@ header ul a:hover {
 .top-carousel .owl-nav button.owl-prev,
 .top-carousel .owl-nav button.owl-next {
   background: rgba(80, 80, 80, 0.4) !important;
-  padding: 0px 18px 5px !important;
+  padding: 0px 0px 1px !important;
+  width: 50px;
+  height: 50px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
@@ -254,6 +260,9 @@ header ul a:hover {
 .top-carousel .owl-nav button span {
   font-size: 40px;
   color: #FFF;
+  display: block;
+  position: relative;
+  bottom: 2px;
 }
 
 .top-carousel .owl-stage-outer {
@@ -347,7 +356,7 @@ header ul a:hover {
   font-size: 18px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  color: #fff;
+  color: #666;
 }
 
 .search-form button {
@@ -564,6 +573,7 @@ header ul a:hover {
 .item-popular-block {
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 .item-popular-block a {
@@ -645,7 +655,7 @@ header ul a:hover {
   display: block !important;
   position: absolute;
   z-index: 0;
-  top: 45%;
+  top: 44%;
   max-width: 1150px;
   width: 100%;
   left: 50%;
@@ -1016,8 +1026,8 @@ footer {
 
 .global-search-block {
   background: #FFF;
-  -webkit-box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.3);
 }
 
 .global-search-block .container {
