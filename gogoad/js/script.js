@@ -60,11 +60,18 @@ $(document).ready(function() {
 	});
 
 	$('.popular-block-carousel').owlCarousel({
-		items:4,
 		lazyLoad:true,
 		nav:true,
 		dots:false,
-		margin: 20
+		margin: 20,
+		responsive:{
+			0:{
+				items:3
+			},
+			960:{
+				items:4
+			}
+		}
 	});
 
 	$('.item-foto-carousel').owlCarousel({

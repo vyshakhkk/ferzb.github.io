@@ -14,7 +14,7 @@
 
 
 body
-	min-width: 1140px
+	min-width: 768px
 	background: #F1F0F0 
 	
 .global-btn
@@ -282,7 +282,8 @@ header
 		padding: 5px 10px 
 		-webkit-border-radius: 4px 
 		border-radius: 4px
-		margin-left: 6px 
+		margin-left: 6px
+		margin-bottom: 6px 
 		&:hover
 			background: #d0d0d0   
 
@@ -303,12 +304,14 @@ header
 	-webkit-border-radius: 0px 
 	border-radius: 0px
 .category-site
-	margin-top: 30px
-	margin-bottom: 50px 
-	display: grid
-	grid-gap: 20px
-	grid-template-columns: 30% 35% 35%
-	grid-template-rows: 1fr 1fr
+	margin: 30px 50px
+	.box-category
+		width: calc(66.66667% - 10px) 
+		&>div
+			display: flex
+			height: 220px 
+			&:first-child
+				margin-bottom: 20px 
 	.category-item
 		padding: 20px
 		-webkit-border-radius: 2px 
@@ -351,6 +354,7 @@ header
 			grid-row-start: 1
 			grid-row-end: 3
 			min-height: 460px
+			width: calc(33.33333% - 10px) 
 			background-image: url('https://source.unsplash.com/random/1')
 			.number-ads
 				background: rgba(197, 137, 208, 0.7)
@@ -358,7 +362,8 @@ header
 				-webkit-box-shadow: inset 0px -7px 0px 0px #c589d0
 				box-shadow: inset 0px -7px 0px 0px #c589d0
 		&.item-2
-			width: 375px
+			max-width: 375px
+			width: 100%
 			text-align: right
 			background-image: url('https://source.unsplash.com/random/2')
 			.number-ads
@@ -367,7 +372,9 @@ header
 				-webkit-box-shadow: inset 0px -7px 0px 0px #f4c901
 				box-shadow: inset 0px -7px 0px 0px #f4c901
 		&.item-3
-			width: 320px
+			max-width: 300px
+			width: 100%
+			margin-left: 20px 
 			text-align: right
 			background-image: url('https://source.unsplash.com/random/3')
 			.number-ads
@@ -376,7 +383,8 @@ header
 				-webkit-box-shadow: inset 0px -7px 0px 0px #cc9966
 				box-shadow: inset 0px -7px 0px 0px #cc9966
 		&.item-4
-			width: 440px
+			max-width: 440px
+			width: 100%
 			background-image: url('https://source.unsplash.com/random/4')
 			.number-ads
 				background: rgba(255, 102, 102, 0.7)
@@ -384,8 +392,10 @@ header
 				-webkit-box-shadow: inset 0px -7px 0px 0px #ff6666
 				box-shadow: inset 0px -7px 0px 0px #ff6666
 		&.item-5
-			width: 250px
-			margin-left: 66px 
+			max-width: 250px
+			width: 100%
+			margin-left: 20px 
+			//margin-left: 66px 
 			background-image: url('https://source.unsplash.com/random/5')
 			.number-ads
 				background: rgba(102, 153, 255, 0.7)
@@ -450,7 +460,7 @@ header
 		-webkit-border-bottom-left-radius: 6px 
 		border-bottom-left-radius: 6px
 		span
-			color: #999
+			color: #999 
 			
 .popular-block-carousel .owl-item:last-child
 	-webkit-border-radius: 6px 
@@ -558,11 +568,16 @@ header
 	padding: 80px 0px
 	div
 		position: relative
-	.col-5
+	.col-ld-5
+		@media screen and (min-width: #{$dw-960})
+			display: flex
+			-webkit-justify-content: center
+			justify-content: center
 		img
-			position: absolute
-			width: auto
-			top: -50px 
+			@media screen and (min-width: #{$dw-960})
+				position: absolute
+				width: auto
+				top: -50px 
 	.title
 		text-align: left
 		max-width: 430px
@@ -577,7 +592,7 @@ header
 		margin: 30px 0px 
 	.inner-blocks > div
 			background: #FFF
-			max-width: 152px
+			max-width: 140px
 			text-align: center
 			padding: 30px 20px
 			font-weight: bold
@@ -585,6 +600,8 @@ header
 			color: #000
 			-webkit-border-radius: 4px 
 			border-radius: 4px  
+			@media screen and (min-width: #{$dw-960})
+				max-width: 152px
 			img
 				width: auto
 	.inner-blocks > div > div
@@ -644,7 +661,17 @@ header
 /*footer stylesheet*/
 footer
 	margin-top: 10px
-	background: #fff 
+	background: #fff
+.lists-box
+	-webkit-order: -1
+	-ms-order: -1
+	order: -1
+	margin: 20px 0px 
+	@media screen and (min-width: #{$dw-960})
+		-webkit-order: 0 
+		-ms-order: 0 
+		order: 0
+		margin: 0 
 .list-footer
 	font-size: 15px
 	line-height: 25px 
@@ -660,6 +687,13 @@ footer
 	
 .contact-footer
 	text-align: right
+	-webkit-order: 1 
+	-ms-order: 1 
+	order: 1
+	@media screen and (min-width: #{$dw-960})
+		-webkit-order: 0 
+		-ms-order: 0 
+		order: 0 
 	.phone, .mail
 		margin-bottom: 10px
 		font-size: 19px 
@@ -752,8 +786,7 @@ footer
 	input
 		border: none
 		padding: 0
-		width: 100%
-		max-width: 875px 
+		width: 70%
 	button
 		margin-left: auto
 		-webkit-transform: none 
@@ -942,6 +975,7 @@ footer
 	padding: 14px 22px
 	-webkit-border-radius: 2px 
 	border-radius: 2px
+	min-width: 220px 
 	input[type='text']
 		padding: 10px 14px
 		border: 1px solid #999 
@@ -1117,10 +1151,16 @@ footer
 		-webkit-box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.1)
 		box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.1)
 	.inner-content
-		padding: 25px 30px
+		padding: 25px 15px
 		border-bottom: 1px solid #ddd
+		@media screen and (min-width: #{$dw-960})
+			padding: 25px 30px
+		&.flex
+			-webkit-flex-wrap: nowrap
+			-ms-flex-wrap: nowrap
+			flex-wrap: nowrap
 	.result-info
-		padding-left: 30px 
+		padding-left: 30px
 		.item-price
 			margin-left: auto
 			font-size: 22px
@@ -1128,13 +1168,15 @@ footer
 			border: none
 			color: #000 
 		span
-			padding: 16px 
+			padding: 16px 10px 
 			display: flex
 			color: #999
 			font-size: 12px  
 			-webkit-align-items: center
 			align-items: center
 			border-right: 1px solid #ddd
+			@media screen and (min-width: #{$dw-1100})
+				padding: 16px
 			&.location
 				svg
 					font-size: 18px 
@@ -1173,9 +1215,13 @@ footer
 			background-size: 100% 
 	.innter-description p
 		padding-left: 48px
-		max-width: 530px
+		max-width: 280px
 		font-size: 16px
 		color: #999
+		@media screen and (min-width: #{$dw-960})
+			max-width: 430px
+		@media screen and (min-width: #{$dw-1100})
+			max-width: 530px
 	.img
 		max-width: 150px
 		max-height: 100px 
@@ -1330,6 +1376,17 @@ footer
 	border-right: 0px!important
 	margin-right: 10px  
 	color: #ff3333!important
+	-webkit-order: 1 
+	-ms-order: 1 
+	order: 1
+	width: 100%
+	margin-bottom: 16px 
+	@media screen and (min-width: #{$dw-1100})
+		-webkit-order: 0
+		-ms-order: 0
+		order: 0
+		width: auto
+		margin-bottom: 0
 	a
 		background: #ffcccc
 		padding: 8px 12px
