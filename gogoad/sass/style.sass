@@ -14,7 +14,7 @@
 
 
 body
-	min-width: 768px
+	min-width: 768px!important
 	background: #F1F0F0 
 	
 .global-btn
@@ -422,8 +422,7 @@ header
 	margin: 40px 0px 
 .item-popular-block
 	-webkit-border-radius: 6px 
-	border-radius: 6px
-	margin-bottom: 10px 
+	border-radius: 6px 
 	a
 		display: block
 		-webkit-border-radius: 6px 
@@ -461,6 +460,9 @@ header
 		border-bottom-left-radius: 6px
 		span
 			color: #999 
+
+.popular-block-carousel .owl-item
+	margin-bottom: 10px 
 			
 .popular-block-carousel .owl-item:last-child
 	-webkit-border-radius: 6px 
@@ -662,6 +664,10 @@ header
 footer
 	margin-top: 10px
 	background: #fff
+	.logo
+		display: none
+		@media screen and (min-width: #{$dw-960})
+			display: block
 .lists-box
 	-webkit-order: -1
 	-ms-order: -1
@@ -686,11 +692,12 @@ footer
 	margin-bottom: 10px
 	
 .contact-footer
-	text-align: right
+	text-align: center
 	-webkit-order: 1 
 	-ms-order: 1 
 	order: 1
 	@media screen and (min-width: #{$dw-960})
+		text-align: right
 		-webkit-order: 0 
 		-ms-order: 0 
 		order: 0 
@@ -706,9 +713,12 @@ footer
 		color: #999  
 .soc-link
 	display: flex
-	-webkit-justify-content: flex-end
-	justify-content: flex-end
+	-webkit-justify-content: center
+	justify-content: center
 	margin-bottom: 10px
+	@media screen and (min-width: #{$dw-960})
+		-webkit-justify-content: flex-end
+		justify-content: flex-end
 	a
 		background: $hover-color
 		color: #FFF
