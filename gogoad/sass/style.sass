@@ -1162,7 +1162,6 @@ footer
 		box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.1)
 	.inner-content
 		padding: 25px 15px
-		border-bottom: 1px solid #ddd
 		@media screen and (min-width: #{$dw-960})
 			padding: 25px 30px
 		&.flex
@@ -1171,6 +1170,7 @@ footer
 			flex-wrap: nowrap
 	.result-info
 		padding-left: 30px
+		border-top: 1px solid #ddd
 		.item-price
 			margin-left: auto
 			font-size: 22px
@@ -1324,11 +1324,20 @@ footer
 
 .wrapper-ads-details
 	display: grid
-	grid-gap: 30px
-	grid-template-columns: 75% 25%
+	grid-gap: 20px
+	grid-template-columns: 70% 27%
+	@media screen and (min-width: #{$dw-1100})
+		grid-gap: 30px
 
 .related-adss
-	margin-bottom: 0 
+	margin-bottom: 0
+	.innter-description
+		p
+			max-width: 520px
+	.expire
+		width: auto
+		margin-bottom: 0
+		margin-left: auto 
 
 .user-info-post
 	background: #FFF
@@ -1343,9 +1352,12 @@ footer
 		text-transform: uppercase
 		margin-bottom: 10px  
 	.load-btn
-		padding: 16px
-		margin-top: auto 
-		
+		padding: 10px 16px
+		margin-top: auto
+		font-size: 14px 
+		@media screen and (min-width: #{$dw-960})
+			padding: 16px 16px
+			font-size: 18px 
 #userNamePost
 	color: #2b0f00
 	font-weight: bold
@@ -1357,7 +1369,9 @@ footer
 	display: flex
 	-webkit-align-items: center
 	align-items: center
-	margin-bottom: 16px 
+	margin-bottom: 13px
+	@media screen and (min-width: #{$dw-960})
+		margin-bottom: 16px 
 	&:before
 		content: ""
 		display: block
@@ -1374,6 +1388,12 @@ footer
 		color: #F62020
 		&:before
 			background: #F62020
+
+.similar-ads
+	.load-btn
+		font-size: 14px 
+		@media screen and (min-width: #{$dw-960})
+			font-size: 18px 
 			
 .wrapper-ads-details
 	.result-info
@@ -1464,7 +1484,10 @@ footer
 	display: flex
 	-webkit-align-items: center
 	align-items: center
-	margin-right: 60px 
+	margin-right: 60px
+	margin-bottom: 20px 
+	@media screen and (min-width: #{$dw-960})
+		margin-right: 7% 
 	span
 		display: block
 		&:first-child
@@ -1491,11 +1514,21 @@ footer
 
 .kilometers:before
 	background-image: url('../img/kmrs.png')
+.kilometers
+	-webkit-order: 1 
+	-ms-order: 1 
+	order: 1 
+	@media screen and (min-width: #{$dw-960})
+		-webkit-order: 0
+		-ms-order: 0
+		order: 0
 	
 .total-views
 	margin-right: 0!important 
 	margin-left: auto
 	text-align: right
+	&:before
+		display: none!important
 
 .more-detail-desc
 	display: grid

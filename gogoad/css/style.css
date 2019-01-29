@@ -1542,7 +1542,6 @@ footer .logo {
 
 .item-search-result .inner-content {
   padding: 25px 15px;
-  border-bottom: 1px solid #ddd;
 }
 
 .item-search-result .inner-content.flex {
@@ -1553,6 +1552,7 @@ footer .logo {
 
 .item-search-result .result-info {
   padding-left: 30px;
+  border-top: 1px solid #ddd;
 }
 
 .item-search-result .result-info .item-price {
@@ -1743,12 +1743,22 @@ footer .logo {
 
 .wrapper-ads-details {
   display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 75% 25%;
+  grid-gap: 20px;
+  grid-template-columns: 70% 27%;
 }
 
 .related-adss {
   margin-bottom: 0;
+}
+
+.related-adss .innter-description p {
+  max-width: 520px;
+}
+
+.related-adss .expire {
+  width: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 }
 
 .user-info-post {
@@ -1771,8 +1781,9 @@ footer .logo {
 }
 
 .user-info-post .load-btn {
-  padding: 16px;
+  padding: 10px 16px;
   margin-top: auto;
+  font-size: 14px;
 }
 
 #userNamePost {
@@ -1787,7 +1798,7 @@ footer .logo {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 #userActive:before {
@@ -1814,6 +1825,10 @@ footer .logo {
 
 #userActive.offline:before {
   background: #F62020;
+}
+
+.similar-ads .load-btn {
+  font-size: 14px;
 }
 
 .wrapper-ads-details .result-info {
@@ -1918,6 +1933,7 @@ footer .logo {
   -webkit-align-items: center;
   align-items: center;
   margin-right: 60px;
+  margin-bottom: 20px;
 }
 
 .item-details-description > div span {
@@ -1957,10 +1973,20 @@ footer .logo {
   background-image: url("../img/kmrs.png");
 }
 
+.kilometers {
+  -webkit-order: 1;
+  -ms-order: 1;
+  order: 1;
+}
+
 .total-views {
   margin-right: 0 !important;
   margin-left: auto;
   text-align: right;
+}
+
+.total-views:before {
+  display: none !important;
 }
 
 .more-detail-desc {
@@ -2436,6 +2462,29 @@ footer .logo {
   .item-search-result .innter-description p {
     max-width: 430px;
   }
+
+  .user-info-post .load-btn {
+    padding: 16px 16px;
+    font-size: 18px;
+  }
+
+  #userActive {
+    margin-bottom: 16px;
+  }
+
+  .similar-ads .load-btn {
+    font-size: 18px;
+  }
+
+  .item-details-description > div {
+    margin-right: 7%;
+  }
+
+  .kilometers {
+    -webkit-order: 0;
+    -ms-order: 0;
+    order: 0;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -2445,6 +2494,10 @@ footer .logo {
 
   .item-search-result .innter-description p {
     max-width: 530px;
+  }
+
+  .wrapper-ads-details {
+    grid-gap: 30px;
   }
 
   .expire {
