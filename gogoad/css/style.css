@@ -101,6 +101,62 @@ body {
   transform: scaleX(1);
 }
 
+.header-btn {
+  background: #000;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 15px;
+  width: 130px;
+  height: 48px;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.header-btn span {
+  position: absolute;
+  display: block;
+  left: 21px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transition: 0.3s 0.15s ease;
+  -moz-transition: 0.3s 0.15s ease;
+  -ms-transition: 0.3s 0.15s ease;
+  -o-transition: 0.3s 0.15s ease;
+  transition: 0.3s 0.15s ease;
+}
+
+.header-btn svg {
+  position: absolute;
+  width: 30px !important;
+  height: 30px !important;
+  top: -40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52);
+  -moz-transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52);
+  -ms-transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52);
+  -o-transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52);
+  transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52);
+}
+
+.header-btn:hover span {
+  transform: translateY(200%);
+}
+
+.header-btn:hover svg {
+  top: 50%;
+}
+
 .title-h4 {
   color: #2b0f00;
   font-size: 20px;
@@ -1744,13 +1800,24 @@ footer .logo {
 }
 
 .wrapper-ads-details {
+  margin-top: -20px;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 18px;
   grid-template-columns: 70% 27%;
+}
+
+.ads-links-box {
+  margin-top: -20px;
+  padding-right: 20px;
 }
 
 .related-adss {
   margin-bottom: 0;
+  box-shadow: 0px 10px 10px -6px rgba(125, 125, 125, 0.2);
+}
+
+.related-adss:hover {
+  -webkit-box-shadow: 0px 10px 10px -6px rgba(125, 125, 125, 0.2);
 }
 
 .related-adss .innter-description p {
@@ -1780,7 +1847,7 @@ footer .logo {
   color: #999;
   font-size: 12px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .user-info-post .load-btn {
@@ -1793,7 +1860,7 @@ footer .logo {
   color: #2b0f00;
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
 }
 
 #userActive {
@@ -2505,12 +2572,12 @@ footer .logo {
   }
 
   .user-info-post .load-btn {
-    padding: 16px 16px;
+    padding: 12px 16px;
     font-size: 18px;
   }
 
   #userActive {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 
   .similar-ads .load-btn {
@@ -2538,7 +2605,7 @@ footer .logo {
   }
 
   .wrapper-ads-details {
-    grid-gap: 30px;
+    grid-gap: 18px;
   }
 
   .expire {

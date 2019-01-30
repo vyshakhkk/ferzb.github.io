@@ -13,7 +13,6 @@
 	src: url('../fonts/Product-Sans-Bold.ttf')
 	font-weight: normal
 
-
 body
 	min-width: 768px!important
 	background: #F1F0F0 
@@ -64,6 +63,54 @@ body
 		&:before
 			-webkit-transform: scaleX(1)
 			transform: scaleX(1)
+
+.header-btn
+	background: #000
+	color: #fff
+	-webkit-border-radius: 3px 
+	border-radius: 3px 
+	padding: 15px
+	width: 130px
+	height: 48px
+	font-weight: bold
+	display: inline-block
+	text-transform: uppercase
+	overflow: hidden
+	position: relative
+	text-align: center
+	-webkit-transition: 0.3s ease 
+	-moz-transition: 0.3s ease 
+	-ms-transition: 0.3s ease 
+	-o-transition: 0.3s ease 
+	transition: 0.3s ease 
+	span
+		position: absolute
+		display: block
+		left: 21px
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transition: 0.3s 0.15s ease 
+		-moz-transition: 0.3s 0.15s ease 
+		-ms-transition: 0.3s 0.15s ease 
+		-o-transition: 0.3s 0.15s ease 
+		transition: 0.3s 0.15s ease 
+	svg
+		position: absolute
+		width: 30px!important
+		height: 30px!important 
+		top: -40%
+		left: 50%
+		transform: translate(-50%, -50%)
+		-webkit-transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52) 
+		-moz-transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52) 
+		-ms-transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52) 
+		-o-transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52) 
+		transition: 0.3s cubic-bezier(0.04, 0.55, 0.96, 0.52)
+	&:hover
+		span
+			transform: translateY(200%)
+		svg
+			top: 50%
 		
 .title-h4
 	color: #2b0f00
@@ -1324,14 +1371,21 @@ footer
 			color: #000
 
 .wrapper-ads-details
+	margin-top: -20px 
 	display: grid
-	grid-gap: 20px
+	grid-gap: 18px
 	grid-template-columns: 70% 27%
 	@media screen and (min-width: #{$dw-1100})
-		grid-gap: 30px
-
+		grid-gap: 18px 
+ 
+.ads-links-box
+	margin-top: -20px 
+	padding-right: 20px 
 .related-adss
 	margin-bottom: 0
+	&:hover
+		-webkit-box-shadow: 0px 10px 10px -6px rgba(125, 125, 125, 0.2)
+	box-shadow: 0px 10px 10px -6px rgba(125, 125, 125, 0.2)
 	.innter-description
 		p
 			max-width: 520px
@@ -1352,19 +1406,19 @@ footer
 		color: #999
 		font-size: 12px
 		text-transform: uppercase
-		margin-bottom: 10px  
+		margin-bottom: 4px  
 	.load-btn
 		padding: 10px 16px
 		margin-top: auto
 		font-size: 14px 
 		@media screen and (min-width: #{$dw-960})
-			padding: 16px 16px
+			padding: 12px 16px
 			font-size: 18px 
 #userNamePost
 	color: #2b0f00
 	font-weight: bold
 	font-size: 20px
-	margin-bottom: 12px 
+	margin-bottom: 7px 
 
 #userActive
 	font-size: 12px
@@ -1373,7 +1427,7 @@ footer
 	align-items: center
 	margin-bottom: 13px
 	@media screen and (min-width: #{$dw-960})
-		margin-bottom: 16px 
+		margin-bottom: 15px 
 	&:before
 		content: ""
 		display: block
