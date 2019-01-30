@@ -12,9 +12,17 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Raleway:400,600" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/grid.css"/>
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
+	<!-- progress bar -->
+		<div id="container-progress-bar">
+			<div id="progress-bar">
+				
+			</div>
+		</div>
+	<!-- /progress bar -->
 	<!-- start preloder -->
 		<div id="page-preloader" class="preloader flex flex-column flex-center">
 			<div class="wrapper">
@@ -101,58 +109,19 @@
 				</div>
 			<!-- end block comments -->
 			<!-- start block commentators -->
-				<div class="com-img flex flex-center">
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
-					<a href="#" class="com-item">
-						<div></div>
-					</a>
+				<div class="com-img owl-carousel">
+					
+					<div  class="com-item">
+						<a href="#">
+							<img src="img/img1.jpg" alt="photo">
+						</a>
+					</div>
+					
+					<div  class="com-item">
+						<a href="#">
+							<img src="img/img2.jpg" alt="photo">
+						</a>
+					</div>
 				</div>
 			<!-- end block commentators -->
 			</article>
@@ -188,6 +157,21 @@
 		</footer>
 	<!-- end footer -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/script.js"></script>
+		<script>
+			$(window).scroll(function(event) {
+				var progress = $(document).scrollTop() / (( $(document).height() - $(window).height() ) / 100)
+				$("#progress-bar").width(progress + "%")
+			});
+			$('.com-img').owlCarousel({
+				items:16,
+				lazyLoad:true,
+				loop:true,
+				dots:false,
+				nav:false,
+				margin:10
+			});
+		</script>
 	</body>
 </html>

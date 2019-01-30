@@ -1,23 +1,49 @@
 /****************Preparatory works***************/
+
 /************************************************************/
+
 /*************General options**************/
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #848484;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #222;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+}
 
 a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+}
 
 /****************preloder*************/
+
+#container-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+
+#container-progress-bar #progress-bar {
+  height: 8px;
+  background: #2ecc71;
+  width: 0%;
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -32,15 +58,19 @@ a {
   -o-transition: .5s all ease;
   transition: .5s all ease;
   opacity: 1;
-  visibility: visible; }
-  .preloader.done {
-    opacity: 0;
-    visibility: hidden; }
+  visibility: visible;
+}
+
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}
 
 .wrapper {
   overflow: hidden;
   width: 205px;
-  position: relative; }
+  position: relative;
+}
 
 .loader {
   position: absolute;
@@ -61,22 +91,25 @@ a {
   -webkit-animation-duration: 9s;
   -moz-animation-duration: 9s;
   -o-animation-duration: 9s;
-  animation-duration: 9s; }
-  .loader span {
-    height: 100%;
-    display: block;
-    width: 5px;
-    margin-left: -8px;
-    -webkit-box-shadow: 8px 0px 8px 1px #ffffff;
-    box-shadow: 8px 0px 8px 1px #ffffff;
-    -webkit-animation: flash infinite ease;
-    -moz-animation: flash infinite ease;
-    -o-animation: flash infinite ease;
-    animation: flash infinite ease;
-    -webkit-animation-duration: 0.75s;
-    -moz-animation-duration: 0.75s;
-    -o-animation-duration: 0.75s;
-    animation-duration: 0.75s; }
+  animation-duration: 9s;
+}
+
+.loader span {
+  height: 100%;
+  display: block;
+  width: 5px;
+  margin-left: -8px;
+  -webkit-box-shadow: 8px 0px 8px 1px #ffffff;
+  box-shadow: 8px 0px 8px 1px #ffffff;
+  -webkit-animation: flash infinite ease;
+  -moz-animation: flash infinite ease;
+  -o-animation: flash infinite ease;
+  animation: flash infinite ease;
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  -o-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
 
 @keyframes move /*animation for move bolck loader*/ {
   0% {
@@ -94,8 +127,9 @@ a {
   100% {
     -webkit-box-shadow: 8px 0px 8px 1px #000;
     box-shadow: 8px 0px 8px 1px #000; } }
-
+      
 /**********header page*********/
+
 .header-page {
   width: 100%;
   height: 65vh;
@@ -105,32 +139,38 @@ a {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-box-shadow: inset 0 8px 0px #2ecc71;
-  box-shadow: inset 0 8px 0px #2ecc71; }
+}
 
 .page-name {
   font-family: 'Pacifico', cursive;
   font-size: 60px;
-  color: #fff; }
-  .page-name span {
-    color: #2ecc71;
-    margin-left: -16px; }
+  color: #fff;
+}
+
+.page-name span {
+  color: #2ecc71;
+  margin-left: -16px;
+}
 
 .page-direction {
   color: #FFF;
   font-weight: 600;
   max-width: 500px;
   margin: 30px 0 20px;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 .corp-items a {
   padding: 12px 14px;
   font-size: 24px;
   margin-right: 15px;
   background: rgba(0, 0, 0, 0.5);
-  color: #b19e94; }
-  .corp-items a:hover {
-    color: #FFF; }
+  color: #b19e94;
+}
+
+.corp-items a:hover {
+  color: #FFF;
+}
 
 .link-item {
   display: block;
@@ -140,23 +180,30 @@ a {
   -moz-transition: background 0.2s, color 0.3s ease;
   -ms-transition: background 0.2s, color 0.3s ease;
   -o-transition: background 0.2s, color 0.3s ease;
-  transition: background 0.2s, color 0.3s ease; }
-  .link-item:hover {
-    background: #2ecc71; }
+  transition: background 0.2s, color 0.3s ease;
+}
+
+.link-item:hover {
+  background: #2ecc71;
+}
 
 /***********main page************/
+
 .about section {
   text-align: center;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+}
 
 .about h4 {
   min-height: 70px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .section-head {
   font-size: 22px;
   font-weight: bold;
-  margin: 20px 0px; }
+  margin: 20px 0px;
+}
 
 .about-img {
   background: #2ecc71 url("../img/sprite.png") no-repeat;
@@ -165,44 +212,48 @@ a {
   padding: 45px;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .mech {
-  background-position: 23px 24px; }
+  background-position: 23px 24px;
+}
 
 .star {
-  background-position: -57px 18px; }
+  background-position: -57px 18px;
+}
 
 .world {
-  background-position: -139px 20px; }
+  background-position: -139px 20px;
+}
 
 /*************video section**************/
-.video, .comments, .soc-items {
-  opacity: 0; }
 
-.video, footer {
-  background: #E3E3E3; }
+.video,
+.comments,
+.soc-items {
+  opacity: 0;
+}
+
+.video,
+footer {
+  background: #E3E3E3;
+}
 
 .form-email {
   margin: 30px 0;
   position: relative;
-  width: 100%; }
-  @media screen and (min-width: 480px) {
-    .form-email {
-      width: 70%; } }
-  @media screen and (min-width: 960px) {
-    .form-email {
-      width: 100%; } }
-  @media screen and (min-width: 1100px) {
-    .form-email {
-      width: 70%; } }
-  .form-email input {
-    padding: 10px 110px 10px 20px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    border: 1px solid #c9c9c9;
-    display: block;
-    width: 100%; }
+  width: 100%;
+}
+
+.form-email input {
+  padding: 10px 110px 10px 20px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #c9c9c9;
+  display: block;
+  width: 100%;
+}
 
 .submit {
   display: inline-block;
@@ -218,51 +269,54 @@ a {
   border-bottom-right-radius: 8px;
   position: absolute;
   top: 0;
-  right: 0; }
-  .submit:hover {
-    background: rgba(46, 204, 113, 0.5); }
+  right: 0;
+}
+
+.submit:hover {
+  background: rgba(46, 204, 113, 0.5);
+}
 
 /***************comments section****************/
+
 .comments {
-  text-align: center; }
+  text-align: center;
+}
 
 .com blockquote {
-  font-style: italic; }
+  font-style: italic;
+}
 
 .com h4 {
   font-size: 18px;
   font-weight: bold;
-  margin: 20px 0 0; }
-
-.com-img {
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  overflow: hidden; }
-  .com-img img {
-    width: 100%; }
+  margin: 20px 0 0;
+}
 
 .com-item {
   display: block;
   background-color: #2ecc71;
-  margin: 0px 3px; }
-  .com-item div {
-    width: 60px;
-    height: 60px; }
-    .com-item div:hover {
-      opacity: 0.3; }
-  .com-item:nth-child(odd) div {
-    display: block;
-    background-image: url("../img/img1.jpg");
-    background-size: cover; }
-  .com-item:nth-child(even) div {
-    display: block;
-    background-image: url("../img/img2.jpg");
-    background-size: cover; }
+}
+
+.com-item img {
+  width: auto !important;
+  height: 60px;
+  display: block;
+}
+
+.com-item a {
+  display: block;
+  overflow: hidden;
+}
+
+.com-item a:hover {
+  opacity: 0.3;
+}
 
 /***********social items section***************/
+
 .soc-items {
-  text-align: center; }
+  text-align: center;
+}
 
 .soc-list li {
   margin: 0 4px;
@@ -272,17 +326,44 @@ a {
   background: #d4d4d4;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  cursor: pointer; }
-  .soc-list li a {
-    display: block;
-    font-size: 16px;
-    color: #FFF; }
-  .soc-list li:hover {
-    background: #62d995; }
+  cursor: pointer;
+}
+
+.soc-list li a {
+  display: block;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.soc-list li:hover {
+  background: #62d995;
+}
 
 /********footer********/
+
 .footer-list li {
   margin: 10px 16px;
-  color: #848484; }
-  .footer-list li a:hover {
-    color: #2ecc71; }
+  color: #848484;
+}
+
+.footer-list li a:hover {
+  color: #2ecc71;
+}
+
+@media screen and (min-width: 480px) {
+  .form-email {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .form-email {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .form-email {
+    width: 70%;
+  }
+}
