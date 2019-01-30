@@ -24,6 +24,8 @@
 
 @import url("owl.carousel.min.css");
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+
 @font-face {
   font-family: 'Product Sans Regular';
   src: url("../fonts/Product-Sans-Regular.ttf");
@@ -1757,6 +1759,7 @@ footer .logo {
 
 .related-adss .expire {
   width: auto;
+  display: flex !important;
   margin-bottom: 0;
   margin-left: auto;
 }
@@ -1847,6 +1850,7 @@ footer .logo {
   order: 1;
   width: 100%;
   margin-bottom: 16px;
+  display: none !important;
 }
 
 .expire a {
@@ -2415,6 +2419,43 @@ footer .logo {
   margin-top: 5px;
 }
 
+.fade-in-box {
+  padding: 30px;
+  margin: 20px 0px;
+  width: 100%;
+  background: #3cc792;
+  color: #fff;
+  position: relative;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fade-in-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.fade-in-box p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fade-in-box .closed {
+  background: #fff;
+  color: #3CC792;
+  font-size: 14px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  padding: 2px 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
 @media screen and (min-width: 960px) {
   .post-newspapper .col-ld-5 {
     display: flex;
@@ -2505,6 +2546,7 @@ footer .logo {
     -ms-order: 0;
     order: 0;
     width: auto;
+    display: flex !important;
     margin-bottom: 0;
   }
 }
