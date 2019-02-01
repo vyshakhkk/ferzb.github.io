@@ -273,17 +273,17 @@ header ul a:hover {
 .dropdown-menu ul {
   width: 200px;
   display: none;
-  padding: 25px 20px;
   margin: 0;
   right: -44px;
   top: 36px;
+  padding: 25px 0px 0px;
   background-color: #FFF;
   position: absolute;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #acacac;
   z-index: 100;
-  line-height: 38px;
+  line-height: 28px;
 }
 
 .dropdown-menu ul:before {
@@ -296,6 +296,14 @@ header ul a:hover {
   border-right: 14px solid transparent;
   border-left: 14px solid transparent;
   border-bottom: 14px solid #fff;
+}
+
+.dropdown-menu ul li {
+  padding: 5px 20px;
+}
+
+.dropdown-menu ul li:hover {
+  background: #ddd;
 }
 
 .dropdown-menu ul li:nth-child(1) a:before {
@@ -320,8 +328,13 @@ header ul a:hover {
 
 .dropdown-menu ul li:nth-child(6) {
   border-top: 1px solid #acacac;
-  margin-top: 6px;
-  padding-top: 4px;
+}
+
+.dropdown-menu ul li:nth-child(6):before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
 }
 
 .dropdown-menu ul li:nth-child(6) a:before {
@@ -332,6 +345,11 @@ header ul a:hover {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
+  font-size: 14px;
+}
+
+.dropdown-menu ul li a:hover {
+  text-decoration: none;
 }
 
 .dropdown-menu ul li a:before {
@@ -2661,6 +2679,32 @@ footer .logo {
   position: absolute;
   top: 6px;
   right: 6px;
+}
+
+.advertising-box {
+  margin-top: 20px;
+}
+
+.advertising-box a {
+  display: block;
+  border: 2px solid #ddd;
+}
+
+.advertising-box .owl-nav button {
+  position: absolute;
+  top: 50%;
+}
+
+.advertising-box .owl-nav button:first-child {
+  left: 6px;
+}
+
+.advertising-box .owl-nav button:last-child {
+  right: 6px;
+}
+
+.advertising-box .owl-nav button span {
+  font-size: 40px;
 }
 
 @media screen and (min-width: 960px) {

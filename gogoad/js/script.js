@@ -88,6 +88,15 @@ $(document).ready(function() {
 		dots:false,
 		margin: 10
 	});
+
+	$('.advertising-box').owlCarousel({
+		items:1,
+		lazyLoad:true,
+		loop:true,
+		nav:true,
+		dots:false,
+		margin: 10
+	});
 	
 	$(function(){
 		var input = $('.input-global')

@@ -206,17 +206,17 @@ header
 	ul
 		width: 200px
 		display: none
-		padding: 25px 20px
 		margin: 0
 		right: -44px
 		top: 36px
+		padding: 25px 0px 0px 
 		background-color: #FFF
 		position: absolute
 		-webkit-border-radius: 3px 
 		border-radius: 3px
 		border: 1px solid #acacac
 		z-index: 100
-		line-height: 38px 
+		line-height: 28px 
 		&:before
 			content: ""
 			display: block
@@ -228,6 +228,9 @@ header
 			border-left: 14px solid transparent
 			border-bottom: 14px solid #fff
 		li
+			padding: 5px 20px
+			&:hover
+				background: #ddd 
 			&:nth-child(1)
 				a:before
 					background-image: url('../img/profile.png')
@@ -245,14 +248,20 @@ header
 					background-image: url('../img/receently-viewed.png')
 			&:nth-child(6)
 				border-top: 1px solid #acacac
-				margin-top: 6px
-				padding-top: 4px  
+				&:before
+					content: ""
+					display: block
+					width: 80%
+					height: 1px  
 				a:before
 					background-image: url('../img/log-out.png')
 			a
 				display: flex
 				-webkit-align-items: center
 				align-items: center
+				font-size: 14px
+				&:hover
+					text-decoration: none 
 				&:before
 					background-position: center 
 					background-repeat: no-repeat 
@@ -1428,9 +1437,49 @@ footer
 		svg
 			color: #f62020
 .share-ads
+	position: relative
 	&:hover
 		svg
 			color: #000
+		.chat-links
+			z-index: 100
+			opacity: 1
+	.chat-links
+		position: absolute
+		z-index: -20
+		opacity: 0
+		right: 5px
+		padding-top: 20px 
+		top: 30px
+		-webkit-transition: 0.3s ease 
+		-moz-transition: 0.3s ease 
+		-ms-transition: 0.3s ease 
+		-o-transition: 0.3s ease 
+		transition: 0.3s ease 
+		a
+			display: block
+			margin-top: 12px 
+			padding: 10px
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			background: #FFF
+			-webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5)
+			box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5)
+			svg
+				width: 20px!important
+				height: 20px!important
+				-webkit-transition: 0.3s ease 
+				-moz-transition: 0.3s ease 
+				-ms-transition: 0.3s ease 
+				-o-transition: 0.3s ease 
+				transition: 0.3s ease 
+			&:nth-child(1):hover
+				svg
+					color: #06b654
+			&:nth-child(2):hover
+				svg
+					color: #214f8f
+
 
 .wrapper-ads-details
 	margin-top: -20px 
@@ -1476,50 +1525,7 @@ footer
 		font-size: 14px 
 		@media screen and (min-width: #{$dw-960})
 			padding: 12px 16px
-			font-size: 18px
-	.box-btn
-		&:hover
-			.chat-links
-				z-index: 100
-				opacity: 1
-	.chat-links
-		position: absolute
-		z-index: -2
-		opacity: 0
-		right: 35px
-		top: -50px
-		-webkit-transition: 0.3s ease 
-		-moz-transition: 0.3s ease 
-		-ms-transition: 0.3s ease 
-		-o-transition: 0.3s ease 
-		transition: 0.3s ease 
-		a
-			display: block
-			margin-bottom: 12px 
-			padding: 10px
-			-webkit-border-radius: 50% 
-			border-radius: 50%
-			background: #FFF
-			-webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5)
-			box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5)
-			svg
-				width: 20px!important
-				height: 20px!important
-				-webkit-transition: 0.3s ease 
-				-moz-transition: 0.3s ease 
-				-ms-transition: 0.3s ease 
-				-o-transition: 0.3s ease 
-				transition: 0.3s ease 
-			&:nth-child(1):hover
-				svg
-					color: #000
-			&:nth-child(2):hover
-				svg
-					color: #06b654
-			&:nth-child(3):hover
-				svg
-					color: #214f8f
-					
+			font-size: 18px					
 #userNamePost
 	color: #2b0f00
 	font-weight: bold
@@ -2043,3 +2049,19 @@ footer
 		position: absolute
 		top: 6px
 		right: 6px 
+		
+.advertising-box
+	margin-top: 20px 
+	a
+		display: block
+		border: 2px solid #ddd 
+	.owl-nav
+		button
+			position: absolute
+			top: 50%
+			&:first-child
+				left: 6px
+			&:last-child
+				right: 6px
+			span
+				font-size: 40px 
