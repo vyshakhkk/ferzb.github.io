@@ -50,6 +50,12 @@ $(document).ready(function() {
 		$('.dropdown-block').slideToggle();
 	});
 
+	$('.dropdown-menu').click(function() {
+		var this_dropdown_link = $(this),
+			this_dropdown_list = this_dropdown_link.find('ul');
+		this_dropdown_list.slideToggle();
+	});
+
 	$(function() {
 		$(window).scroll(function(){
 			if  ($(window).scrollTop() > 180)

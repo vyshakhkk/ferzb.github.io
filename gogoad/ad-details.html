@@ -22,7 +22,16 @@
 				</div>
 				<div class="flex flex-vertical-center">
 					<ul class="flex">
-						<li class="title-header-list"><a href="#">My Account</a></li>
+						<li class="title-header-list dropdown-menu"><span>My Account</span>
+							<ul>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">My Ads</a></li>
+								<li><a href="#">Messages</a></li>
+								<li><a href="#">Favorite Ads</a></li>
+								<li><a href="#">Recently Viewed</a></li>
+								<li><a href="#">Log out</a></li>
+							</ul>
+						</li>
 					</ul>
 					<a href="#" class="user-info header-message"></a>
 					<a href="#" class="user-info header-event"></a>
@@ -87,7 +96,15 @@
 						<i>post by</i>
 						<span id="userNamePost">Kumar</span>
 						<span id="userActive" class="online">Online</span>
-						<a href="#" class="global-btn load-btn">login to chat</a>
+						<div class="box-btn">
+							<a href="#" class="global-btn load-btn">login to chat</a>
+							<div class="chat-links flex flex-column">
+								<a href="#"><i class="fas fa-share-alt"></i></a>
+								<a href="#"><i class="fab fa-whatsapp"></i></a>
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+							</div>
+						</div>
+							
 					</article>
 					<!-- end user info post -->
 
@@ -152,9 +169,24 @@
 						
 						<!-- start more detail desc -->
 						<div class="more-detail-desc">
-							<!-- start additional details -->
+							<!-- start address details -->
+							<div class="address-details">
+								<div class="flex flex-sb flex-vertical-center">
+									<h4 class="title-h4">Location</h4>
+									<a id="viewItemMap" href="https://goo.gl/maps/rm15deg6TwP2">view map</a>
+								</div>
+								<div id="detailsItemMap">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2691.9994687104586!2d78.40898240785856!3d17.408804388590198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1548245532501" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+								<span class="address-info">
+									Flat 506, Brundavam Apartments, Sri kaka colony, DD nagar, Hyd - 500045
+								</span>
+							</div>
+							<!-- end address details -->
+
+							<!-- start basic details -->
 							<div class="additional-details">
-								<h4 class="title-h4">Additional Details</h4>
+								<h4 class="title-h4">Basic Details</h4>
 								<table>
 									<thead>
 										<th></th>
@@ -215,22 +247,45 @@
 									</tbody>
 								</table>
 							</div>
+							<!-- end basic details -->
+
+							<!-- start additional details -->
+							<div class="additional-details">
+								<h4 class="title-h4">Additional Details</h4>
+								<p class="additional-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat laudantium natus deleniti repellat ab quae aperiam voluptate aliquam, vel cupiditate possimus, doloribus tempora, incidunt accusamus ratione odio consectetur temporibus facere dicta in qui, dolorem? Commodi odit iste blanditiis sint iure!</p>
+								<table>
+									<thead>
+										<th></th>
+										<th></th>
+										<th></th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Make</td>
+											<td>:</td>
+											<td>Hyundai</td>
+										</tr>
+										<tr>
+											<td>Model</td>
+											<td>:</td>
+											<td>Accent</td>
+										</tr>
+										<tr>
+											<td>Variant</td>
+											<td>:</td>
+											<td>Fluid XBT</td>
+										</tr>
+										<tr>
+											<td>Vehicle Type</td>
+											<td>:</td>
+											<td>Sedan</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 							<!-- end additional details -->
 
-							<!-- start address details -->
-							<div class="address-details">
-								<div class="flex flex-sb flex-vertical-center">
-									<h4 class="title-h4">Address</h4>
-									<a id="viewItemMap" href="https://goo.gl/maps/rm15deg6TwP2">view map</a>
-								</div>
-								<div id="detailsItemMap">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2691.9994687104586!2d78.40898240785856!3d17.408804388590198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1548245532501" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</div>
-								<span class="address-info">
-									Flat 506, Brundavam Apartments, Sri kaka colony, DD nagar, Hyd - 500045
-								</span>
-							</div>
-							<!-- end address details -->
+							
 						</div>
 						<!-- end item details description -->
 					</article>
