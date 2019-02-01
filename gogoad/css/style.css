@@ -1874,8 +1874,60 @@ footer .logo {
   color: #f62020;
 }
 
+.share-ads {
+  position: relative;
+}
+
 .share-ads:hover svg {
   color: #000;
+}
+
+.share-ads:hover .chat-links {
+  z-index: 100;
+  opacity: 1;
+}
+
+.share-ads .chat-links {
+  position: absolute;
+  z-index: -20;
+  opacity: 0;
+  right: 5px;
+  padding-top: 20px;
+  top: 30px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.share-ads .chat-links a {
+  display: block;
+  margin-top: 12px;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5);
+}
+
+.share-ads .chat-links a svg {
+  width: 20px !important;
+  height: 20px !important;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.share-ads .chat-links a:nth-child(1):hover svg {
+  color: #06b654;
+}
+
+.share-ads .chat-links a:nth-child(2):hover svg {
+  color: #214f8f;
 }
 
 .wrapper-ads-details {
@@ -1934,57 +1986,6 @@ footer .logo {
   padding: 10px 16px;
   margin-top: auto;
   font-size: 14px;
-}
-
-.user-info-post .box-btn:hover .chat-links {
-  z-index: 100;
-  opacity: 1;
-}
-
-.user-info-post .chat-links {
-  position: absolute;
-  z-index: -2;
-  opacity: 0;
-  right: 35px;
-  top: -50px;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.user-info-post .chat-links a {
-  display: block;
-  margin-bottom: 12px;
-  padding: 10px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background: #FFF;
-  -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5);
-}
-
-.user-info-post .chat-links a svg {
-  width: 20px !important;
-  height: 20px !important;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.user-info-post .chat-links a:nth-child(1):hover svg {
-  color: #000;
-}
-
-.user-info-post .chat-links a:nth-child(2):hover svg {
-  color: #06b654;
-}
-
-.user-info-post .chat-links a:nth-child(3):hover svg {
-  color: #214f8f;
 }
 
 #userNamePost {
