@@ -111,7 +111,19 @@ body
 			transform: translateY(200%)
 		svg
 			top: 50%
-		
+			
+.global-btn.header-btn
+	background: $hover-color
+	padding: 15px
+	width: 135px
+	height: 48px
+	-webkit-border-radius: 3px 
+	border-radius: 3px 
+	color: #100F0E
+	font-size: 15px
+	&:before
+		display: none
+
 .title-h4
 	color: #2b0f00
 	font-size: 20px
@@ -176,10 +188,6 @@ header
 	ul
 		margin-left: 20px
 		margin-bottom: 2px  
-		
-.btn-header
-	text-transform: uppercase
-	font-family: 'Product Sans Bold'
 	
 .title-header-list span
 	cursor: pointer
@@ -269,7 +277,13 @@ header
 					display: block
 					margin-right: 12px
 					width: 20px
-					height: 20px  
+					height: 20px
+		
+#searchSite + .global-btn
+	&:hover
+		background: #151414 
+	&:before
+		display: none
 /*top page*/
 .top-page
 	position: relative
@@ -2064,4 +2078,87 @@ footer
 			&:last-child
 				right: 6px
 			span
-				font-size: 40px 
+				font-size: 40px
+
+
+.login-section
+	background: #FAF0BD 
+	padding: 60px 0px
+	.container
+		position: relative
+	.arrow-back
+		width: 56px
+		height: 56px
+		background: #FFF
+		-webkit-border-radius: 50% 
+		border-radius: 50%
+		position: absolute
+		-webkit-transform: rotate(-45deg) 
+		-moz-transform: rotate(-45deg) 
+		-ms-transform: rotate(-45deg) 
+		-o-transform: rotate(-45deg) 
+		transform: rotate(-45deg) 
+		top: 0
+		left: 0
+		cursor: pointer
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 55%
+			left: 55%
+			-webkit-transform: translate(-50%, -50%) 
+			-moz-transform: translate(-50%, -50%) 
+			-ms-transform: translate(-50%, -50%) 
+			-o-transform: translate(-50%, -50%) 
+			transform: translate(-50%, -50%) 
+			width: 16px
+			height: 16px
+			border-top: 2px solid #000
+			border-left: 2px solid #000   
+.login-form
+	text-align: center
+	margin-top: 36px 
+	max-width: 400px
+	width: 100% 
+	background: #FFF
+	-webkit-border-radius: 3px 
+	border-radius: 3px
+	padding: 30px
+	color: #999 
+	h3
+		color: #282828
+		font-size: 28px
+		margin-bottom: 14px
+	span
+		margin-bottom: 14px
+		display: block
+		font-size: 14px
+	.e-login
+		margin-bottom: 14px
+		a
+			padding: 12px 0px
+			-webkit-border-radius: 3px 
+			border-radius: 3px
+			border: 1px solid #cccccc
+			svg
+				margin-right: 6px
+			&:nth-child(1)
+				svg
+					margin-right: 12px 
+	form
+		input
+			display: block
+			padding: 10px 14px
+			border: 1px solid #cccccc
+			color: #CCC 
+			-webkit-border-radius: 3px 
+			border-radius: 3px   
+			width: 100%
+			margin-bottom: 10px 
+		button
+			display: block
+			border: none
+			width: 100%
+			padding: 14px 28px
+			text-transform: uppercase   
