@@ -2816,8 +2816,12 @@ footer .logo {
   background: #f1f1f1;
 }
 
+.login-form .e-login a:hover image {
+  background: #f1f1f1;
+}
+
 .login-form .e-login a svg {
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .login-form .e-login a:nth-child(1) svg {
