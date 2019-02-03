@@ -2771,33 +2771,33 @@ footer .logo {
 .login-form {
   text-align: center;
   margin-top: 36px;
-  max-width: 400px;
+  max-width: 462px;
   width: 100%;
   background: #FFF;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  padding: 30px;
+  padding: 40px;
   color: #999;
 }
 
 .login-form h3 {
   color: #282828;
   font-size: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .login-form span {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   display: block;
   font-size: 14px;
 }
 
 .login-form .e-login {
-  margin-bottom: 14px;
+  margin-bottom: 38px;
 }
 
 .login-form .e-login a {
-  padding: 12px 0px;
+  padding: 8px 0px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #cccccc;
@@ -2811,9 +2811,13 @@ footer .logo {
   margin-right: 12px;
 }
 
+.login-form form {
+  margin-bottom: 70px;
+}
+
 .login-form form input {
   display: block;
-  padding: 10px 14px;
+  padding: 13px 14px;
   border: 1px solid #cccccc;
   color: #CCC;
   -webkit-border-radius: 3px;
@@ -2828,6 +2832,15 @@ footer .logo {
   width: 100%;
   padding: 14px 28px;
   text-transform: uppercase;
+}
+
+.login-form .login-link {
+  color: #5298E0;
+  font-size: 12px;
+}
+
+.login-form .login-link:hover {
+  color: #000;
 }
 
 @media screen and (min-width: 960px) {
