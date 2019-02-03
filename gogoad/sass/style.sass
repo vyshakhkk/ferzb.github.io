@@ -2098,6 +2098,11 @@ footer
 		-ms-transform: rotate(-45deg) 
 		-o-transform: rotate(-45deg) 
 		transform: rotate(-45deg) 
+		-webkit-transition: 0.3s ease 
+		-moz-transition: 0.3s ease 
+		-ms-transition: 0.3s ease 
+		-o-transition: 0.3s ease 
+		transition: 0.3s ease 
 		top: 0
 		left: 0
 		cursor: pointer
@@ -2115,7 +2120,9 @@ footer
 			width: 16px
 			height: 16px
 			border-top: 2px solid #000
-			border-left: 2px solid #000   
+			border-left: 2px solid #000
+		&:hover
+			background: rgba(255, 255, 255, 0.5)   
 .login-form
 	text-align: center
 	margin-top: 36px 
@@ -2141,6 +2148,8 @@ footer
 			-webkit-border-radius: 3px 
 			border-radius: 3px
 			border: 1px solid #cccccc
+			&:hover
+				background: #f1f1f1 
 			svg
 				margin-right: 6px
 			&:nth-child(1)
@@ -2150,6 +2159,7 @@ footer
 		margin-bottom: 70px
 		input
 			display: block
+			font-size: 14px
 			padding: 13px 14px
 			border: 1px solid #cccccc
 			color: #CCC 
@@ -2165,6 +2175,6 @@ footer
 			text-transform: uppercase
 	.login-link
 		color: #5298E0
-		font-size: 12px
+		font-size: 14px
 		&:hover
 			color: #000 
