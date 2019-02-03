@@ -2087,6 +2087,7 @@ footer
 	.container
 		position: relative
 	.arrow-back
+		display: none
 		width: 56px
 		height: 56px
 		background: #FFF
@@ -2104,8 +2105,10 @@ footer
 		-o-transition: 0.3s ease 
 		transition: 0.3s ease 
 		top: 0
-		left: 0
+		left: 14px
 		cursor: pointer
+		@media screen and (min-width: #{$dw-960})
+			display: block
 		&:before
 			content: ""
 			display: block

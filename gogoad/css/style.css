@@ -2735,6 +2735,7 @@ footer .logo {
 }
 
 .login-section .arrow-back {
+  display: none;
   width: 56px;
   height: 56px;
   background: #FFF;
@@ -2752,7 +2753,7 @@ footer .logo {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
   top: 0;
-  left: 0;
+  left: 14px;
   cursor: pointer;
 }
 
@@ -2930,6 +2931,10 @@ footer .logo {
     -webkit-order: 0;
     -ms-order: 0;
     order: 0;
+  }
+
+  .login-section .arrow-back {
+    display: block;
   }
 }
 
