@@ -440,7 +440,7 @@ nav ul li a {
   background-color: #1aa4d7;
   max-width: 720px;
   margin: 30px auto;
-  padding: 60px;
+  padding: 60px 20px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   -webkit-box-shadow: 0 0 0 0.2px rgba(0, 20, 40, 0.8), 0px 20px 85px 0 rgba(50, 55, 90, 0.4);
@@ -544,6 +544,10 @@ nav ul li a {
 
   .title-banner h2 {
     font-size: 40px;
+  }
+
+  .contact-form-block .from-box {
+    padding: 60px;
   }
 
   .contact-form-block form fieldset {
