@@ -372,7 +372,21 @@ nav.nav-open {
   min-height: 700px;
   position: relative;
 }
-
+.header-block.header-block-1{
+  background-image: url("../img/2.png");
+}
+.header-block.header-block-2{
+  background-image: url("../img/3.png");
+}
+.header-block.header-block-3{
+  background-image: url("../img/4.png");
+}
+.header-block.header-block-4{
+  background-image: url("../img/5.png");
+}
+.header-block.header-block-5{
+  background-image: url("../img/6.png");
+}
 .overlay {
   position: absolute;
   z-index: 1;
