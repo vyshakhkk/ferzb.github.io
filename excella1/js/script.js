@@ -50,4 +50,26 @@ $(document).ready(function() {
 			$('.btn-up').removeClass('active');
 		}
 	});
+
+	$(function(){
+		var window_size = $(window).width();
+		var panel = $('.panel');
+		var window_offset_top = $(window).scrollTop();
+		console.log(window_offset_top)
+		panel.each(function() {
+			var this_panel = $(this)
+			var this_panel_offest_top = this_panel.offset().top;
+			var window_offset_top = $(window).scrollTop();
+			if (window_offset_top >= this_panel_offest_top-550) {
+				this_panel.addClass('fade-in')
+			}
+			$(window).scroll(function(){
+				var window_scroll_top = $(window).scrollTop();
+				
+				if (window_scroll_top > this_panel_offest_top-550){
+					this_panel.addClass('fade-in')
+				}
+			})
+		});
+	})
 });
