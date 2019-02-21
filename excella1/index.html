@@ -10,6 +10,36 @@
 		<!--[if gt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<style>
+			@font-face{
+				font-family: 'Argenta';
+				src: url('fonts/ArgentCF-Bold.woff'),
+					url('fonts/ArgentCF-Bold.woff2'),
+					url('fonts/ArgentCF-Bold.otf'),
+					url('fonts/ArgentCF-Bold.eot');
+				font-weight: bold;
+				font-style: normal;
+			}
+			@font-face{
+				font-family: 'ArgentaLight';
+				src: url('fonts/ArgentCF-Light.woff'),
+					url('fonts/ArgentCF-Light.woff2'),
+					url('fonts/ArgentCF-Light.otf'),
+					url('fonts/ArgentCF-Light.eot');
+				font-weight: 100;
+				font-style: normal;
+			}
+				
+			@font-face{
+				font-family: 'ArgentaRegular';
+				src: url('fonts/ArgentCF-Regular.woff'),
+					url('fonts/ArgentCF-Regular.woff2'),
+					url('fonts/ArgentCF-Regular.otf'),
+					url('fonts/ArgentCF-Regular.eot');
+				font-weight: normal;
+				font-style: normal;
+			}
+		</style>
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
@@ -33,8 +63,8 @@
 						<li><a href="#about">about</a></li>
 						<li><a href="#whatWeDo">what we do</a></li>
 						<li><a href="#whyExcella">why excella</a></li>
-						<li><a href="#solutions">solutions</a></li>
-						<li><a href="#archiveForce">product</a></li>
+						<li><a href="#solutions">solution</a></li>
+						<li><a href="#archiveForce">products</a></li>
 						<li><a href="#contact">contact</a></li>
 					</ul>
 				</nav>
@@ -62,7 +92,7 @@
 					<article class="flex flex-column flex-smd-row flex-vertical-center flex-sb">
 						<div class="inner-description col-12 col-smd-7">
 							<h2 class="title-section-h2">
-								We know cloud like no others
+								We know cloud<br> like no others
 							</h2>
 							<p>At our core, we are inspired by excellence. At Excella, our team brings decades of experience in ensuring our clients achieve delivery excellence on the Salesforce platform.  <br><br> We are a one-stop shop for all things on Salesforce, yet our customers lean on us not just for our technical expertise, but also for our commitment towards the clients vision. </p>
 						</div>
@@ -135,7 +165,7 @@
 			<section id="whyExcella" class="why-excella section-block panel scrollspy">
 				<div class="container flex flex-column flex-md-row flex-sb flex-vertical-center">
 					<article class="col-12 col-xld-6">
-						<h2 class="title-section-h2">Giving the best is our default motto</h2>
+						<h2 class="title-section-h2">Giving the best<br> is our default motto</h2>
 						<p>Excella is a new age salesforce consulting company bringing togetherinnovation, technology and design to give simplified salesforce.Maecenas dignissim posuere urna, non ullamcorper purus consequat sed. Aliquam erat volutpat. Curabitur rutrum varius facilisis.</p>
 					</article>
 					<article class="col-12 col-xld-6 flex flex-center">
@@ -150,7 +180,7 @@
 				<div class="container flex flex-sb flex-vertical-center">
 
 					<div class="col-12 col-ld-7">
-						<h2 class="title-section-h2">Success is not new to us</h2>
+						<h2 class="title-section-h2">Success is not<br> new to us</h2>
 						<p>These days you can’t navigate salesforce without getting lost in the clouds. There is now an IoT Cloud, a Health cloud, a  Commerce Cloud, and even an Einstein.  Salesforce gives you endless possibilities to help you connect, sell, market and support  your customers, all under a single platform.</p>
 					</div>
 
@@ -215,16 +245,20 @@
 					<h2 class="title-section-h2">
 						ArchiveForce
 					</h2>
-					<div class="inner-text flex flex-sb flex-vertical-center">
+					<div class="inner-text">
 						<p>
 							Excella is a new age salesforce consulting company bringing togetherinnovation, technology and design to give simplified salesforce. Maecenas dignissim posuere urna, non ullamcorper purus consequat sed. Aliquam erat volutpat. Curabitur rutrum varius facilisis.
 						</p>
+					</div>
+					<div class="video-wrap">
+						<img src="img/image.png" alt="image">
 						<button id="openVideo" class="btn">play demo</button>
 					</div>
 				</div>
 				<div class="overlayVideo"></div>
 				<div class="video-box-popup">
-					<div class="video"></div>
+					<div class="close">X</div>
+					<iframe id="youtube" src="https://www.youtube.com/embed/WsptdUFthWI" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</section>
 		<!-- the end archive force content of page -->

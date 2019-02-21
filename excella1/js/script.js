@@ -81,17 +81,20 @@ $(document).ready(function() {
 			$('.btn-up').removeClass('active');
 		}
 	});
-
+	var videoYoutube = $('#youtube').attr('src');
 	$('#openVideo').click(function() {
 		$('.overlayVideo').addClass('active');
 		$('.video-box-popup').addClass('active');
 		$('body,html').css('overflow', 'hidden');
+		$('#youtube').attr('src', videoYoutube+'?autoplay=1');
 	});
-
-	$('.overlayVideo').click(function() {
-		$(this).removeClass('active');
+	
+	$('.overlayVideo, .close').click(function() {
+		$('.overlayVideo').removeClass('active');
 		$('.video-box-popup').removeClass('active');
 		$('body,html').removeAttr('style');
+		$('#youtube').removeAttr('autoplay');
+		$('#youtube').attr('src', videoYoutube+'?autoplay=0');
 	});
 
 	$(function(){
