@@ -2,7 +2,9 @@ $(document).ready(function() {
 	var toggleBlock = $('.nav-toggle-block'),
 		toggleLine = $('.nav-toggle-line'),
 		pageNav = $('.page-nav'),
-		overlay = $('.overlay')
+		overlay = $('.overlay'),
+		menuList = $('.menu-list').find('> li'),
+		links = menuList.find('> a')
 
 	toggleBlock.on('click', function(event) {
 		$(this).toggleClass('open');
@@ -35,6 +37,35 @@ $(document).ready(function() {
 		if  ($(window).scrollTop() > 100){$('header').addClass('page-fixed-header')}			
 	});
 
+	links.on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+            top = top - 130;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+
+	$(window).bind('scroll', function() {
+		var currentTop = $(window).scrollTop();
+		var elems = $('.scrollspy');
+		elems.each(function(index){
+			var elemTop = $(this).offset().top - 160;
+			var elemBottom 	= elemTop + $(this).height() - 160;
+			if(currentTop >= elemTop && currentTop <= elemBottom){
+				var id = $(this).attr('id');
+				var navElem = $('a[href="#' + id+ '"]');
+				navElem.addClass('active');
+			}
+			else{
+				var id = $(this).attr('id');
+				var navElem = $('a[href="#' + id+ '"]');
+				$(function(){
+					navElem.removeClass('active');
+				})
+			}
+		})
+	}); 
+
     $('body').append('<i class="btn-up">');
 
 	$('.btn-up').click(function(){
@@ -51,11 +82,22 @@ $(document).ready(function() {
 		}
 	});
 
+	$('#openVideo').click(function() {
+		$('.overlayVideo').addClass('active');
+		$('.video-box-popup').addClass('active');
+		$('body,html').css('overflow', 'hidden');
+	});
+
+	$('.overlayVideo').click(function() {
+		$(this).removeClass('active');
+		$('.video-box-popup').removeClass('active');
+		$('body,html').removeAttr('style');
+	});
+
 	$(function(){
 		var window_size = $(window).width();
 		var panel = $('.panel');
 		var window_offset_top = $(window).scrollTop();
-		console.log(window_offset_top)
 		panel.each(function() {
 			var this_panel = $(this)
 			var this_panel_offest_top = this_panel.offset().top;

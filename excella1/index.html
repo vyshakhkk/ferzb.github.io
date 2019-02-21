@@ -30,12 +30,12 @@
 				</div>
 				<nav class="page-nav">
 					<ul class="menu-list flex flex-column flex-smd-row">
-						<li><a href="#">about</a></li>
-						<li><a href="#">what we do</a></li>
-						<li><a href="#">why excella</a></li>
-						<li><a href="#">solution</a></li>
-						<li><a href="#">products</a></li>
-						<li><a href="#">contact</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#whatWeDo">what we do</a></li>
+						<li><a href="#whyExcella">why excella</a></li>
+						<li><a href="#solutions">solution</a></li>
+						<li><a href="#archiveForce">products</a></li>
+						<li><a href="#contact">contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -57,7 +57,7 @@
 		<!-- the end banner content of page -->
 
 		<!-- what we do content of page -->
-			<section class="about panel">
+			<section id="about" class="about panel scrollspy">
 				<div class="container">
 					<article class="flex flex-column flex-smd-row flex-vertical-center flex-sb">
 						<div class="inner-description col-12 col-smd-7">
@@ -72,7 +72,7 @@
 					</article>
 				</div>
 			</section>
-			<section class="what-we-do panel">
+			<section id="whatWeDo" class="what-we-do panel scrollspy">
 				<div class="container">
 					<h2 class="title-section-h2 flex flex-end">
 						As unique as<br>your business is
@@ -132,7 +132,7 @@
 		<!-- the end what we do content of page -->
 
 		<!-- why go whith Excella content of page -->
-			<section class="why-excella section-block panel">
+			<section id="whyExcella" class="why-excella section-block panel scrollspy">
 				<div class="container flex flex-column flex-md-row flex-sb flex-vertical-center">
 					<article class="col-12 col-xld-6">
 						<h2 class="title-section-h2">Giving the best is our default motto</h2>
@@ -146,7 +146,7 @@
 		<!-- the end why go whith Excella content of page -->
 
 		<!-- why go whith Excella content of page -->
-			<section class="solutions section-block panel">
+			<section id="solutions" class="solutions section-block panel scrollspy">
 				<div class="container flex flex-sb flex-vertical-center">
 
 					<div class="col-12 col-ld-7">
@@ -192,7 +192,7 @@
 		<!-- the end why go whith Excella content of page -->
 
 		<!-- Word of mouth content of page -->
-			<section class="word-mouth section-block panel">
+			<section id="wordMouth" class="word-mouth section-block panel">
 				<div class="container">
 					<h2 class="title-section-h2">Word of mouth</h2>
 					<div class="img-title">
@@ -210,7 +210,7 @@
 
 		
 		<!-- archive force content of page -->
-			<section class="archive-force section-block">
+			<section id="archiveForce" class="archive-force section-block scrollspy">
 				<div class="container">
 					<h2 class="title-section-h2">
 						ArchiveForce
@@ -219,19 +219,19 @@
 						<p>
 							Excella is a new age salesforce consulting company bringing togetherinnovation, technology and design to give simplified salesforce. Maecenas dignissim posuere urna, non ullamcorper purus consequat sed. Aliquam erat volutpat. Curabitur rutrum varius facilisis.
 						</p>
-						<a class="btn" href="#">play demo</a>
-					</div>
-					<div class="demo-video">
-						<video src=""></video>
+						<button id="openVideo" class="btn">play demo</button>
 					</div>
 				</div>
-					
+				<div class="overlayVideo"></div>
+				<div class="video-box-popup">
+					<div class="video"></div>
+				</div>
 			</section>
 		<!-- the end archive force content of page -->
 
 		</main>
 
-		<footer>
+		<footer id="contact">
 			<div class="container">
 				<h2 class="title-section-h2">
 					Let’s get started
