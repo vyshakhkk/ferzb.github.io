@@ -1,0 +1,356 @@
+@import 'setting.sass';
+@import url('grid.css');
+@import url('icons.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+.global-header
+	background-color: #EC2839 
+	@media screen and (min-width: #{$dw-640})
+		background-color: #fff
+	.logo
+		width: calc(50% - 0px)
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		@media screen and (min-width: #{$dw-640})
+			width: calc(28% - 20px)
+		i
+			display: block
+			margin-right: 10px
+			font-size: 24px
+			color: #FFF
+			@media screen and (min-width: #{$dw-640})
+				color: #EC2839 
+			@media screen and (min-width: #{$dw-960})
+				display: none
+		.logo-img
+			&:nth-child(2)
+				display: none
+				@media screen and (min-width: #{$dw-640})
+					display: block
+			&:last-child
+				display: block
+				@media screen and (min-width: #{$dw-640})
+					display: none
+	form
+		width: calc(44% - 20px) 
+		display: none
+		position: relative
+		@media screen and (min-width: #{$dw-640})
+			display: block
+			width: calc(46% - 20px) 
+		@media screen and (min-width: #{$dw-960})
+			width: calc(44% - 20px) 
+			
+		input
+			width: 100%
+			padding: 13px 54px 13px 22px
+			border: 1px solid #E0E0E0
+			-webkit-border-radius: 40px 
+			border-radius: 40px
+			background: #F7F7F7
+			color: #90949C
+		button
+			cursor: pointer
+			border: none
+			background: transparent 
+			display: block
+			position: absolute
+			font-size: 24px
+			right: 24px
+			top: 50%
+			-webkit-transform: translateY(-50%) 
+			-moz-transform: translateY(-50%) 
+			-ms-transform: translateY(-50%) 
+			-o-transform: translateY(-50%) 
+			transform: translateY(-50%) 
+	.header-btn
+		width: calc(50% - 0px)
+		@media screen and (min-width: #{$dw-640})
+			width: auto
+		@media screen and (min-width: #{$dw-960})
+			width: calc(28% - 20px)
+		a
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			padding-right: 0px
+			background-color: transparent
+			-webkit-border-radius: 6px 
+			border-radius: 6px
+			font-size: 14px
+			font-weight: 600
+			position: relative
+			width: auto
+			@media screen and (min-width: #{$dw-960})
+				padding-right: 12px
+				width: calc(50% - 20px)
+			.icon
+				font-size: 24px
+				padding: 9px
+				-webkit-border-radius: 50% 
+				border-radius: 50%
+				background-color: transparent
+				color: #FFF 
+				margin-right: 9px
+				@media screen and (min-width: #{$dw-640})
+					background-color: #F7F7F7
+					color: #757575 
+					font-size: 18px
+			&:hover
+				background: #F7F7F7
+			&.profile
+				display: none
+				@media screen and (min-width: #{$dw-960})
+					display: flex
+			&.cart
+				margin-left: auto
+				@media screen and (min-width: #{$dw-960})
+					margin-left: 0
+				.global-price
+					display: block
+					color: #FFF
+					font-size: 12px
+					font-weight: bold
+					.price-number
+						font-weight: bolder
+						font-size: 16px
+					@media screen and (min-width: #{$dw-640})
+						display: none
+				.text
+					display: none
+					@media screen and (min-width: #{$dw-640})
+						display: block
+				.number-item
+					position: absolute
+					left: 26px
+					top: -2px
+					-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4)
+					box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4)
+					margin-right: 0
+					width: 16px
+					height: 16px
+					-webkit-border-radius: 50% 
+					border-radius: 50%
+					background: #fff
+					color: #ec2839
+					font-size: 11px
+					display: flex
+					-webkit-align-items: center
+					align-items: center
+					-webkit-justify-content: center
+					justify-content: center
+					@media screen and (min-width: #{$dw-640})
+						right: -6px
+						top: -6px
+						left: auto
+						background: #ec2839
+						color: #fff
+						-webkit-box-shadow: 0px 2px 5px 0px rgba(236, 40, 57, 0.4)
+						box-shadow: 0px 2px 5px 0px rgba(236, 40, 57, 0.4)
+
+.overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	display: none
+	background: rgba(0, 0, 0, 0.5)
+	&.active
+		display: block
+.global-nav
+	position: absolute
+	background: #FFF 
+	top: 0
+	left: 0
+	width: 90vw
+	height: 100vh
+	-webkit-transform: translateX(-100%) 
+	-moz-transform: translateX(-100%) 
+	-ms-transform: translateX(-100%) 
+	-o-transform: translateX(-100%) 
+	transform: translateX(-100%)
+	-webkit-transition: .3s 
+	-moz-transition: .3s 
+	-ms-transition: .3s 
+	-o-transition: .3s 
+	transition: .3s 
+	&.open
+		-webkit-transform: translateX(0%) 
+		-moz-transform: translateX(0%) 
+		-ms-transform: translateX(0%) 
+		-o-transform: translateX(0%) 
+		transform: translateX(0%)
+	@media screen and (min-width: #{$dw-480})
+		width: 70vw
+	@media screen and (min-width: #{$dw-960})
+		-webkit-transform: none 
+		-moz-transform: none 
+		-ms-transform: none 
+		-o-transform: none 
+		transform: none
+		height: auto
+		width: 100%
+		position: static
+		background: transparent
+	.close-nav
+		position: absolute
+		right: 10px
+		top: 10px
+		font-size: 24px
+		display: block
+		@media screen and (min-width: #{$dw-960})
+			display: none
+.menu-list
+	text-transform: uppercase
+	font-size: 16px
+	padding: 0px
+	width: 100%
+	border-top: 1px solid #e8e8e8 
+	border-bottom: 1px solid #e8e8e8
+	li
+		margin: 0
+		a
+			display: block
+			padding: 21px 20px 21px 20px
+			background: #fff
+			font-weight: 600
+			display: flex
+			-webkit-align-items: center
+			align-items: center 
+			&:hover
+				background: #ec2839
+				color: #FFF
+		&:first-child
+			a
+				padding: 21px 3vw 21px 20px
+				i
+					margin-right: 12px 
+		&:last-child
+			color: #ec2839
+			
+.site-nav
+	a
+		font-size: 13px
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		margin-right: 10px 
+		&:after
+			content: ""
+			display: block
+			width: 6px
+			height: 6px
+			margin-top: 2px 
+			margin-left: 6px
+			-webkit-transform: rotate(45deg) 
+			-moz-transform: rotate(45deg) 
+			-ms-transform: rotate(45deg) 
+			-o-transform: rotate(45deg) 
+			transform: rotate(45deg) 
+			border-right: 1px solid #757575  
+			border-top: 1px solid #757575
+		&.active
+			font-weight: bold
+	li:last-child
+		a
+			&:after
+				display: none
+				
+.top-partners
+	max-width: 780px
+	margin: 0 auto
+	padding: 10px 10px
+	.item-partners
+		margin: 10px 
+		max-height: 50px
+		max-width: 90px
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+	img
+		height: auto
+		width: 100%
+		
+.subscribe
+	margin-top: 50px 
+	border-top: 1px solid #e8e8e8
+	.container
+		padding: 30px 10px
+	h3
+		color: #EC2839
+		font-weight: 600
+		margin-bottom: 10px 
+	article, form
+		margin: 10px 0px 
+	form
+		max-width: 500px
+		width: 100%
+		margin-left: auto
+		position: relative
+		input
+			width: 100%
+			border: 1px solid #e8e8e8
+			-webkit-border-radius: 6px
+			border-radius: 6px
+			padding: 17px 140px 17px 20px
+		button
+			position: absolute
+			top: 0
+			right: 0
+			border: none
+			height: 100%
+			width: 138px
+			cursor: pointer
+			background: #EC2839
+			color: #fff
+			text-transform: uppercase
+			font-size: 14px 
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center 
+			-webkit-border-top-right-radius: 6px 
+			border-top-right-radius: 6px 
+			-webkit-border-bottom-right-radius: 6px 
+			border-bottom-right-radius: 6px
+			
+.global-footer
+	.title
+		font-weight: 600
+		font-size: 18px
+		color: #2D2A2A
+		margin-bottom: 20px
+	ul
+		li
+			color: #222 
+			margin-bottom: 8px
+			font-size: 14px
+			a
+				&:hover
+					color: #0066c0 
+	.contact
+		.logotype
+			font-weight: 700
+		li
+			i
+				margin-right: 10px 
+			&:nth-child(3)
+				text-transform: uppercase
+				font-weight: 600
+	.zahlungsarten
+		.item-method
+			max-height: 50px
+			max-width: 90px
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center 
+			img
+				height: auto
+				width: 100%			
