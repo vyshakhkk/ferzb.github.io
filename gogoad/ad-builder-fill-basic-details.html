@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="description about page">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+		<title>GoGoAd | ad builder | Fill Basic Details</title>
+		<link rel="shortcut icon" href="">
+		<!--[if gt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+	<!-- start header nav -->
+		<header class="global-header page-builder">
+			<div class="container flex flex-sb flex-vertical-center">
+				<div class="logo logo-builder">
+					<a href="index.html">
+						<img src="img/home.svg" alt="home">
+						<span>post your ad</span>
+					</a>
+				</div>
+				<div class="flex flex-vertical-center">
+					<ul class="flex">
+						<li class="title-header-list dropdown-menu"><span>My Account</span>
+							<ul>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">My Ads</a></li>
+								<li><a href="#">Messages</a></li>
+								<li><a href="#">Favorite Ads</a></li>
+								<li><a href="#">Recently Viewed</a></li>
+								<li><a href="#">Log out</a></li>
+							</ul>
+						</li>
+					</ul>
+					<a class="header-btn btn-builder" href="ad-builder.html"><span>Support</span></a>
+				</div>
+			</div>
+		</header>
+	<!-- end header nav -->
+	<!-- start main page -->
+		<main class="main-builder-page__fill-basic-details">
+			<div class="container global-box-shadow">
+				<span class="title-page">Please fill in as much details as possible</span>
+				<div class="flex flex-sb">
+					<article class="prefer-photo-box flex flex-column flex-center flex-vertical-center">
+						<span>Drag and Drop or Upload Photos</span>
+						<input type="file" id="preferPhotos">
+						<label for="preferPhotos">Browse</label>
+						<span>People prefer ads with photos</span>
+					</article>
+					<article class="other-photos-box">
+						<div class="add-photo-box"></div>
+						<input type="file" id="uploadNewImg">
+						<label for="uploadNewImg" class="add-func-box">
+							+ Drag or Click to Upload 
+						</label>
+					</article>
+				</div>
+				<form id="fillBasic__form" class="fill-basic__form" action="" method="post">
+					<div class="form__box">
+						<input id="form_adTitle" type="text" placeholder="Ad Title*" required>
+					</div>
+					<div class="form__box">
+						<select name="typeDetails" id="form_typeDetails" form="fillBasic__form" required>
+							<option value="0">Type*</option>
+							<option value="1">Type 1</option>
+							<option value="2">Type 2</option>
+						</select>
+						<select name="makeDetails" id="form_makeDetails" form="fillBasic__form" required>
+							<option value="0">Make*</option>
+							<option value="1">Make 1</option>
+							<option value="2">Make 2</option>
+						</select>
+						<input type="text" id="form_modelDetails" placeholder="Model*" required>
+						<input type="text" id="form_variantDetails" placeholder="Variant">
+						<select name="makeYearDetails" id="form_makeYearDetails" form="fillBasic__form" required>
+							<option value="0">Make Year*</option>
+							<option value="1">Make Year 1</option>
+							<option value="2">Make Year 2</option>
+						</select>
+						<input type="text" id="form_kmDrivenDetails" placeholder="KilometersDriven*">
+					</div>
+					<div class="form__box">
+						<input type="text" id="form_priceDetails" placeholder="Price">
+						<select name="fuelTypeDetails" id="form_fuelTypeDetails" form="fillBasic__form" required>
+							<option value="0">Fuel Type*</option>
+							<option value="1">Fuel Type 1</option>
+							<option value="2">Fuel Type 2</option>
+						</select>
+						<div class="transmission">
+							<span>Transmission:</span>
+							<div>
+								<input id="transmissionManual" type="radio" name="transmission" value="Transmission Manual" checked>
+								<label for="transmissionManual">Manual</label>
+
+							</div>
+							<div>
+								<input id="transmissionAuto" type="radio" name="transmission" value="Transmission Auto">
+								<label for="transmissionAuto">Auto</label>
+							</div>	
+						</div>
+						<select name="colourDetails" id="form_colourDetails" form="fillBasic__form" required>
+							<option value="0">Colour*</option>
+							<option value="1">Colour 1</option>
+							<option value="2">Colour 2</option>
+						</select>
+						<select name="postedDetails" id="form_postedDetails" form="fillBasic__form" required>
+							<option value="0">Posted By*</option>
+							<option value="1">Posted By 1</option>
+							<option value="2">Posted By 2</option>
+						</select>
+					</div>
+					<div class="form__box">
+						<input type="text" id="locationDetails" placeholder="Location">
+					</div>
+					<div class="form__box">
+						<input type="tel" id="contactNumberDetails" placeholder="Contact Number*" required>
+					</div>
+					<button class="global-btn">Continue to select newspaper</button>
+				</form>
+			</div>
+		</main>
+	<!-- end main page -->
+	<!-- start footer page -->
+		<footer class="footer-builder-page">
+			<div class="container">
+				<i>&copy;</i> gogoad, 2019
+			</div>
+		</footer>
+	<!-- end footer page -->
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

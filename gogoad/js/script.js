@@ -5,7 +5,7 @@ $(document).ready(function() {
 		toggleCategoryBlock = $('.toggle-category-block'),
 		toggleTopSearch = $('.toggle-top-search'),
 		toggleTitleBuilder = $('.title-builder');
-
+	/*category's script active*/
 	categoryBlock.each(function() {
 		var this_categoryBlock = $(this);
 		var this_categoryCheckBox = this_categoryBlock.find('label');
@@ -45,6 +45,25 @@ $(document).ready(function() {
 			this_containerItem.slideToggle();
 		});
 	});
+	/*end category's script active*/
+
+	/*builder's script active*/
+	var builder__chooseCategoty = $('.main-builder-page__choose-category-selection').find('.builder__choose-categoty'),
+		chooseCategoty__builder__itemBox = builder__chooseCategoty.find('.builder__item-box'),
+		builder__selectTheAD = $('.main-builder-page__choose-category-selection').find('.builder__select-the-AD'),
+		selectTheAD__builder__itemBox = builder__selectTheAD.find('.builder__item-box');
+
+	chooseCategoty__builder__itemBox.click(function() {
+		chooseCategoty__builder__itemBox.removeClass('active');
+		$(this).addClass('active');
+		
+	});
+	selectTheAD__builder__itemBox.click(function() {
+		selectTheAD__builder__itemBox.removeClass('active');
+		$(this).addClass('active');
+		
+	});
+	/*end builder's script active*/
 
 	$('.dropdown-link').click(function() {
 		$('.dropdown-block').slideToggle();
