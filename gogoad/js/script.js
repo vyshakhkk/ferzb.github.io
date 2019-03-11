@@ -116,6 +116,28 @@ $(document).ready(function() {
 		dots:false,
 		margin: 10
 	});
+
+	$('.popular-packages_carousel').owlCarousel({
+		items:2,
+		nav:true,
+		dots:false,
+		navText: ["<span></span>","<span></span>"],
+		margin: 20
+	});
+	$('.popular-template_carousel').owlCarousel({
+		items:2,
+		nav:true,
+		dots:false,
+		navText: ["<span></span>","<span></span>"],
+		margin: 20
+	});
+	$('.popular-offer_carousel').owlCarousel({
+		items:3,
+		nav:true,
+		dots:false,
+		navText: ["<span></span>","<span></span>"],
+		margin: 20
+	});
 	
 	$(function(){
 		var input = $('.input-global')

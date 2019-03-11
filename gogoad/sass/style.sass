@@ -15,7 +15,13 @@
 
 body
 	min-width: 768px!important
-	background: #F1F0F0 
+	background: #F1F0F0
+	&::-webkit-scrollbar
+		width: 6px 
+	&::-webkit-scrollbar-thumb
+		-webkit-border-radius: 10px 
+		border-radius: 10px
+		background: #bbb 
 	
 .global-btn
 	background: $hover-color
@@ -2362,7 +2368,754 @@ footer
 				-ms-transform: rotate(45deg) 
 				-o-transform: rotate(45deg) 
 				transform: rotate(45deg)
-	
+
+/************builder**************/
+/***************Select Package***********/
+/*************stylesheet*************/
+
+.main-builder-page__select-package
+	.clients-ad-cost
+		display: block
+		width: 218px
+		text-align: center
+		font-size: 16px
+		color: #FFF
+		font-weight: bold
+		padding: 14px
+		background: #003A5F
+		margin: 14px 0px 14px auto
+	.select-package__orders-choose
+		max-width: 750px
+		-webkit-flex-grow: 1 
+		flex-grow: 1
+		margin-right: 20px
+		.select-item
+			background: #FFF 
+			margin-bottom: 30px
+			&.active
+				.title-builder
+					background: #2a314e
+					color: #FFF
+					span
+						background: #fff
+						color: #2a314e
+					h4
+						color: #fff
+				.inner-item
+					display: block
+			.title-builder
+				background: #FFF
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				color: #2a314e 
+				padding: 14px 25px
+				cursor: pointer
+				-webkit-transition: 0.3s ease 
+				-moz-transition: 0.3s ease 
+				-ms-transition: 0.3s ease 
+				-o-transition: 0.3s ease 
+				transition: 0.3s ease 
+				span
+					background: #2a314e
+					color: #fff
+					display: block
+					margin-right: 16px
+					padding: 6px 12px
+					font-size: 16px
+					font-weight: bold 
+					-webkit-transition: 0.3s ease 
+					-moz-transition: 0.3s ease 
+					-ms-transition: 0.3s ease 
+					-o-transition: 0.3s ease 
+					transition: 0.3s ease 
+				h4
+					font-size: 16px
+					font-weight: bold
+					color: #2a314e
+			.inner-item
+				background: #FFF
+				display: none
+			&:last-child
+				margin-bottom: 0 
+			.inner-item
+				padding: 20px 0px 20px 20px
+				.inner-item_title, .inner-item_popular-title
+					display: block
+					font-size: 18px 
+					color: #141414 
+					margin-bottom: 20px 
+				.inner-item_title
+					font-weight: bold
+				.popular-packages_carousel, .popular-template_carousel, .popular-offer_carousel 
+					.owl-nav
+						display: flex
+						-webkit-justify-content: center
+						justify-content: center
+						-webkit-align-items: center
+						align-items: center
+						margin: 20px 0px 30px 
+						button
+							width: 28px
+							height: 28px
+							margin: 0px 4px 
+							background: #f6c900
+							-webkit-border-radius: 50% 
+							border-radius: 50%
+							display: flex
+							-webkit-align-items: center
+							align-items: center
+							-webkit-justify-content: center
+							justify-content: center
+							&:nth-child(1)
+								span
+									border-top: 5px solid transparent 
+									border-right: 6px solid #000 
+									border-left: 0px solid transparent 
+									border-bottom: 5px solid transparent
+								&.disabled
+									span
+										border-right-color: #fff 
+							&:nth-child(2)
+								span
+									border-top: 5px solid transparent 
+									border-right: 0px solid transparent 
+									border-left: 6px solid #000 
+									border-bottom: 5px solid transparent
+								&.disabled
+									span
+										border-left-color: #fff
+							&.disabled
+								background: #dcdcdc
+				.owl-stage
+					padding: 4px 2px 
+				.owl-item
+					max-width: 320px
+					.popular-packages_carousel_item, .popular-template_carousel_item, .popular-offer_carousel_item
+						cursor: pointer
+						&.active
+							-webkit-box-shadow: 0px 0px 0px 2px #000 
+							box-shadow: 0px 0px 0px 2px #000 	
+						.item_title
+							background: #F6C900
+							padding: 12px 14px
+							font-size: 16px
+							color: #000
+							display: flex
+							-webkit-justify-content: space-between
+							justify-content: space-between
+							.item-name
+								font-weight: bold
+						.item_description
+							padding: 12px 14px 30px 14px
+							font-size: 16px
+							color: #000
+							background: #F5F5F5 
+				.inner-item_title-text 
+					span
+						&:nth-child(1)
+							font-size: 18px
+							color: #000
+							-webkit-border-radius: 50% 
+							border-radius: 50%
+							background: #CCC
+							width: 50px
+							height: 50px
+							display: flex
+							-webkit-align-items: center
+							align-items: center
+							-webkit-justify-content: center
+							justify-content: center
+							margin-right: 20px
+						&:nth-child(2)
+							font-size: 16px
+							color: #000 
+						&:nth-child(3)
+							margin-left: auto
+							margin-right: 20px
+							font-size: 16px
+							color: #9D9D9D   
+				.inner-item_list-edition_box
+					padding: 0px 10px
+				.inner-item_list-edition
+					border-bottom: 1px solid #ddd
+					padding: 20px 10px 
+					max-height: 539px
+					height: 100%
+					-ms-overflow-y: scroll
+					overflow-y: scroll
+					&::-webkit-scrollbar
+						width: 6px 
+					&::-webkit-scrollbar-thumb
+						-webkit-border-radius: 10px 
+						border-radius: 10px
+						background: #e1e1e1 
+					li
+						display: flex
+						-webkit-align-items: center
+						align-items: center
+						font-size: 16px
+						color: #010101
+						padding: 16px 20px
+						border-bottom: 1px solid #ddd
+						&:last-child
+							border: none
+						.list-name
+							max-width: 250px
+							width: 100% 
+						.list-price
+							margin-left: auto
+							color: #666 
+							i
+								color: #f64b00
+						span:last-child
+							margin-left: auto
+							input
+								display: none
+								&:checked + label
+									background: #6bda2e
+									border: 1px solid #6BDA2E 
+									&:after
+										display: block
+							label
+								width: 16px
+								height: 16px
+								display: block
+								position: relative
+								cursor: pointer
+								border: 1px solid #111111
+								&:after
+									width: 3px
+									height: 8px
+									content: ""
+									display: none
+									position: absolute
+									left: 5px
+									top: 2px
+									border-right: 1px solid #fff  	
+									border-bottom: 1px solid #fff
+									-webkit-transform: rotate(40deg) 
+									-moz-transform: rotate(40deg) 
+									-ms-transform: rotate(40deg) 
+									-o-transform: rotate(40deg) 
+									transform: rotate(40deg) 	
+			.global-btn
+				margin: 20px 20px 20px auto
+				cursor: pointer 
+				padding: 0px
+				width: 200px
+				height: 44px
+				font-size: 16px
+				text-transform: uppercase  
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				-webkit-justify-content: center
+				justify-content: center
+				font-weight: bold 
+		.compose-ad
+			.global-btn
+				margin: 20px 20px 20px auto
+			.type-ad
+				padding-right: 20px
+				margin-bottom: 20px
+				textarea
+					height: 240px
+					border: none
+					background: #F5F5F5   
+					padding: 20px
+					display: block
+					width: 100%	
+					font-size: 16px
+					color: #999
+				span
+					color: #999
+					font-size: 16px
+					padding: 6px 0px
+					display: inline-block
+					i
+						margin-right: 20px 
+			.inner-item-title
+				font-size: 16px
+				color: #2A314E
+				font-weight: bold
+				display: block
+				margin: 0px 0px 30px
+			.choose-backgound
+				.title
+					color: #666
+					font-size: 16px
+					i
+						font-size: 15px
+						color: #E9373C
+						display: inline-block
+						margin-left: 10px
+						font-weight: bold
+				.background-color-box
+					margin: 10px 0px
+					display: flex
+					span
+						width: 75px
+						height: 45px
+						display: inline-block
+						padding: 2px
+						cursor: pointer
+						margin-right: 30px
+						&.active
+							-webkit-box-shadow: inset 0px 0px 0px 2px #000
+							box-shadow: inset 0px 0px 0px 2px #000
+					.white-color
+						background: #FFF
+						border: 1px solid #e5e5e5
+					.pink-color
+						background: #FCC
+					.blue-color
+						background: #9CF
+					.yellow-color
+						background: #FC3 
+					.orange-color
+						background: #F6AE00 
+			.choose-weight
+				margin: 30px 20px 0px 0px
+				padding-bottom: 30px 
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				border-bottom: 1px solid #e1e1e1
+				span
+					display: flex
+					-webkit-align-items: center
+					align-items: center
+					color: #666
+					margin-right: 20px 
+					i
+						color: #E9373C
+						font-size: 15px
+						margin-left: 10px 
+						font-weight: bold 
+					&>span
+						margin-left: 20px 
+						input
+							display: none
+							&:checked + label
+								&:after
+									display: block
+								&:before
+									border: 1px solid #6BDA2E 
+						label
+							cursor: pointer
+							position: relative
+							display: flex
+							-webkit-align-items: center
+							align-items: center
+							font-weight: bold
+							color: #333
+							&:after
+								content: ""
+								display: none
+								width: 8px
+								height: 8px
+								position: absolute
+								left: 3px
+								top: 4px
+								background: #6BDA2E
+								-webkit-border-radius: 50% 
+								border-radius: 50%   
+							&:before
+								width: 12px
+								height: 12px
+								content: ""
+								display: block
+								margin-right: 10px
+								-webkit-border-radius: 50% 
+								border-radius: 50%
+								border: 1px solid #a5a5a5    
+		.own-dates
+			.inner-item-title
+				font-size: 16px
+				color: #2A314E
+				font-weight: bold
+				margin-bottom: 20px
+				display: block
+			.inner-item
+				.popular-offer_carousel
+					.owl-item
+						max-width: 220px
+					.popular-offer_carousel_item
+						background: #F5F5F5
+						padding-bottom: 10px
+						.item_title
+							font-weight: bold
+						.item_description_title
+							padding: 12px 14px 12px 14px
+							font-size: 16px
+							color: #000 
+						.item_description
+							padding: 12px 7px
+							margin: 0px 7px
+							background-color: #FFB9B9
+							font-size: 16px
+							color: #DD3A3A
+					 
+	.select-package__order-status
+		max-width: 310px
+		width: 100%
+		background: #FFF 
+		padding: 18px 16px
+		.section-title
+			font-size: 16px
+			color: #2B0F00
+			margin-bottom: 20px
+			text-align: center
+		.ad-details-box
+			display: flex
+			&.focus, &.active
+				.order-description
+					color: #333
+				.order-status
+					i
+						background: #6BDA2E
+			&.focus
+				.order-status
+					i
+						-webkit-box-shadow: 0px 0px 0px 5px rgba(107, 218, 46, 0.3)
+						box-shadow: 0px 0px 0px 5px rgba(107, 218, 46, 0.3)
+			&.active
+				.order-status
+					&:after
+						background: #6BDA2E
+					i
+						&:before
+							display: block
+			&:last-child
+				.order-status
+					&:after
+						display: none
+		.order-status
+			position: relative
+			margin-right: 20px
+			i
+				width: 24px
+				height: 24px
+				background: #B0B0B0
+				-webkit-border-radius: 50% 
+				border-radius: 50%
+				display: block
+				position: relative
+				&:before
+					width: 6px
+					height: 12px
+					content: ""
+					display: none
+					position: absolute
+					border-right: 2px solid #fff  
+					border-bottom: 2px solid #fff
+					right: 8px
+					top: 3px 
+					-webkit-transform: rotate(40deg) 
+					-moz-transform: rotate(40deg) 
+					-ms-transform: rotate(40deg) 
+					-o-transform: rotate(40deg) 
+					transform: rotate(40deg)   
+			&:after
+				width: 2px
+				height: 100%
+				content: ""
+				display: block
+				background: #B0B0B0
+				margin: -24px auto 0
+		.order-description
+			padding-bottom: 30px
+			span
+				font-size: 16px
+			.box-title
+				font-weight: bold
+				text-transform: uppercase
+				margin-bottom: 6px 
+			.ad-category, .ad-type, .box-title
+				display: block
+
+/************builder**************/
+/*************** payment ***********/
+/*************stylesheet*************/
+
+.main-builder-page__payment
+	padding-top: 40px
+	.container
+		background: #fff
+		-webkit-border-radius: 6px 
+		border-radius: 6px  
+	.payment_title
+		color: #000
+		font-size: 24px
+		text-transform: capitalize
+		font-weight: bold 
+	.payment__content-page
+		display: flex
+		margin-top: 30px
+		font-size: 16px
+		color: #000
+		border-bottom: 1px solid #e1e1e1
+		padding-bottom: 46px  
+		.amount-pay
+			margin-bottom: 20px 
+			.number
+				font-weight: bold
+				width: 80px
+				display: inline-block
+				text-align: center
+		.method-payment
+			margin: 20px 0px
+			input
+				display: none
+				&:checked + label
+					&:before
+						border: 2px solid #6FDF38 
+					&:after
+						display: block
+			label
+				display: flex
+				-webkit-flex-wrap: wrap 
+				-ms-flex-wrap: wrap 
+				flex-wrap: wrap 
+				-webkit-align-items: center
+				align-items: center
+				cursor: pointer
+				font-weight: bold
+				position: relative
+				span
+					font-weight: normal
+					width: 100%
+					padding-left: 24px
+					padding-top: 4px  
+				&:before
+					content: ""
+					display: block
+					margin-right: 6px 
+					width: 16px
+					height: 16px
+					border: 2px solid #000
+					-webkit-border-radius: 50% 
+					border-radius: 50%
+				&:after
+					content: ""
+					display: none
+					position: absolute
+					top: 4px
+					left: 4px
+					width: 12px
+					height: 12px
+					background: #6FDF38
+					-webkit-border-radius: 50% 
+					border-radius: 50%  
+		.method-payment-box
+			max-width: 380px
+			padding-bottom: 80px 
+			width: 100%
+			border-right: 1px solid #e1e1e1  
+			.global-btn
+				max-width: 210px
+				display: block
+				width: 100%
+				padding: 21px 10px
+				text-align: center
+				margin-top: 20px
+				background: #00BAFF
+				color: #fff
+				font-size: 16px
+				font-weight: bold
+				cursor: pointer    
+		.payment__user-address
+			padding: 0px 3% 80px 70px
+			-webkit-flex-grow: 1
+			flex-grow: 1 
+			font-size: 16px
+			.title
+				color: #2A314E
+				text-align: left
+				font-weight: bold
+				display: block
+				text-transform: capitalize
+			form
+				margin-top: 20px 
+				input
+					border: none
+					display: block
+					width: 100%
+					padding: 12px 0px
+					margin-bottom: 6px
+					font-size: 16px 
+					border-bottom: 2px solid #ededed
+					&::-webkit-input-placeholder
+						color: #000
+					&::-moz-placeholder
+						color: #000
+					&::-ms-input-placeholder
+						color: #000
+	.payment__buttons
+		padding: 20px 0px
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		.global-btn
+			cursor: pointer
+			font-weight: bold
+			text-transform: uppercase
+			padding: 18px
+			text-align: center
+			&:nth-child(1)
+				max-width: 138px
+				width: 100%
+			&:nth-child(2)
+				max-width: 272px
+				width: 100% 
+
+/************builder**************/
+/*************** payment successful ***********/
+/*************stylesheet*************/
+
+.main-builder-page__payment-successful
+	.container
+		background: #FFF 
+		margin-top: 30px
+		text-align: center
+	.payment-successful__content
+		border-bottom: 1px solid #e1e1e1
+		padding-top: 20px 
+		padding-bottom: 70px
+		margin-bottom: 20px
+	.payment-successful__title
+		color: #000
+		font-size: 24px
+		font-weight: bold
+		text-transform: uppercase
+		position: relative
+		margin-bottom: 30px
+		&:before
+			content: ""
+			display: block
+			width: 56px
+			height: 56px
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			background: #6FDF38
+			margin: 0px auto 30px
+		&:after
+			width: 6px
+			height: 10px 
+			content: ""
+			display: block
+			position: absolute
+			top: 23px
+			left: 50%
+			border-right: 3px solid #fff  
+			border-bottom: 3px solid #fff
+			-webkit-transform: rotate(40deg) translateX(-50%)
+			-moz-transform: rotate(40deg) translateX(-50%)
+			-ms-transform: rotate(40deg) translateX(-50%)
+			-o-transform: rotate(40deg) translateX(-50%)
+			transform: rotate(40deg) translateX(-50%) 
+	.payment-successful__ad-details
+		font-size: 16px
+		color: #000
+		margin: 0px 20px 20px
+		width: auto 
+		span
+			font-weight: bold
+			max-width: 160px
+			margin-left: 20px 
+			width: 100%
+			text-align: center
+			display: inline-block 
+	.payment-successful__title-status
+		font-size: 16px
+		color: #000
+		font-weight: bold
+		text-align: center
+		margin: 50px 0px 20px 
+	.details-status-box
+		display: flex
+		article
+			position: relative
+			padding-top: 10px
+			width: $col-4
+			font-size: 16px
+			color: #000 
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				top: 24px
+				left: 50%
+				width: 100%
+				height: 2px
+				background: #b3b3b3
+			&:last-child
+				&:before
+					display: none
+			&.complete
+				&:before
+					background: #6fdf38
+				i
+					background: #6fdf38
+					&:after
+						display: block
+			&.focus
+				i
+					width: 18px
+					height: 18px
+					background: #6fdf38
+					margin-top: 6px
+					-webkit-box-shadow: 0px 0px 0px 6px rgba(111, 223, 56, 0.4)
+					box-shadow: 0px 0px 0px 6px rgba(111, 223, 56, 0.4)
+			div
+				max-width: 215px
+				width: 100%
+				padding: 10px
+				margin: auto
+			i
+				display: block
+				margin: auto
+				position: relative
+				z-index: 1
+				top: -10px
+				width: 30px
+				height: 30px
+				background: #b3b3b3
+				-webkit-border-radius: 50% 
+				border-radius: 50%
+				&:after
+					content: ""
+					display: none
+					position: absolute
+					border-right: 3px solid #fff  
+					border-bottom: 3px solid #fff  
+					width: 5px
+					height: 10px
+					top: 9px
+					left: 50%
+					-webkit-transform: rotate(40deg) translateX(-50%)
+					-moz-transform: rotate(40deg) translateX(-50%)
+					-ms-transform: rotate(40deg) translateX(-50%)
+					-o-transform: rotate(40deg) translateX(-50%)
+					transform: rotate(40deg) translateX(-50%)
+			h5
+				font-size: 16px
+				font-weight: bold
+				margin-bottom: 4px
+			span
+				color: #BCBCBC
+				display: inline-block
+				margin-top: 4px 
+	.global-btn
+		max-width: 272px
+		width: 100%
+		text-align: center
+		font-weight: bold			
+
+
 .section-builder-main
 	display: grid
 	grid-gap: 20px
@@ -2385,52 +3138,7 @@ footer
 		color: #fff 
 		background: #f6c900
 
-.select-item
-	margin-bottom: 30px 
-	.container-item
-		background: #FFF
-		display: none
-	&:last-child
-		margin-bottom: 0 
-
-.select-item.active
-	.title-builder
-		background: #F6C900
-		color: #fff
-		span
-			background: #fff
-			color: #F6C900  
-
-.title-builder
-	background: #FFF
-	display: flex
-	-webkit-align-items: center
-	align-items: center
-	color: #100F0E 
-	padding: 14px 25px
-	cursor: pointer
-	-webkit-transition: 0.3s ease 
-	-moz-transition: 0.3s ease 
-	-ms-transition: 0.3s ease 
-	-o-transition: 0.3s ease 
-	transition: 0.3s ease 
-	span
-		background: #F6C900
-		color: #fff
-		display: block
-		margin-right: 16px
-		padding: 6px 12px
-		font-size: 16px
-		font-weight: bold 
-		-webkit-transition: 0.3s ease 
-		-moz-transition: 0.3s ease 
-		-ms-transition: 0.3s ease 
-		-o-transition: 0.3s ease 
-		transition: 0.3s ease 
-	h4
-		font-size: 16px
-		font-weight: bold
-		
+	
 .inner-builder
 	display: grid
 	grid-gap: 20px
