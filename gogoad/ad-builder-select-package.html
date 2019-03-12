@@ -46,10 +46,10 @@
 			<span class="clients-ad-cost">YOUR AD COST:  Rs. <span class="cost-number">900</span></span>
 			<div class="container flex">
 				<section class="select-package__orders-choose">
-					<article class="select-item pick-popular-editions global-box-shadow">
+					<article class="select-item pick-popular-editions complete global-box-shadow">
 						<div class="title-builder">
 							<span>1</span>
-							<h4>PICK ANY POPULAR PACKAGE OR CHOOSE EDITIONS</h4>
+							<h4>PICK ANY POPULAR PACKAGE OR CHOOSE EDITIONS <span class="edit">Edit</span></h4>
 						</div>
 						<div class="inner-item">
 							<span class="inner-item_title">Your Selected Newspaper: Sakshi</span>
@@ -248,7 +248,7 @@
 							<span class="global-btn">continue</span>		
 						</div>
 					</article>
-					<article class="select-item compose-ad global-box-shadow">
+					<article class="select-item compose-ad active global-box-shadow">
 						<div class="title-builder">
 							<span>2</span>
 							<h4>COMPOSE YOUR AD</h4>
@@ -336,7 +336,7 @@
 							<span class="global-btn">select dates</span>
 						</div>			
 					</article>
-					<article class="select-item own-dates active global-box-shadow">
+					<article class="select-item own-dates global-box-shadow">
 						<div class="title-builder">
 							<span>3</span>
 							<h4>SELECT OFFERS OR YOUR OWN DATES</h4>
@@ -389,7 +389,41 @@
 									</div>
 								</div>
 							</div>
-							<span class="global-btn">CONTINUE TO SUMMARY</span>
+							<span class="select-date-text">Select date of publish</span>
+							<div class="calendar-wrap flex">
+								<div class="calendar">
+									<table id="calendar2">
+										<thead>
+											<tr>
+												<td>‹</td>
+												<td colspan="5"></td>
+												<td>›</td>
+											</tr>
+											<tr>
+												<td>Sun</td>
+												<td>Mon</td>
+												<td>Tue</td>
+												<td>Wed</td>
+												<td>Thur</td>
+												<td>Fri</td>
+												<td>Sat</td>
+											</tr>
+										</thead>
+										<tbody>
+										</tbody>
+									</table>
+									<div class="details-info-calendar">
+										<span>Your Dates</span>
+										<span>Offer Dates</span>
+									</div>
+								</div>
+								<div class="select-date">
+									<span>Selected Dates</span>
+									<span class="selected-date">10/11/2018 <i class="close">X</i></span>
+								</div>
+							</div>
+								
+							<span class="global-btn">CONTINUE TO SUMMARY</span>	
 						</div>
 					</article>
 				</section>
@@ -439,7 +473,7 @@
 		</main>
 	<!-- end main page -->
 	<!-- start footer page -->
-		<footer class="footer-builder-page">
+		<footer class="footer-builder-page select-package">
 			<div class="container">
 				<i>&copy;</i> gogoad, 2019
 			</div>
@@ -448,6 +482,7 @@
 	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/calendar.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

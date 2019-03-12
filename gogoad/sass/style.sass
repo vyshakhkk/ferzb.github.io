@@ -2374,6 +2374,8 @@ footer
 /*************stylesheet*************/
 
 .main-builder-page__select-package
+	.container
+		padding: 20px 30px 0px 
 	.clients-ad-cost
 		display: block
 		width: 218px
@@ -2385,10 +2387,13 @@ footer
 		background: #003A5F
 		margin: 14px 0px 14px auto
 	.select-package__orders-choose
-		max-width: 750px
+		max-width: 710px
 		-webkit-flex-grow: 1 
 		flex-grow: 1
+		margin-bottom: 30px 
 		margin-right: 20px
+		@media screen and (min-width: 800px)
+			max-width: 750px
 		.select-item
 			background: #FFF 
 			margin-bottom: 30px
@@ -2403,6 +2408,11 @@ footer
 						color: #fff
 				.inner-item
 					display: block
+			&.complete
+				.title-builder
+					h4
+						.edit
+							display: block
 			.title-builder
 				background: #FFF
 				display: flex
@@ -2433,6 +2443,20 @@ footer
 					font-size: 16px
 					font-weight: bold
 					color: #2a314e
+					display: flex
+					-webkit-justify-content: space-between
+					justify-content: space-between
+					-webkit-align-items: center
+					align-items: center
+					width: 100%
+					.edit
+						width: 98px
+						text-align: center
+						background: #1D90F2 
+						display: none
+						&:hover
+							background: #100F0E 
+
 			.inner-item
 				background: #FFF
 				display: none
@@ -2740,7 +2764,7 @@ footer
 			.inner-item
 				.popular-offer_carousel
 					.owl-item
-						max-width: 220px
+						max-width: 215px
 					.popular-offer_carousel_item
 						background: #F5F5F5
 						padding-bottom: 10px
@@ -2755,11 +2779,11 @@ footer
 							margin: 0px 7px
 							background-color: #FFB9B9
 							font-size: 16px
-							color: #DD3A3A
-					 
+							color: #DD3A3A					 
 	.select-package__order-status
 		max-width: 310px
 		width: 100%
+		margin-bottom: 30px
 		background: #FFF 
 		padding: 18px 16px
 		.section-title
@@ -2834,7 +2858,112 @@ footer
 				margin-bottom: 6px 
 			.ad-category, .ad-type, .box-title
 				display: block
+	.calendar-wrap
+		border-bottom: 1px solid #e1e1e1
+		padding-bottom: 38px
+		margin-right: 20px
+		.calendar
+			display: inline-block
+			border: 1px solid #f1f0f0
+			padding: 10px
+			color: #010101
+			thead
+				tr
+					font-weight: bold
+					&:nth-child(1)
+						text-align: center
+						text-transform: uppercase
+						cursor: pointer
+					&:nth-child(2)
+						-webkit-box-shadow: 0 1px 0 #f1f0f0 
+						box-shadow: 0 1px 0 #f1f0f0
+						td
+							padding: 8px 16px
+			tbody
+				td
+					text-align: center
+					padding: 10px
+			.details-info-calendar
+				border-top: 1px solid #f1f0f0
+				padding: 10px 10px 0px
+				font-size: 15px
+				color: #000
+				display: flex
+				-webkit-justify-content: flex-end
+				justify-content: flex-end
+				span
+					display: flex
+					-webkit-align-items: center
+					align-items: center
+					&:before
+						display: inline-block
+						content: ""
+						width: 16px
+						height: 16px
+						-webkit-border-radius: 50% 
+						border-radius: 50% 
+						margin: 0px 10px
+					&:nth-child(1)
+						&:before
+					 		background: #2A314E
+					&:nth-child(2)
+						&:before
+					 		background: #f6c900
+		.select-date
+			-webkit-flex-grow: 1
+			flex-grow: 1
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			-webkit-align-items: center
+			align-items: center
+			span
+				&:first-child
+					color: #2A314E
+					font-size: 16px
+					font-weight: bold
+					display: block
+					margin-bottom: 30px
+			.selected-date
+				background: #2a314e
+				width: 160px
+				display: flex
+				-webkit-justify-content: space-between
+				justify-content: space-between
+				-webkit-border-radius: 6px 
+				border-radius: 6px
+				color: #fff
+				font-weight: bold
+				padding: 10px 15px 
+				.close
+					cursor: pointer  	
 
+.select-date-text
+	display: flex
+	-webkit-align-items: center
+	align-items: center
+	font-size: 16px
+	color: #000
+	margin-bottom: 30px
+	&:before
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		font-size: 18px
+		content: "or"
+		margin-right: 10px 
+		width: 50px
+		height: 50px
+		-webkit-border-radius: 50% 
+		border-radius: 50%
+		background: #CCC
+		color: #000  
+.select-package
+	.container
+		padding: 0px 30px 20px 
 /************builder**************/
 /*************** payment ***********/
 /*************stylesheet*************/
@@ -2952,7 +3081,7 @@ footer
 						color: #000
 					&::-ms-input-placeholder
 						color: #000
-	.payment__buttons
+.payment__buttons
 		padding: 20px 0px
 		display: flex
 		-webkit-align-items: center
@@ -3115,6 +3244,101 @@ footer
 		text-align: center
 		font-weight: bold			
 
+/************builder**************/
+/*************** review checkout ***********/
+/*************stylesheet*************/
+
+.main-builder-page__review-checkout
+	.container
+		background: #FFF
+		margin-top: 30px  
+	.review-checkout__content
+		color: #000
+		font-size: 16px
+		border-bottom: 1px solid #e1e1e1
+		padding-bottom: 30px 
+		.payment-successful__title
+			font-size: 24px
+			color: #000
+			font-weight: bold
+			margin-bottom: 10px
+		.content_box
+			margin-top: 30px
+			&>div
+				border-right: 1px solid #e1e1e1
+				&:last-child
+					border: none
+		.description
+			max-width: 315px
+			min-height: 359px 
+			width: 100%
+			p
+				margin-bottom: 14px
+				display: flex 
+				span
+					font-weight: bold
+					margin-left: 10px
+					max-width: 160px
+					display: inline-block
+		.preveiew
+			max-width: 380px
+			width: 100%
+			padding: 0px 20px
+			.preview-controller
+				padding: 10px 0px
+				margin-bottom: 10px
+				font-size: 16px
+				color: #666
+				font-weight: bold
+				span
+					cursor: pointer
+					padding-bottom: 4px 
+				span:last-child
+					margin-left: 20px 
+				.active
+					color: #2A314E
+					-webkit-box-shadow: 0px 2px 0px 0px #2A314E
+					box-shadow: 0px 2px 0px 0px #2A314E
+			.ad-preview, .digital-preview
+				max-height: 310px
+				overflow-y: scroll 
+				display: none
+				&.active
+					display: block
+			.digital-preview
+				p
+					background: #FCC
+					width: 286px
+					padding: 26px
+					font-size: 16px
+					color: #000
+					font-weight: bold  
+		.price
+			max-width: 315px
+			width: 100%
+			padding-left: 20px
+			.title
+				font-size: 16px
+				color: #2A314E
+				font-weight: bold
+				text-align: left 
+			ul
+				li
+					display: flex
+					-webkit-justify-content: space-between
+					justify-content: space-between
+					color: #333
+					padding: 7px 0px
+					&:nth-child(3)
+						border-bottom: 1px solid #CCC
+					&:nth-child(4)
+						border-bottom: 1px solid #CCC 
+					&:nth-child(6)
+						border-bottom: 1px solid #CCC 
+					&:last-child
+						font-weight: bold
+						margin-top: 10px 
+
 
 .section-builder-main
 	display: grid
@@ -3124,7 +3348,7 @@ footer
 		&:nth-child(4)
 			background: #FFF
 			padding: 16px 
-	
+
 .change-marker
 	color: #f6c900
 	padding: 12px 24px

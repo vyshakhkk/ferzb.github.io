@@ -65,6 +65,17 @@ $(document).ready(function() {
 	});
 	/*end builder's script active*/
 
+	var preview_controller = $('.main-builder-page__review-checkout').find('.preview-controller');
+	var preview_controller_btn = preview_controller.find('span');
+	console.log(preview_controller_btn);
+	preview_controller_btn.click(function() {
+		var data_name = $(this).attr('data-name');
+		preview_controller_btn.removeClass('active')
+		$(this).addClass('active');
+		$('.ad-info-preview').removeClass('active');
+		$('.' + data_name).addClass('active');
+	});
+
 	$('.dropdown-link').click(function() {
 		$('.dropdown-block').slideToggle();
 	});
