@@ -1,0 +1,492 @@
+/****Grid layout settings****/
+
+/*General for documetn settings*/
+
+/*Color*/
+
+/*Typography*/
+
+/*h1*/
+
+/*nav block*/
+
+/*section block*/
+
+/*container block*/
+
+/*wrapper block*/
+
+/*nav toggle*/
+
+/*btn up*/
+
+@import url("grid.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+header {
+  background: #0b2241;
+  color: #FFF;
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background: #0b2241;
+  padding-top: 50px;
+  padding-left: 50px;
+  height: 100vh;
+  width: 65vw;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+header nav.active {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+header .menu-list a {
+  text-transform: uppercase;
+}
+
+header .logo {
+  max-width: 147px;
+  max-height: 84px;
+}
+
+.overlay {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+.menu-list a {
+  padding: 5px 0px;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-list a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #fff;
+  height: 2px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.menu-list a:hover {
+  background: none;
+  color: inherit;
+}
+
+.menu-list a:hover:before {
+  left: 20%;
+  right: 20%;
+}
+
+.menu-list a.active {
+  color: inherit;
+}
+
+.menu-list a.active:before {
+  left: 20%;
+  right: 20%;
+}
+
+footer {
+  background: #0b2241;
+  text-align: center;
+  font-size: 13px;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+}
+
+/*********home page**********/
+
+/*********stylesheet**********/
+
+.home-page__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home-page__header .container {
+  padding: 45px 20px 45px 20px;
+}
+
+.home-page__content {
+  height: 100vh;
+  width: 100%;
+  background: #0b2241;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.home-page__content .img_logo {
+  max-width: 416px;
+  max-height: 235px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+/*********how we do page**********/
+
+/*********stylesheet**********/
+
+.how-we-do__content {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.content__img {
+  overflow: hidden;
+  max-height: 250px;
+  width: 100%;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.content__img img {
+  width: 100%;
+}
+
+.content__text {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.content__text .title-page {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #4E1B1A;
+  margin-bottom: 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+.content__text .title-page:after {
+  height: 1px;
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 153px;
+  background: #0B1831;
+}
+
+.content__text p {
+  max-width: 630px;
+}
+
+/*********contact page**********/
+
+/*********stylesheet**********/
+
+.contact-page__content .title-page {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #4e1b1a;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-page__content .title-page:after {
+  height: 1px;
+  content: "";
+  display: block;
+  margin-top: 6px;
+  width: 53px;
+  background: #0B1831;
+}
+
+.contact-page__content form {
+  padding-top: 30px;
+}
+
+.contact-page__content input,
+.contact-page__content select,
+.contact-page__content textarea {
+  display: block;
+  border: none;
+  background: #f4f3f3;
+}
+
+.contact-page__content label,
+.contact-page__content span {
+  font-size: 14px;
+  color: #0C2A4D;
+  cursor: pointer;
+}
+
+.contact-page__content .application-info,
+.contact-page__content .financial-info {
+  margin-bottom: 20px;
+}
+
+.contact-page__content .application-info .box-1,
+.contact-page__content .financial-info .box-1 {
+  width: 100%;
+  min-width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-page__content .application-info .box-2,
+.contact-page__content .financial-info .box-2 {
+  width: 190px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-page__content .application-info .box-3,
+.contact-page__content .financial-info .box-3 {
+  width: 100%;
+  min-width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-page__content .application-info .box-3 input,
+.contact-page__content .financial-info .box-3 input {
+  height: 80px;
+}
+
+.contact-page__content .application-info input,
+.contact-page__content .application-info select,
+.contact-page__content .financial-info input,
+.contact-page__content .financial-info select {
+  padding: 10px;
+  width: 100%;
+}
+
+.contact-page__content .application-info .radio-btn,
+.contact-page__content .financial-info .radio-btn {
+  margin-bottom: 20px;
+}
+
+.contact-page__content .application-info .radio-btn div,
+.contact-page__content .financial-info .radio-btn div {
+  height: 40px;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.contact-page__content .application-info .radio-btn label,
+.contact-page__content .financial-info .radio-btn label {
+  text-transform: uppercase;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+.contact-page__content .application-info .radio-btn label:before,
+.contact-page__content .financial-info .radio-btn label:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #cdcdcd;
+  background: #f4f2f2;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.contact-page__content .application-info .radio-btn label:after,
+.contact-page__content .financial-info .radio-btn label:after {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  background: #cdcdcd;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.contact-page__content .application-info .radio-btn input,
+.contact-page__content .financial-info .radio-btn input {
+  display: none;
+}
+
+.contact-page__content .application-info .radio-btn input:checked + label:after,
+.contact-page__content .financial-info .radio-btn input:checked + label:after {
+  opacity: 1;
+}
+
+.contact-page__content .application-info select,
+.contact-page__content .financial-info select {
+  height: 40px;
+}
+
+.contact-page__content .financial-info {
+  margin-bottom: 20px;
+}
+
+.contact-page__content .financial-info .box-4 {
+  width: 100%;
+  min-width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-page__content .financial-info .box-5 {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.contact-page__content .client-bio {
+  margin-right: 20px;
+}
+
+.contact-page__content .client-bio textarea {
+  width: 100%;
+  padding: 20px;
+  height: 120px;
+}
+
+.contact-page__content .form-btn {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  border: none;
+  background: #0b2241;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  header nav {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  header nav {
+    padding-top: 0;
+    padding-left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    position: static;
+    height: auto;
+    width: auto;
+  }
+
+  .how-we-do__content {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .content__img {
+    max-height: 100%;
+    display: block;
+    width: auto;
+  }
+
+  .content__img img {
+    width: auto;
+    height: 100%;
+  }
+
+  .content__text {
+    padding: 150px 40px 40px;
+  }
+
+  .contact-page__content .application-info .box-1,
+  .contact-page__content .financial-info .box-1 {
+    width: calc(25% - 20px);
+    min-width: 235px;
+  }
+
+  .contact-page__content .application-info .box-3,
+  .contact-page__content .financial-info .box-3 {
+    width: calc(50% - 20px);
+    min-width: 235px;
+  }
+
+  .contact-page__content .financial-info .box-4 {
+    width: calc(50% - 20px);
+    min-width: 235px;
+  }
+}
