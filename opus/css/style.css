@@ -29,6 +29,11 @@
 header {
   background: #0b2241;
   color: #FFF;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 header nav {
@@ -189,6 +194,7 @@ footer {
 
 .how-we-do__content {
   max-width: 1500px;
+  padding-top: 124px;
   margin: auto;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -245,6 +251,11 @@ footer {
 
 /*********stylesheet**********/
 
+.contact-page__content {
+  padding-top: 124px;
+  max-width: 1500px;
+}
+
 .contact-page__content .title-page {
   text-transform: uppercase;
   font-weight: 300;
@@ -278,7 +289,6 @@ footer {
 .contact-page__content span {
   font-size: 14px;
   color: #0C2A4D;
-  cursor: pointer;
 }
 
 .contact-page__content .application-info,
