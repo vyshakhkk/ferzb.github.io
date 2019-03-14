@@ -278,7 +278,7 @@ footer
 	label, span
 		font-size: 14px
 		color: #0C2A4D
-	.application-info, .financial-info
+	.application-info, .financial-info, .policy-info
 		margin-bottom: 20px
 		.box-1
 			width: 100%
@@ -302,6 +302,14 @@ footer
 				min-width: 235px
 			input
 				height: 80px
+		.box-6
+			width: 100%
+			min-width: 100%
+			margin-right: 20px
+			margin-bottom: 20px 
+			@media screen and (min-width: #{$dw-640})
+				width: calc(33.3333333% - 20px)
+				min-width: 235px  
 		input, select
 			padding: 10px
 			width: 100%

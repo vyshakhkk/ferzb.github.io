@@ -346,12 +346,14 @@ footer {
 }
 
 .contact-page__content .application-info,
-.contact-page__content .financial-info {
+.contact-page__content .financial-info,
+.contact-page__content .policy-info {
   margin-bottom: 20px;
 }
 
 .contact-page__content .application-info .box-1,
-.contact-page__content .financial-info .box-1 {
+.contact-page__content .financial-info .box-1,
+.contact-page__content .policy-info .box-1 {
   width: 100%;
   min-width: 100%;
   margin-right: 20px;
@@ -359,14 +361,16 @@ footer {
 }
 
 .contact-page__content .application-info .box-2,
-.contact-page__content .financial-info .box-2 {
+.contact-page__content .financial-info .box-2,
+.contact-page__content .policy-info .box-2 {
   width: 190px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
 .contact-page__content .application-info .box-3,
-.contact-page__content .financial-info .box-3 {
+.contact-page__content .financial-info .box-3,
+.contact-page__content .policy-info .box-3 {
   width: 100%;
   min-width: 100%;
   margin-right: 20px;
@@ -374,25 +378,39 @@ footer {
 }
 
 .contact-page__content .application-info .box-3 input,
-.contact-page__content .financial-info .box-3 input {
+.contact-page__content .financial-info .box-3 input,
+.contact-page__content .policy-info .box-3 input {
   height: 80px;
+}
+
+.contact-page__content .application-info .box-6,
+.contact-page__content .financial-info .box-6,
+.contact-page__content .policy-info .box-6 {
+  width: 100%;
+  min-width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-page__content .application-info input,
 .contact-page__content .application-info select,
 .contact-page__content .financial-info input,
-.contact-page__content .financial-info select {
+.contact-page__content .financial-info select,
+.contact-page__content .policy-info input,
+.contact-page__content .policy-info select {
   padding: 10px;
   width: 100%;
 }
 
 .contact-page__content .application-info .radio-btn,
-.contact-page__content .financial-info .radio-btn {
+.contact-page__content .financial-info .radio-btn,
+.contact-page__content .policy-info .radio-btn {
   margin-bottom: 20px;
 }
 
 .contact-page__content .application-info .radio-btn div,
-.contact-page__content .financial-info .radio-btn div {
+.contact-page__content .financial-info .radio-btn div,
+.contact-page__content .policy-info .radio-btn div {
   height: 40px;
   display: flex;
   -webkit-align-items: center;
@@ -400,7 +418,8 @@ footer {
 }
 
 .contact-page__content .application-info .radio-btn label,
-.contact-page__content .financial-info .radio-btn label {
+.contact-page__content .financial-info .radio-btn label,
+.contact-page__content .policy-info .radio-btn label {
   text-transform: uppercase;
   display: flex;
   -webkit-align-items: center;
@@ -410,7 +429,8 @@ footer {
 }
 
 .contact-page__content .application-info .radio-btn label:before,
-.contact-page__content .financial-info .radio-btn label:before {
+.contact-page__content .financial-info .radio-btn label:before,
+.contact-page__content .policy-info .radio-btn label:before {
   content: "";
   display: block;
   width: 22px;
@@ -423,7 +443,8 @@ footer {
 }
 
 .contact-page__content .application-info .radio-btn label:after,
-.contact-page__content .financial-info .radio-btn label:after {
+.contact-page__content .financial-info .radio-btn label:after,
+.contact-page__content .policy-info .radio-btn label:after {
   content: "";
   display: block;
   opacity: 0;
@@ -438,17 +459,20 @@ footer {
 }
 
 .contact-page__content .application-info .radio-btn input,
-.contact-page__content .financial-info .radio-btn input {
+.contact-page__content .financial-info .radio-btn input,
+.contact-page__content .policy-info .radio-btn input {
   display: none;
 }
 
 .contact-page__content .application-info .radio-btn input:checked + label:after,
-.contact-page__content .financial-info .radio-btn input:checked + label:after {
+.contact-page__content .financial-info .radio-btn input:checked + label:after,
+.contact-page__content .policy-info .radio-btn input:checked + label:after {
   opacity: 1;
 }
 
 .contact-page__content .application-info select,
-.contact-page__content .financial-info select {
+.contact-page__content .financial-info select,
+.contact-page__content .policy-info select {
   height: 40px;
 }
 
@@ -540,14 +564,23 @@ footer {
   }
 
   .contact-page__content .application-info .box-1,
-  .contact-page__content .financial-info .box-1 {
+  .contact-page__content .financial-info .box-1,
+  .contact-page__content .policy-info .box-1 {
     width: calc(25% - 20px);
     min-width: 235px;
   }
 
   .contact-page__content .application-info .box-3,
-  .contact-page__content .financial-info .box-3 {
+  .contact-page__content .financial-info .box-3,
+  .contact-page__content .policy-info .box-3 {
     width: calc(50% - 20px);
+    min-width: 235px;
+  }
+
+  .contact-page__content .application-info .box-6,
+  .contact-page__content .financial-info .box-6,
+  .contact-page__content .policy-info .box-6 {
+    width: calc(33.3333333% - 20px);
     min-width: 235px;
   }
 
