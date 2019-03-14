@@ -34,6 +34,19 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .container {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 header nav {
@@ -71,7 +84,38 @@ header .menu-list a {
 
 header .logo {
   max-width: 147px;
-  max-height: 84px;
+  max-height: 100%;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .logo a {
+  display: block;
+}
+
+header.fixed {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header.fixed .container {
+  padding: 10px 20px;
+}
+
+header.fixed .logo {
+  max-width: 90px;
+  max-height: 100%;
+}
+
+header.fixed .logo img {
+  width: 100%;
+  height: auto;
 }
 
 .overlay {
@@ -469,7 +513,8 @@ footer {
   }
 
   .content__img {
-    max-height: 100%;
+    max-width: 454px;
+    max-height: 813px;
     display: block;
     width: auto;
   }

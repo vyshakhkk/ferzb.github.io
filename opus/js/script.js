@@ -54,9 +54,11 @@ $(document).ready(function() {
 	$(window).scroll(function(){
 		if ($(window).scrollTop() > 200){
 			$('.btn-up').addClass('active');
+			$('header').addClass('fixed')
 		}
 		else{
 			$('.btn-up').removeClass('active');
+			$('header').removeClass('fixed')
 		}
 	});
 	
