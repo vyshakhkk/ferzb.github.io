@@ -253,13 +253,11 @@ header
 		p
 			font-size: 16px
 
-.materials
-	background-image: url('../img/Layer-4-copy.jpg')
+.materials, .tried-brands
 	-webkit-background-size: cover 
 	-o-background-size: cover 
 	background-size: cover
 	color: #FFF
-	text-align: center
 	margin: 0 2%
 	background-repeat: no-repeat 
 	.title-section
@@ -267,6 +265,10 @@ header
 	p
 		display: block
 		margin: 40px 0px 80px 
+
+.materials
+	background-image: url('../img/Layer-4-copy.jpg')
+	text-align: center
 
 .customers
 	.customers-carousel
@@ -342,7 +344,7 @@ header
 			font-weight: bold
 			&:first-child
 				text-decoration: underline 
-				
+			
 footer
 	font-weight: bold
 	color: #000
@@ -351,3 +353,343 @@ footer
 		width: 59px
 		display: block
 		margin-bottom: 10px 
+
+/*******about page*******/
+.about-page_about
+	.title-section
+		font-size: 30px
+		margin: 0px 0px 20px
+		span
+			display: block
+			color: #F5A500 
+			font-size: 24px
+			margin-bottom: 20px
+	.content-text
+		margin-bottom: 40px
+
+.main_about-page
+	.sets-us-box
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		&:last-child
+			&:after
+				display: none
+		&:after
+			content: ""
+			display: none
+			width: 32px
+			height: 32px
+			margin-top: -160px 
+			margin-left: 10%
+			background-image: url('../img/arrow-right.svg')
+			background-repeat: no-repeat
+			@media screen and (min-width: #{$dw-1100})
+				display: block
+		&>div
+			width: auto
+			@media screen and (min-width: #{$dw-780})
+				width: 260px
+
+.tried-brands
+	background-image: url('../img/Layer-5-copy.jpg')
+	font-weight: 300
+	p
+		margin-bottom: 0 
+	
+.view-details
+	.title-section
+		margin-bottom: 40px
+	.global-btn
+		&:hover
+			background: #FFF
+			-webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1) 
+			box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1) 
+
+.footer_about-page
+	text-align: center
+	.social-links
+		margin: 30px 0px 40px
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		a
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			height: 80px
+			width: 80px
+			margin: 10px
+			background: #f3a61d
+			-webkit-border-radius: 50% 
+			border-radius: 50%  
+			img
+				width: auto
+				display: block
+				margin-top: 10px
+	.contanct-links
+		margin-bottom: 30px
+		a
+			font-size: 18px
+			color: #4123D9
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			&:after
+				content: "|"
+				display: block
+				margin: 0px 16px 
+			&:last-child
+				&:after
+					display: none
+	.copyright
+		font-weight: 700
+		 
+/*box*/
+.road-to-create
+	.road-box
+		font-weight: 700
+		position: relative
+		width: 30%
+		text-align: center
+		&.active
+			&:before
+				position: relative
+				z-index: 2
+				background: #f3a61d
+				-webkit-box-shadow: 0px 0px 5px 5px rgba(243, 166, 29, .5)
+				box-shadow: 0px 0px 5px 5px rgba(243, 166, 29, .5)
+		&:after
+			content: ""
+			display: block
+			height: 1px
+			width: 100%
+			position: absolute
+			background: #cfcfcf
+			top: 21px
+			right: -55% 
+		&:before
+			content: "" 
+			width: 45px
+			height: 45px
+			display: block
+			background: #cfcfcf
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			margin: 0px auto  30px
+		&:last-child
+			&:after
+				display: none
+				
+.custom-box-carousel
+	.custom-box-slider
+		position: relative
+		.owl-nav
+			button
+				position: absolute
+				top: 30%
+				-webkit-transform: translateY(-50%) 
+				-moz-transform: translateY(-50%) 
+				-ms-transform: translateY(-50%) 
+				-o-transform: translateY(-50%) 
+				transform: translateY(-50%)
+				span
+					font-size: 70px
+					color: #4123d9
+					-webkit-transition: 0.3s 
+					-moz-transition: 0.3s 
+					-ms-transition: 0.3s 
+					-o-transition: 0.3s 
+					transition: 0.3s 
+				&:last-child
+					right: 0
+				&.disabled
+					span
+						color: #DCDCDC 
+		.slider-item
+			font-size: 24px
+			color: #424242
+			text-align: center
+			margin-bottom: 4px
+			padding-bottom: 6px
+			-webkit-transition: 0.3s 
+			-moz-transition: 0.3s 
+			-ms-transition: 0.3s 
+			-o-transition: 0.3s 
+			transition: 0.3s 
+			&:hover
+				color: #4123D9
+				font-weight: 700
+				-webkit-box-shadow: 0px 4px 0px -1px #4123D9 
+				box-shadow: 0px 4px 0px -1px #4123D9   
+		.img
+			width: 50px
+			height: 50px
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			background: #8E8E8E
+			margin: 0px auto 30px 
+			
+.tabs-box
+	.tabs-wrap
+		-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3)
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3)
+		padding-bottom: 60px
+		margin-bottom: 30px
+		width: 100%
+		@media screen and (min-width: #{$dw-960})
+			width: calc(70% - 10px)
+	.tabs
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		padding: 0px 16px
+		border-bottom: 1px solid #ececec
+		@media screen and (min-width: #{$dw-640})
+			padding: 0px 36px
+		.tab-item
+			font-size: 10px
+			color: #191919
+			cursor: pointer
+			padding: 30px 0px
+			-webkit-transition: 0.3s 
+			-moz-transition: 0.3s 
+			-ms-transition: 0.3s 
+			-o-transition: 0.3s 
+			transition: 0.3s
+			@media screen and (min-width: #{$dw-480})
+				font-size: 14px
+			@media screen and (min-width: #{$dw-640})
+				font-size: 24px
+			&.active, &:hover
+				color: #f3a61d
+				font-weight: 700 
+				-webkit-box-shadow: 0px 4px 0px -1px #F3A61D
+				box-shadow: 0px 4px 0px -1px #F3A61D
+	.paints-box
+		padding: 0px 10px
+		@media screen and (min-width: #{$dw-640})
+			padding: 0px 20px
+		.paints-item
+			padding: 16px 0px
+			display: flex
+			-webkit-justify-content: space-between
+			justify-content: space-between
+			-webkit-align-items: flex-start
+			align-items: flex-start
+			border-bottom: 1px solid #ececec
+			@media screen and (min-width: #{$dw-640})
+				-webkit-align-items: center
+				align-items: center
+			.title-block
+				font-weight: 700
+				color: #000
+				font-size: 16px
+				line-height: 28px
+				@media screen and (min-width: #{$dw-640})
+					font-size: 21px
+				span
+					font-weight: 300
+					display: block
+					i
+						margin-right: 20px
+			.tab-btn
+				color: #F3A61D
+				font-weight: 700
+				width: 95px
+				height: 25px
+				margin-left: 20px 
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				-webkit-justify-content: center
+				justify-content: center 
+				border: 2px solid #F3A61D
+				-webkit-border-radius: 6px 
+				border-radius: 6px
+				cursor: pointer
+				-webkit-transition: 0.3s 
+				-moz-transition: 0.3s 
+				-ms-transition: 0.3s 
+				-o-transition: 0.3s 
+				transition: 0.3s
+				@media screen and (min-width: #{$dw-640})
+					width: 145px
+					height: 45px
+				&:hover
+					background: #F3A61D
+					color: #fff  
+	.user-box
+		margin-bottom: 30px
+		-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3)
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3)
+		width: 100%
+		@media screen and (min-width: #{$dw-960})
+			width: calc(30% - 10px)
+		.title-box
+			text-align: center
+			padding: 30px 0px
+			font-size: 24px
+			color: #000
+			display: block
+			border-bottom: 1px solid #ececec
+		.add-item-box
+			padding: 0px 20px
+			.add-item
+				padding: 10px 0px
+				border-bottom: 1px solid #ececec
+				.title
+					color: #000
+					font-weight: 700
+					font-size: 21px 
+				.number-item
+					display: flex
+					-webkit-align-items: center
+					align-items: center
+					margin-top: 10px 
+					.minuns-item
+						display: flex
+						-webkit-align-items: center
+						align-items: center
+						-webkit-justify-content: center
+						justify-content: center
+						cursor: pointer
+						width: 33px
+						height: 33px
+						background: #F3A61D
+						-webkit-border-radius: 50% 
+						border-radius: 50%
+						margin-right: 10px
+						font-size: 30px
+						color: #fff
+						font-weight: 700
+					.plus-item
+						display: flex
+						-webkit-align-items: center
+						align-items: center
+						-webkit-justify-content: center
+						justify-content: center
+						cursor: pointer
+						width: 33px
+						height: 33px
+						background: #50e129
+						-webkit-border-radius: 50% 
+						border-radius: 50%
+						margin-left: 10px
+						margin-right: 10px 
+						font-size: 30px
+						color: #fff
+						font-weight: 700
+					.price
+						margin-left: 10px
+						display: inline-block  
+				.price
+					margin-left: auto
+					font-weight: 700
+					margin-top: 10px  
