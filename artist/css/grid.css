@@ -68,7 +68,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 h4 {
@@ -713,7 +713,7 @@ textarea:-ms-input-placeholder {
 @media screen and (min-width: 640px) {
   html,
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h1 {
@@ -735,7 +735,7 @@ textarea:-ms-input-placeholder {
 
   .section-block {
     margin: 0px;
-    padding: 40px 0px;
+    padding: 20px 0px;
   }
 
   .block-toggle {

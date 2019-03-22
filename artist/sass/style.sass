@@ -128,7 +128,8 @@ header
 	overflow: hidden
 	color: #FFF 
 	font-weight: bold
-	font-weight: 500
+	font-weight: 400
+	font-size: 16px
 	-webkit-border-radius: 40px 
 	border-radius: 40px
 	background: #F3A61D 
@@ -139,7 +140,7 @@ header
 	-o-transition: 0.3s 
 	transition: 0.3s
 	@media screen and (min-width: #{$dw-640})
-		padding: 26px 57px
+		padding: 18px 50px
 	&:before
 		content: ""
 		display: block 
@@ -174,9 +175,12 @@ header
 			transform: translateX(30%) 
 
 .title-section
-	font-size: 24px
 	color: #424242
-	font-weight: 600  
+	font-weight: 300
+/**home page**/
+.home-page
+	.top-page
+		height: 500px 
 
 .top-page
 	background-image: url('../img/homeBg.jpg')
@@ -189,8 +193,7 @@ header
 	align-items: center
 	-webkit-justify-content: center
 	justify-content: center 
-	height: 80vh
-	min-height: 500px 
+	height: 380px
 	color: #FFF
 	text-align: center
 	position: relative
@@ -200,7 +203,7 @@ header
 		height: 100%
 		top: 0
 		left: 0
-		background: rgba(0, 0, 0, 0.1) 
+		background: rgba(0, 0, 0, 0.3) 
 	.wrap
 		max-width: 880px
 		padding: 10px
@@ -210,9 +213,9 @@ header
 		font-size: 24px
 		margin-bottom: 30px
 		@media screen and (min-width: #{$dw-640})
-			font-size: 40px
+			font-size: 35px
 	p
-		font-size: 18px
+		font-size: 15px
 		font-weight: 300
 		display: block
 		margin-bottom: 30px
@@ -223,7 +226,9 @@ header
 		margin: 0px 0px 20px
 		span
 			display: block
-			color: #F5A500 
+			font-size: 18px
+			color: #F5A500
+			font-weight: 600 
 			margin-bottom: 20px
 	.global-btn
 		margin-top: 40px 
@@ -250,8 +255,7 @@ header
 		.title-box
 			margin-bottom: 20px
 			margin-top: 10px
-		p
-			font-size: 16px
+			font-size: 18px
 
 .materials, .tried-brands
 	-webkit-background-size: cover 
@@ -291,7 +295,7 @@ header
 					background: #4123D9   
 		.item-carousel
 			margin: 10px
-			min-height: 350px
+			min-height: 315px
 			position: relative
 			display: flex
 			padding: 5%
@@ -408,8 +412,10 @@ footer
 
 .footer_about-page
 	text-align: center
+	.title-section
+		margin-bottom: 30px
 	.social-links
-		margin: 30px 0px 40px
+		margin: 0px 0px 40px
 		display: flex
 		-webkit-align-items: center
 		align-items: center
@@ -446,17 +452,19 @@ footer
 			&:last-child
 				&:after
 					display: none
-	.copyright
-		font-weight: 700
+.copyright
+	font-weight: 200
+	font-size: 15px
 		 
 /*box*/
 .road-to-create
 	.road-box
-		font-weight: 700
+		font-weight: 300
 		position: relative
 		width: 30%
 		text-align: center
 		&.active
+			font-weight: 700
 			&:before
 				position: relative
 				z-index: 2
@@ -511,7 +519,7 @@ footer
 					span
 						color: #DCDCDC 
 		.slider-item
-			font-size: 24px
+			font-size: 18px
 			color: #424242
 			text-align: center
 			margin-bottom: 4px
@@ -554,9 +562,10 @@ footer
 		@media screen and (min-width: #{$dw-640})
 			padding: 0px 36px
 		.tab-item
-			font-size: 10px
+			font-size: 12px
 			color: #191919
 			cursor: pointer
+			font-weight: 500 
 			padding: 30px 0px
 			-webkit-transition: 0.3s 
 			-moz-transition: 0.3s 
@@ -566,7 +575,7 @@ footer
 			@media screen and (min-width: #{$dw-480})
 				font-size: 14px
 			@media screen and (min-width: #{$dw-640})
-				font-size: 24px
+				font-size: 18px
 			&.active, &:hover
 				color: #f3a61d
 				font-weight: 700 
@@ -593,7 +602,7 @@ footer
 				font-size: 16px
 				line-height: 28px
 				@media screen and (min-width: #{$dw-640})
-					font-size: 21px
+					font-size: 18px
 				span
 					font-weight: 300
 					display: block
@@ -601,7 +610,7 @@ footer
 						margin-right: 20px
 			.tab-btn
 				color: #F3A61D
-				font-weight: 700
+				font-weight: 500
 				width: 95px
 				height: 25px
 				margin-left: 20px 
@@ -634,8 +643,8 @@ footer
 			width: calc(30% - 10px)
 		.title-box
 			text-align: center
-			padding: 30px 0px
-			font-size: 24px
+			padding: 28px 0px
+			font-size: 21px
 			color: #000
 			display: block
 			border-bottom: 1px solid #ececec
@@ -646,8 +655,8 @@ footer
 				border-bottom: 1px solid #ececec
 				.title
 					color: #000
-					font-weight: 700
-					font-size: 21px 
+					font-weight: 500
+					font-size: 18px 
 				.number-item
 					display: flex
 					-webkit-align-items: center
