@@ -1,0 +1,659 @@
+@import 'setting.sass';
+@import url('owl.carousel.min.css');
+
+@font-face
+	font-family: 'URW ImperialT Normal'
+	src: url('../fonts/URWImperialT.ttf')
+	font-weight: normal
+
+@font-face
+	font-family: 'URW ImperialT Bold'
+	src: url('../fonts/URWImperialTExtBol.ttf')
+	font-weight: bold
+
+.col-12
+	-webkit-flex: auto
+	-ms-flex: auto
+	flex: auto
+
+.col-6
+	-webkit-flex: auto
+	-ms-flex: auto
+	flex: auto
+
+.overlay
+	width: 100%
+	height: 100vh
+	position: fixed
+	z-index: 0 
+	top: 0
+	left: 0
+	background: rgba(0, 0, 0, 0.4)
+	display: none
+	&.active
+		display: block
+		
+.page-nav
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1
+	padding-left: 5% 
+	overflow: auto
+	-webkit-transform: translateX(-100%) 
+	-moz-transform: translateX(-100%) 
+	-ms-transform: translateX(-100%) 
+	-o-transform: translateX(-100%) 
+	transform: translateX(-100%) 
+	background: #fff 
+	min-height: 100vh
+	width: 50%
+	-webkit-transition: 0.3s
+	-moz-transition: 0.3s
+	-ms-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	&.active
+		-webkit-transform: translateX(0%) 
+		-moz-transform: translateX(0%) 
+		-ms-transform: translateX(0%) 
+		-o-transform: translateX(0%) 
+		transform: translateX(0%)
+	@media screen and (min-width: 1465px)
+		min-height: 100%
+		width: auto
+		position: static
+		-webkit-transform: none 
+		-moz-transform: none 
+		-ms-transform: none 
+		-o-transform: none 
+		transform: none
+		background: transparent
+		padding-left: 0
+		overflow: visible
+	.menu-list
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		@media screen and (min-width: 1465px)
+			-webkit-flex-direction: row
+			-ms-flex-direction: row
+			flex-direction: row
+			-webkit-align-items: center
+			align-items: center
+		a
+			font-family: 'URW ImperialT Bold'
+			font-size: 16px
+			@media screen and (min-width: 960px)
+				font-size: 21px
+			@media screen and (min-width: 1465px)
+				font-size: 23px
+				
+
+/****main page****/
+.main-page
+	background-image: url('../img/banner.jpg')
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	.overlay-pink
+		width: 100%
+		height: 80%
+		position: absolute
+		z-index: 0 
+		top: 0
+		left: 0
+		background: rgba(247, 221, 201, 0.7)
+		display: block
+	.overlay-black
+		width: 100%
+		height: 20%
+		position: absolute
+		z-index: 0 
+		bottom: 0
+		left: 0
+		background: rgba(0, 0, 0, 0.4)
+		display: block
+
+/*main header*/
+.main-page__header
+	background-image: url('../img/banner.jpg')
+	background-repeat: no-repeat
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	height: 440px
+	position: relative
+	h1
+		font-size: 35px
+		text-align: center
+		font-family: 'URW ImperialT Bold'
+		color: #FFF
+		padding: 0px 2%
+		@media screen and (min-width: 780px)
+			font-size: 7vw
+		@media screen and (min-width: 1720px)
+			font-size: 136px
+		
+/*main description*/	
+.main-page__description
+	padding: 40px 0px
+	background: #F7DDC9
+	position: relative
+	p
+		text-align: center
+		padding: 0px 2%
+		font-family: 'URW ImperialT Bold'
+		padding: 0px 2%
+			font-size: 25px
+		@media screen and (min-width: 1100px)
+			font-size: 40px
+
+/*main video*/			
+.main-page__video
+	position: relative
+	border: 2px solid #fff
+	background: #8b837d 
+	.video-box
+		background: #FFF
+		padding: 20px
+		position: relative
+		.play-video
+			width: 41%
+			height: 65%
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			position: absolute
+			cursor: pointer
+			top: 50%
+			left: 50%
+			background: rgba(0, 0, 0, .5) 
+			-webkit-transform: translate(-50%, -50%) 
+			-moz-transform: translate(-50%, -50%) 
+			-ms-transform: translate(-50%, -50%) 
+			-o-transform: translate(-50%, -50%) 
+			transform: translate(-50%, -50%) 
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			border: 1vw solid #fff
+			&:after
+				content: ""
+				display: block
+				border-top: 4vw solid transparent 
+				border-right: 0px solid transparent 
+				border-bottom: 4vw solid transparent 
+				border-left: 5vw solid #fff 
+	.text-box
+		padding: 0
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		h3, p
+			background: #FFF
+			font-family: 'URW ImperialT Bold'
+		h3
+			text-align: center
+			font-size: 30px
+			padding: 20px
+			@media screen and (min-width: 480px)
+				padding: 20px 50px
+			@media screen and (min-width: 1665px)
+				font-size: 50px
+		p
+			font-size: 16px
+			padding: 20px
+			@media screen and (min-width: 480px)
+				font-size: 25px
+			@media screen and (min-width: 1665px)
+				font-size: 33px 
+
+/*main carousel*/	
+.main-page__carousel
+	position: relative
+	background: #8b837d
+	border: 2px solid #fff
+	margin-top: 40px
+	.page-carousel
+		padding: 0px 30px
+		@media screen and (min-width: #{$dw-480})
+			padding: 0px 80px
+	.item-carousel
+		background: #FFF
+		padding: 10px
+		position: relative
+		.play-video
+			width: 41%
+			height: 65%
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			position: absolute
+			cursor: pointer
+			top: 50%
+			left: 50%
+			background: rgba(0, 0, 0, .5) 
+			-webkit-transform: translate(-50%, -50%) 
+			-moz-transform: translate(-50%, -50%) 
+			-ms-transform: translate(-50%, -50%) 
+			-o-transform: translate(-50%, -50%) 
+			transform: translate(-50%, -50%) 
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			border: 1vw solid #fff
+			&:after
+				content: ""
+				display: block
+				border-top: 2vw solid transparent 
+				border-right: 0px solid transparent 
+				border-bottom: 2vw solid transparent 
+				border-left: 3vw solid #fff 
+	.owl-nav
+		button
+			position: absolute
+			top: 50%
+			left: 0
+			-webkit-transform: translateY(-50%) 
+			-moz-transform: translateY(-50%) 
+			-ms-transform: translateY(-50%) 
+			-o-transform: translateY(-50%) 
+			transform: translateY(-50%)
+			width: 28px
+			height: 50px
+			@media screen and (min-width: #{$dw-480})
+				width: 68px
+				height: 125px
+			span
+				background-image: url('../img/arrow.png')
+				background-repeat: no-repeat
+				-webkit-background-size: 100% 
+				-o-background-size: 100% 
+				background-size: 100%
+				display: block 
+				height: 100%
+				width: 100%
+			&:nth-child(2)
+				left: auto
+				right: 0
+				span
+					-webkit-transform: rotate(180deg) 
+					-moz-transform: rotate(180deg) 
+					-ms-transform: rotate(180deg) 
+					-o-transform: rotate(180deg) 
+					transform: rotate(180deg) 
+
+/*main send message*/				
+.choose-language
+	position: relative
+	font-family: 'URW ImperialT Bold'
+	.container
+		padding-bottom: 0
+	span 
+		font-size: 37px
+	.language
+		background: #8B837D
+		padding: 0px 20px
+		margin-left: 10px  
+		.language-item
+			color: #FFF
+			font-size: 50px
+		.drowdown-btn
+			display: inline-block
+			height: 40px
+			width: 21px
+			cursor: pointer
+			margin-left: 20px
+			position: relative
+			top: 5px
+			-webkit-transform: rotate(-90deg) 
+			-moz-transform: rotate(-90deg) 
+			-ms-transform: rotate(-90deg) 
+			-o-transform: rotate(-90deg) 
+			transform: rotate(-90deg) 
+			background-image: url('../img/arrow.png')
+			background-repeat: no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100%
+
+.main-page__send-message
+	background: #8B837D
+	border: 2px solid #fff
+	position: relative
+	span
+		background: #fff
+		font-size: 13vw
+		color: #8B837D
+		padding: 0
+		@media screen and (min-width: 1460px)
+			font-size: 213px
+	.message-box
+		padding: 0
+		span
+			font-size: 18px
+			padding: 2px 20px
+			height: 87px
+			max-width: 800px
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			@media screen and (min-width: 560px)
+				font-size: 4vw
+			@media screen and (min-width: 1460px)
+				font-size: 58px
+		textarea
+			background: #E2E0DE
+			padding: 5px 20px
+			height: calc(100% - 86px)
+			width: 100%
+	p
+		color: #FFF
+		text-align: center
+		font-size: 18px
+		padding: 20px 0px 
+		@media screen and (min-width: 560px)
+			font-size: 4vw
+		@media screen and (min-width: 1460px)
+			font-size: 50px
+	.user_email
+		margin: 20px 0px 
+		label
+			color: #FFF
+			font-size: 16px
+			margin-bottom: 0
+			@media screen and (min-width: 560px)
+				font-size: 4vw
+			@media screen and (min-width: 1460px)
+				font-size: 50px
+		input
+			display: block
+			border: none
+			margin-left: 10px 
+			color: #8B837D
+			background: #DADAD9
+			font-size: 18px
+			padding: 0px 20px 
+			@media screen and (min-width: 560px)
+				font-size: 4vw
+			@media screen and (min-width: 1460px)
+				font-size: 50px
+	.user_age
+		margin: 20px 0px
+		span
+			color: #FFF
+			font-size: 16px
+			background: transparent 
+			margin-bottom: 0
+			@media screen and (min-width: 560px)
+				font-size: 4vw
+			@media screen and (min-width: 1460px)
+				font-size: 50px
+		label
+			color: #8B837D
+			background: #DADAD9
+			border: 1px solid #DADAD9 
+			font-size: 16px
+			margin-bottom: 0
+			margin-left: 10px
+			padding: 0px 5px
+			cursor: pointer  
+			@media screen and (min-width: 560px)
+				font-size: 4vw
+			@media screen and (min-width: 1460px)
+				font-size: 50px
+		input
+			display: none
+			&:checked + label
+				background: transparent
+				color: #fff 
+				
+	.checkbox
+		margin-bottom: 20px
+		input
+			display: none
+			&:checked + label:after
+				display: block
+		label
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			position: relative
+			cursor: pointer
+			font-size: 16px
+			margin-bottom: 0
+			color: #FFF 
+			@media screen and (min-width: 560px)
+				font-size: 4vw
+			@media screen and (min-width: 1460px)
+				font-size: 50px
+			&:before
+				content: ""
+				display: block
+				width: 4vw
+				height: 4vw
+				margin-right: 10px
+				border: 2px solid #fff
+				@media screen and (min-width: 1460px)
+					width: 50px
+					height: 50px
+			&:after 
+				content: ""
+				display: none
+				width: 3vw
+				height: 3vw 
+				background-image: url('../img/check.png')
+				-webkit-background-size: 100% 
+				-o-background-size: 100% 
+				background-size: 100% 
+				background-repeat: no-repeat
+				position: absolute
+				top: 50%
+				left: 1%
+				-webkit-transform: translateY(-50%) 
+				-moz-transform: translateY(-50%) 
+				-ms-transform: translateY(-50%) 
+				-o-transform: translateY(-50%) 
+				transform: translateY(-50%)
+				@media screen and (min-width: 1460px)
+					width: 41px
+					height: 36px
+	button
+		font-size: 20px
+		color: #8B837D
+		background: #FFF 
+		border: none
+		padding: 10px 20px
+		@media screen and (min-width: 560px)
+			font-size: 4vw
+		@media screen and (min-width: 1460px)
+			font-size: 58px
+
+/*main tabs section*/		
+.main-page__tabs-section
+	position: relative
+	.tabs-links
+		background: #645c56 
+		border: 2px solid #fff 
+		margin: 40px 0px 0px
+		li
+			color: #FFF
+			font-size: 20px
+			margin: 10px 2% 
+			@media screen and (min-width: 560px)
+				font-size: 4vw
+			@media screen and (min-width: 1460px)
+				font-size: 58px
+	h4
+		color: #000
+		font-size: 16px
+		padding: 20px 
+		display: block
+		text-align: center
+		@media screen and (min-width: 560px)
+			font-size: 4vw
+		@media screen and (min-width: 1460px)
+			font-size: 50px
+	.tab-item
+		background: #8B837D 
+		border: 2px solid #fff
+		margin-bottom: 60px
+		&:last-child
+			margin-bottom: 0
+		h4
+			padding: 0
+			color: #fff
+			text-align: left 
+			margin-bottom: 10px
+	.video
+		background: #FFF
+		padding: 10px
+		position: relative
+		.play-video
+			width: 41%
+			height: 64%
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			position: absolute
+			cursor: pointer
+			top: 50%
+			left: 50%
+			background: rgba(0, 0, 0, .5) 
+			-webkit-transform: translate(-50%, -50%) 
+			-moz-transform: translate(-50%, -50%) 
+			-ms-transform: translate(-50%, -50%) 
+			-o-transform: translate(-50%, -50%) 
+			transform: translate(-50%, -50%) 
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			border: .5vw solid #fff
+			&:after
+				content: ""
+				display: block
+				border-top: 1.5vw solid transparent 
+				border-right: 0px solid transparent 
+				border-bottom: 1.5vw solid transparent 
+				border-left: 2vw solid #fff 
+	.text
+		padding-left: 0px
+		margin-top: 30px
+		@media screen and (min-width: #{$dw-780})
+			padding-left: 40px
+			margin-top: 0
+			
+
+.main-page__footer
+	position: relative
+	.title-footer
+		color: #FFF
+		text-align: center
+		display: block
+		margin-bottom: 30px 
+		font-size: 18px
+		@media screen and (min-width: 560px)
+			font-size: 3vw
+		@media screen and (min-width: 1460px)
+			font-size: 42px
+	.social-links
+		a
+			width: 8vw
+			height: 8vw
+			min-width: 55px
+			min-height: 55px
+			max-width: 100px
+			max-height: 100px  
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			background: rgba(70, 69, 66, 0.7)
+			margin: 0px 2% 
+			padding: 10px
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			img
+				height: 65%
+				width: auto 
+	.last-box
+		margin-top: 40px
+		.logo
+			margin: 0px 10px 
+			img
+				width: auto
+		ul
+			margin: 0px 10px 
+		li
+			color: #FFF
+			a
+				font-size: 20px 
+		.list-title
+			text-transform: uppercase
+			margin-bottom: 20px
+			&:after
+				content: ""
+				display: block
+				margin-top: 20px
+				width: 100%
+				height: 1px
+				background: #FFF  
+		.form
+			margin: auto 10px 0px
+			input
+				background: transparent
+				border: 1px solid #989795
+				color: #989795
+				font-size: 17px
+				padding: 10px 20px
+				width: 260px
+				text-align: center
+				margin-right: 20px
+				margin-top: 20px
+			button
+				margin-top: 20px
+				border: none
+				cursor: pointer
+				background-color: #999795 
+				width: 90px
+				height: 47px
+				background-repeat: no-repeat
+				background-position: center  
+				background-image: url('../img/paper.png')
+			.soc-links
+				a
+					margin: 10px 10px 10px 0px
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					border: 1px solid #fff
+					display: flex
+					-webkit-align-items: center
+					align-items: center
+					-webkit-justify-content: center
+					justify-content: center
+					width: 44px
+					height: 44px
+					color: #FFF
+					&:hover
+						text-decoration: none 
+						
+.footer-page
+	text-align: center
+	font-size: 16px
+	color: #000
+	background: #FFF
