@@ -1,0 +1,200 @@
+/****Grid layout settings****/
+
+/*General for documetn settings*/
+
+/*Color*/
+
+/*Typography*/
+
+/*h1*/
+
+/*nav block*/
+
+/*section block*/
+
+/*container block*/
+
+/*wrapper block*/
+
+/*nav toggle*/
+
+/*btn up*/
+
+/*General styles*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-width: 320px;
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: 18px;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i,
+em,
+strong {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 16px 0px 16px 0px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+a {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav {
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+nav ul li {
+  margin: 12px 12px 12px 12px;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: Arial, sans-serif;
+}
+
+textarea::-moz-placeholder {
+  font-family: Arial, sans-serif;
+}
+
+textarea:-moz-placeholder {
+  font-family: Arial, sans-serif;
+}
+
+textarea:-ms-input-placeholder {
+  font-family: Arial, sans-serif;
+}
+
+/*container-block*/
+
+.container-block {
+  margin: 40px 0;
+}
+
+/*wrapper*/
+
+.wrapper {
+  max-width: 730px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 42px;
+}
+
+/*container*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 22px;
+}
+
+/*section-block*/
+
+.section-block {
+  margin: 0px;
+  padding: 20px 0px;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 640px) {
+  html,
+  body {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 47px;
+  }
+
+  nav ul li {
+    margin: 0px 0px 0px 38px;
+  }
+
+  .container {
+    max-width: 755px;
+    padding: 20px;
+  }
+
+  .section-block {
+    margin: 0px;
+    padding: 40px 0px;
+  }
+}

@@ -1,0 +1,273 @@
+/****Grid layout settings****/
+
+/*General for documetn settings*/
+
+/*Color*/
+
+/*Typography*/
+
+/*h1*/
+
+/*nav block*/
+
+/*section block*/
+
+/*container block*/
+
+/*wrapper block*/
+
+/*nav toggle*/
+
+/*btn up*/
+
+@import url("grid.css");
+
+header {
+  background: #383838;
+  min-height: 425px;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 5%;
+  position: relative;
+}
+
+header h1 {
+  margin-top: auto;
+  font-size: 38px;
+  color: #C8C8C8;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+header span {
+  font-size: 17px;
+  color: #888;
+}
+
+header img {
+  width: auto;
+  margin: auto auto 0px;
+}
+
+.main-page {
+  padding: 20px;
+}
+
+.main-page h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #383838;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.main-page .title-span {
+  font-size: 15px;
+  color: #383838;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-page .wrap-box {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 40px 0px 10px;
+}
+
+.main-page .wrap-box .box-item {
+  width: 100%;
+  border: 2px solid #383838;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  color: #383838;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-page .wrap-box .box-item:hover {
+  background: #6E5252;
+  border: 2px solid #6E5252;
+  color: #fff;
+}
+
+.main-page .wrap-box .box-item:hover .checkbox {
+  border: 1.5px solid #fff;
+}
+
+.main-page .wrap-box .box-item.active {
+  background: #6E5252;
+  border: 2px solid #6E5252;
+  color: #fff;
+}
+
+.main-page .wrap-box .box-item.active span {
+  color: #fff;
+}
+
+.main-page .wrap-box .box-item.active .checkbox {
+  border: 1.5px solid #fff;
+}
+
+.main-page .wrap-box .box-item.active .checkbox:before {
+  display: block;
+}
+
+.main-page .wrap-box .box-item .checkbox {
+  position: absolute;
+  background: #FFF;
+  top: 9px;
+  right: 9px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 1.5px solid rgba(56, 56, 56, 0.4);
+}
+
+.main-page .wrap-box .box-item .checkbox:before {
+  display: none;
+  content: "";
+  width: 4px;
+  height: 8px;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  border-right: 2px solid #6E5252;
+  border-bottom: 2px solid #6E5252;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.main-page .choose-veidu .box-item {
+  height: 115px;
+}
+
+.main-page .choose-veidu .box-item h4 {
+  font-size: 17px;
+}
+
+.main-page .choose-veidu .box-item span {
+  font-size: 15px;
+}
+
+.main-page .choose-periodu .box-item {
+  height: 170px;
+  margin-bottom: 30px;
+}
+
+.main-page .choose-periodu .box-item:hover span {
+  color: #fff;
+}
+
+.main-page .choose-periodu .box-item span {
+  font-size: 15px;
+  font-weight: normal;
+  color: #6E5252;
+}
+
+.main-page .choose-periodu .box-item span:last-child {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.main-page .choose-periodu .box-item .price {
+  font-size: 20px;
+  display: block;
+  margin: 10px 0px;
+}
+
+.main-page .choose-periodu .box-item .price i {
+  font-size: 49px;
+}
+
+.main-page .global-btn {
+  background: #6E5252;
+  border-radius: 10px;
+  padding: 13px 10px;
+  display: block;
+  color: #FFF;
+  text-align: center;
+}
+
+.main-page .text-box {
+  max-width: 510px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.main-page .text-box h3 {
+  font-size: 15px;
+  color: #383838;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.main-page .text-box p {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 24px 28px;
+  background: #383838;
+}
+
+footer span {
+  display: block;
+  color: #fff;
+  width: 100%;
+}
+
+footer span:last-child {
+  text-align: right;
+}
+
+@media screen and (min-width: 560px) {
+  .main-page .wrap-box .box-item {
+    width: calc(50% - 15px);
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .main-page h2 {
+    font-size: 56px;
+  }
+}
