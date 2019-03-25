@@ -32,6 +32,9 @@
 	display: none
 	&.active
 		display: block
+
+.header_page
+	background: #C3D5ED 
 		
 .page-nav
 	position: absolute
@@ -59,7 +62,7 @@
 		-ms-transform: translateX(0%) 
 		-o-transform: translateX(0%) 
 		transform: translateX(0%)
-	@media screen and (min-width: 1465px)
+	@media screen and (min-width: 1100px)
 		min-height: 100%
 		width: auto
 		position: static
@@ -76,7 +79,7 @@
 		-webkit-flex-direction: column
 		-ms-flex-direction: column
 		flex-direction: column
-		@media screen and (min-width: 1465px)
+		@media screen and (min-width: 1100px)
 			-webkit-flex-direction: row
 			-ms-flex-direction: row
 			flex-direction: row
@@ -93,31 +96,14 @@
 
 /****main page****/
 .main-page
-	background-image: url('../img/banner.jpg')
-	-webkit-background-size: cover 
-	-o-background-size: cover 
-	background-size: cover
+	background-image: url('../img/BG-Image.jpg')
+	background-color: #c3d5ed 
+	-webkit-background-size: auto 80% 
+	-o-background-size: auto 80% 
+	background-size: auto 80%
+	background-position: bottom 
 	background-repeat: no-repeat
 	position: relative
-	.overlay-pink
-		width: 100%
-		height: 80%
-		position: absolute
-		z-index: 0 
-		top: 0
-		left: 0
-		background: rgba(247, 221, 201, 0.7)
-		display: block
-	.overlay-black
-		width: 100%
-		height: 20%
-		position: absolute
-		z-index: 0 
-		bottom: 0
-		left: 0
-		background: rgba(0, 0, 0, 0.4)
-		display: block
-
 /*main header*/
 .main-page__header
 	background-image: url('../img/banner.jpg')
@@ -134,29 +120,31 @@
 		color: #FFF
 		padding: 0px 2%
 		@media screen and (min-width: 780px)
-			font-size: 7vw
-		@media screen and (min-width: 1720px)
-			font-size: 136px
+			font-size: 6vw
+		@media screen and (min-width: 1366px)
+			font-size: 96px
 		
 /*main description*/	
 .main-page__description
 	padding: 40px 0px
-	background: #F7DDC9
+	background: transparent
 	position: relative
 	p
 		text-align: center
+		max-width: 800px
+		margin: auto 
 		padding: 0px 2%
 		font-family: 'URW ImperialT Bold'
 		padding: 0px 2%
-			font-size: 25px
+			font-size: 20px
 		@media screen and (min-width: 1100px)
-			font-size: 40px
+			font-size: 28px
 
 /*main video*/			
 .main-page__video
 	position: relative
 	border: 2px solid #fff
-	background: #8b837d 
+	background: #355681 
 	.video-box
 		background: #FFF
 		padding: 20px
@@ -202,24 +190,22 @@
 			font-family: 'URW ImperialT Bold'
 		h3
 			text-align: center
-			font-size: 30px
+			font-size: 25px
 			padding: 20px
 			@media screen and (min-width: 480px)
 				padding: 20px 50px
-			@media screen and (min-width: 1665px)
-				font-size: 50px
+			@media screen and (min-width: 1100px)
+				font-size: 35px
 		p
-			font-size: 16px
+			font-size: 17px
 			padding: 20px
-			@media screen and (min-width: 480px)
-				font-size: 25px
-			@media screen and (min-width: 1665px)
-				font-size: 33px 
+			@media screen and (min-width: 1100px)
+				font-size: 24px
 
 /*main carousel*/	
 .main-page__carousel
 	position: relative
-	background: #8b837d
+	background: #355681
 	border: 2px solid #fff
 	margin-top: 40px
 	.page-carousel
@@ -228,7 +214,7 @@
 			padding: 0px 80px
 	.item-carousel
 		background: #FFF
-		padding: 10px
+		padding: 5px
 		position: relative
 		.play-video
 			width: 41%
@@ -250,7 +236,7 @@
 			transform: translate(-50%, -50%) 
 			-webkit-border-radius: 50% 
 			border-radius: 50%
-			border: 1vw solid #fff
+			border: .4vw solid #fff
 			&:after
 				content: ""
 				display: block
@@ -299,14 +285,14 @@
 	.container
 		padding-bottom: 0
 	span 
-		font-size: 37px
+		font-size: 26px
 	.language
 		background: #8B837D
 		padding: 0px 20px
 		margin-left: 10px  
 		.language-item
 			color: #FFF
-			font-size: 50px
+			font-size: 35px
 		.drowdown-btn
 			display: inline-block
 			height: 40px
@@ -314,7 +300,7 @@
 			cursor: pointer
 			margin-left: 20px
 			position: relative
-			top: 5px
+			top: 8px
 			-webkit-transform: rotate(-90deg) 
 			-moz-transform: rotate(-90deg) 
 			-ms-transform: rotate(-90deg) 
@@ -327,22 +313,22 @@
 			background-size: 100%
 
 .main-page__send-message
-	background: #8B837D
+	background: #355681
 	border: 2px solid #fff
 	position: relative
 	span
 		background: #fff
-		font-size: 13vw
+		font-size: 11vw
 		color: #8B837D
 		padding: 0
-		@media screen and (min-width: 1460px)
-			font-size: 213px
+		@media screen and (min-width: 1100px)
+			font-size: 151px
 	.message-box
 		padding: 0
 		span
 			font-size: 18px
 			padding: 2px 20px
-			height: 87px
+			height: 55px
 			max-width: 800px
 			display: flex
 			-webkit-align-items: center
@@ -350,13 +336,13 @@
 			-webkit-justify-content: center
 			justify-content: center
 			@media screen and (min-width: 560px)
-				font-size: 4vw
-			@media screen and (min-width: 1460px)
-				font-size: 58px
+				font-size: 3.5vw
+			@media screen and (min-width: 1100px)
+				font-size: 41px
 		textarea
 			background: #E2E0DE
 			padding: 5px 20px
-			height: calc(100% - 86px)
+			height: calc(100% - 55px)
 			width: 100%
 	p
 		color: #FFF
@@ -364,9 +350,9 @@
 		font-size: 18px
 		padding: 20px 0px 
 		@media screen and (min-width: 560px)
-			font-size: 4vw
-		@media screen and (min-width: 1460px)
-			font-size: 50px
+			font-size: 3.5vw
+		@media screen and (min-width: 1100px)
+			font-size: 35px
 	.user_email
 		margin: 20px 0px 
 		label
@@ -374,9 +360,9 @@
 			font-size: 16px
 			margin-bottom: 0
 			@media screen and (min-width: 560px)
-				font-size: 4vw
-			@media screen and (min-width: 1460px)
-				font-size: 50px
+				font-size: 3.5vw
+			@media screen and (min-width: 1100px)
+				font-size: 35px
 		input
 			display: block
 			border: none
@@ -386,9 +372,9 @@
 			font-size: 18px
 			padding: 0px 20px 
 			@media screen and (min-width: 560px)
-				font-size: 4vw
-			@media screen and (min-width: 1460px)
-				font-size: 50px
+				font-size: 3.5vw
+			@media screen and (min-width: 1100px)
+				font-size: 35px
 	.user_age
 		margin: 20px 0px
 		span
@@ -397,9 +383,9 @@
 			background: transparent 
 			margin-bottom: 0
 			@media screen and (min-width: 560px)
-				font-size: 4vw
-			@media screen and (min-width: 1460px)
-				font-size: 50px
+				font-size: 3.5vw
+			@media screen and (min-width: 1100px)
+				font-size: 35px
 		label
 			color: #8B837D
 			background: #DADAD9
@@ -410,9 +396,9 @@
 			padding: 0px 5px
 			cursor: pointer  
 			@media screen and (min-width: 560px)
-				font-size: 4vw
-			@media screen and (min-width: 1460px)
-				font-size: 50px
+				font-size: 3.5vw
+			@media screen and (min-width: 1100px)
+				font-size: 35px
 		input
 			display: none
 			&:checked + label
@@ -437,9 +423,9 @@
 			margin-bottom: 0
 			color: #FFF 
 			@media screen and (min-width: 560px)
-				font-size: 4vw
-			@media screen and (min-width: 1460px)
-				font-size: 50px
+				font-size: 3.5vw
+			@media screen and (min-width: 1100px)
+				font-size: 35px
 			&:before
 				content: ""
 				display: block
@@ -447,14 +433,14 @@
 				height: 4vw
 				margin-right: 10px
 				border: 2px solid #fff
-				@media screen and (min-width: 1460px)
-					width: 50px
-					height: 50px
+				@media screen and (min-width: 1100px)
+					width: 40px
+					height: 40px
 			&:after 
 				content: ""
 				display: none
-				width: 3vw
-				height: 3vw 
+				width: 2.8vw
+				height: 2.8vw 
 				background-image: url('../img/check.png')
 				-webkit-background-size: 100% 
 				-o-background-size: 100% 
@@ -462,15 +448,15 @@
 				background-repeat: no-repeat
 				position: absolute
 				top: 50%
-				left: 1%
+				left: 1.5%
 				-webkit-transform: translateY(-50%) 
 				-moz-transform: translateY(-50%) 
 				-ms-transform: translateY(-50%) 
 				-o-transform: translateY(-50%) 
 				transform: translateY(-50%)
-				@media screen and (min-width: 1460px)
-					width: 41px
-					height: 36px
+				@media screen and (min-width: 1100px)
+					width: 30px
+					height: 28px
 	button
 		font-size: 20px
 		color: #8B837D
@@ -478,15 +464,15 @@
 		border: none
 		padding: 10px 20px
 		@media screen and (min-width: 560px)
-			font-size: 4vw
-		@media screen and (min-width: 1460px)
-			font-size: 58px
+			font-size: 3.5vw
+		@media screen and (min-width: 1100px)
+			font-size: 35px
 
 /*main tabs section*/		
 .main-page__tabs-section
 	position: relative
 	.tabs-links
-		background: #645c56 
+		background: #355681 
 		border: 2px solid #fff 
 		margin: 40px 0px 0px
 		li
@@ -494,9 +480,9 @@
 			font-size: 20px
 			margin: 10px 2% 
 			@media screen and (min-width: 560px)
-				font-size: 4vw
-			@media screen and (min-width: 1460px)
-				font-size: 58px
+				font-size: 3vw
+			@media screen and (min-width: 1100px)
+				font-size: 42px
 	h4
 		color: #000
 		font-size: 16px
@@ -504,11 +490,11 @@
 		display: block
 		text-align: center
 		@media screen and (min-width: 560px)
-			font-size: 4vw
-		@media screen and (min-width: 1460px)
-			font-size: 50px
+			font-size: 2.5vw
+		@media screen and (min-width: 1100px)
+			font-size: 26px
 	.tab-item
-		background: #8B837D 
+		background: #355681 
 		border: 2px solid #fff
 		margin-bottom: 60px
 		&:last-child
@@ -516,11 +502,12 @@
 		h4
 			padding: 0
 			color: #fff
+			font-size: 32px
 			text-align: left 
 			margin-bottom: 10px
 	.video
 		background: #FFF
-		padding: 10px
+		padding: 5px
 		position: relative
 		.play-video
 			width: 41%
@@ -542,7 +529,7 @@
 			transform: translate(-50%, -50%) 
 			-webkit-border-radius: 50% 
 			border-radius: 50%
-			border: .5vw solid #fff
+			border: .4vw solid #fff
 			&:after
 				content: ""
 				display: block
@@ -553,11 +540,12 @@
 	.text
 		padding-left: 0px
 		margin-top: 30px
+		color: #fff 
 		@media screen and (min-width: #{$dw-780})
 			padding-left: 40px
 			margin-top: 0
 			
-
+/*main footer section*/	
 .main-page__footer
 	position: relative
 	.title-footer
@@ -567,17 +555,17 @@
 		margin-bottom: 30px 
 		font-size: 18px
 		@media screen and (min-width: 560px)
-			font-size: 3vw
+			font-size: 1.5vw
 		@media screen and (min-width: 1460px)
-			font-size: 42px
+			font-size: 22px
 	.social-links
 		a
-			width: 8vw
-			height: 8vw
-			min-width: 55px
-			min-height: 55px
-			max-width: 100px
-			max-height: 100px  
+			width: 4vw
+			height: 4vw
+			min-width: 45px
+			min-height: 45px
+			max-width: 55px
+			max-height: 55px  
 			-webkit-border-radius: 50% 
 			border-radius: 50%
 			background: rgba(70, 69, 66, 0.7)
@@ -602,10 +590,11 @@
 		li
 			color: #FFF
 			a
-				font-size: 20px 
+				font-size: 14px 
 		.list-title
 			text-transform: uppercase
 			margin-bottom: 20px
+			font-size: 16px 
 			&:after
 				content: ""
 				display: block
@@ -636,6 +625,7 @@
 				background-position: center  
 				background-image: url('../img/paper.png')
 			.soc-links
+				margin-top: 15px
 				a
 					margin: 10px 10px 10px 0px
 					-webkit-border-radius: 50% 
@@ -656,4 +646,4 @@
 	text-align: center
 	font-size: 16px
 	color: #000
-	background: #FFF
+	background: #355681

@@ -97,7 +97,7 @@ nav {
 }
 
 nav a {
-  font-size: 23px;
+  font-size: 16px;
 }
 
 ul {
@@ -855,7 +855,7 @@ textarea:-ms-input-placeholder {
   }
 
   .container {
-    max-width: 1710px;
+    max-width: 1366px;
     padding: 20px;
   }
 
@@ -1438,6 +1438,32 @@ textarea:-ms-input-placeholder {
 }
 
 @media screen and (min-width: 1100px) {
+  nav ul li {
+    margin: 0px 0px 0px 35px;
+  }
+
+  .navigation {
+    position: static;
+    width: auto;
+    visibility: visible;
+    overflow: inherit;
+    opacity: 1;
+  }
+
+  .navigation-inner {
+    position: static;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    overflow: inherit;
+  }
+
+  .block-toggle {
+    display: none;
+  }
+
   .flex-xld-column {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -1624,33 +1650,5 @@ textarea:-ms-input-placeholder {
 
   .grid-xld-12 {
     flex-basis: calc(100% - 0px);
-  }
-}
-
-@media screen and (min-width: 1465px) {
-  nav ul li {
-    margin: 0px 0px 0px 75px;
-  }
-
-  .navigation {
-    position: static;
-    width: auto;
-    visibility: visible;
-    overflow: inherit;
-    opacity: 1;
-  }
-
-  .navigation-inner {
-    position: static;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-    overflow: inherit;
-  }
-
-  .block-toggle {
-    display: none;
   }
 }

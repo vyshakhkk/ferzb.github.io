@@ -61,6 +61,10 @@
   display: block;
 }
 
+.header_page {
+  background: #C3D5ED;
+}
+
 .page-nav {
   position: absolute;
   top: 0;
@@ -106,34 +110,14 @@
 /****main page****/
 
 .main-page {
-  background-image: url("../img/banner.jpg");
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url("../img/BG-Image.jpg");
+  background-color: #c3d5ed;
+  -webkit-background-size: auto 80%;
+  -o-background-size: auto 80%;
+  background-size: auto 80%;
+  background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
-}
-
-.main-page .overlay-pink {
-  width: 100%;
-  height: 80%;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  background: rgba(247, 221, 201, 0.7);
-  display: block;
-}
-
-.main-page .overlay-black {
-  width: 100%;
-  height: 20%;
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  display: block;
 }
 
 /*main header*/
@@ -160,16 +144,18 @@
 
 .main-page__description {
   padding: 40px 0px;
-  background: #F7DDC9;
+  background: transparent;
   position: relative;
 }
 
 .main-page__description p {
   text-align: center;
+  max-width: 800px;
+  margin: auto;
   padding: 0px 2%;
   font-family: 'URW ImperialT Bold';
   padding: 0px 2%;
-  padding-font-size: 25px;
+  padding-font-size: 20px;
 }
 
 /*main video*/
@@ -177,7 +163,7 @@
 .main-page__video {
   position: relative;
   border: 2px solid #fff;
-  background: #8b837d;
+  background: #355681;
 }
 
 .main-page__video .video-box {
@@ -236,12 +222,12 @@
 
 .main-page__video .text-box h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   padding: 20px;
 }
 
 .main-page__video .text-box p {
-  font-size: 16px;
+  font-size: 17px;
   padding: 20px;
 }
 
@@ -249,7 +235,7 @@
 
 .main-page__carousel {
   position: relative;
-  background: #8b837d;
+  background: #355681;
   border: 2px solid #fff;
   margin-top: 40px;
 }
@@ -260,7 +246,7 @@
 
 .main-page__carousel .item-carousel {
   background: #FFF;
-  padding: 10px;
+  padding: 5px;
   position: relative;
 }
 
@@ -284,7 +270,7 @@
   transform: translate(-50%, -50%);
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 1vw solid #fff;
+  border: .4vw solid #fff;
 }
 
 .main-page__carousel .item-carousel .play-video:after {
@@ -345,7 +331,7 @@
 }
 
 .choose-language span {
-  font-size: 37px;
+  font-size: 26px;
 }
 
 .choose-language .language {
@@ -356,7 +342,7 @@
 
 .choose-language .language .language-item {
   color: #FFF;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .choose-language .language .drowdown-btn {
@@ -366,7 +352,7 @@
   cursor: pointer;
   margin-left: 20px;
   position: relative;
-  top: 5px;
+  top: 8px;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -380,14 +366,14 @@
 }
 
 .main-page__send-message {
-  background: #8B837D;
+  background: #355681;
   border: 2px solid #fff;
   position: relative;
 }
 
 .main-page__send-message span {
   background: #fff;
-  font-size: 13vw;
+  font-size: 11vw;
   color: #8B837D;
   padding: 0;
 }
@@ -399,7 +385,7 @@
 .main-page__send-message .message-box span {
   font-size: 18px;
   padding: 2px 20px;
-  height: 87px;
+  height: 55px;
   max-width: 800px;
   display: flex;
   -webkit-align-items: center;
@@ -411,7 +397,7 @@
 .main-page__send-message .message-box textarea {
   background: #E2E0DE;
   padding: 5px 20px;
-  height: calc(100% - 86px);
+  height: calc(100% - 55px);
   width: 100%;
 }
 
@@ -510,8 +496,8 @@
 .main-page__send-message .checkbox label:after {
   content: "";
   display: none;
-  width: 3vw;
-  height: 3vw;
+  width: 2.8vw;
+  height: 2.8vw;
   background-image: url("../img/check.png");
   -webkit-background-size: 100%;
   -o-background-size: 100%;
@@ -519,7 +505,7 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
-  left: 1%;
+  left: 1.5%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -542,7 +528,7 @@
 }
 
 .main-page__tabs-section .tabs-links {
-  background: #645c56;
+  background: #355681;
   border: 2px solid #fff;
   margin: 40px 0px 0px;
 }
@@ -562,7 +548,7 @@
 }
 
 .main-page__tabs-section .tab-item {
-  background: #8B837D;
+  background: #355681;
   border: 2px solid #fff;
   margin-bottom: 60px;
 }
@@ -574,13 +560,14 @@
 .main-page__tabs-section .tab-item h4 {
   padding: 0;
   color: #fff;
+  font-size: 32px;
   text-align: left;
   margin-bottom: 10px;
 }
 
 .main-page__tabs-section .video {
   background: #FFF;
-  padding: 10px;
+  padding: 5px;
   position: relative;
 }
 
@@ -604,7 +591,7 @@
   transform: translate(-50%, -50%);
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: .5vw solid #fff;
+  border: .4vw solid #fff;
 }
 
 .main-page__tabs-section .video .play-video:after {
@@ -619,7 +606,10 @@
 .main-page__tabs-section .text {
   padding-left: 0px;
   margin-top: 30px;
+  color: #fff;
 }
+
+/*main footer section*/
 
 .main-page__footer {
   position: relative;
@@ -634,12 +624,12 @@
 }
 
 .main-page__footer .social-links a {
-  width: 8vw;
-  height: 8vw;
-  min-width: 55px;
-  min-height: 55px;
-  max-width: 100px;
-  max-height: 100px;
+  width: 4vw;
+  height: 4vw;
+  min-width: 45px;
+  min-height: 45px;
+  max-width: 55px;
+  max-height: 55px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: rgba(70, 69, 66, 0.7);
@@ -678,12 +668,13 @@
 }
 
 .main-page__footer .last-box li a {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .main-page__footer .last-box .list-title {
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .main-page__footer .last-box .list-title:after {
@@ -723,6 +714,10 @@
   background-image: url("../img/paper.png");
 }
 
+.main-page__footer .last-box .form .soc-links {
+  margin-top: 15px;
+}
+
 .main-page__footer .last-box .form .soc-links a {
   margin: 10px 10px 10px 0px;
   -webkit-border-radius: 50%;
@@ -746,16 +741,12 @@
   text-align: center;
   font-size: 16px;
   color: #000;
-  background: #FFF;
+  background: #355681;
 }
 
 @media screen and (min-width: 480px) {
   .main-page__video .text-box h3 {
     padding: 20px 50px;
-  }
-
-  .main-page__video .text-box p {
-    font-size: 25px;
   }
 
   .main-page__carousel .page-carousel {
@@ -770,53 +761,53 @@
 
 @media screen and (min-width: 560px) {
   .main-page__send-message .message-box span {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .main-page__send-message p {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .main-page__send-message .user_email label {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .main-page__send-message .user_email input {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .main-page__send-message .user_age span {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .main-page__send-message .user_age label {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .main-page__send-message .checkbox label {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .main-page__send-message button {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .main-page__tabs-section .tabs-links li {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .main-page__tabs-section h4 {
-    font-size: 4vw;
+    font-size: 2.5vw;
   }
 
   .main-page__footer .title-footer {
-    font-size: 3vw;
+    font-size: 1.5vw;
   }
 }
 
 @media screen and (min-width: 780px) {
   .main-page__header h1 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
   .main-page__tabs-section .text {
@@ -832,72 +823,6 @@
 }
 
 @media screen and (min-width: 1100px) {
-  .main-page__description p {
-    font-size: 40px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  .main-page__send-message span {
-    font-size: 213px;
-  }
-
-  .main-page__send-message .message-box span {
-    font-size: 58px;
-  }
-
-  .main-page__send-message p {
-    font-size: 50px;
-  }
-
-  .main-page__send-message .user_email label {
-    font-size: 50px;
-  }
-
-  .main-page__send-message .user_email input {
-    font-size: 50px;
-  }
-
-  .main-page__send-message .user_age span {
-    font-size: 50px;
-  }
-
-  .main-page__send-message .user_age label {
-    font-size: 50px;
-  }
-
-  .main-page__send-message .checkbox label {
-    font-size: 50px;
-  }
-
-  .main-page__send-message .checkbox label:before {
-    width: 50px;
-    height: 50px;
-  }
-
-  .main-page__send-message .checkbox label:after {
-    width: 41px;
-    height: 36px;
-  }
-
-  .main-page__send-message button {
-    font-size: 58px;
-  }
-
-  .main-page__tabs-section .tabs-links li {
-    font-size: 58px;
-  }
-
-  .main-page__tabs-section h4 {
-    font-size: 50px;
-  }
-
-  .main-page__footer .title-footer {
-    font-size: 42px;
-  }
-}
-
-@media screen and (min-width: 1465px) {
   .page-nav {
     min-height: 100%;
     width: auto;
@@ -920,23 +845,87 @@
     align-items: center;
   }
 
-  .page-nav .menu-list a {
-    font-size: 23px;
+  .main-page__description p {
+    font-size: 28px;
   }
-}
 
-@media screen and (min-width: 1665px) {
   .main-page__video .text-box h3 {
-    font-size: 50px;
+    font-size: 35px;
   }
 
   .main-page__video .text-box p {
-    font-size: 33px;
+    font-size: 24px;
+  }
+
+  .main-page__send-message span {
+    font-size: 151px;
+  }
+
+  .main-page__send-message .message-box span {
+    font-size: 41px;
+  }
+
+  .main-page__send-message p {
+    font-size: 35px;
+  }
+
+  .main-page__send-message .user_email label {
+    font-size: 35px;
+  }
+
+  .main-page__send-message .user_email input {
+    font-size: 35px;
+  }
+
+  .main-page__send-message .user_age span {
+    font-size: 35px;
+  }
+
+  .main-page__send-message .user_age label {
+    font-size: 35px;
+  }
+
+  .main-page__send-message .checkbox label {
+    font-size: 35px;
+  }
+
+  .main-page__send-message .checkbox label:before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main-page__send-message .checkbox label:after {
+    width: 30px;
+    height: 28px;
+  }
+
+  .main-page__send-message button {
+    font-size: 35px;
+  }
+
+  .main-page__tabs-section .tabs-links li {
+    font-size: 42px;
+  }
+
+  .main-page__tabs-section h4 {
+    font-size: 26px;
   }
 }
 
-@media screen and (min-width: 1720px) {
+@media screen and (min-width: 1366px) {
   .main-page__header h1 {
-    font-size: 136px;
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .main-page__footer .title-footer {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1465px) {
+  .page-nav .menu-list a {
+    font-size: 23px;
   }
 }
