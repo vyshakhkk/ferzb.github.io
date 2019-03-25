@@ -200,7 +200,7 @@ header img {
 }
 
 .main-page .choose-periodu .box-item .sale {
-  width: 281px;
+  width: 80%;
   text-align: center;
   padding: 6px 6px 20px;
   background: #FBD94C;
@@ -305,10 +305,6 @@ footer span:last-child {
 }
 
 @media screen and (min-width: 560px) {
-  .main-page .wrap-box .box-item {
-    width: calc(50% - 15px);
-  }
-
   footer .box {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -325,6 +321,12 @@ footer span:last-child {
 
   footer span:last-child {
     text-align: right;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .main-page .wrap-box .box-item {
+    width: calc(50% - 15px);
   }
 }
 
