@@ -97,7 +97,7 @@ nav {
 }
 
 nav a {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 ul {
@@ -855,7 +855,7 @@ textarea:-ms-input-placeholder {
   }
 
   .container {
-    max-width: 1366px;
+    max-width: 970px;
     padding: 20px;
   }
 
@@ -1248,6 +1248,32 @@ textarea:-ms-input-placeholder {
 }
 
 @media screen and (min-width: 960px) {
+  nav ul li {
+    margin: 0px 0px 0px 35px;
+  }
+
+  .navigation {
+    position: static;
+    width: auto;
+    visibility: visible;
+    overflow: inherit;
+    opacity: 1;
+  }
+
+  .navigation-inner {
+    position: static;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    overflow: inherit;
+  }
+
+  .block-toggle {
+    display: none;
+  }
+
   .flex-ld-column {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -1438,32 +1464,6 @@ textarea:-ms-input-placeholder {
 }
 
 @media screen and (min-width: 1100px) {
-  nav ul li {
-    margin: 0px 0px 0px 35px;
-  }
-
-  .navigation {
-    position: static;
-    width: auto;
-    visibility: visible;
-    overflow: inherit;
-    opacity: 1;
-  }
-
-  .navigation-inner {
-    position: static;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-    overflow: inherit;
-  }
-
-  .block-toggle {
-    display: none;
-  }
-
   .flex-xld-column {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -1650,5 +1650,15 @@ textarea:-ms-input-placeholder {
 
   .grid-xld-12 {
     flex-basis: calc(100% - 0px);
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  nav a {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1366px;
   }
 }

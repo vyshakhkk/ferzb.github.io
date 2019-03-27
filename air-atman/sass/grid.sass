@@ -51,7 +51,9 @@ a
 nav
 	font-family: $font-nav
 	a
-		font-size: $nav-size
+		font-size: 12px
+		@media screen and (min-width: 1367px)
+			font-size: $nav-size
 ul
 	list-style: none
 	margin: 0
@@ -94,7 +96,8 @@ textarea:-ms-input-placeholder
 	@media screen and (min-width: #{$dw-640})
 		max-width: $display-width
 		padding: $container-max-pading
-
+	@media screen and (min-width: 1367px)
+		max-width: 1366px 
 /*section-block*/
 .section-block
 	margin: 0px

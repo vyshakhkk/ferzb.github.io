@@ -65,6 +65,10 @@
   background: #C3D5ED;
 }
 
+.header_page .logo {
+  max-width: 86px;
+}
+
 .page-nav {
   position: absolute;
   top: 0;
@@ -223,7 +227,7 @@
 .main-page__video .text-box h3 {
   text-align: center;
   font-size: 25px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .main-page__video .text-box p {
@@ -270,16 +274,16 @@
   transform: translate(-50%, -50%);
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: .4vw solid #fff;
+  border: .3vw solid #fff;
 }
 
 .main-page__carousel .item-carousel .play-video:after {
   content: "";
   display: block;
-  border-top: 2vw solid transparent;
+  border-top: 1.2vw solid transparent;
   border-right: 0px solid transparent;
-  border-bottom: 2vw solid transparent;
-  border-left: 3vw solid #fff;
+  border-bottom: 1.2vw solid transparent;
+  border-left: 2vw solid #fff;
 }
 
 .main-page__carousel .owl-nav button {
@@ -487,8 +491,8 @@
 .main-page__send-message .checkbox label:before {
   content: "";
   display: block;
-  width: 4vw;
-  height: 4vw;
+  width: 3vw;
+  height: 3vw;
   margin-right: 10px;
   border: 2px solid #fff;
 }
@@ -496,8 +500,8 @@
 .main-page__send-message .checkbox label:after {
   content: "";
   display: none;
-  width: 2.8vw;
-  height: 2.8vw;
+  width: 2.1vw;
+  height: 2.1vw;
   background-image: url("../img/check.png");
   -webkit-background-size: 100%;
   -o-background-size: 100%;
@@ -505,7 +509,7 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
-  left: 1.5%;
+  left: 2.5%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -560,9 +564,9 @@
 .main-page__tabs-section .tab-item h4 {
   padding: 0;
   color: #fff;
-  font-size: 32px;
   text-align: left;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .main-page__tabs-section .video {
@@ -591,22 +595,26 @@
   transform: translate(-50%, -50%);
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: .4vw solid #fff;
+  border: .2vw solid #fff;
 }
 
 .main-page__tabs-section .video .play-video:after {
   content: "";
   display: block;
-  border-top: 1.5vw solid transparent;
+  border-top: 1vw solid transparent;
   border-right: 0px solid transparent;
-  border-bottom: 1.5vw solid transparent;
-  border-left: 2vw solid #fff;
+  border-bottom: 1vw solid transparent;
+  border-left: 1.5vw solid #fff;
 }
 
 .main-page__tabs-section .text {
   padding-left: 0px;
   margin-top: 30px;
   color: #fff;
+}
+
+.main-page__tabs-section .text p {
+  font-size: 16px;
 }
 
 /*main footer section*/
@@ -746,7 +754,7 @@
 
 @media screen and (min-width: 480px) {
   .main-page__video .text-box h3 {
-    padding: 20px 50px;
+    padding: 10px 50px;
   }
 
   .main-page__carousel .page-carousel {
@@ -754,8 +762,8 @@
   }
 
   .main-page__carousel .owl-nav button {
-    width: 68px;
-    height: 125px;
+    width: 48px;
+    height: 95px;
   }
 }
 
@@ -765,39 +773,43 @@
   }
 
   .main-page__send-message p {
-    font-size: 3.5vw;
+    font-size: 25px;
   }
 
   .main-page__send-message .user_email label {
-    font-size: 3.5vw;
+    font-size: 25px;
   }
 
   .main-page__send-message .user_email input {
-    font-size: 3.5vw;
+    font-size: 25px;
   }
 
   .main-page__send-message .user_age span {
-    font-size: 3.5vw;
+    font-size: 25px;
   }
 
   .main-page__send-message .user_age label {
-    font-size: 3.5vw;
+    font-size: 25px;
   }
 
   .main-page__send-message .checkbox label {
-    font-size: 3.5vw;
+    font-size: 25px;
   }
 
   .main-page__send-message button {
-    font-size: 3.5vw;
+    font-size: 25px;
   }
 
   .main-page__tabs-section .tabs-links li {
-    font-size: 3vw;
+    font-size: 29px;
   }
 
   .main-page__tabs-section h4 {
     font-size: 2.5vw;
+  }
+
+  .main-page__tabs-section .tab-item h4 {
+    font-size: 25px;
   }
 
   .main-page__footer .title-footer {
@@ -807,7 +819,7 @@
 
 @media screen and (min-width: 780px) {
   .main-page__header h1 {
-    font-size: 6vw;
+    font-size: 68px;
   }
 
   .main-page__tabs-section .text {
@@ -817,12 +829,6 @@
 }
 
 @media screen and (min-width: 960px) {
-  .page-nav .menu-list a {
-    font-size: 21px;
-  }
-}
-
-@media screen and (min-width: 1100px) {
   .page-nav {
     min-height: 100%;
     width: auto;
@@ -844,6 +850,44 @@
     -webkit-align-items: center;
     align-items: center;
   }
+}
+
+@media screen and (min-width: 1100px) {
+  .main-page__send-message span {
+    font-size: 151px;
+  }
+
+  .main-page__send-message .message-box span {
+    font-size: 41px;
+  }
+
+  .main-page__send-message .checkbox label:before {
+    width: 35px;
+    height: 35px;
+  }
+
+  .main-page__send-message .checkbox label:after {
+    width: 22px;
+    height: 20px;
+  }
+
+  .main-page__tabs-section h4 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  .header_page .logo {
+    max-width: 126px;
+  }
+
+  .page-nav .menu-list a {
+    font-size: 21px;
+  }
+
+  .main-page__header h1 {
+    font-size: 96px;
+  }
 
   .main-page__description p {
     font-size: 28px;
@@ -857,12 +901,9 @@
     font-size: 24px;
   }
 
-  .main-page__send-message span {
-    font-size: 151px;
-  }
-
-  .main-page__send-message .message-box span {
-    font-size: 41px;
+  .main-page__carousel .owl-nav button {
+    width: 68px;
+    height: 125px;
   }
 
   .main-page__send-message p {
@@ -889,43 +930,25 @@
     font-size: 35px;
   }
 
-  .main-page__send-message .checkbox label:before {
-    width: 40px;
-    height: 40px;
-  }
-
-  .main-page__send-message .checkbox label:after {
-    width: 30px;
-    height: 28px;
-  }
-
   .main-page__send-message button {
     font-size: 35px;
   }
 
   .main-page__tabs-section .tabs-links li {
-    font-size: 42px;
+    font-size: 41px;
   }
 
-  .main-page__tabs-section h4 {
-    font-size: 26px;
+  .main-page__tabs-section .tab-item h4 {
+    font-size: 35px;
   }
-}
 
-@media screen and (min-width: 1366px) {
-  .main-page__header h1 {
-    font-size: 96px;
+  .main-page__tabs-section .text p {
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 1460px) {
   .main-page__footer .title-footer {
     font-size: 22px;
-  }
-}
-
-@media screen and (min-width: 1465px) {
-  .page-nav .menu-list a {
-    font-size: 23px;
   }
 }

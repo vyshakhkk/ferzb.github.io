@@ -34,7 +34,11 @@
 		display: block
 
 .header_page
-	background: #C3D5ED 
+	background: #C3D5ED
+	.logo
+		max-width: 86px
+		@media screen and (min-width: 1367px)
+			max-width: 126px
 		
 .page-nav
 	position: absolute
@@ -62,7 +66,7 @@
 		-ms-transform: translateX(0%) 
 		-o-transform: translateX(0%) 
 		transform: translateX(0%)
-	@media screen and (min-width: 1100px)
+	@media screen and (min-width: 960px)
 		min-height: 100%
 		width: auto
 		position: static
@@ -79,7 +83,7 @@
 		-webkit-flex-direction: column
 		-ms-flex-direction: column
 		flex-direction: column
-		@media screen and (min-width: 1100px)
+		@media screen and (min-width: 960px)
 			-webkit-flex-direction: row
 			-ms-flex-direction: row
 			flex-direction: row
@@ -88,10 +92,8 @@
 		a
 			font-family: 'URW ImperialT Bold'
 			font-size: 16px
-			@media screen and (min-width: 960px)
+			@media screen and (min-width: 1367px)
 				font-size: 21px
-			@media screen and (min-width: 1465px)
-				font-size: 23px
 				
 
 /****main page****/
@@ -120,8 +122,8 @@
 		color: #FFF
 		padding: 0px 2%
 		@media screen and (min-width: 780px)
-			font-size: 6vw
-		@media screen and (min-width: 1366px)
+			font-size: 68px
+		@media screen and (min-width: 1367px)
 			font-size: 96px
 		
 /*main description*/	
@@ -137,7 +139,7 @@
 		font-family: 'URW ImperialT Bold'
 		padding: 0px 2%
 			font-size: 20px
-		@media screen and (min-width: 1100px)
+		@media screen and (min-width: 1367px)
 			font-size: 28px
 
 /*main video*/			
@@ -191,15 +193,15 @@
 		h3
 			text-align: center
 			font-size: 25px
-			padding: 20px
+			padding: 10px
 			@media screen and (min-width: 480px)
-				padding: 20px 50px
-			@media screen and (min-width: 1100px)
+				padding: 10px 50px
+			@media screen and (min-width: 1367px)
 				font-size: 35px
 		p
 			font-size: 17px
 			padding: 20px
-			@media screen and (min-width: 1100px)
+			@media screen and (min-width: 1367px)
 				font-size: 24px
 
 /*main carousel*/	
@@ -236,14 +238,14 @@
 			transform: translate(-50%, -50%) 
 			-webkit-border-radius: 50% 
 			border-radius: 50%
-			border: .4vw solid #fff
+			border: .3vw solid #fff
 			&:after
 				content: ""
 				display: block
-				border-top: 2vw solid transparent 
+				border-top: 1.2vw solid transparent 
 				border-right: 0px solid transparent 
-				border-bottom: 2vw solid transparent 
-				border-left: 3vw solid #fff 
+				border-bottom: 1.2vw solid transparent 
+				border-left: 2vw solid #fff 
 	.owl-nav
 		button
 			position: absolute
@@ -257,6 +259,9 @@
 			width: 28px
 			height: 50px
 			@media screen and (min-width: #{$dw-480})
+				width: 48px
+				height: 95px
+			@media screen and (min-width: 1367px)
 				width: 68px
 				height: 125px
 			span
@@ -350,8 +355,8 @@
 		font-size: 18px
 		padding: 20px 0px 
 		@media screen and (min-width: 560px)
-			font-size: 3.5vw
-		@media screen and (min-width: 1100px)
+			font-size: 25px
+		@media screen and (min-width: 1367px)
 			font-size: 35px
 	.user_email
 		margin: 20px 0px 
@@ -360,8 +365,8 @@
 			font-size: 16px
 			margin-bottom: 0
 			@media screen and (min-width: 560px)
-				font-size: 3.5vw
-			@media screen and (min-width: 1100px)
+				font-size: 25px
+			@media screen and (min-width: 1367px)
 				font-size: 35px
 		input
 			display: block
@@ -372,8 +377,8 @@
 			font-size: 18px
 			padding: 0px 20px 
 			@media screen and (min-width: 560px)
-				font-size: 3.5vw
-			@media screen and (min-width: 1100px)
+				font-size: 25px
+			@media screen and (min-width: 1367px)
 				font-size: 35px
 	.user_age
 		margin: 20px 0px
@@ -383,8 +388,8 @@
 			background: transparent 
 			margin-bottom: 0
 			@media screen and (min-width: 560px)
-				font-size: 3.5vw
-			@media screen and (min-width: 1100px)
+				font-size: 25px
+			@media screen and (min-width: 1367px)
 				font-size: 35px
 		label
 			color: #8B837D
@@ -396,8 +401,8 @@
 			padding: 0px 5px
 			cursor: pointer  
 			@media screen and (min-width: 560px)
-				font-size: 3.5vw
-			@media screen and (min-width: 1100px)
+				font-size: 25px
+			@media screen and (min-width: 1367px)
 				font-size: 35px
 		input
 			display: none
@@ -423,24 +428,24 @@
 			margin-bottom: 0
 			color: #FFF 
 			@media screen and (min-width: 560px)
-				font-size: 3.5vw
-			@media screen and (min-width: 1100px)
+				font-size: 25px
+			@media screen and (min-width: 1367px)
 				font-size: 35px
 			&:before
 				content: ""
 				display: block
-				width: 4vw
-				height: 4vw
+				width: 3vw
+				height: 3vw
 				margin-right: 10px
 				border: 2px solid #fff
 				@media screen and (min-width: 1100px)
-					width: 40px
-					height: 40px
+					width: 35px
+					height: 35px
 			&:after 
 				content: ""
 				display: none
-				width: 2.8vw
-				height: 2.8vw 
+				width: 2.1vw
+				height: 2.1vw 
 				background-image: url('../img/check.png')
 				-webkit-background-size: 100% 
 				-o-background-size: 100% 
@@ -448,15 +453,15 @@
 				background-repeat: no-repeat
 				position: absolute
 				top: 50%
-				left: 1.5%
+				left: 2.5%
 				-webkit-transform: translateY(-50%) 
 				-moz-transform: translateY(-50%) 
 				-ms-transform: translateY(-50%) 
 				-o-transform: translateY(-50%) 
 				transform: translateY(-50%)
 				@media screen and (min-width: 1100px)
-					width: 30px
-					height: 28px
+					width: 22px
+					height: 20px
 	button
 		font-size: 20px
 		color: #8B837D
@@ -464,8 +469,8 @@
 		border: none
 		padding: 10px 20px
 		@media screen and (min-width: 560px)
-			font-size: 3.5vw
-		@media screen and (min-width: 1100px)
+			font-size: 25px
+		@media screen and (min-width: 1367px)
 			font-size: 35px
 
 /*main tabs section*/		
@@ -480,9 +485,9 @@
 			font-size: 20px
 			margin: 10px 2% 
 			@media screen and (min-width: 560px)
-				font-size: 3vw
-			@media screen and (min-width: 1100px)
-				font-size: 42px
+				font-size: 29px
+			@media screen and (min-width: 1367px)
+				font-size: 41px
 	h4
 		color: #000
 		font-size: 16px
@@ -502,9 +507,13 @@
 		h4
 			padding: 0
 			color: #fff
-			font-size: 32px
 			text-align: left 
 			margin-bottom: 10px
+			font-size: 20px
+			@media screen and (min-width: 560px)
+				font-size: 25px
+			@media screen and (min-width: 1367px)
+				font-size: 35px
 	.video
 		background: #FFF
 		padding: 5px
@@ -529,14 +538,14 @@
 			transform: translate(-50%, -50%) 
 			-webkit-border-radius: 50% 
 			border-radius: 50%
-			border: .4vw solid #fff
+			border: .2vw solid #fff
 			&:after
 				content: ""
 				display: block
-				border-top: 1.5vw solid transparent 
+				border-top: 1vw solid transparent 
 				border-right: 0px solid transparent 
-				border-bottom: 1.5vw solid transparent 
-				border-left: 2vw solid #fff 
+				border-bottom: 1vw solid transparent 
+				border-left: 1.5vw solid #fff 
 	.text
 		padding-left: 0px
 		margin-top: 30px
@@ -544,6 +553,10 @@
 		@media screen and (min-width: #{$dw-780})
 			padding-left: 40px
 			margin-top: 0
+		p
+			font-size: 16px
+			@media screen and (min-width: 1367px)
+				font-size: 24px
 			
 /*main footer section*/	
 .main-page__footer
