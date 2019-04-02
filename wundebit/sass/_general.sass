@@ -1,0 +1,94 @@
+
+.general-btn
+    max-width: 145px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 53px
+    font-size: 14px
+    font-weight: 500
+.buy
+    border: 1px solid #02D29A
+    color: #02D29A
+    &:hover
+        background: #02D29A
+        color: #fff
+.sell
+    border: 1px solid #E14DAF
+    margin-left: 6px
+    color: #E14DAF
+    &:hover
+        background: #E14DAF
+        color: #fff
+
+.general-title-h3
+    font-size: 12px
+    color: #000
+    font-weight: bold
+
+.general-input
+    border: none
+    font-size: 10px
+    color: #BDBDBD
+    padding: 5px 0px
+    text-transform: uppercase
+    border-bottom: 1px solid #828282
+    display: block
+    width: 100%
+    outline: 0
+
+.general-radio
+    display: flex
+    align-items: center
+    input
+        display: none
+        &:checked, &:hover
+            &+label
+                color: #ffffff
+                background: #E14DAF
+                border: 1px solid #E14DAF
+    label
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        width: 22px
+        height: 22px
+        border-radius: 50%
+        border: 1px solid #E0E0E0
+        color: #000
+        font-size: 8px
+
+.general-checkbox
+    input
+        display: none
+        &:checked
+            &+label
+                &:before
+                    background: #C4C4C4
+                &:after
+                    display: block
+    label
+        font-size: 10px
+        display: flex
+        align-items: flex-start
+        color: #000000
+        position: relative
+        &:before
+            content: ""
+            display: block
+            width: 10px
+            height: 10px
+            border-radius: 2px
+            border: 1px solid #C4C4C4
+        &:after
+            content: ""
+            display: none
+            position: absolute
+            top: 1px
+            width: 3px
+            height: 7px
+            border-bottom: 1px solid #fff
+            border-right: 1px solid #fff
+            transform: rotate(40deg)

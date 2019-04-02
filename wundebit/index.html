@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="description about page">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+		<title>Wundebit</title>
+		<link rel="shortcut icon" href="">
+		<!--[if gt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="inter-ui.css">
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+
+		<div class="page">
+			<div class="container">
+				<section class="main-constructor">
+					<img src="img/image.png" alt="chart">
+				</section>
+
+				<section class="main-box">
+					<header>
+						<a href="#" class="general-btn buy">Buy</a>
+						<a href="#" class="general-btn sell">Sell</a>
+					</header>
+
+					<article class="main-box_select">
+						<h3 class="general-title-h3">Available pairs</h3>
+						<span>You can trade only those pairs where you have balance above zero</span>
+						<select name="pairs" id="pairs">
+							<option value="0">ada/bnb</option>
+							<option value="1">ada/bnb</option>
+							<option value="2">ada/bnb</option>
+							<option value="3">ada/bnb</option>
+						</select>
+					</article>
+
+					<article class="main-box_portfolio">
+						<h2><span>Your pair is</span>ADA/BNB</h2>
+						<h3 class="general-title-h3">Portfolio share and strategy</h3>
+						<input class="general-input" type="text" placeholder="0%">
+						<div class="general-radio">
+							<input type="radio" name="portfolio_percent" id="portfolio_percent_1">
+							<label for="portfolio_percent_1">1%</label>
+
+							<input type="radio" name="portfolio_percent" id="portfolio_percent_2">
+							<label for="portfolio_percent_2">2%</label>
+
+							<input type="radio" name="portfolio_percent" id="portfolio_percent_10">
+							<label for="portfolio_percent_10">10%</label>
+
+							<input type="radio" name="portfolio_percent" id="portfolio_percent_15">
+							<label for="portfolio_percent_15">15%</label>
+
+							<input type="radio" name="portfolio_percent" id="portfolio_percent_20">
+							<label for="portfolio_percent_20">20%</label>
+						</div>
+					</article>
+
+					<article class="main-box_price">
+						<span class="small-text">Choose your price type</span>
+
+						<div class="main-box_price_btn">
+							<a href="#" class="buy">Limit</a>
+							<span>or</span>
+							<a href="#" class="sell">Market</a>
+						</div>
+
+						<h3 class="general-title-h3">Price</h3>
+
+						<input class="general-input" type="text" placeholder="0.0001">
+
+						<div class="main-box_price_box">
+							<div class="inner-box">
+								<h3 class="general-title-h3">Take Profit</h3>
+
+								<div class="general-checkbox">
+									<input type="checkbox" id="profit_check">
+									<label for="profit_check">Active</label>
+								</div>
+
+								<input class="general-input" type="text" placeholder="0.0001">
+
+								<div class="general-radio">
+									<input type="radio" name="profit_percent" id="profit_percent_1">
+									<label for="profit_percent_1">1%</label>
+		
+									<input type="radio" name="profit_percent" id="profit_percent_2">
+									<label for="profit_percent_2">2%</label>
+		
+									<input type="radio" name="profit_percent" id="profit_percent_10">
+									<label for="profit_percent_10">10%</label>
+		
+									<input type="radio" name="profit_percent" id="profit_percent_15">
+									<label for="profit_percent_15">15%</label>
+		
+									<input type="radio" name="profit_percent" id="profit_percent_20">
+									<label for="profit_percent_20">20%</label>
+								</div>
+
+							</div>
+
+							<div class="inner-box">
+								<h3 class="general-title-h3">Stop Loss</h3>
+
+								<div class="general-checkbox">
+									<input type="checkbox" id="loss_check">
+									<label for="loss_check">Active</label>
+								</div>
+
+								<input class="general-input" type="text" placeholder="0.0001">
+
+								<div class="general-radio">
+									<input type="radio" name="loss_percent" id="loss_percent_1">
+									<label for="loss_percent_1">1%</label>
+		
+									<input type="radio" name="loss_percent" id="loss_percent_2">
+									<label for="loss_percent_2">2%</label>
+		
+									<input type="radio" name="loss_percent" id="loss_percent_10">
+									<label for="loss_percent_10">10%</label>
+		
+									<input type="radio" name="loss_percent" id="loss_percent_15">
+									<label for="loss_percent_15">15%</label>
+		
+									<input type="radio" name="loss_percent" id="loss_percent_20">
+									<label for="loss_percent_20">20%</label>
+								</div>
+
+							</div>
+
+							<div class="inner-box">
+								<h3 class="general-title-h3">Amount</h3>
+
+								<input class="general-input" type="text" placeholder="0.0001">
+							</div>
+
+							<div class="inner-box">
+								<h3 class="general-title-h3">Amount</h3>
+
+								<input class="general-input" type="text" placeholder="0.0001">
+							</div>
+						</div>
+					</article>
+					<a class="main-btn" href="#">Create Strategy</a>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
