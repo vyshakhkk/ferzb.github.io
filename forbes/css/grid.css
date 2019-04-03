@@ -1,37 +1,23 @@
 /****Grid layout settings****/
-
 /*General for documetn settings*/
-
 /*Color*/
-
 /*Typography*/
-
 /*h1*/
-
 /*nav block*/
-
 /*section block*/
-
 /*container block*/
-
 /*wrapper block*/
-
 /*nav toggle*/
-
 /*btn up*/
-
 /*General styles*/
-
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
+html, body {
   min-width: 320px;
   font-family: Arial, sans-serif;
   color: #000;
@@ -39,17 +25,13 @@ body {
   position: relative;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-i,
-em,
-strong {
+@media screen and (min-width: 640px) {
+  html, body {
+    font-size: 24px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, a, i, em, strong {
   font-style: normal;
   text-decoration: none;
   font-weight: normal;
@@ -63,8 +45,20 @@ h1 {
   margin: 16px 0px 16px 0px;
 }
 
+@media screen and (min-width: 640px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
 h2 {
   font-size: 32px;
+}
+
+@media screen and (min-width: 640px) {
+  h2 {
+    font-size: 47px;
+  }
 }
 
 h3 {
@@ -86,9 +80,6 @@ h6 {
 a {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -112,9 +103,13 @@ nav ul li {
   margin: 12px 12px 12px 12px;
 }
 
-input,
-textarea,
-button {
+@media screen and (min-width: 640px) {
+  nav ul li {
+    margin: 0px 0px 0px 38px;
+  }
+}
+
+input, textarea, button {
   outline: none;
   font-family: Arial, sans-serif;
 }
@@ -136,13 +131,11 @@ textarea:-ms-input-placeholder {
 }
 
 /*container-block*/
-
 .container-block {
   margin: 40px 0;
 }
 
 /*wrapper*/
-
 .wrapper {
   max-width: 730px;
   margin: 0 auto;
@@ -151,50 +144,34 @@ textarea:-ms-input-placeholder {
 }
 
 /*container*/
-
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 22px;
 }
 
-/*section-block*/
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 755px;
+    padding: 20px;
+  }
+}
 
+/*section-block*/
 .section-block {
   margin: 0px;
   padding: 20px 0px;
+}
+
+@media screen and (min-width: 640px) {
+  .section-block {
+    margin: 0px;
+    padding: 40px 0px;
+  }
 }
 
 .img img {
   width: 100%;
   height: auto;
 }
-
-@media screen and (min-width: 640px) {
-  html,
-  body {
-    font-size: 24px;
-  }
-
-  h1 {
-    font-size: 60px;
-  }
-
-  h2 {
-    font-size: 47px;
-  }
-
-  nav ul li {
-    margin: 0px 0px 0px 38px;
-  }
-
-  .container {
-    max-width: 755px;
-    padding: 20px;
-  }
-
-  .section-block {
-    margin: 0px;
-    padding: 40px 0px;
-  }
-}
+/*# sourceMappingURL=grid.css.map */

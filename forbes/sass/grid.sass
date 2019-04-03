@@ -1,0 +1,106 @@
+@import "setting.sass";
+
+/*General styles*/
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	margin: 0	
+	padding: 0
+
+html, body
+	min-width: 320px 
+	font-family: $global-font
+	color: $text-color  
+	font-size: $min-font-size
+	position: relative
+	@media screen and (min-width: #{$dw-640})
+		font-size: $font-size
+	
+h1,h2,h3,h4,h5,h6,p,a,i,em,strong
+	font-style: normal 
+	text-decoration: none
+	font-weight: normal
+	color: inherit   
+	padding: 0
+	margin: 0
+h1
+	font-size: $h1-min-size
+	margin: $margin-h1 
+	@media screen and (min-width: #{$dw-h-size})
+		font-size: $h1-size
+h2
+	font-size: $h2-min-size
+	@media screen and (min-width: #{$dw-h-size})
+		font-size: $h2-size
+h3
+	font-size: $h3-size
+h4
+	font-size: $h4-size
+h5
+	font-size: $h5-size
+h6
+	font-size: $h6-size
+a
+	cursor: pointer
+	-webkit-transition: all 0.3s ease 
+	-moz-transition: all 0.3s ease 
+	-ms-transition: all 0.3s ease 
+	-o-transition: all 0.3s ease 
+	transition: all 0.3s ease 
+nav
+	font-family: $font-nav
+	a
+		font-size: $nav-size
+ul
+	list-style: none 
+img
+	width: 100%
+nav ul li
+	margin: $margin-nav-min-offest
+	@media screen and (min-width: #{$dw-width-nav-toggle})
+		margin: $margin-nav-offest
+
+input, textarea, button
+	outline: none
+	font-family: $global-font 
+		
+textarea::-webkit-input-placeholder
+	font-family: $global-font
+textarea::-moz-placeholder
+	font-family: $global-font
+textarea:-moz-placeholder
+	font-family: $global-font
+textarea:-ms-input-placeholder
+	font-family: $global-font
+	
+/*container-block*/
+.container-block
+	margin: 40px 0
+	
+/*wrapper*/
+.wrapper
+	max-width: $wrap-size
+	margin: 0 auto
+	text-align: $text-align-wrapper 
+	padding: $wrap-pading
+
+/*container*/
+.container
+	width: 100%
+	margin: 0 auto
+	padding: $container-pading
+	@media screen and (min-width: #{$dw-640})
+		max-width: $display-width
+		padding: $container-max-pading
+
+/*section-block*/
+.section-block
+	margin: 0px
+	padding: 20px 0px
+	@media screen and (min-width: #{$dw-width-section})
+		margin: $margin-section-block 
+		padding: $padding-section-block
+.img img
+	width: 100%
+	height: auto
