@@ -93,8 +93,7 @@ textarea:-ms-input-placeholder {
 }
 
 .general-btn {
-  max-width: 145px;
-  width: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,59 +301,25 @@ textarea:-ms-input-placeholder {
   margin: 12px 0px 24px;
 }
 
-.page .main-box_select .pairs-box {
+.page .main-box_select select {
   border: none;
   cursor: pointer;
-  position: relative;
-  background: transparent;
+  background-color: transparent !important;
+  background-image: url("../img/arrow.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
   font-size: 12px;
   color: #BDBDBD;
   padding: 5px 0px;
-  border-radius: 0px;
+  border-radius: 0px !important;
   text-transform: uppercase;
   border-bottom: 1px solid #828282;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
-}
-
-.page .main-box_select .pairs-box span {
-  font-size: 12px;
-  color: #BDBDBD;
-  margin: 0;
-}
-
-.page .main-box_select .pairs-box:after {
-  content: "";
-  display: inline-block;
-  margin-left: auto;
-  border-bottom: 0px solid transparent;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  border-top: 4px solid #828282;
-}
-
-.page .main-box_select .pairs-box .pairs-box_list {
-  position: absolute;
-  width: 100%;
-  top: 104%;
-  left: 0;
-  border-bottom: 1px solid #828282;
-  border-right: 1px solid #828282;
-  border-left: 1px solid #828282;
-  display: none;
-  background: #fff;
-  line-height: 20px;
-}
-
-.page .main-box_select .pairs-box .pairs-box_list li {
-  padding: 0px 4px;
-}
-
-.page .main-box_select .pairs-box .pairs-box_list li:hover {
-  color: #fff;
-  background: #2D9CDB;
+  outline: 0;
 }
 
 .page .main-box_portfolio h2 {
