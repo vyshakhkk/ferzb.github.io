@@ -10,5 +10,25 @@ $(document).ready(function() {
 			$(this).addClass('active');
 
 		})
+	});
+
+	var filter = $('.pairs-box'),
+		filter_list = filter.find('.pairs-box_list'),
+		filter_span = filter.find('span'),
+		filter_item = filter_list.find('li');
+
+	filter.each(function(){
+		var this_filter = $(this),
+			this_filter_list = this_filter.find(filter_list),
+			this_filter_item = this_filter_list.find(filter_item),
+			this_filter_span = this_filter.find(filter_span);
+		this_filter.click(function(){
+			this_filter_list.slideToggle();
+		})
+
+		this_filter_item.click(function(){
+			var text = $(this).text();
+			this_filter_span.text(text);
+		})
 	})
 });
