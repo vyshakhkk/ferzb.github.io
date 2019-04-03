@@ -93,7 +93,7 @@ header img {
   border-radius: 10px;
   text-align: center;
   padding: 10px;
-  margin: 30px 7px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +112,20 @@ header img {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.main-page .wrap-box .box-item:nth-child(2n+1) {
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 580px) {
+  .main-page .wrap-box .box-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+.main-page .wrap-box .box-item:last-child {
+  margin-right: 0;
 }
 
 @media screen and (min-width: 580px) {
