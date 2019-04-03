@@ -19,13 +19,15 @@
 		<div class="page">
 			<div class="container">
 				<section class="main-constructor">
-					<img src="img/image.png" alt="chart">
+					<div class="main-constructor_chart">
+						<img src="img/image.png" alt="chart">
+					</div>
 				</section>
 
 				<section class="main-box">
-					<header>
-						<a href="#" class="general-btn buy">Buy</a>
-						<a href="#" class="general-btn sell">Sell</a>
+					<header class="global-btn-box">
+						<button data-name="buy" class="general-btn buy active">Buy</button>
+						<button data-name="sell" class="general-btn sell">Sell</button>
 					</header>
 
 					<article class="main-box_select">
@@ -64,10 +66,10 @@
 					<article class="main-box_price">
 						<span class="small-text">Choose your price type</span>
 
-						<div class="main-box_price_btn">
-							<a href="#" class="buy">Limit</a>
+						<div class="global-btn-box main-box_price_btn">
+							<button class="buy" data-name="buy">Limit</button>
 							<span>or</span>
-							<a href="#" class="sell">Market</a>
+							<button class="sell" data-name="sell">Market</a>
 						</div>
 
 						<h3 class="general-title-h3">Price</h3>

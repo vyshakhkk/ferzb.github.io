@@ -36,7 +36,7 @@ html, body {
 
 @media screen and (min-width: 640px) {
   html, body {
-    font-size: 24px;
+    font-size: 12px;
   }
 }
 
@@ -56,7 +56,7 @@ a {
 }
 
 nav {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 nav a {
@@ -71,25 +71,25 @@ img {
   width: 100%;
 }
 
-input, textarea, button {
+input, textarea, button, select {
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 textarea::-webkit-input-placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 textarea::-moz-placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 textarea:-moz-placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 textarea:-ms-input-placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 .general-btn {
@@ -105,8 +105,10 @@ textarea:-ms-input-placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   height: 53px;
-  font-size: 14px;
+  font-size: 17px;
+  cursor: pointer;
   font-weight: 500;
+  background: transparent;
 }
 
 .buy {
@@ -114,7 +116,7 @@ textarea:-ms-input-placeholder {
   color: #02D29A;
 }
 
-.buy:hover {
+.buy:hover, .buy.active {
   background: #02D29A;
   color: #fff;
 }
@@ -125,13 +127,13 @@ textarea:-ms-input-placeholder {
   color: #E14DAF;
 }
 
-.sell:hover {
+.sell:hover, .sell.active {
   background: #E14DAF;
   color: #fff;
 }
 
 .general-title-h3 {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   font-weight: bold;
 }
@@ -139,6 +141,7 @@ textarea:-ms-input-placeholder {
 .general-input {
   border: none;
   font-size: 10px;
+  background: transparent;
   color: #BDBDBD;
   padding: 5px 0px;
   text-transform: uppercase;
@@ -178,12 +181,12 @@ textarea:-ms-input-placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: 1px solid #E0E0E0;
   color: #000;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .general-checkbox input {
@@ -199,7 +202,7 @@ textarea:-ms-input-placeholder {
 }
 
 .general-checkbox label {
-  font-size: 10px;
+  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,13 +211,14 @@ textarea:-ms-input-placeholder {
           align-items: flex-start;
   color: #000000;
   position: relative;
+  cursor: pointer;
 }
 
 .general-checkbox label:before {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 2px;
   border: 1px solid #C4C4C4;
 }
@@ -223,7 +227,7 @@ textarea:-ms-input-placeholder {
   content: "";
   display: none;
   position: absolute;
-  top: 1px;
+  top: 2px;
   width: 3px;
   height: 7px;
   border-bottom: 1px solid #fff;
@@ -233,7 +237,8 @@ textarea:-ms-input-placeholder {
 }
 
 .page .container {
-  max-width: 990px;
+  max-width: 1100px;
+  position: relative;
   padding: 30px 20px;
   margin: auto;
   display: -webkit-box;
@@ -247,6 +252,7 @@ textarea:-ms-input-placeholder {
 }
 
 .page .main-constructor {
+  position: relative;
   width: 100%;
   margin-bottom: 40px;
 }
@@ -255,7 +261,16 @@ textarea:-ms-input-placeholder {
   .page .main-constructor {
     width: calc(66.6666666% - 20px);
     margin-bottom: 0;
+    position: relative;
   }
+}
+
+.page .main-constructor_chart {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 10px;
+  display: block;
 }
 
 .page .main-box {
@@ -282,16 +297,19 @@ textarea:-ms-input-placeholder {
 
 .page .main-box_select span {
   color: #2D9CDB;
-  font-size: 8px;
+  font-size: 10px;
   display: block;
   margin: 12px 0px 24px;
 }
 
 .page .main-box_select select {
   border: none;
-  font-size: 10px;
+  cursor: pointer;
+  background: transparent;
+  font-size: 12px;
   color: #BDBDBD;
   padding: 5px 0px;
+  border-radius: 0px;
   text-transform: uppercase;
   border-bottom: 1px solid #828282;
   display: block;
@@ -300,14 +318,14 @@ textarea:-ms-input-placeholder {
 }
 
 .page .main-box_portfolio h2 {
-  font-size: 23px;
+  font-size: 27px;
   color: #06124A;
   margin-bottom: 32px;
 }
 
 .page .main-box_portfolio h2 span {
   display: block;
-  font-size: 9px;
+  font-size: 11px;
   color: #333;
   margin-bottom: 6px;
 }
@@ -317,7 +335,7 @@ textarea:-ms-input-placeholder {
 }
 
 .page .main-box_portfolio .general-radio {
-  margin-top: 14px;
+  margin-top: 17px;
 }
 
 .page .main-box_portfolio .general-radio label {
@@ -329,7 +347,7 @@ textarea:-ms-input-placeholder {
 }
 
 .page .main-box_price .small-text {
-  font-size: 9px;
+  font-size: 11px;
   color: #333;
   display: block;
   margin-bottom: 10px;
@@ -350,12 +368,14 @@ textarea:-ms-input-placeholder {
 }
 
 .page .main-box_price_btn span {
-  font-size: 12px;
+  font-size: 14px;
   color: #333;
   margin-left: 6px;
 }
 
-.page .main-box_price_btn a {
+.page .main-box_price_btn button {
+  background: transparent;
+  cursor: pointer;
   width: 82px;
   height: 30px;
   display: -webkit-box;
@@ -368,7 +388,28 @@ textarea:-ms-input-placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
-  font-size: 10px;
+  font-size: 12px;
+}
+
+.page .main-box_price_btn button.buy {
+  border: 1px solid #02D29A;
+  color: #02D29A;
+}
+
+.page .main-box_price_btn button.buy:hover, .page .main-box_price_btn button.buy.active {
+  background: #02D29A;
+  color: #fff;
+}
+
+.page .main-box_price_btn button.sell {
+  border: 1px solid #E14DAF;
+  margin-left: 6px;
+  color: #E14DAF;
+}
+
+.page .main-box_price_btn button.sell:hover, .page .main-box_price_btn button.sell.active {
+  background: #E14DAF;
+  color: #fff;
 }
 
 .page .main-box_price_box {
@@ -407,13 +448,13 @@ textarea:-ms-input-placeholder {
 }
 
 .page .main-box_price_box .inner-box .general-checkbox label:after {
-  left: 4px;
+  left: 5px;
 }
 
 .main-btn {
   display: block;
   width: 100%;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   padding: 12px;
   border-radius: 20px;

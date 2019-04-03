@@ -1,57 +1,14 @@
 $(document).ready(function() {
-	var toggleBlock = $('.nav-toggle-block'),
-		toggleLine = $('.nav-toggle-line'),
-		menuList = $('.menu-list').find('> li'),
-		links = $('.scroll'),
-		nav = $('#nav');
-
-	toggleBlock.on('click', function(event) {
-		$(this).toggleClass('open');
-		toggleLine.toggleClass('active-line');
-		nav.toggleClass('active');
-	});
-
-	$(window).resize(function() {
-		if ($(window).width() > 960) {
-			nav.removeClass('active');
-			toggleLine.removeClass('active-line');
-			toggleBlock.removeClass('open');
-		}
-	});
-
-
-	links.on("click", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
-    	nav.removeClass('active');
-    	toggleLine.removeClass('active-line');
-    });
-
-    $('body').append('<i class="btn-up">');
-
-	$('.btn-up').click(function(){
-		$('body').animate({'scrollTop': 0}, 1000);
-		$('html').animate({'scrollTop': 0}, 1000)
-	})
-
-	$(window).scroll(function(){
-		if ($(window).scrollTop() > 200){
-			$('.btn-up').addClass('active');
-		}
-		else{
-			$('.btn-up').removeClass('active');
-		}
-	});
+	var btn_box = $('.global-btn-box'),
+		btn_item = btn_box.find('button');
 	
-	$(function(){
-		var input = $('.input-global')
-		input.each(function() {
-			var this_input = $(this);
-			this_input.click(function() {
-				this_input.addClass('input-focus')
-			});
-		});
-	});
+	btn_box.each(function(){
+		var this_btn_box = $(this),
+			this_btn_item = this_btn_box.find(btn_item);
+		this_btn_item.click(function(){
+			this_btn_item.removeClass('active')
+			$(this).addClass('active');
+
+		})
+	})
 });
