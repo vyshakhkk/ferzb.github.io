@@ -68,42 +68,59 @@
 						<span class="small-text">Choose your price type</span>
 
 						<div class="global-btn-box main-box_price_btn">
-							<button class="buy" data-name="buy">Limit</button>
+							<button class="general-price buy active" data-name="buy">Limit</button>
 							<span>or</span>
-							<button class="sell" data-name="sell">Market</a>
+							<button class="general-price sell" data-name="sell">Market</a>
 						</div>
 
-						<h3 class="general-title-h3">Price</h3>
-
-						<input class="general-input" type="text" placeholder="0.0001">
+						<div class="tiggle-slide-box">
+							<h3 class="general-title-h3">Price</h3>
+							<input class="general-input" type="number" placeholder="0.0001">
+							
+						</div>
+						
 
 						<div class="main-box_price_box">
+
 							<div class="inner-box">
 								<h3 class="general-title-h3">Take Profit</h3>
 
 								<div class="general-checkbox">
-									<input type="checkbox" id="profit_check">
-									<label for="profit_check">Active</label>
+									
+									<button class="checkbox_btn active">Active</button>
+
+									<div class="general-checkbox_inner">
+										<input class="general-input" type="text" placeholder="0.0001">
+
+										<div class="general-radio">
+											<input type="radio" name="profit_percent" id="profit_percent_1">
+											<label for="profit_percent_1">1%</label>
+				
+											<input type="radio" name="profit_percent" id="profit_percent_2">
+											<label for="profit_percent_2">2%</label>
+				
+											<input type="radio" name="profit_percent" id="profit_percent_10">
+											<label for="profit_percent_10">10%</label>
+				
+											<input type="radio" name="profit_percent" id="profit_percent_15">
+											<label for="profit_percent_15">15%</label>
+				
+											<input type="radio" name="profit_percent" id="profit_percent_20">
+											<label for="profit_percent_20">20%</label>
+										</div>
+
+										<div>
+											<h3 class="general-title-h3">Amount</h3>
+			
+											<input class="general-input" type="text" placeholder="0.0001">
+										</div>
+
+									</div>
+									
+
 								</div>
 
-								<input class="general-input" type="text" placeholder="0.0001">
-
-								<div class="general-radio">
-									<input type="radio" name="profit_percent" id="profit_percent_1">
-									<label for="profit_percent_1">1%</label>
-		
-									<input type="radio" name="profit_percent" id="profit_percent_2">
-									<label for="profit_percent_2">2%</label>
-		
-									<input type="radio" name="profit_percent" id="profit_percent_10">
-									<label for="profit_percent_10">10%</label>
-		
-									<input type="radio" name="profit_percent" id="profit_percent_15">
-									<label for="profit_percent_15">15%</label>
-		
-									<input type="radio" name="profit_percent" id="profit_percent_20">
-									<label for="profit_percent_20">20%</label>
-								</div>
+								
 
 							</div>
 
@@ -111,42 +128,40 @@
 								<h3 class="general-title-h3">Stop Loss</h3>
 
 								<div class="general-checkbox">
-									<input type="checkbox" id="loss_check">
-									<label for="loss_check">Active</label>
+									
+									<button class="checkbox_btn active">Active</button>
+
+									<div class="general-checkbox_inner">
+										<input class="general-input" type="text" placeholder="0.0001">
+
+										<div class="general-radio">
+											<input type="radio" name="profit_percent" id="profit_percent_1">
+											<label for="profit_percent_1">1%</label>
+				
+											<input type="radio" name="profit_percent" id="profit_percent_2">
+											<label for="profit_percent_2">2%</label>
+				
+											<input type="radio" name="profit_percent" id="profit_percent_10">
+											<label for="profit_percent_10">10%</label>
+				
+											<input type="radio" name="profit_percent" id="profit_percent_15">
+											<label for="profit_percent_15">15%</label>
+				
+											<input type="radio" name="profit_percent" id="profit_percent_20">
+											<label for="profit_percent_20">20%</label>
+										</div>
+
+										<div>
+											<h3 class="general-title-h3">Amount</h3>
+			
+											<input class="general-input" type="text" placeholder="0.0001">
+										</div>
+									</div>
+
 								</div>
 
-								<input class="general-input" type="text" placeholder="0.0001">
-
-								<div class="general-radio">
-									<input type="radio" name="loss_percent" id="loss_percent_1">
-									<label for="loss_percent_1">1%</label>
-		
-									<input type="radio" name="loss_percent" id="loss_percent_2">
-									<label for="loss_percent_2">2%</label>
-		
-									<input type="radio" name="loss_percent" id="loss_percent_10">
-									<label for="loss_percent_10">10%</label>
-		
-									<input type="radio" name="loss_percent" id="loss_percent_15">
-									<label for="loss_percent_15">15%</label>
-		
-									<input type="radio" name="loss_percent" id="loss_percent_20">
-									<label for="loss_percent_20">20%</label>
-								</div>
-
 							</div>
 
-							<div class="inner-box">
-								<h3 class="general-title-h3">Amount</h3>
-
-								<input class="general-input" type="text" placeholder="0.0001">
-							</div>
-
-							<div class="inner-box">
-								<h3 class="general-title-h3">Amount</h3>
-
-								<input class="general-input" type="text" placeholder="0.0001">
-							</div>
 						</div>
 					</article>
 					<a class="main-btn" href="#">Create Strategy</a>

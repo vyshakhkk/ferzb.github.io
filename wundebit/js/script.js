@@ -8,27 +8,32 @@ $(document).ready(function() {
 		this_btn_item.click(function(){
 			this_btn_item.removeClass('active')
 			$(this).addClass('active');
+			$(function(){
+				if ($('.general-btn.buy').hasClass('active')){
+					$('header').css('box-shadow', '0px 7px 0px 0px #02D29A')
+				} else($('header').css('box-shadow', '0px 7px 0px 0px #E14DAF'))
+			})
 
+			$(function(){
+				if ($('.general-price.sell').hasClass('active')){
+					$('.tiggle-slide-box').slideUp();
+				} else($('.tiggle-slide-box').slideDown())
+			})
 		})
 	});
 
-	var filter = $('.pairs-box'),
-		filter_list = filter.find('.pairs-box_list'),
-		filter_span = filter.find('span'),
-		filter_item = filter_list.find('li');
+	var btn_checkbox = $('.general-checkbox'),
+		btn_checkbox_item = btn_checkbox.find('button');
 
-	filter.each(function(){
-		var this_filter = $(this),
-			this_filter_list = this_filter.find(filter_list),
-			this_filter_item = this_filter_list.find(filter_item),
-			this_filter_span = this_filter.find(filter_span);
-		this_filter.click(function(){
-			this_filter_list.slideToggle();
-		})
+		btn_checkbox.each(function(){
+			var this_btn_checkbox = $(this),
+				this_btn_checkbox_item = this_btn_checkbox.find(btn_checkbox_item),
+				this_inupt_box = this_btn_checkbox.find('.general-checkbox_inner');
+			this_btn_checkbox_item.click(function(){
+				$(this).toggleClass('active');
+				this_inupt_box.slideToggle();
+			})
+		});
+	
 
-		this_filter_item.click(function(){
-			var text = $(this).text();
-			this_filter_span.text(text);
-		})
-	})
 });
