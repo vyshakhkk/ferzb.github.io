@@ -162,6 +162,16 @@ header img {
   display: block;
 }
 
+.main-page .wrap-box .box-item.box-offer {
+  padding: 14px 10px 32px;
+}
+
+.main-page .wrap-box .box-item.business.active, .main-page .wrap-box .box-item.business:hover {
+  background: #383838;
+  border: 2px solid #383838;
+  color: #fff;
+}
+
 .main-page .wrap-box .box-item .checkbox {
   position: absolute;
   background: #FFF;
@@ -259,6 +269,10 @@ header img {
   display: block;
   color: #FFF;
   text-align: center;
+}
+
+.main-page .global-btn.business {
+  background: #383838;
 }
 
 .main-page .text-box {

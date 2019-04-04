@@ -19,7 +19,7 @@
 
 html, body {
   min-width: 320px;
-  font-family: Arial, sans-serif;
+  font-family: "Inter UI", sans-serif;
   color: #000;
   font-size: 18px;
   position: relative;
@@ -84,7 +84,7 @@ a {
 }
 
 nav {
-  font-family: Arial, sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 nav a {
@@ -111,23 +111,23 @@ nav ul li {
 
 input, textarea, button {
   outline: none;
-  font-family: Arial, sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 textarea::-webkit-input-placeholder {
-  font-family: Arial, sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 textarea::-moz-placeholder {
-  font-family: Arial, sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 textarea:-moz-placeholder {
-  font-family: Arial, sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 textarea:-ms-input-placeholder {
-  font-family: Arial, sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 /*container-block*/
